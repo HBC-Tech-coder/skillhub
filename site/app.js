@@ -18,7 +18,7 @@
       searchPh: '试试：帮我下载无水印的B站、抖音视频的 Skill…',
       stCount: '收录', stEco: '生态', stScenes: '场景', stUpdate: '更新',
       scenes: '按用途找', scenesProfession: '按职位', scenesTask: '按任务', scenesFeature: '按功能', searchBtn: '搜 索',
-      eco: '生态', rec: '编辑推荐', recNote: '—— 装了这几个就能…',
+      eco: '生态', rec: '编辑推荐', recNote: '—— 装了这几个就能…', recAll: '全部推荐 →',
       rank: '热门榜', rankNote: '按 GitHub 星标排序（爬虫刷新）', about: '关于技能港',
       aboutTxt: '跨生态插件与技能聚合目录。数据与站点完全开源，列出 ≠ 背书：安装第三方代码前请先查看源码。',
       repo: '数据仓库', submit: '投稿', copy: '复制', copied: '已复制', source: '源码',
@@ -32,7 +32,7 @@
       searchPh: 'Try: a skill that downloads watermark-free Bilibili videos…',
       stCount: 'Items', stEco: 'Ecos', stScenes: 'Scenes', stUpdate: 'Updated',
       scenes: 'By use case', scenesProfession: 'By profession', scenesTask: 'By task', scenesFeature: 'By capability', searchBtn: 'Search',
-      eco: 'Ecosystem', rec: "Editor's Picks", recNote: '— install these to…',
+      eco: 'Ecosystem', rec: "Editor's Picks", recNote: '— install these to…', recAll: 'All picks →',
       rank: 'Trending', rankNote: 'Sorted by GitHub stars (crawler refreshed)', about: 'About SkillHub',
       aboutTxt: 'Cross-ecosystem plugin & skill catalog. Open data, open site. Listing ≠ endorsement: read the source before installing third-party code.',
       repo: 'Repository', submit: 'Submit', copy: 'Copy', copied: 'Copied', source: 'Source',
@@ -225,14 +225,31 @@
     if (!RECS || !RECS.entries) { document.getElementById('recBlock').style.display = 'none'; return; }
     document.getElementById('recBlock').style.display = '';
     document.getElementById('recGrid').innerHTML = RECS.entries.map((r) => `
-      <div class="reccard">
+      <div class="reccard" onclick="openRec('${esc(r.id)}')" title="${lang === 'zh' ? '点击查看全文' : 'Click for full text'}">
         <div class="rectitle">${esc(lang === 'zh' ? r.title : (r.titleEn || r.title))}</div>
         <div class="rectext">${esc(lang === 'zh' ? r.text : (r.textEn || r.text))}</div>
         <div class="recitems">${r.itemIds.map((id) => {
           const i = DATA.plugins.find((x) => x.id === id);
-          return i ? `<span class="recitem" onclick="openModal('${esc(id)}')">${esc(i.name)}</span>` : '';
+          return i ? `<span class="recitem" onclick="event.stopPropagation();openModal('${esc(id)}')">${esc(i.name)}</span>` : '';
         }).join('')}</div>
       </div>`).join('');
+  }
+  function openRec(id) {
+    const r = RECS && RECS.entries && RECS.entries.find((x) => x.id === id);
+    if (!r) return;
+    const chips = (r.itemIds || []).map((id) => {
+      const i = DATA.plugins.find((x) => x.id === id);
+      return i ? `<span class="recitem" onclick="openModal('${esc(id)}')">${esc(i.name)}</span>` : '';
+    }).join(' ');
+    document.getElementById('modal').innerHTML = `
+      <h2>📱 ${esc(lang === 'zh' ? r.title : (r.titleEn || r.title))}</h2>
+      <div class="en">${esc(r.added || '')} · ${lang === 'zh' ? '编辑推荐' : 'Editor\u2019s pick'}</div>
+      <div class="row"><b>${esc(t('modalDesc'))}</b>${esc(lang === 'zh' ? r.text : (r.textEn || r.text))}</div>
+      <div class="row"><b>${esc(t('modalEn'))}</b>${esc(lang === 'zh' ? (r.textEn || '') : (r.text || ''))}</div>
+      <div class="row"><b>${esc(t('scenes'))}</b>${chips}</div>
+      <div class="row"><b>${esc(t('detail'))}</b><a href="picks.html">${lang === 'zh' ? '全部推荐（历史归档）→' : 'All picks (archive) →'}</a></div>
+      <button class="close" onclick="closeModal()">${lang === 'zh' ? '关闭' : 'Close'}</button>`;
+    document.getElementById('mbg').style.display = 'flex';
   }
 
   /* ---------- 热门榜（榜单 ⇄ 文字说明 交替轮播） ---------- */
@@ -366,6 +383,7 @@
   window.openModal = openModal;
   window.closeModal = closeModal;
   window.copyCmd = copyCmd;
+  window.openRec = openRec;
   window.setEco = (v) => { state.eco = v; rotatePausedUntil = Date.now() + 20000; renderFilters(); render(); };
   window.setScene = (v) => { state.scene = v; rotatePausedUntil = Date.now() + 20000; renderFilters(); render(); };
   window.setTab = setTab;

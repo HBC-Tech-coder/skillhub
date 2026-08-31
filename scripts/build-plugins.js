@@ -104,8 +104,30 @@ function build() {
     fs.copyFileSync(recSrc, path.join(ROOT, 'site', 'recommendations.json'));
   }
   buildFeed(out);
+  syncHistory(today);
   for (const w of warnings) console.warn(`[build] WARN: ${w}`);
   console.log(`[build] OK: ${entries.length} entries -> ${path.relative(ROOT, OUT)} (updated=${today})`);
+}
+
+// 推荐历史归档：当前推荐并入 history（按 id 去重，新的在前），并复制到 site/ 供二级页读取。
+function syncHistory(today) {
+  const curFile = path.join(ROOT, 'data', 'recommendations.json');
+  const hisFile = path.join(ROOT, 'data', 'recommendations-history.json');
+  let cur = [];
+  try { cur = JSON.parse(fs.readFileSync(curFile, 'utf8')).entries || []; } catch { /* ignore */ }
+  let old = [];
+  try { old = JSON.parse(fs.readFileSync(hisFile, 'utf8')).entries || []; } catch { /* ignore */ }
+  const seen = new Set();
+  const merged = [];
+  for (const e of [...cur, ...old]) {
+    if (!e || !e.id || seen.has(e.id)) continue;
+    seen.add(e.id);
+    merged.push(e);
+  }
+  const out = { updated: today, source: 'history', entries: merged };
+  fs.writeFileSync(hisFile, JSON.stringify(out, null, 2) + '\n');
+  fs.mkdirSync(path.join(ROOT, 'site'), { recursive: true });
+  fs.copyFileSync(hisFile, path.join(ROOT, 'site', 'recommendations-history.json'));
 }
 
 // Atom 订阅源：data/feed.xml（供 RSS 读者/推广渠道订阅，字段对齐 plugins.json）

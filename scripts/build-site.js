@@ -91,7 +91,66 @@ ${urls.map((u) => `  <url><loc>${esc(u)}</loc><lastmod>${DATA.updated}</lastmod>
 `;
   fs.writeFileSync(path.join(SITE, 'sitemap.xml'), sitemap);
   buildDemo();
+  buildPicks();
   console.log(`[site] ${DATA.plugins.length} item pages -> site/items/ ; sitemap.xml (${urls.length} urls)`);
+}
+
+// 编辑推荐二级页：全部历史推荐（site/picks.html），数据源 recommendations-history.json。
+function buildPicks() {
+  const html = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>编辑推荐 · 全部 — 技能港 SkillHub</title>
+<meta name="description" content="技能港 SkillHub 历期编辑推荐：装了这几个就能…">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235b5bd6'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3E技%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="head">
+  <div class="logo">技</div><div class="brand">技能港 <small>SkillHub</small></div>
+  <div class="spacer"></div>
+  <a href="./" style="color:var(--accent);text-decoration:none;font-size:14px">← 返回目录</a>
+</div></header>
+<main class="pickswrap">
+  <h1>📱 编辑推荐 · 全部</h1>
+  <p class="picks-sub">历期推荐存档：装上这几个就能…（点击条目名查看详情）</p>
+  <div id="picks"></div>
+</main>
+<footer><div>技能港 SkillHub · 列出 ≠ 背书 · <a href="./">返回目录</a></div></footer>
+<script>
+(function () {
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] }); }
+  Promise.all([
+    fetch('recommendations-history.json', { cache: 'no-store' }).then(function (r) { return r.json(); }),
+    fetch('plugins.json', { cache: 'no-store' }).then(function (r) { return r.json(); }),
+  ]).then(function (res) {
+    var his = res[0], data = res[1];
+    var el = document.getElementById('picks');
+    var entries = his.entries || [];
+    if (!entries.length) { el.innerHTML = '<div class="empty">暂无推荐</div>'; return; }
+    el.innerHTML = entries.map(function (r) {
+      var chips = (r.itemIds || []).map(function (id) {
+        var i = data.plugins.find(function (x) { return x.id === id; });
+        return i ? '<a class="recitem" href="items/' + esc(id) + '.html">' + esc(i.name) + '</a>' : '';
+      }).join(' ');
+      return '<div class="pickcard">' +
+        '<div class="pick-top"><span class="pick-title">' + esc(r.title) + '</span><span class="pick-date">' + esc(r.added || '') + '</span></div>' +
+        '<div class="pick-en">' + esc(r.titleEn || '') + '</div>' +
+        '<div class="pick-text">' + esc(r.text) + '</div>' +
+        '<div class="pick-text pick-text-en">' + esc(r.textEn || '') + '</div>' +
+        '<div class="pick-items">' + chips + '</div>' +
+      '</div>';
+    }).join('');
+  }).catch(function (e) { document.getElementById('picks').innerHTML = '<div class="empty">加载失败：' + esc(e && e.message) + '</div>'; });
+})();
+</script>
+</body>
+</html>
+`;
+  fs.writeFileSync(path.join(SITE, 'picks.html'), html);
+  console.log('[site] picks.html（推荐二级页）已生成');
 }
 
 // 精选 demo 数据集（Founder 审设计用）：site/demo.json + site/demo-recommendations.json

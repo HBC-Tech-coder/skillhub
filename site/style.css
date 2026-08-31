@@ -65,12 +65,29 @@ header{background:var(--head-bg);backdrop-filter:blur(8px);border-bottom:1px sol
 .hi-name{flex:1;font-size:13px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .hi-star{font-size:11.5px;color:#f59e0b;white-space:nowrap;flex:none;}
 
+/* ---------- 推荐二级页 ---------- */
+.pickswrap{max-width:860px;margin:0 auto;padding:28px 20px 60px;}
+.pickswrap h1{font-size:26px;margin-bottom:6px;}
+.picks-sub{color:var(--sub);font-size:13.5px;margin-bottom:18px;}
+.pickcard{background:var(--rec-bg);border:1px solid var(--rec-line);border-radius:14px;padding:16px 18px;margin-bottom:14px;}
+.pick-top{display:flex;align-items:baseline;gap:10px;margin-bottom:4px;}
+.pick-title{font-weight:700;font-size:15.5px;}
+.pick-date{margin-left:auto;color:var(--sub);font-size:12px;flex:none;}
+.pick-en{color:var(--sub);font-size:12.5px;margin-bottom:8px;}
+.pick-text{color:var(--text);font-size:13.5px;line-height:1.7;}
+.pick-text-en{color:var(--sub);margin-top:6px;}
+.pick-items{margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;}
+.pick-items .recitem{text-decoration:none;}
+
 /* ---------- 编辑推荐 ---------- */
 .recblock{margin:6px 0 12px;}
 .recblock h3{font-size:14.5px;margin-bottom:8px;display:flex;align-items:center;gap:6px;}
 .recblock .note{font-weight:400;color:var(--sub);font-size:12.5px;}
 .recgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;}
-.reccard{background:var(--rec-bg);border:1px solid var(--rec-line);border-radius:12px;padding:13px 15px;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+.reccard{background:var(--rec-bg);border:1px solid var(--rec-line);border-radius:12px;padding:13px 15px;box-shadow:0 1px 3px rgba(0,0,0,.04);cursor:pointer;transition:border-color .15s,box-shadow .15s,transform .15s;}
+.reccard:hover{border-color:var(--accent);box-shadow:var(--hover-shadow);transform:translateY(-2px);}
+.reclink{margin-left:auto;font-size:12.5px;color:var(--accent);text-decoration:none;font-weight:600;}
+.reclink:hover{text-decoration:underline;}
 .reccard .rectitle{font-weight:700;font-size:13.5px;margin-bottom:5px;}
 .reccard .rectext{color:var(--sub);font-size:12.5px;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
 .recitems{display:flex;gap:6px;flex-wrap:wrap;}

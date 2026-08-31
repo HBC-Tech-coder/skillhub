@@ -4,6 +4,7 @@
   "entries": [
     {
       "id": "rec-newmedia-1",
+      "added": "2026-08-31",
       "title": "新媒体运营起步套装：热点 → 文案 → 分发一条龙",
       "titleEn": "Social Media Starter Kit: trends → copy → publish in one flow",
       "text": "装上这 4 个：TrendRadar 自动盯全网热点、电商视觉文案 Skill 出商品图文案、rayskills 把内容直接排进公众号/X 草稿箱、微信 OpenClaw 通道让 WorkBuddy 直连微信。从选题到发布，每天省 2 小时。",
@@ -13,6 +14,7 @@
     },
     {
       "id": "rec-dev-1",
+      "added": "2026-08-31",
       "title": "开发者效率三件套：让 agent 真正读懂你的代码库",
       "titleEn": "Developer Trio: make your agent actually understand the codebase",
       "text": "Serena 提供语义级代码检索编辑，codebase-memory-mcp 把代码库索引成持久知识图谱，context-mode 再把工具输出压缩 98%。三者叠加，长会话不爆上下文、agent 改代码不再瞎猜。",
@@ -22,6 +24,7 @@
     },
     {
       "id": "rec-design-1",
+      "added": "2026-08-31",
       "title": "设计产出套装：从原型到落地页，全给 agent 装上",
       "titleEn": "Design Output Kit: prototypes to landing pages for your agent",
       "text": "open-design 把 agent 变成设计引擎（原型/看板/幻灯片导出真实文件），ui-ux-pro-max-skill 提供配色/字体/布局知识库，CodeDrobe Skills 负责给桌面应用换肤。设计师的活，AI 也能出一版。",
