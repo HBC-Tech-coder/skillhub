@@ -97,7 +97,8 @@ header{background:var(--head-bg);backdrop-filter:blur(8px);border-bottom:1px sol
 /* ---------- 布局 ---------- */
 .layout{max-width:1200px;margin:0 auto;padding:10px 20px 50px;display:grid;grid-template-columns:minmax(0,1fr) 264px;gap:18px;align-items:start;min-width:0;}
 .side{position:sticky;top:76px;min-width:0;}
-.center,.filters-top,.recgrid,.grid,.toolbar,.tabcard,.tabbar,.tabbody{min-width:0;}
+.center,.filters-top,.recgrid,.grid,.toolbar,.tabcard,.tabbar,.tabbody,.card,.reccard{min-width:0;}
+.card>*{min-width:0;}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px;margin-bottom:14px;}
 .panel h3{font-size:14px;margin-bottom:10px;display:flex;align-items:center;gap:7px;}
 
@@ -146,8 +147,8 @@ header{background:var(--head-bg);backdrop-filter:blur(8px);border-bottom:1px sol
 .card .tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:7px;}
 .card .tag{font-size:11px;color:var(--sub);border:1px solid var(--line);border-radius:999px;padding:1px 8px;background:var(--line-soft);}
 .card .meta{display:flex;gap:12px;flex-wrap:wrap;color:var(--sub);font-size:12px;margin-bottom:7px;}
-.install{display:flex;align-items:center;gap:8px;background:var(--code-bg);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-family:var(--mono);font-size:12px;margin-top:auto;}
-.install code{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--code-text);}
+.install{display:flex;align-items:center;gap:8px;background:var(--code-bg);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-family:var(--mono);font-size:12px;margin-top:auto;min-width:0;overflow:hidden;}
+.install code{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--code-text);}
 .copy{background:var(--accent);color:#fff;border:none;border-radius:6px;padding:3px 10px;font-size:12px;cursor:pointer;flex:none;}
 .card .foot{display:flex;gap:12px;color:var(--sub);font-size:12px;}
 
@@ -177,10 +178,10 @@ header{background:var(--head-bg);backdrop-filter:blur(8px);border-bottom:1px sol
 .modal .en{color:var(--sub);margin-bottom:14px;font-size:13.5px;}
 .modal .row{margin:9px 0;font-size:14px;overflow-wrap:anywhere;} .modal .row b{display:inline-block;width:66px;color:var(--sub);font-weight:500;}
 .modal .row a{color:var(--accent);text-decoration:none;}
-.modal .install{background:var(--code-bg);margin-top:12px;}
+.modal .install{background:var(--code-bg);margin-top:12px;min-width:0;overflow:hidden;}
 .modal .ecolist{margin-top:8px;display:flex;flex-direction:column;gap:8px;}
-.ecoline{display:flex;align-items:center;gap:8px;background:var(--line-soft);border:1px dashed var(--line);border-radius:9px;padding:6px 10px;font-family:var(--mono);font-size:12px;}
-.ecoline code{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--code-text);}
+.ecoline{display:flex;align-items:center;gap:8px;background:var(--line-soft);border:1px dashed var(--line);border-radius:9px;padding:6px 10px;font-family:var(--mono);font-size:12px;min-width:0;overflow:hidden;}
+.ecoline code{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--code-text);}
 .close{margin-top:16px;width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);cursor:pointer;font:inherit;}
 
 .empty{text-align:center;color:var(--sub);padding:50px 0;}
@@ -197,7 +198,7 @@ footer a{color:var(--accent);text-decoration:none;}
   .examples{justify-content:flex-start;max-width:640px;}
 }
 @media (max-width:560px){
-  .grid{grid-template-columns:1fr;}
+  .grid{grid-template-columns:minmax(0,1fr);}
   .hero{padding-top:16px;}
   .headstats{display:none;}
   .tabbtn{font-size:12px;gap:3px;padding:0 6px;min-width:0;}
@@ -206,5 +207,4 @@ footer a{color:var(--accent);text-decoration:none;}
   .chip{white-space:nowrap;max-width:calc(100vw - 64px);overflow:hidden;text-overflow:ellipsis;}
   .searchbtn{padding:9px 14px;}
   .toolbar{flex-wrap:wrap;gap:6px;}
-  body{overflow-x:hidden;overflow-x:clip;}
 }

@@ -17,7 +17,7 @@ const HOST = process.env.HOST || '127.0.0.1';
 const ADMIN_TOKEN = process.env.SKILLHUB_ADMIN_TOKEN || '';
 const { validateEntry } = require(path.join(ROOT, 'scripts', 'validate-entry.js'));
 
-const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.txt': 'text/plain; charset=utf-8' };
+const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.csv': 'text/csv; charset=utf-8' };
 
 function json(res, code, obj) {
   const body = JSON.stringify(obj);
@@ -137,9 +137,10 @@ const server = http.createServer(async (req, res) => {
   if (p.startsWith('/api/admin/')) return handleAdmin(req, res, url);
   if (p === '/plugins.json' || p === '/feed.xml' || p === '/skillhub.csv') {
     const file = path.join(DATA_DIR, p.slice(1));
+    const type = { '/plugins.json': 'application/json; charset=utf-8', '/feed.xml': 'application/atom+xml; charset=utf-8', '/skillhub.csv': 'text/csv; charset=utf-8' }[p];
     fs.readFile(file, (err, buf) => {
       if (err) return json(res, 500, { error: p + ' 不存在，请先运行 build-plugins.js / export-csv.js' });
-      res.writeHead(200, { 'Content-Type': MIME[path.extname(file).toLowerCase()] || 'application/json; charset=utf-8', 'Access-Control-Allow-Origin': '*' });
+      res.writeHead(200, { 'Content-Type': type, 'Access-Control-Allow-Origin': '*' });
       res.end(buf);
     });
     return;
