@@ -24,11 +24,15 @@ jobs:
           node-version: 20
       - name: Build plugins.json
         run: node scripts/build-plugins.js
+      - name: Export CSV
+        run: node scripts/export-csv.js
       - name: Assemble dist (site + data)
         run: |
           mkdir -p dist
           cp -r site/. dist/
           cp data/plugins.json dist/
+          cp data/feed.xml dist/
+          cp data/skillhub.csv dist/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

@@ -92,8 +92,36 @@ function build() {
   };
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify(out, null, 1) + '\n');
+  buildFeed(out);
   for (const w of warnings) console.warn(`[build] WARN: ${w}`);
   console.log(`[build] OK: ${entries.length} entries -> ${path.relative(ROOT, OUT)} (updated=${today})`);
+}
+
+// Atom 订阅源：data/feed.xml（供 RSS 读者/推广渠道订阅，字段对齐 plugins.json）
+function buildFeed(data) {
+  const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const items = data.plugins.map((p) => {
+    const desc = (p.description && (p.description.zh || p.description.en)) || '';
+    return `  <entry>
+    <id>skillhub:${esc(p.id)}</id>
+    <title>${esc(p.name)}</title>
+    <link href="${esc(p.url)}"/>
+    <updated>${esc(p.added)}T00:00:00Z</updated>
+    <summary>${esc(desc.slice(0, 400))}</summary>
+    <category term="${esc(p.category)}"/>
+  </entry>`;
+  }).join('\n');
+  const feed = `<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>skillhub:${esc(data.updated)}</id>
+  <title>技能港 SkillHub — 跨生态 AI 插件与技能</title>
+  <link href="${esc(data.url)}"/>
+  <updated>${esc(data.updated)}T00:00:00Z</updated>
+  <author><name>SkillHub</name></author>
+${items}
+</feed>
+`;
+  fs.writeFileSync(path.join(ROOT, 'data', 'feed.xml'), feed);
 }
 
 build();

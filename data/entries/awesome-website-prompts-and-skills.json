@@ -1,0 +1,27 @@
+{
+  "id": "awesome-website-prompts-and-skills",
+  "name": "awesome-website-prompts-and-skills",
+  "owner": "TencentEdgeOne",
+  "url": "https://github.com/TencentEdgeOne/awesome-website-prompts-and-skills",
+  "category": "docs",
+  "description": {
+    "en": "Official Tencent EdgeOne resource pool: give an AI coding tool one Prompt or Skill to generate polished websites, or complete sites with login, payment and AI capabilities. WorkBuddy x EdgeOne AI Prompts x Skills challenge works.",
+    "zh": "腾讯 EdgeOne 官方资源合集：给 AI 编程工具一个 Prompt 或 Skill，即可生成精美酷炫的网页，或带登录、支付、AI 能力的完整网站（WorkBuddy × EdgeOne AI Prompts × Skills 挑战赛官方作品池）。"
+  },
+  "install": "在线浏览 https://github.com/TencentEdgeOne/awesome-website-prompts-and-skills",
+  "ecosystems": [
+    { "id": "workbuddy", "kind": "registry", "install": "在线浏览 https://github.com/TencentEdgeOne/awesome-website-prompts-and-skills" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 164,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "registry",
+  "license": "MIT",
+  "author": "TencentEdgeOne",
+  "tags": ["website", "prompts", "skills", "edgeone", "official", "challenge"],
+  "verified": false,
+  "status": "active"
+}

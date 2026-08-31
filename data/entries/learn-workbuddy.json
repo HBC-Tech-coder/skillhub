@@ -1,0 +1,27 @@
+{
+  "id": "learn-workbuddy",
+  "name": "learn-workbuddy",
+  "owner": "adongwanai",
+  "url": "https://github.com/adongwanai/learn-workbuddy",
+  "category": "docs",
+  "description": {
+    "en": "Rebuild a WorkBuddy-style desktop AI assistant harness from zero: 4-chapter Python tutorial covering Agent Loop, tool calling, memory systems, sidecar, sandbox design, and DeepSeek/OpenAI evaluation traces.",
+    "zh": "从 0 复刻 WorkBuddy 风格桌面 AI 助手 Harness：4 章 Python 教程，覆盖 Agent Loop、工具调用、记忆系统、Sidecar、沙箱设计，附 DeepSeek/OpenAI 评测轨迹。"
+  },
+  "install": "git clone https://github.com/adongwanai/learn-workbuddy",
+  "ecosystems": [
+    { "id": "workbuddy", "kind": "other", "install": "git clone https://github.com/adongwanai/learn-workbuddy（学习资料）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 261,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "MIT",
+  "author": "adongwanai",
+  "tags": ["tutorial", "harness", "python", "agent-loop", "education"],
+  "verified": false,
+  "status": "active"
+}

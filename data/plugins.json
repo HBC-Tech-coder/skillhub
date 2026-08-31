@@ -3,7 +3,7 @@
  "url": "https://hub.hibcglobal.com",
  "source": "https://github.com/HBC-Tech-coder/skillhub",
  "updated": "2026-08-31",
- "count": 24,
+ "count": 27,
  "categories": {
   "agi": {
    "en": "AGI Architecture Exploration",
@@ -283,6 +283,43 @@
     "memory"
    ],
    "verified": true,
+   "status": "active"
+  },
+  {
+   "id": "agency-agents-zh",
+   "name": "agency-agents-zh",
+   "owner": "jnMetaCode",
+   "url": "https://github.com/jnMetaCode/agency-agents-zh",
+   "category": "identity",
+   "description": {
+    "en": "267 plug-and-play AI expert roles for Hermes Agent / Claude Code / Cursor / Copilot and 18+ tools, covering engineering, design, marketing and finance departments, plus 52 China-market originals (Xiaohongshu, Douyin, WeChat, Feishu, DingTalk).",
+    "zh": "267 个即插即用的 AI 专家角色，支持 Hermes Agent / Claude Code / Cursor / Copilot 等 18 种工具，覆盖工程/设计/营销/金融等 20 个部门；含 52 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）。"
+   },
+   "install": "git clone https://github.com/jnMetaCode/agency-agents-zh",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "other",
+     "install": "git clone https://github.com/jnMetaCode/agency-agents-zh（按 README 导入对应工具）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 20144,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": "MIT",
+   "author": "jnMetaCode",
+   "tags": [
+    "roles",
+    "personas",
+    "chinese",
+    "multi-tool",
+    "orchestration"
+   ],
+   "verified": false,
    "status": "active"
   },
   {
@@ -650,6 +687,43 @@
    "status": "active"
   },
   {
+   "id": "learn-workbuddy",
+   "name": "learn-workbuddy",
+   "owner": "adongwanai",
+   "url": "https://github.com/adongwanai/learn-workbuddy",
+   "category": "docs",
+   "description": {
+    "en": "Rebuild a WorkBuddy-style desktop AI assistant harness from zero: 4-chapter Python tutorial covering Agent Loop, tool calling, memory systems, sidecar, sandbox design, and DeepSeek/OpenAI evaluation traces.",
+    "zh": "从 0 复刻 WorkBuddy 风格桌面 AI 助手 Harness：4 章 Python 教程，覆盖 Agent Loop、工具调用、记忆系统、Sidecar、沙箱设计，附 DeepSeek/OpenAI 评测轨迹。"
+   },
+   "install": "git clone https://github.com/adongwanai/learn-workbuddy",
+   "ecosystems": [
+    {
+     "id": "workbuddy",
+     "kind": "other",
+     "install": "git clone https://github.com/adongwanai/learn-workbuddy（学习资料）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 261,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": "MIT",
+   "author": "adongwanai",
+   "tags": [
+    "tutorial",
+    "harness",
+    "python",
+    "agent-loop",
+    "education"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "codedrobe-skills",
    "name": "CodeDrobe Skills",
    "owner": "CodeDrobe",
@@ -718,6 +792,44 @@
     "oauth2",
     "meetings",
     "official"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "awesome-website-prompts-and-skills",
+   "name": "awesome-website-prompts-and-skills",
+   "owner": "TencentEdgeOne",
+   "url": "https://github.com/TencentEdgeOne/awesome-website-prompts-and-skills",
+   "category": "docs",
+   "description": {
+    "en": "Official Tencent EdgeOne resource pool: give an AI coding tool one Prompt or Skill to generate polished websites, or complete sites with login, payment and AI capabilities. WorkBuddy x EdgeOne AI Prompts x Skills challenge works.",
+    "zh": "腾讯 EdgeOne 官方资源合集：给 AI 编程工具一个 Prompt 或 Skill，即可生成精美酷炫的网页，或带登录、支付、AI 能力的完整网站（WorkBuddy × EdgeOne AI Prompts × Skills 挑战赛官方作品池）。"
+   },
+   "install": "在线浏览 https://github.com/TencentEdgeOne/awesome-website-prompts-and-skills",
+   "ecosystems": [
+    {
+     "id": "workbuddy",
+     "kind": "registry",
+     "install": "在线浏览 https://github.com/TencentEdgeOne/awesome-website-prompts-and-skills"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 164,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "registry",
+   "license": "MIT",
+   "author": "TencentEdgeOne",
+   "tags": [
+    "website",
+    "prompts",
+    "skills",
+    "edgeone",
+    "official",
+    "challenge"
    ],
    "verified": false,
    "status": "active"

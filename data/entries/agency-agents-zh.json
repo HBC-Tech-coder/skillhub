@@ -1,0 +1,27 @@
+{
+  "id": "agency-agents-zh",
+  "name": "agency-agents-zh",
+  "owner": "jnMetaCode",
+  "url": "https://github.com/jnMetaCode/agency-agents-zh",
+  "category": "identity",
+  "description": {
+    "en": "267 plug-and-play AI expert roles for Hermes Agent / Claude Code / Cursor / Copilot and 18+ tools, covering engineering, design, marketing and finance departments, plus 52 China-market originals (Xiaohongshu, Douyin, WeChat, Feishu, DingTalk).",
+    "zh": "267 个即插即用的 AI 专家角色，支持 Hermes Agent / Claude Code / Cursor / Copilot 等 18 种工具，覆盖工程/设计/营销/金融等 20 个部门；含 52 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）。"
+  },
+  "install": "git clone https://github.com/jnMetaCode/agency-agents-zh",
+  "ecosystems": [
+    { "id": "generic", "kind": "other", "install": "git clone https://github.com/jnMetaCode/agency-agents-zh（按 README 导入对应工具）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 20144,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "MIT",
+  "author": "jnMetaCode",
+  "tags": ["roles", "personas", "chinese", "multi-tool", "orchestration"],
+  "verified": false,
+  "status": "active"
+}
