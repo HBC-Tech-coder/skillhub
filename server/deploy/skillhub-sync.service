@@ -1,0 +1,9 @@
+[Unit]
+Description=SkillHub 数据同步一次性任务
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=skillhub
+Group=skillhub
+ExecStart=/bin/bash /opt/skillhub/server/deploy/sync-cycle.sh

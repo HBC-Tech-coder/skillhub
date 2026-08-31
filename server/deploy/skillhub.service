@@ -1,0 +1,23 @@
+[Unit]
+Description=SkillHub 技能港目录站（静态 + 检索/管理 API）
+After=network.target
+
+[Service]
+Type=simple
+User=skillhub
+Group=skillhub
+WorkingDirectory=/opt/skillhub/server
+ExecStart=/usr/bin/node /opt/skillhub/server/server.js
+Environment=PORT=4290
+Environment=HOST=127.0.0.1
+Environment=SKILLHUB_ADMIN_TOKEN=__CHANGE_ME_RANDOM_64HEX__
+Environment=GITHUB_TOKEN=__CHANGE_ME_OPTIONAL__
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ReadWritePaths=/opt/skillhub/data
+
+[Install]
+WantedBy=multi-user.target

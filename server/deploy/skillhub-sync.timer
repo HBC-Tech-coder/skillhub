@@ -1,0 +1,9 @@
+[Unit]
+Description=SkillHub 数据同步周期（构建+推送 GitHub）
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=timers.target
