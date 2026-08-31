@@ -112,7 +112,8 @@ async function handleAdmin(req, res, url) {
   const m = pathname.match(/^\/api\/admin\/crawl\/([a-z0-9-]+)$/);
   if (m && req.method === 'POST') {
     const eco = m[1];
-    const crawler = path.join(__dirname, 'crawlers', eco + '.js');
+    const crawlerName = eco === 'foreign' ? 'foreign.js' : eco + '.js';
+    const crawler = path.join(__dirname, 'crawlers', crawlerName);
     if (!fs.existsSync(crawler)) return json(res, 404, { error: `unknown crawler: ${eco}` });
     const child = spawn(process.execPath, [crawler], { cwd: ROOT, detached: true, stdio: 'ignore' });
     child.unref();

@@ -1,0 +1,30 @@
+{
+  "id": "ecc",
+  "name": "ECC",
+  "owner": "affaan-m",
+  "url": "https://github.com/affaan-m/ecc",
+  "category": "dev",
+  "description": {
+    "en": "The agent harness performance optimization system: skills, instincts, memory, security and research-first development for Claude Code, Codex, OpenCode, Cursor and beyond.",
+    "zh": "Agent Harness 性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供 Skills、直觉、记忆、安全与研究优先的开发方法。"
+  },
+  "install": "git clone https://github.com/affaan-m/ecc（按 README 导入）",
+  "ecosystems": [
+    { "id": "claude-code", "kind": "skill", "install": "git clone https://github.com/affaan-m/ecc（按 README 导入 Claude Code）" },
+    { "id": "codex", "kind": "skill", "install": "git clone https://github.com/affaan-m/ecc（按 README 导入 Codex）" },
+    { "id": "cursor", "kind": "skill", "install": "git clone https://github.com/affaan-m/ecc（按 README 导入 Cursor）" }
+  ],
+  "scenarios": ["dev-coding", "memory-knowledge"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 244895,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "affaan-m",
+  "tags": ["performance", "skills", "memory", "security", "research"],
+  "verified": false,
+  "status": "active"
+}

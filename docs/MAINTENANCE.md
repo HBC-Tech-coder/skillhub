@@ -11,6 +11,7 @@ node server/crawlers/dsh.js
 node server/crawlers/workbuddy.js
 node server/crawlers/trae.js
 node server/crawlers/mcp.js
+node server/crawlers/foreign.js          # claude-code / codex / gemini 三生态
 
 # 2. 审阅（机械证据判定）
 node scripts/review-pending.js data/pending/dsh-*.json --eco dsh --limit 15        # bundle 证据
@@ -42,7 +43,12 @@ git push origin main
 |---|---|
 | `POST /api/admin/entries` | 写入/更新单条目（body=条目 JSON，自动校验） |
 | `POST /api/admin/publish` | 重新构建 plugins.json |
-| `POST /api/admin/crawl/{dsh|workbuddy|trae|mcp}` | 触发爬虫（异步，草稿入 pending） |
+| `POST /api/admin/crawl/{dsh|workbuddy|trae|mcp|foreign}` | 触发爬虫（异步，草稿入 pending） |
+
+## 每日 LLM 推荐（服务器版可选）
+
+- 配置 `DEEPSEEK_API_KEY` 后，`node server/lib/recommend.js` 用 LLM 基于 plugins.json 生成 App Store 式编辑推荐（中英双语），写入 `data/recommendations.json`（itemIds 校验失败自动保留旧版）；`sync-cycle.sh` 每小时触发一次（无 key 自动跳过）。
+- 语义搜索升级：`/api/search` 在意图词表回退之上，可继续接 LLM 查询改写（见 `server/lib/llm.js`）。
 
 ## 质量红线
 

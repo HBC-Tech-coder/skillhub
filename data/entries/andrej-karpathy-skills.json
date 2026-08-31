@@ -1,0 +1,28 @@
+{
+  "id": "andrej-karpathy-skills",
+  "name": "andrej-karpathy-skills",
+  "owner": "multica-ai",
+  "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+  "category": "dev",
+  "description": {
+    "en": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+    "zh": "一个改进 Claude Code 行为的 CLAUDE.md 配置，源自 Andrej Karpathy 对 LLM 编程常见坑的观察总结。"
+  },
+  "install": "git clone https://github.com/multica-ai/andrej-karpathy-skills（复制 CLAUDE.md 使用）",
+  "ecosystems": [
+    { "id": "claude-code", "kind": "skill", "install": "git clone https://github.com/multica-ai/andrej-karpathy-skills（复制 CLAUDE.md 使用）" }
+  ],
+  "scenarios": ["dev-coding"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 209002,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "multica-ai",
+  "tags": ["claude", "karpathy", "behavior", "rules"],
+  "verified": false,
+  "status": "active"
+}

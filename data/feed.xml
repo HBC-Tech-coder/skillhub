@@ -6,6 +6,22 @@
   <updated>2026-08-31T00:00:00Z</updated>
   <author><name>SkillHub</name></author>
   <entry>
+    <id>skillhub:ecc</id>
+    <title>ECC</title>
+    <link href="https://github.com/affaan-m/ecc"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Agent Harness 性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供 Skills、直觉、记忆、安全与研究优先的开发方法。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:andrej-karpathy-skills</id>
+    <title>andrej-karpathy-skills</title>
+    <link href="https://github.com/multica-ai/andrej-karpathy-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>一个改进 Claude Code 行为的 CLAUDE.md 配置，源自 Andrej Karpathy 对 LLM 编程常见坑的观察总结。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
     <id>skillhub:yt-dlp</id>
     <title>yt-dlp</title>
     <link href="https://github.com/yt-dlp/yt-dlp"/>
@@ -28,6 +44,22 @@
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>AI 设计智能 Skill：为跨平台构建专业 UI/UX 提供设计知识库（配色、字体、布局、图表等规则）。</summary>
     <category term="skill"/>
+  </entry>
+  <entry>
+    <id>skillhub:graphify</id>
+    <title>graphify</title>
+    <link href="https://github.com/Graphify-Labs/graphify"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>把任意代码库（含文档、SQL schema、配置与 PDF）变成可查询的知识图谱。面向 Claude Code、Cursor、Codex 与 Gemini CLI 的 /graphify Skill。</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
+    <id>skillhub:caveman</id>
+    <title>caveman</title>
+    <link href="https://github.com/JuliusBrussee/caveman"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>多 token 不如少 token——让 Claude Code 用「原始人腔」说话，token 用量直降 65% 的 Skill。</summary>
+    <category term="dev"/>
   </entry>
   <entry>
     <id>skillhub:open-design</id>

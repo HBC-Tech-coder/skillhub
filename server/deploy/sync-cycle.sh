@@ -5,6 +5,8 @@
 set -euo pipefail
 APP=/opt/skillhub
 cd "$APP"
+# 每日推荐（有 DEEPSEEK_API_KEY 时生成，无则保留现有版本）
+node server/lib/recommend.js || true
 node scripts/build-plugins.js
 if ! git diff --quiet data/plugins.json; then
   git add data/plugins.json data/entries

@@ -3,7 +3,7 @@
  "url": "https://hub.hibcglobal.com",
  "source": "https://github.com/HBC-Tech-coder/skillhub",
  "updated": "2026-08-31",
- "count": 45,
+ "count": 49,
  "categories": {
   "agi": {
    "en": "AGI Architecture Exploration",
@@ -166,6 +166,96 @@
  },
  "plugins": [
   {
+   "id": "ecc",
+   "name": "ECC",
+   "owner": "affaan-m",
+   "url": "https://github.com/affaan-m/ecc",
+   "category": "dev",
+   "description": {
+    "en": "The agent harness performance optimization system: skills, instincts, memory, security and research-first development for Claude Code, Codex, OpenCode, Cursor and beyond.",
+    "zh": "Agent Harness 性能优化系统：为 Claude Code、Codex、OpenCode、Cursor 等提供 Skills、直觉、记忆、安全与研究优先的开发方法。"
+   },
+   "install": "git clone https://github.com/affaan-m/ecc（按 README 导入）",
+   "ecosystems": [
+    {
+     "id": "claude-code",
+     "kind": "skill",
+     "install": "git clone https://github.com/affaan-m/ecc（按 README 导入 Claude Code）"
+    },
+    {
+     "id": "codex",
+     "kind": "skill",
+     "install": "git clone https://github.com/affaan-m/ecc（按 README 导入 Codex）"
+    },
+    {
+     "id": "cursor",
+     "kind": "skill",
+     "install": "git clone https://github.com/affaan-m/ecc（按 README 导入 Cursor）"
+    }
+   ],
+   "scenarios": [
+    "dev-coding",
+    "memory-knowledge"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 244895,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": "MIT",
+   "author": "affaan-m",
+   "tags": [
+    "performance",
+    "skills",
+    "memory",
+    "security",
+    "research"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "andrej-karpathy-skills",
+   "name": "andrej-karpathy-skills",
+   "owner": "multica-ai",
+   "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+   "category": "dev",
+   "description": {
+    "en": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+    "zh": "一个改进 Claude Code 行为的 CLAUDE.md 配置，源自 Andrej Karpathy 对 LLM 编程常见坑的观察总结。"
+   },
+   "install": "git clone https://github.com/multica-ai/andrej-karpathy-skills（复制 CLAUDE.md 使用）",
+   "ecosystems": [
+    {
+     "id": "claude-code",
+     "kind": "skill",
+     "install": "git clone https://github.com/multica-ai/andrej-karpathy-skills（复制 CLAUDE.md 使用）"
+    }
+   ],
+   "scenarios": [
+    "dev-coding"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 209002,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": null,
+   "author": "multica-ai",
+   "tags": [
+    "claude",
+    "karpathy",
+    "behavior",
+    "rules"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "yt-dlp",
    "name": "yt-dlp",
    "owner": "yt-dlp",
@@ -277,6 +367,101 @@
     "palette",
     "typography",
     "skill"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "graphify",
+   "name": "graphify",
+   "owner": "Graphify-Labs",
+   "url": "https://github.com/Graphify-Labs/graphify",
+   "category": "memory",
+   "description": {
+    "en": "Turn any codebase, with its docs, SQL schemas, configs and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex and Gemini CLI.",
+    "zh": "把任意代码库（含文档、SQL schema、配置与 PDF）变成可查询的知识图谱。面向 Claude Code、Cursor、Codex 与 Gemini CLI 的 /graphify Skill。"
+   },
+   "install": "git clone https://github.com/Graphify-Labs/graphify（按 README 导入）",
+   "ecosystems": [
+    {
+     "id": "claude-code",
+     "kind": "skill",
+     "install": "git clone https://github.com/Graphify-Labs/graphify（按 README 导入）"
+    },
+    {
+     "id": "codex",
+     "kind": "skill",
+     "install": "git clone https://github.com/Graphify-Labs/graphify（按 README 导入 Codex）"
+    },
+    {
+     "id": "gemini",
+     "kind": "skill",
+     "install": "git clone https://github.com/Graphify-Labs/graphify（按 README 导入 Gemini CLI）"
+    },
+    {
+     "id": "cursor",
+     "kind": "skill",
+     "install": "git clone https://github.com/Graphify-Labs/graphify（按 README 导入 Cursor）"
+    }
+   ],
+   "scenarios": [
+    "memory-knowledge",
+    "dev-coding"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 112815,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": "Apache-2.0",
+   "author": "Graphify-Labs",
+   "tags": [
+    "knowledge-graph",
+    "codebase",
+    "query",
+    "sql",
+    "pdf"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "caveman",
+   "name": "caveman",
+   "owner": "JuliusBrussee",
+   "url": "https://github.com/JuliusBrussee/caveman",
+   "category": "dev",
+   "description": {
+    "en": "Why use many token when few token do trick — a Claude Code skill that cuts 65% of tokens by talking like a caveman.",
+    "zh": "多 token 不如少 token——让 Claude Code 用「原始人腔」说话，token 用量直降 65% 的 Skill。"
+   },
+   "install": "git clone https://github.com/JuliusBrussee/caveman（按 README 导入）",
+   "ecosystems": [
+    {
+     "id": "claude-code",
+     "kind": "skill",
+     "install": "git clone https://github.com/JuliusBrussee/caveman（按 README 导入）"
+    }
+   ],
+   "scenarios": [
+    "dev-coding"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 101952,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": null,
+   "author": "JuliusBrussee",
+   "tags": [
+    "tokens",
+    "savings",
+    "style",
+    "fun"
    ],
    "verified": false,
    "status": "active"

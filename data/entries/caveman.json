@@ -1,0 +1,28 @@
+{
+  "id": "caveman",
+  "name": "caveman",
+  "owner": "JuliusBrussee",
+  "url": "https://github.com/JuliusBrussee/caveman",
+  "category": "dev",
+  "description": {
+    "en": "Why use many token when few token do trick — a Claude Code skill that cuts 65% of tokens by talking like a caveman.",
+    "zh": "多 token 不如少 token——让 Claude Code 用「原始人腔」说话，token 用量直降 65% 的 Skill。"
+  },
+  "install": "git clone https://github.com/JuliusBrussee/caveman（按 README 导入）",
+  "ecosystems": [
+    { "id": "claude-code", "kind": "skill", "install": "git clone https://github.com/JuliusBrussee/caveman（按 README 导入）" }
+  ],
+  "scenarios": ["dev-coding"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 101952,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "JuliusBrussee",
+  "tags": ["tokens", "savings", "style", "fun"],
+  "verified": false,
+  "status": "active"
+}

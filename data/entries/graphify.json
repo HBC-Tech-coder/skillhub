@@ -1,0 +1,31 @@
+{
+  "id": "graphify",
+  "name": "graphify",
+  "owner": "Graphify-Labs",
+  "url": "https://github.com/Graphify-Labs/graphify",
+  "category": "memory",
+  "description": {
+    "en": "Turn any codebase, with its docs, SQL schemas, configs and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex and Gemini CLI.",
+    "zh": "把任意代码库（含文档、SQL schema、配置与 PDF）变成可查询的知识图谱。面向 Claude Code、Cursor、Codex 与 Gemini CLI 的 /graphify Skill。"
+  },
+  "install": "git clone https://github.com/Graphify-Labs/graphify（按 README 导入）",
+  "ecosystems": [
+    { "id": "claude-code", "kind": "skill", "install": "git clone https://github.com/Graphify-Labs/graphify（按 README 导入）" },
+    { "id": "codex", "kind": "skill", "install": "git clone https://github.com/Graphify-Labs/graphify（按 README 导入 Codex）" },
+    { "id": "gemini", "kind": "skill", "install": "git clone https://github.com/Graphify-Labs/graphify（按 README 导入 Gemini CLI）" },
+    { "id": "cursor", "kind": "skill", "install": "git clone https://github.com/Graphify-Labs/graphify（按 README 导入 Cursor）" }
+  ],
+  "scenarios": ["memory-knowledge", "dev-coding"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 112815,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "Graphify-Labs",
+  "tags": ["knowledge-graph", "codebase", "query", "sql", "pdf"],
+  "verified": false,
+  "status": "active"
+}
