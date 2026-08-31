@@ -16,8 +16,8 @@ function ghGet(pathname, token) {
       let body = '';
       res.on('data', (d) => { body += d; });
       res.on('end', () => {
-        if (res.status === 403 || res.status === 429) return reject(new Error('rate limited (HTTP ' + res.status + ')'));
-        if (res.status !== 200) return reject(new Error('HTTP ' + res.status + ': ' + body.slice(0, 200)));
+        if (res.statusCode === 403 || res.statusCode === 429) return reject(new Error('rate limited (HTTP ' + res.statusCode + ')'));
+        if (res.statusCode !== 200) return reject(new Error('HTTP ' + res.statusCode + ': ' + body.slice(0, 200)));
         try { resolve(JSON.parse(body)); } catch (e) { reject(new Error('bad json: ' + e.message)); }
       });
     });

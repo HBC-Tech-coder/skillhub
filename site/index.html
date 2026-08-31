@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>技能港 SkillHub — 跨生态 AI 插件与技能聚合</title>
 <meta name="description" content="聚合 DSH · WorkBuddy · TRAE · MCP 生态的插件与技能目录：浏览、搜索、一键安装。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235b5bd6'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3E技%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,14 +14,18 @@
     <div class="logo">技</div>
     <div class="brand">技能港 <small>SkillHub</small></div>
     <div class="spacer"></div>
+    <button id="themeBtn" class="iconbtn" title="切换 亮色/夜间 模式" aria-label="切换主题">🌙</button>
     <input id="hq" placeholder="快速搜索…" aria-label="快速搜索">
   </div>
 </header>
 
 <section class="hero">
   <h1>一个地方，装齐所有 AI 的<b>插件与技能</b></h1>
-  <p>聚合 DSH · WorkBuddy · TRAE · MCP 生态 — 浏览、评估、一键安装</p>
-  <div class="search"><input id="q" placeholder="搜索名称 / 描述 / 作者，例如：dsh、视觉、workbuddy…" aria-label="搜索"></div>
+  <p>聚合 DSH · WorkBuddy · TRAE · MCP 生态 — One place for all AI plugins &amp; skills</p>
+  <div class="search">
+    <span class="sicon" aria-hidden="true">🔍</span>
+    <input id="q" placeholder="搜索名称 / 描述 / 作者 / 标签，例如：dsh、视觉、workbuddy…" aria-label="搜索">
+  </div>
   <div class="stats">
     <div><b id="stCount">—</b>收录条目</div>
     <div><b id="stEco">—</b>生态</div>
@@ -29,19 +34,59 @@
   </div>
 </section>
 
-<main>
-  <div class="filters" id="ecoFilters" title="生态筛选"></div>
-  <div class="filters" id="catFilters" title="分类筛选"></div>
-  <div class="grid" id="grid"></div>
-  <div class="empty" id="empty" style="display:none">没有匹配的条目，换个关键词试试</div>
+<main class="layout">
+  <aside class="side side-left">
+    <div class="panel">
+      <h3>生态</h3>
+      <div class="vlist" id="ecoFilters"></div>
+    </div>
+    <div class="panel">
+      <h3>分类</h3>
+      <div class="vlist" id="catFilters"></div>
+    </div>
+  </aside>
+
+  <section class="center">
+    <div class="toolbar">
+      <span id="resultInfo" class="resultinfo"></span>
+      <div class="sort" role="group" aria-label="排序">
+        <button data-sort="stars">星标</button>
+        <button data-sort="added">最新</button>
+        <button data-sort="name">名称</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" style="display:none">没有匹配的条目，换个关键词试试</div>
+  </section>
+
+  <aside class="side side-right">
+    <div class="panel rank">
+      <h3>🔥 热门榜</h3>
+      <div id="rank"></div>
+      <p class="note">按 GitHub 星标排序（爬虫刷新）</p>
+    </div>
+    <div class="panel about">
+      <h3>关于技能港</h3>
+      <p class="about-txt">跨生态插件与技能聚合目录。数据与站点完全开源，<b>列出 ≠ 背书</b>：安装第三方代码前请先查看源码。</p>
+      <div class="about-links">
+        <a id="srcLink" target="_blank" rel="noopener">GitHub 仓库</a>
+        <a href="#contrib" onclick="window.open('https://github.com/HBC-Tech-coder/skillhub/blob/main/contrib/CONTRIBUTING.md','_blank');return false;">投稿指南</a>
+      </div>
+    </div>
+  </aside>
 </main>
 
-<div class="modal-bg" id="mbg"><div class="modal" id="modal" role="dialog"></div></div>
+<div class="modal-bg" id="mbg"><div class="modal" id="modal" role="dialog" aria-modal="true"></div></div>
 
 <footer>
-  技能港 SkillHub · 数据来自开源仓库 <a id="srcLink" target="_blank" rel="noopener">GitHub</a> ·
-  本页同时部署于自有服务器与 GitHub Pages 镜像 ·
-  <span id="footVer"></span>
+  <div>技能港 SkillHub · 同一套站点部署于自有服务器与 GitHub Pages 镜像 · <span id="footVer"></span></div>
+  <div class="foot-links">
+    <a id="srcLink2" target="_blank" rel="noopener">数据仓库</a>
+    <span class="sep">·</span>
+    <a href="https://github.com/HBC-Tech-coder/skillhub/blob/main/contrib/CONTRIBUTING.md" target="_blank" rel="noopener">投稿</a>
+    <span class="sep">·</span>
+    <span>待备案号</span>
+  </div>
 </footer>
 
 <script src="app.js"></script>
