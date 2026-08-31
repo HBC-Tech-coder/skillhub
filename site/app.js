@@ -79,7 +79,7 @@
       catCount[i.category] = (catCount[i.category] || 0) + 1;
     });
     document.getElementById('ecoFilters').innerHTML =
-      `<div class="chip${state.eco ? '' : ' on'}" onclick="setEco('')"><span>全部</span></div>` +
+      `<div class="chip${state.eco ? '' : ' on'}" onclick="setEco('')"><span>全部</span><span class="cnt">${DATA.count}</span></div>` +
       Object.entries(ecoCount).map(([k, n]) =>
         `<div class="chip${state.eco === k ? ' on' : ''}" onclick="setEco('${esc(k)}')"><span><span class="dot" style="background:${ecoColor(k)}"></span>${esc(ecoLabel(k))}</span><span class="cnt">${n}</span></div>`).join('');
     document.getElementById('catFilters').innerHTML =
