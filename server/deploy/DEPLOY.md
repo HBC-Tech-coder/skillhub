@@ -12,7 +12,7 @@
 2. 编辑 `/etc/systemd/system/skillhub.service`：替换 `SKILLHUB_ADMIN_TOKEN`（64 位随机 hex，AI 维护入口）与可选的 `GITHUB_TOKEN`（数据同步推送用，或 deploy key）；如需每日 LLM 推荐，再加 `Environment=DEEPSEEK_API_KEY=<key>`。`systemctl daemon-reload && systemctl restart skillhub`。
 3. nginx：把 `skillhub.nginx.conf` 作为**新 vhost** 合入，`nginx -t` 通过后 reload；TLS 用 certbot 补（免费证书，不要动其他域名证书）。
 4. DNS（由 DNS owner 执行）：阿里云云解析 `hub.hibcglobal.com` A → `39.105.17.219`。
-5. 启用同步周期：`cp skillhub-sync.timer skillhub-sync.service /etc/systemd/system/ && systemctl enable --now skillhub-sync.timer`（每小时：构建 → 有变更则 commit+push 回 GitHub）。
+5. 启用同步周期：`cp skillhub-sync.timer skillhub-sync.service skillhub-daily.timer skillhub-daily.service /etc/systemd/system/ && systemctl daemon-reload && systemctl enable --now skillhub-sync.timer skillhub-daily.timer`——每小时：构建 → 有变更则 commit+push 回 GitHub；每天 04:00：7 生态爬取 + AI 每日推荐 + AI 打标 + 自动收录 + push（需要 `DEEPSEEK_API_KEY` 与 `GITHUB_TOKEN`，经受保护的 EnvironmentFile 注入，不落任何共享文件）。
 6. 验证：`curl -s http://127.0.0.1:4290/api/health`；`curl -s https://hub.hibcglobal.com/plugins.json`。
 
 ## 回滚
