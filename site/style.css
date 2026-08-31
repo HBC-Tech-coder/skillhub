@@ -5,7 +5,7 @@
 
 :root{
   --bg:#f7f8fa; --panel:#ffffff; --line:#d9dce3; --line-soft:#eef0f4;
-  --text:#111827; --sub:#4b5563; --accent:#5b5bd6; --accent-soft:#eef0fe;
+  --text:#111827; --sub:#374151; --accent:#5b5bd6; --accent-soft:#eef0fe;
   --code-bg:#f3f4f6; --code-text:#374151; --hover-shadow:0 10px 30px rgba(0,0,0,.09);
   --modal-bg:rgba(17,24,39,.45); --head-bg:rgba(247,248,250,.92);
   --rank-num:#c3c8e0; --rank-line:#e8eaf2;
@@ -99,7 +99,7 @@ header{background:var(--head-bg);backdrop-filter:blur(8px);border-bottom:1px sol
 .chip.on{background:var(--text);color:var(--bg);border-color:var(--text);}
 .chip.on:hover{color:var(--bg);}
 .chip .dot{display:inline-block;width:8px;height:8px;border-radius:50%;}
-.chip .cnt{font-size:11px;opacity:.65;}
+.chip .cnt{font-size:11px;opacity:.85;}
 
 /* ---------- 中心区 ---------- */
 .toolbar{display:flex;align-items:center;justify-content:space-between;margin:2px 2px 12px;min-height:30px;}
