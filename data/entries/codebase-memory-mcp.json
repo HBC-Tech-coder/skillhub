@@ -1,0 +1,27 @@
+{
+  "id": "codebase-memory-mcp",
+  "name": "codebase-memory-mcp",
+  "owner": "DeusData",
+  "url": "https://github.com/DeusData/codebase-memory-mcp",
+  "category": "tools",
+  "description": {
+    "en": "High-performance code intelligence MCP server: indexes codebases into a persistent knowledge graph (average repo in milliseconds), 158 languages, sub-ms queries, 99% fewer tokens, single static binary.",
+    "zh": "高性能代码智能 MCP 服务：把代码库索引为持久知识图谱（普通仓库毫秒级），支持 158 种语言、亚毫秒查询、节省 99% token，单静态二进制部署。"
+  },
+  "install": "从 Releases 下载对应平台二进制，按 README 配置 MCP 客户端",
+  "ecosystems": [
+    { "id": "mcp", "kind": "server", "install": "从 Releases 下载对应平台二进制，按 README 配置 MCP 客户端" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 41392,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "MIT",
+  "author": "DeusData",
+  "tags": ["code-intelligence", "knowledge-graph", "indexing", "memory"],
+  "verified": true,
+  "status": "active"
+}

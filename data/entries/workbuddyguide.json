@@ -1,0 +1,27 @@
+{
+  "id": "workbuddyguide",
+  "name": "WorkBuddyGuide",
+  "owner": "AlephAITech",
+  "url": "https://github.com/AlephAITech/WorkBuddyGuide",
+  "category": "docs",
+  "description": {
+    "en": "A practical, open-source guide to mastering WorkBuddy through real-world workflows: tutorials, Skills, MCP, automation and multi-agent practice.",
+    "zh": "WorkBuddy 实战开源蓝皮书：教程、真实工作流、Skills、MCP、自动化与多智能体实践。"
+  },
+  "install": "git clone https://github.com/AlephAITech/WorkBuddyGuide",
+  "ecosystems": [
+    { "id": "workbuddy", "kind": "other", "install": "git clone https://github.com/AlephAITech/WorkBuddyGuide（在线阅读）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 2656,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "MIT",
+  "author": "AlephAITech",
+  "tags": ["guide", "tutorial", "workflows", "mcp", "automation"],
+  "verified": false,
+  "status": "active"
+}

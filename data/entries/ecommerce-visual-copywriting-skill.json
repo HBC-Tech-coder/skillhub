@@ -1,0 +1,27 @@
+{
+  "id": "ecommerce-visual-copywriting-skill",
+  "name": "ecommerce-visual-copywriting-skill",
+  "owner": "feichanggege",
+  "url": "https://github.com/feichanggege/ecommerce-visual-copywriting-skill",
+  "category": "skill",
+  "description": {
+    "en": "E-commerce visual copywriting SOP skill: lets design novices produce seasoned-quality product images in one go. Compatible with Claude / Codex / Cursor / WorkBuddy SKILL.md agents.",
+    "zh": "电商视觉文案设计 SOP Skill：让电商设计小白一键做出资深水准的商品图片文案，兼容 Claude / Codex / Cursor / WorkBuddy 等 SKILL.md Agent。"
+  },
+  "install": "git clone https://github.com/feichanggege/ecommerce-visual-copywriting-skill",
+  "ecosystems": [
+    { "id": "workbuddy", "kind": "skill", "install": "git clone https://github.com/feichanggege/ecommerce-visual-copywriting-skill（按 README 导入）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 674,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "feichanggege",
+  "tags": ["ecommerce", "copywriting", "design", "sop"],
+  "verified": false,
+  "status": "active"
+}

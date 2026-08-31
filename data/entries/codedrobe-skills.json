@@ -1,0 +1,27 @@
+{
+  "id": "codedrobe-skills",
+  "name": "CodeDrobe Skills",
+  "owner": "CodeDrobe",
+  "url": "https://github.com/CodeDrobe/skills",
+  "category": "theme",
+  "description": {
+    "en": "Agent Skills for theming AI desktop apps: reference image -> reversible Codex/WorkBuddy skin -> verify, repair, publish.",
+    "zh": "给 AI 桌面应用换肤的 Agent Skills：参考图 → 可逆的 Codex/WorkBuddy 皮肤 → 校验、修复、发布。"
+  },
+  "install": "git clone https://github.com/CodeDrobe/skills",
+  "ecosystems": [
+    { "id": "workbuddy", "kind": "skill", "install": "git clone https://github.com/CodeDrobe/skills（按 README 导入）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 247,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "CodeDrobe",
+  "tags": ["theming", "skin", "desktop", "electron"],
+  "verified": false,
+  "status": "active"
+}

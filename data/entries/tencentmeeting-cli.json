@@ -1,0 +1,27 @@
+{
+  "id": "tencentmeeting-cli",
+  "name": "tencentmeeting-cli",
+  "owner": "TencentCloud",
+  "url": "https://github.com/TencentCloud/tencentmeeting-cli",
+  "category": "tools",
+  "description": {
+    "en": "Tencent Meeting command-line tool (CLI) built on the Tencent Meeting Open Platform OAuth2: meeting management, recording management and attendee reports; distributed as a CodeBuddy/WorkBuddy skill.",
+    "zh": "腾讯会议命令行工具（CLI），基于腾讯会议开放平台 OAuth2 授权，支持会议管理、录制管理、参会报告等；以 CodeBuddy/WorkBuddy Skill 形态分发。"
+  },
+  "install": "git clone https://github.com/TencentCloud/tencentmeeting-cli",
+  "ecosystems": [
+    { "id": "workbuddy", "kind": "skill", "install": "git clone https://github.com/TencentCloud/tencentmeeting-cli（按 README 导入）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 229,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "TencentCloud",
+  "tags": ["tencent-meeting", "cli", "oauth2", "meetings", "official"],
+  "verified": false,
+  "status": "active"
+}

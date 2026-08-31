@@ -6,6 +6,8 @@ const { repoToDraft } = require('../lib/draft.js');
 
 const ECO = 'trae';
 const TOKEN = process.env.GITHUB_TOKEN || '';
+// 噪音过滤：'trae' 是 'traefik' 的子串，文本搜索会捞进大量 traefik 插件；同时排除其他明显无关仓库。
+const NOISE = /traefik|proxy|middleware|geoblock|modsecurity|ondemand|wake-on-lan/i;
 const QUERIES = ['topic:trae', 'trae skills in:name,description', 'trae plugin in:name,description'];
 
 (async () => {
@@ -13,7 +15,11 @@ const QUERIES = ['topic:trae', 'trae skills in:name,description', 'trae plugin i
     const seen = new Map();
     for (const q of QUERIES) {
       const res = await searchRepos(q, 20, TOKEN);
-      for (const r of res.items || []) if (!seen.has(r.full_name)) seen.set(r.full_name, r);
+      for (const r of res.items || []) {
+        if (!seen.has(r.full_name) && !NOISE.test((r.name || '') + ' ' + (r.description || ''))) {
+          seen.set(r.full_name, r);
+        }
+      }
     }
     const drafts = [...seen.values()].map((r) => repoToDraft(r, ECO));
     const dir = path.resolve(__dirname, '..', '..', 'data', 'pending');

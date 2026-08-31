@@ -1,0 +1,27 @@
+{
+  "id": "awesome-workbuddy",
+  "name": "awesome-workbuddy",
+  "owner": "semlinker",
+  "url": "https://github.com/semlinker/awesome-workbuddy",
+  "category": "docs",
+  "description": {
+    "en": "Curated Tencent WorkBuddy learning materials, real-world cases, prompts, Skills and MCP resource navigation.",
+    "zh": "精选腾讯 WorkBuddy 学习资料、实战案例、提示词、Skills 与 MCP 资源导航。"
+  },
+  "install": "git clone https://github.com/semlinker/awesome-workbuddy",
+  "ecosystems": [
+    { "id": "workbuddy", "kind": "registry", "install": "在线浏览 https://github.com/semlinker/awesome-workbuddy" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 20,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "registry",
+  "license": "CC0-1.0",
+  "author": "semlinker",
+  "tags": ["awesome-list", "registry", "workbuddy", "navigation"],
+  "verified": false,
+  "status": "active"
+}

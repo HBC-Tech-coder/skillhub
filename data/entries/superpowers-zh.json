@@ -1,0 +1,27 @@
+{
+  "id": "superpowers-zh",
+  "name": "superpowers-zh",
+  "owner": "jnMetaCode",
+  "url": "https://github.com/jnMetaCode/superpowers-zh",
+  "category": "skill",
+  "description": {
+    "en": "AI coding superpowers, Chinese-enhanced edition: full localization of superpowers (116k+ stars) plus 6 original Chinese skills, for Claude Code / Copilot CLI / Hermes Agent / Cursor / Windsurf / Kiro / Gemini CLI and 16+ AI coding tools.",
+    "zh": "AI 编程超能力 · 中文增强版：superpowers（116k+ ⭐）完整汉化 + 6 个中国原创 skills，让 Claude Code / Copilot CLI / Hermes Agent / Cursor / Windsurf / Kiro / Gemini CLI 等 16 款 AI 编程工具真正会干活。"
+  },
+  "install": "git clone https://github.com/jnMetaCode/superpowers-zh",
+  "ecosystems": [
+    { "id": "trae", "kind": "skill", "install": "git clone https://github.com/jnMetaCode/superpowers-zh（按 README 导入对应工具）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 7909,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "jnMetaCode",
+  "tags": ["skills", "chinese", "coding", "superpowers", "multi-tool"],
+  "verified": false,
+  "status": "active"
+}

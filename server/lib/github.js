@@ -30,4 +30,19 @@ function searchRepos(q, perPage, token) {
   return ghGet('/search/repositories?q=' + encodeURIComponent(q) + '&sort=stars&order=desc&per_page=' + (perPage || 30), token);
 }
 
-module.exports = { ghGet, searchRepos };
+// raw.githubusercontent.com 读取（不计 API 限速）。返回文本，失败返回 ''。
+function rawGetText(fullName, file, branch) {
+  return new Promise((resolve) => {
+    const url = `https://raw.githubusercontent.com/${fullName}/${branch || 'HEAD'}/${file}`;
+    const req = https.get(url, { headers: { 'User-Agent': 'skillhub-crawler' } }, (res) => {
+      if (res.statusCode !== 200) { res.resume(); return resolve(''); }
+      let body = '';
+      res.on('data', (d) => { body += d; if (body.length > 300000) req.destroy(); });
+      res.on('end', () => resolve(body.slice(0, 300000)));
+    });
+    req.on('error', () => resolve(''));
+    req.setTimeout(20000, () => req.destroy());
+  });
+}
+
+module.exports = { ghGet, searchRepos, rawGetText };

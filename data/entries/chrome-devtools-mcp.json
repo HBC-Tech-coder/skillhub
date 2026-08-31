@@ -1,0 +1,27 @@
+{
+  "id": "chrome-devtools-mcp",
+  "name": "chrome-devtools-mcp",
+  "owner": "ChromeDevTools",
+  "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "category": "tools",
+  "description": {
+    "en": "Chrome DevTools for coding agents: the official MCP server that lets any MCP client debug, inspect and automate Chrome.",
+    "zh": "面向 coding agent 的 Chrome DevTools：官方 MCP 服务，让任意 MCP 客户端调试、检查并自动化 Chrome。"
+  },
+  "install": "npx chrome-devtools-mcp@latest",
+  "ecosystems": [
+    { "id": "mcp", "kind": "server", "install": "npx chrome-devtools-mcp@latest（或按 README 配置远程端点）" }
+  ],
+  "added": "2026-08-31",
+  "npm": "chrome-devtools-mcp",
+  "tarball": null,
+  "stars": 50246,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "Apache-2.0",
+  "author": "ChromeDevTools",
+  "tags": ["chrome", "devtools", "debugging", "browser", "official"],
+  "verified": true,
+  "status": "active"
+}
