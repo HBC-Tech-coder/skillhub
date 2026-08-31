@@ -1,9 +1,10 @@
 [Unit]
-Description=SkillHub 数据同步一次性任务
+Description=SkillHub 每小时数据同步（构建+推送 GitHub）
 After=network-online.target
 
 [Service]
 Type=oneshot
 User=skillhub
 Group=skillhub
+EnvironmentFile=/opt/skillhub/.ops/runtime.env
 ExecStart=/bin/bash /opt/skillhub/server/deploy/sync-cycle.sh

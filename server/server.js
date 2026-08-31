@@ -135,10 +135,11 @@ const server = http.createServer(async (req, res) => {
     return item ? json(res, 200, item) : json(res, 404, { error: 'not found' });
   }
   if (p.startsWith('/api/admin/')) return handleAdmin(req, res, url);
-  if (p === '/plugins.json') {
-    fs.readFile(PLUGINS_JSON, (err, buf) => {
-      if (err) return json(res, 500, { error: 'plugins.json 不存在，请先运行 node scripts/build-plugins.js' });
-      res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8', 'Access-Control-Allow-Origin': '*' });
+  if (p === '/plugins.json' || p === '/feed.xml' || p === '/skillhub.csv') {
+    const file = path.join(DATA_DIR, p.slice(1));
+    fs.readFile(file, (err, buf) => {
+      if (err) return json(res, 500, { error: p + ' 不存在，请先运行 build-plugins.js / export-csv.js' });
+      res.writeHead(200, { 'Content-Type': MIME[path.extname(file).toLowerCase()] || 'application/json; charset=utf-8', 'Access-Control-Allow-Origin': '*' });
       res.end(buf);
     });
     return;

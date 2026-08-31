@@ -6,4 +6,5 @@ After=network-online.target
 Type=oneshot
 User=skillhub
 Group=skillhub
+EnvironmentFile=/opt/skillhub/.ops/runtime.env
 ExecStart=/bin/bash /opt/skillhub/server/deploy/daily-cycle.sh
