@@ -1,0 +1,27 @@
+{
+  "id": "trendradar",
+  "name": "TrendRadar",
+  "owner": "sansan0",
+  "url": "https://github.com/sansan0/trendradar",
+  "category": "tools",
+  "description": {
+    "en": "AI-driven public opinion and trend monitor with multi-platform hot-topic aggregation, RSS, smart alerts, AI news filtering/translation and analysis briefs; supports MCP integration for natural-language conversation and sentiment insight.",
+    "zh": "AI 舆情与热点监控：多平台热点聚合 + RSS 订阅 + 关键词筛选 + AI 筛选/翻译/分析简报直推手机；支持接入 MCP，赋能自然语言对话分析与情感洞察。"
+  },
+  "install": "按 README 部署（应用本体；支持 MCP 接入）",
+  "ecosystems": [
+    { "id": "mcp", "kind": "other", "install": "按 README 部署（应用本体；支持 MCP 接入）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 61958,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "GPL-3.0",
+  "author": "sansan0",
+  "tags": ["trends", "opinion", "rss", "monitor", "alerts", "mcp"],
+  "verified": false,
+  "status": "active"
+}

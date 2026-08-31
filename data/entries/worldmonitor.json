@@ -1,0 +1,27 @@
+{
+  "id": "worldmonitor",
+  "name": "worldmonitor",
+  "owner": "koala73",
+  "url": "https://github.com/koala73/worldmonitor",
+  "category": "tools",
+  "description": {
+    "en": "Real-time global intelligence dashboard: AI-powered news aggregation, geopolitical monitoring and infrastructure tracking in a unified situational-awareness interface (supports MCP integration).",
+    "zh": "实时全球情报看板：AI 驱动的新闻聚合、地缘政治监控与基础设施追踪，统一态势感知界面（支持 MCP 接入）。"
+  },
+  "install": "按 README 部署（应用本体；支持 MCP 接入）",
+  "ecosystems": [
+    { "id": "mcp", "kind": "other", "install": "按 README 部署（应用本体；支持 MCP 接入）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 85116,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "AGPL-3.0",
+  "author": "koala73",
+  "tags": ["intelligence", "news", "geopolitics", "dashboard", "mcp"],
+  "verified": false,
+  "status": "active"
+}
