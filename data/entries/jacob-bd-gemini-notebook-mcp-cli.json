@@ -1,0 +1,43 @@
+{
+  "id": "jacob-bd-gemini-notebook-mcp-cli",
+  "name": "gemini-notebook-mcp-cli",
+  "owner": "jacob-bd",
+  "url": "https://github.com/jacob-bd/gemini-notebook-mcp-cli",
+  "category": "memory",
+  "description": {
+    "en": "Programmatic access to Gemini Notebook - via command-line interface (CLI), Model Context Protocol (MCP) server, and AI agent skills.",
+    "zh": "提供命令行、MCP服务器和AI代理技能，实现对Gemini Notebook的编程访问。"
+  },
+  "install": "git clone https://github.com/jacob-bd/gemini-notebook-mcp-cli（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/jacob-bd/gemini-notebook-mcp-cli（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "memory-knowledge",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "Gemini Notebook用户",
+    "en": "Gemini Notebook users"
+  },
+  "usecases": {
+    "zh": "通过CLI、MCP或AI技能编程访问Gemini Notebook",
+    "en": "Programmatic access to Gemini Notebook via CLI, MCP, or AI skills"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 5982,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "jacob-bd",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

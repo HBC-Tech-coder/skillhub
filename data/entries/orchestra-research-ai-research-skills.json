@@ -1,0 +1,54 @@
+{
+  "id": "orchestra-research-ai-research-skills",
+  "name": "AI-Research-SKILLs",
+  "owner": "Orchestra-Research",
+  "url": "https://github.com/Orchestra-Research/AI-Research-SKILLs",
+  "category": "skill",
+  "description": {
+    "en": "Comprehensive open-source library of AI research and engineering skills for any AI model. Package the skills and your claude code/codex/gemini agent will be an AI research agent with full horsepower. Maintained by Orchestra Research.",
+    "zh": "开源AI研究和工程技能库，可打包给多种AI代理使用"
+  },
+  "install": "git clone https://github.com/Orchestra-Research/AI-Research-SKILLs（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/Orchestra-Research/AI-Research-SKILLs（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "science-research",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "研究人员、工程师和AI代理用户",
+    "en": "Researchers, engineers, and AI agent users"
+  },
+  "usecases": {
+    "zh": "将Claude Code等代理变成全能的AI研究助手，用于科研和工程任务",
+    "en": "Turn agents like Claude Code into full-fledged AI research assistants for scientific and engineering tasks"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 12196,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "Orchestra-Research",
+  "tags": [
+    "ai",
+    "ai-research",
+    "claude",
+    "claude-code",
+    "claude-skills",
+    "codex",
+    "gemini",
+    "gpt-5",
+    "grpo",
+    "huggingface"
+  ],
+  "verified": false,
+  "status": "active"
+}

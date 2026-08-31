@@ -1,0 +1,54 @@
+{
+  "id": "wanshuiyin-auto-claude-code-research-in-sleep",
+  "name": "Auto-claude-code-research-in-sleep",
+  "owner": "wanshuiyin",
+  "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+  "category": "skill",
+  "description": {
+    "en": "ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent.",
+    "zh": "ARIS 是一个轻量级 Markdown 技能集，用于自主机器学习研究，支持跨模型审查循环、想法发现和实验自动化，无框架依赖。"
+  },
+  "install": "git clone https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "science-research",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "机器学习研究者和 AI 开发者",
+    "en": "Machine learning researchers and AI developers"
+  },
+  "usecases": {
+    "zh": "自动化机器学习研究，包括想法发现和实验自动化",
+    "en": "Automate ML research including idea discovery and experiment automation"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 15488,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "wanshuiyin",
+  "tags": [
+    "ai-research",
+    "ai-tools",
+    "aris",
+    "autonomous-agent",
+    "claude",
+    "claude-code",
+    "claude-code-skills",
+    "codex",
+    "deep-learning",
+    "gpt"
+  ],
+  "verified": false,
+  "status": "active"
+}

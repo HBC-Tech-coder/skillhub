@@ -1,0 +1,54 @@
+{
+  "id": "bhanunamikaze-agentic-seo-skill",
+  "name": "Agentic-SEO-Skill",
+  "owner": "Bhanunamikaze",
+  "url": "https://github.com/Bhanunamikaze/Agentic-SEO-Skill",
+  "category": "workflow",
+  "description": {
+    "en": "An LLM-first SEO analysis skill for Antigravity, Codex, Claude with 16 specialized sub-skills, 10 specialist agents, and 88 optional utility scripts used as evidence collectors.",
+    "zh": "面向Antigravity、Codex、Claude的SEO分析技能，包含多个子技能和脚本"
+  },
+  "install": "git clone https://github.com/Bhanunamikaze/Agentic-SEO-Skill（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/Bhanunamikaze/Agentic-SEO-Skill（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "marketing",
+    "trends-monitor"
+  ],
+  "audience": {
+    "zh": "SEO专家和内容营销人员",
+    "en": "SEO specialists and content marketers"
+  },
+  "usecases": {
+    "zh": "使用16个子技能和10个专家代理进行LLM优先的SEO分析",
+    "en": "Perform LLM-first SEO analysis with 16 sub-skills and 10 specialist agents"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 880,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "Bhanunamikaze",
+  "tags": [
+    "ai-skill",
+    "ai-skills",
+    "antigravity-ai",
+    "antigravity-skills",
+    "antigravity-tools",
+    "claude-skill",
+    "claude-skills",
+    "codex-skill",
+    "codex-skills",
+    "seo"
+  ],
+  "verified": false,
+  "status": "active"
+}

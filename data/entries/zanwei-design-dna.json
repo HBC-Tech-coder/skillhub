@@ -1,0 +1,54 @@
+{
+  "id": "zanwei-design-dna",
+  "name": "design-dna",
+  "owner": "zanwei",
+  "url": "https://github.com/zanwei/design-dna",
+  "category": "ui",
+  "description": {
+    "en": "Turn reference UIs (images, screenshots, URLs) into quantified Design DNA JSON—tokens, qualitative style, visual effects—then generate matching UI from your content.",
+    "zh": "将参考 UI 转化为量化的设计 DNA JSON，并生成匹配的界面。"
+  },
+  "install": "git clone https://github.com/zanwei/design-dna（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/zanwei/design-dna（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "design",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "UI/UX 设计师和前端开发者",
+    "en": "UI/UX designers and front-end developers"
+  },
+  "usecases": {
+    "zh": "从参考 UI 提取设计规范并生成匹配的界面",
+    "en": "Extract design specs from reference UIs and generate matching UI"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 1612,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "zanwei",
+  "tags": [
+    "agent-skills",
+    "claude-skills",
+    "codex-skills",
+    "cursor-skills",
+    "design-dna",
+    "design-system",
+    "design-tokens",
+    "skills-cli",
+    "ui-design",
+    "visual-design"
+  ],
+  "verified": false,
+  "status": "active"
+}

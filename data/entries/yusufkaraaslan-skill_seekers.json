@@ -1,0 +1,54 @@
+{
+  "id": "yusufkaraaslan-skill_seekers",
+  "name": "Skill_Seekers",
+  "owner": "yusufkaraaslan",
+  "url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+  "category": "docs",
+  "description": {
+    "en": "Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection",
+    "zh": "将文档网站、GitHub 仓库和 PDF 转化为 Claude 技能，并自动检测冲突。"
+  },
+  "install": "git clone https://github.com/yusufkaraaslan/Skill_Seekers（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/yusufkaraaslan/Skill_Seekers（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "learn",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "希望将文档转化为技能的用户",
+    "en": "Users wanting to convert docs into skills"
+  },
+  "usecases": {
+    "zh": "将文档网站、GitHub 仓库和 PDF 转化为 Claude 技能",
+    "en": "Convert documentation sites, GitHub repos, and PDFs into Claude skills"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 14866,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "yusufkaraaslan",
+  "tags": [
+    "ai-tools",
+    "ast-parser",
+    "automation",
+    "claude-ai",
+    "claude-skills",
+    "code-analysis",
+    "conflict-detection",
+    "documentation",
+    "documentation-generator",
+    "github"
+  ],
+  "verified": false,
+  "status": "active"
+}

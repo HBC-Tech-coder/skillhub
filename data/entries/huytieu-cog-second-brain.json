@@ -1,0 +1,55 @@
+{
+  "id": "huytieu-cog-second-brain",
+  "name": "COG-second-brain",
+  "owner": "huytieu",
+  "url": "https://github.com/huytieu/COG-second-brain",
+  "category": "memory",
+  "description": {
+    "en": "Self-evolving second brain with 33 AI skills, 10 agents, and people CRM. Closed-loop harness: a V-model verification lifecycle where the worker never grades its own homework. Plus paired anti-slop design skills for marketing and product UI. Works with Claude Code, Cursor, Kiro, Gemini CLI, Codex.",
+    "zh": "自进化第二大脑，包含33个AI技能、10个代理和人员CRM，采用V模型验证生命周期。"
+  },
+  "install": "git clone https://github.com/huytieu/COG-second-brain（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/huytieu/COG-second-brain（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "memory-knowledge",
+    "marketing",
+    "design"
+  ],
+  "audience": {
+    "zh": "知识管理者和产品设计师",
+    "en": "Knowledge managers and product designers"
+  },
+  "usecases": {
+    "zh": "构建自进化第二大脑，包含营销和产品UI技能",
+    "en": "Build a self-evolving second brain with marketing and product UI skills"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 1147,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "huytieu",
+  "tags": [
+    "agent-loop",
+    "agent-plugins",
+    "agent-skills",
+    "agentic",
+    "ai-agents",
+    "claude-code",
+    "closed-loop",
+    "cursor",
+    "garry-tan",
+    "gbrain"
+  ],
+  "verified": false,
+  "status": "active"
+}

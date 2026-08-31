@@ -1,0 +1,54 @@
+{
+  "id": "juneyaooo-self-media-compliance-review",
+  "name": "self-media-compliance-review",
+  "owner": "JuneYaooo",
+  "url": "https://github.com/JuneYaooo/self-media-compliance-review",
+  "category": "workflow",
+  "description": {
+    "en": "自媒体视频发布前违规风险审核。检查画面/声音/文字/封面/评论/带货信息/资质/引流，输出 Pass→Blocker 五级风险报告。覆盖抖音/小红书/视频号/B站/快手+千川低质素材。Claude Code、codex、workbuddy、hermes  skill",
+    "zh": "自媒体视频发布前违规风险审核，输出五级风险报告"
+  },
+  "install": "git clone https://github.com/JuneYaooo/self-media-compliance-review",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/JuneYaooo/self-media-compliance-review"
+    }
+  ],
+  "scenarios": [
+    "content-social",
+    "trends-monitor"
+  ],
+  "audience": {
+    "zh": "自媒体创作者和运营人员",
+    "en": "Self-media creators and operators"
+  },
+  "usecases": {
+    "zh": "发布前审核视频违规风险，覆盖多平台",
+    "en": "Pre-publishing compliance review for videos across platforms"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 70,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "JuneYaooo",
+  "tags": [
+    "ai-agent",
+    "ai-agents",
+    "claude-code-skills",
+    "compliance-check",
+    "content-creation",
+    "content-moderation",
+    "e-commerce-compliance",
+    "risk-assessment",
+    "skills",
+    "social-media-tool"
+  ],
+  "verified": false,
+  "status": "active"
+}

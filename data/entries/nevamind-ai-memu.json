@@ -1,0 +1,53 @@
+{
+  "id": "nevamind-ai-memu",
+  "name": "memU",
+  "owner": "NevaMind-AI",
+  "url": "https://github.com/NevaMind-AI/memU",
+  "category": "memory",
+  "description": {
+    "en": "Personal memory across agents",
+    "zh": "为AI代理提供跨会话的个人记忆功能"
+  },
+  "install": "git clone https://github.com/NevaMind-AI/memU（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/NevaMind-AI/memU（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "memory-knowledge"
+  ],
+  "audience": {
+    "zh": "使用Claude Code等AI代理的开发者和重度用户",
+    "en": "Developers and power users of AI agents like Claude Code"
+  },
+  "usecases": {
+    "zh": "跨会话持久记忆，避免重复解释项目背景和决策",
+    "en": "Persistent memory across sessions to avoid re-explaining project context and decisions"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 14365,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "NevaMind-AI",
+  "tags": [
+    "agent-memory",
+    "claude-skills",
+    "harness",
+    "loop-engineering",
+    "mcp",
+    "memory",
+    "openclaw",
+    "openclaw-skills",
+    "sandbox",
+    "skills"
+  ],
+  "verified": false,
+  "status": "active"
+}

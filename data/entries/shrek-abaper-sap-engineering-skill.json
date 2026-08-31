@@ -1,0 +1,53 @@
+{
+  "id": "shrek-abaper-sap-engineering-skill",
+  "name": "sap-engineering-skill",
+  "owner": "shrek-abaper",
+  "url": "https://github.com/shrek-abaper/sap-engineering-skill",
+  "category": "dev",
+  "description": {
+    "en": "AI agent skills for SAP ABAP: ADT read/write CLI, 9-dimension code review, transport release gate, integration wiki. Works with Claude Code / opencode.",
+    "zh": "面向 SAP ABAP 的 AI 技能，支持 ADT 读写、代码审查和传输门禁"
+  },
+  "install": "git clone https://github.com/shrek-abaper/sap-engineering-skill",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/shrek-abaper/sap-engineering-skill"
+    }
+  ],
+  "scenarios": [
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "SAP ABAP 开发者",
+    "en": "SAP ABAP developers"
+  },
+  "usecases": {
+    "zh": "SAP ABAP 代码开发、审查和传输管理",
+    "en": "SAP ABAP development, code review, and transport management"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 33,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "shrek-abaper",
+  "tags": [
+    "abap",
+    "abap-development",
+    "agent-skills",
+    "ai-agents",
+    "cli",
+    "code-review",
+    "developer-tools",
+    "python",
+    "s4hana",
+    "sap"
+  ],
+  "verified": false,
+  "status": "active"
+}

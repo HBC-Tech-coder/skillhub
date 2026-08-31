@@ -1,0 +1,54 @@
+{
+  "id": "travisvn-awesome-claude-skills",
+  "name": "awesome-claude-skills",
+  "owner": "travisvn",
+  "url": "https://github.com/travisvn/awesome-claude-skills",
+  "category": "docs",
+  "description": {
+    "en": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code",
+    "zh": "精选 Claude 技能、资源和工具，用于定制 Claude AI 工作流。"
+  },
+  "install": "git clone https://github.com/travisvn/awesome-claude-skills（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/travisvn/awesome-claude-skills（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "learn",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "Claude 用户",
+    "en": "Claude users"
+  },
+  "usecases": {
+    "zh": "发现和整理 Claude 技能资源",
+    "en": "Discover and curate Claude skills resources"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 14906,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "travisvn",
+  "tags": [
+    "agentic-coding",
+    "anthropic",
+    "awesome",
+    "awesome-list",
+    "awesome-lists",
+    "claude",
+    "claude-ai",
+    "claude-code",
+    "claude-desktop",
+    "claude-skills"
+  ],
+  "verified": false,
+  "status": "active"
+}

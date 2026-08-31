@@ -1,0 +1,43 @@
+{
+  "id": "autobcb-source-skills",
+  "name": "source-skills",
+  "owner": "autobcb",
+  "url": "https://github.com/autobcb/source-skills",
+  "category": "fun",
+  "description": {
+    "en": "轻悦时光 ai 书源技能包 ，ai用的是字节trae",
+    "zh": "轻悦时光AI书源技能包，适配字节Trae"
+  },
+  "install": "git clone https://github.com/autobcb/source-skills",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/autobcb/source-skills"
+    }
+  ],
+  "scenarios": [
+    "fun",
+    "content-social"
+  ],
+  "audience": {
+    "zh": "小说阅读爱好者、AI用户",
+    "en": "Novel readers, AI users"
+  },
+  "usecases": {
+    "zh": "使用AI生成书源技能包",
+    "en": "Use AI to generate book source skill packs"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 28,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "autobcb",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

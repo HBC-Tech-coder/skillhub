@@ -1,0 +1,54 @@
+{
+  "id": "eugeniughelbur-obsidian-second-brain",
+  "name": "obsidian-second-brain",
+  "owner": "eugeniughelbur",
+  "url": "https://github.com/eugeniughelbur/obsidian-second-brain",
+  "category": "memory",
+  "description": {
+    "en": "Persistent memory for Claude Code and 6 other CLI agents, stored as plain markdown in your Obsidian vault. Stop re-explaining your projects, decisions and people every session. 45 commands: hybrid semantic search, self-rewriting notes, key-less web research, and scheduled agents that maintain the va",
+    "zh": "为Claude Code等代理提供基于Obsidian的持久记忆"
+  },
+  "install": "git clone https://github.com/eugeniughelbur/obsidian-second-brain（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/eugeniughelbur/obsidian-second-brain（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "memory-knowledge",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "使用Obsidian管理知识的Claude Code用户",
+    "en": "Claude Code users who manage knowledge in Obsidian"
+  },
+  "usecases": {
+    "zh": "将Claude Code的记忆存储在Obsidian笔记中，支持语义搜索和自动重写",
+    "en": "Store Claude Code memory in Obsidian notes with semantic search and self-rewriting"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 4266,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "eugeniughelbur",
+  "tags": [
+    "agent-skills",
+    "ai-agents",
+    "ai-note-taking",
+    "ai-second-brain",
+    "anthropic",
+    "claude",
+    "claude-code",
+    "claude-code-skill",
+    "claude-memory",
+    "claude-plugin"
+  ],
+  "verified": false,
+  "status": "active"
+}

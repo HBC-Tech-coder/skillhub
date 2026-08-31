@@ -1,0 +1,49 @@
+{
+  "id": "zhuang-he-workbuddy-harness",
+  "name": "workbuddy-harness",
+  "owner": "zhuang-HE",
+  "url": "https://github.com/zhuang-HE/workbuddy-harness",
+  "category": "dev",
+  "description": {
+    "en": "🏗️ AI Agent 九维基础设施框架 - 9个架构维度、11个插件、21个Hooks、30条基准评测",
+    "zh": "AI Agent 九维基础设施框架，提供架构维度、插件、Hooks 和基准评测"
+  },
+  "install": "git clone https://github.com/zhuang-HE/workbuddy-harness",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/zhuang-HE/workbuddy-harness"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI Agent 开发者/架构师",
+    "en": "AI agent developers and architects"
+  },
+  "usecases": {
+    "zh": "搭建和评估 AI Agent 基础设施",
+    "en": "Building and evaluating AI agent infrastructure"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 35,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "zhuang-HE",
+  "tags": [
+    "ai-agents",
+    "harness",
+    "infrastructure",
+    "memory-management",
+    "workbuddy"
+  ],
+  "verified": false,
+  "status": "active"
+}

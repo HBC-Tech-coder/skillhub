@@ -1,0 +1,55 @@
+{
+  "id": "alirezarezvani-claude-skills",
+  "name": "claude-skills",
+  "owner": "alirezarezvani",
+  "url": "https://github.com/alirezarezvani/claude-skills",
+  "category": "dev",
+  "description": {
+    "en": "380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commerc",
+    "zh": "包含 380+ Claude Code 技能、插件和自定义命令，适用于多种编码代理。"
+  },
+  "install": "git clone https://github.com/alirezarezvani/claude-skills（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/alirezarezvani/claude-skills（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "marketing",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "多领域 AI 用户",
+    "en": "Multi-domain AI users"
+  },
+  "usecases": {
+    "zh": "获取 380+ 技能，覆盖工程、营销、产品等",
+    "en": "Access 380+ skills covering engineering, marketing, product, etc."
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 25289,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "alirezarezvani",
+  "tags": [
+    "agent-plugins",
+    "agent-skills",
+    "agentic-ai",
+    "ai-coding-agent",
+    "anthropic-claude",
+    "claude-ai",
+    "claude-code",
+    "claude-code-plugins",
+    "claude-code-skills",
+    "claude-skills"
+  ],
+  "verified": false,
+  "status": "active"
+}

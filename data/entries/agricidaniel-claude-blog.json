@@ -1,0 +1,55 @@
+{
+  "id": "agricidaniel-claude-blog",
+  "name": "claude-blog",
+  "owner": "AgriciDaniel",
+  "url": "https://github.com/AgriciDaniel/claude-blog",
+  "category": "workflow",
+  "description": {
+    "en": "Claude Code blog skill suite: 30 sub-skills, 5 agents, 5-gate v1.9.0 Blog Delivery Contract, dual-optimized for Google rankings and AI citations. Active development at AI-Marketing-Hub/claude-blog (AI Marketing Hub Pro community); public releases ship here.",
+    "zh": "Claude Code博客技能套件，包含30个子技能和5个代理"
+  },
+  "install": "git clone https://github.com/AgriciDaniel/claude-blog（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/AgriciDaniel/claude-blog（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "content-social",
+    "marketing",
+    "copywriting"
+  ],
+  "audience": {
+    "zh": "博客作者和内容营销人员",
+    "en": "Bloggers and content marketers"
+  },
+  "usecases": {
+    "zh": "使用Claude Code技能套件优化博客写作，兼顾Google排名和AI引用",
+    "en": "Optimize blog writing with Claude Code skill suite for Google rankings and AI citations"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 1986,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "AgriciDaniel",
+  "tags": [
+    "agent-skills",
+    "ai",
+    "ai-citations",
+    "ai-content",
+    "ai-marketing",
+    "ai-marketing-hub",
+    "blog",
+    "blog-writing",
+    "claude-code",
+    "claude-code-skill"
+  ],
+  "verified": false,
+  "status": "active"
+}

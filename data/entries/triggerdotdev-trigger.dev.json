@@ -1,0 +1,54 @@
+{
+  "id": "triggerdotdev-trigger.dev",
+  "name": "trigger.dev",
+  "owner": "triggerdotdev",
+  "url": "https://github.com/triggerdotdev/trigger.dev",
+  "category": "workflow",
+  "description": {
+    "en": "Trigger.dev – build and deploy fully‑managed AI agents and workflows",
+    "zh": "Trigger.dev 是一个用于构建和部署全托管AI代理与工作流的平台。"
+  },
+  "install": "参照仓库 README 配置 MCP 客户端",
+  "ecosystems": [
+    {
+      "id": "mcp",
+      "kind": "server",
+      "install": "参照仓库 README 配置 MCP 客户端"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "开发者、AI工程师",
+    "en": "Developers, AI engineers"
+  },
+  "usecases": {
+    "zh": "构建和部署AI代理与工作流自动化",
+    "en": "Build and deploy AI agents and workflow automation"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 16168,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "Apache-2.0",
+  "author": "triggerdotdev",
+  "tags": [
+    "ai",
+    "ai-agent-framework",
+    "ai-agents",
+    "automation",
+    "background-jobs",
+    "mcp",
+    "mcp-server",
+    "nextjs",
+    "orchestration",
+    "scheduler"
+  ],
+  "verified": false,
+  "status": "active"
+}

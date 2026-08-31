@@ -1,0 +1,54 @@
+{
+  "id": "lbb00-ai-rules-sync",
+  "name": "ai-rules-sync",
+  "owner": "lbb00",
+  "url": "https://github.com/lbb00/ai-rules-sync",
+  "category": "workflow",
+  "description": {
+    "en": "Synchronize, manage, and share your ai rules, skills, commands, subagents (Cursor, Claude Code, Copilot, OpenCode, Trae AI, Codex, Gemini CLI, Warp) with ease.",
+    "zh": "同步、管理和分享AI规则、技能、命令和子代理的工具"
+  },
+  "install": "git clone https://github.com/lbb00/ai-rules-sync",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/lbb00/ai-rules-sync"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "多工具AI用户、开发者",
+    "en": "Multi-tool AI users, developers"
+  },
+  "usecases": {
+    "zh": "同步和管理多个AI工具的规则、技能和命令",
+    "en": "Synchronize and manage rules, skills, and commands across multiple AI tools"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 37,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Unlicense",
+  "author": "lbb00",
+  "tags": [
+    "agents",
+    "claude-code",
+    "claude-skills",
+    "codex",
+    "copilot",
+    "copilot-prompts",
+    "cursor",
+    "gemini",
+    "opencode",
+    "rules"
+  ],
+  "verified": false,
+  "status": "active"
+}

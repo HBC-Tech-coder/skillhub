@@ -1,0 +1,55 @@
+{
+  "id": "sunchaokun-ppt-design-skill",
+  "name": "PPT-Design-Skill",
+  "owner": "sunchaokun",
+  "url": "https://github.com/sunchaokun/PPT-Design-Skill",
+  "category": "ui",
+  "description": {
+    "en": "Precision PPT design skill for OpenCode/Claude Code/Codex, with 40,000+ styles, pixel-perfect Build Mode control, AI image generation, and fully editable PPTX. 面向专业演示设计场景，帮助用户从需求分析、视觉方向选择到原生可编辑 PPTX 交付，打造高质量、可持续修改的演示文稿。",
+    "zh": "面向专业演示设计场景，提供精准 PPT 设计技能，支持 4 万+ 样式、AI 图像生成和可编辑 PPTX 交付。"
+  },
+  "install": "git clone https://github.com/sunchaokun/PPT-Design-Skill（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/sunchaokun/PPT-Design-Skill（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "design",
+    "education",
+    "marketing"
+  ],
+  "audience": {
+    "zh": "需要制作专业演示文稿的职场人士、教师、营销人员",
+    "en": "Professionals, teachers, and marketers needing professional presentations"
+  },
+  "usecases": {
+    "zh": "从需求分析到交付可编辑 PPTX，生成高质量演示文稿",
+    "en": "Generate high-quality editable PPTX from requirement analysis to delivery"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 1152,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "sunchaokun",
+  "tags": [
+    "ai-coding-tools",
+    "claude-code-skills",
+    "codex",
+    "codex-skill",
+    "codex-skills",
+    "dsh-plugin",
+    "opencode-skills",
+    "ppt",
+    "pptx",
+    "pptx-generator"
+  ],
+  "verified": false,
+  "status": "active"
+}

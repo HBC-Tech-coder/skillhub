@@ -1,0 +1,54 @@
+{
+  "id": "tadata-org-fastapi_mcp",
+  "name": "fastapi_mcp",
+  "owner": "tadata-org",
+  "url": "https://github.com/tadata-org/fastapi_mcp",
+  "category": "dev",
+  "description": {
+    "en": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
+    "zh": "将FastAPI端点转换为MCP工具，支持认证，方便AI集成。"
+  },
+  "install": "参照仓库 README 配置 MCP 客户端",
+  "ecosystems": [
+    {
+      "id": "mcp",
+      "kind": "server",
+      "install": "参照仓库 README 配置 MCP 客户端"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "Python开发者、API开发者",
+    "en": "Python developers, API developers"
+  },
+  "usecases": {
+    "zh": "将FastAPI端点暴露为MCP工具，便于AI调用",
+    "en": "Expose FastAPI endpoints as MCP tools for AI integration"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 11992,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "MIT",
+  "author": "tadata-org",
+  "tags": [
+    "ai",
+    "authentication",
+    "authorization",
+    "claude",
+    "cursor",
+    "fastapi",
+    "llm",
+    "mcp",
+    "mcp-server",
+    "mcp-servers"
+  ],
+  "verified": false,
+  "status": "active"
+}

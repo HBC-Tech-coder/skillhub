@@ -1,0 +1,54 @@
+{
+  "id": "imbad0202-academic-research-skills-codex",
+  "name": "academic-research-skills-codex",
+  "owner": "Imbad0202",
+  "url": "https://github.com/Imbad0202/academic-research-skills-codex",
+  "category": "skill",
+  "description": {
+    "en": "Codex-native Academic Research Skills suite for human-in-the-loop academic research workflows",
+    "zh": "面向 Codex 的学术研究技能套件，支持人机协作的学术研究工作流。"
+  },
+  "install": "git clone https://github.com/Imbad0202/academic-research-skills-codex（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/Imbad0202/academic-research-skills-codex（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "science-research",
+    "education"
+  ],
+  "audience": {
+    "zh": "学术研究人员和学生",
+    "en": "Academic researchers and students"
+  },
+  "usecases": {
+    "zh": "进行人机协作的学术研究工作流",
+    "en": "Conduct human-in-the-loop academic research workflows"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 9634,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "Imbad0202",
+  "tags": [
+    "academic-pipeline",
+    "academic-research",
+    "academic-writing",
+    "ai-research",
+    "codex",
+    "literature-review",
+    "openai-codex",
+    "peer-review",
+    "prompt-engineering",
+    "research-assistant"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "echovic-boss-skill",
+  "name": "boss-skill",
+  "owner": "echoVic",
+  "url": "https://github.com/echoVic/boss-skill",
+  "category": "dev",
+  "description": {
+    "en": "Boss Skill - BMAD 全自动研发流水线（多 Agent 编排）",
+    "zh": "BMAD全自动研发流水线，通过多Agent编排实现自动化开发。"
+  },
+  "install": "git clone https://github.com/echoVic/boss-skill",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/echoVic/boss-skill"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "研发团队、AI开发者",
+    "en": "R&D teams, AI developers"
+  },
+  "usecases": {
+    "zh": "多Agent编排的全自动研发流水线",
+    "en": "Fully automated R&D pipeline with multi-agent orchestration"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 552,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "echoVic",
+  "tags": [
+    "ai-agents",
+    "bmad",
+    "bmad-workflow",
+    "claude-code",
+    "cursor",
+    "skill",
+    "trae"
+  ],
+  "verified": false,
+  "status": "active"
+}

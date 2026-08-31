@@ -1,0 +1,54 @@
+{
+  "id": "ad-naan-adnify",
+  "name": "Adnify",
+  "owner": "ad-naan",
+  "url": "https://github.com/ad-naan/Adnify",
+  "category": "dev",
+  "description": {
+    "en": "Your codebase just hired an AI teammate — it plans, edits, runs, and ships, with a little otter energy. 🦦（一个很牛逼的agent ide）",
+    "zh": "将代码库交给 AI 队友，自动完成规划、编辑、运行和交付。"
+  },
+  "install": "git clone https://github.com/ad-naan/Adnify",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/ad-naan/Adnify"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI 编程用户/开发者",
+    "en": "AI coding users and developers"
+  },
+  "usecases": {
+    "zh": "在 IDE 中让 AI 代理自动规划、编辑、运行和交付代码",
+    "en": "Let an AI agent plan, edit, run, and ship code within the IDE"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 272,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "ad-naan",
+  "tags": [
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "cursor-ide",
+    "gemini",
+    "gpt",
+    "harness",
+    "openai",
+    "opencode-ai",
+    "skills"
+  ],
+  "verified": false,
+  "status": "active"
+}

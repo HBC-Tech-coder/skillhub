@@ -1,0 +1,53 @@
+{
+  "id": "nvidia-skillspector",
+  "name": "SkillSpector",
+  "owner": "NVIDIA",
+  "url": "https://github.com/NVIDIA/SkillSpector",
+  "category": "security",
+  "description": {
+    "en": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
+    "zh": "用于 AI 代理技能的安全扫描器，检测漏洞、恶意模式、提示注入、数据外泄和供应链风险。"
+  },
+  "install": "git clone https://github.com/NVIDIA/SkillSpector（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/NVIDIA/SkillSpector（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "security"
+  ],
+  "audience": {
+    "zh": "AI 代理技能的使用者和安全工程师",
+    "en": "Users of AI agent skills and security engineers"
+  },
+  "usecases": {
+    "zh": "在安装前扫描技能中的漏洞和恶意模式",
+    "en": "Scan skills for vulnerabilities and malicious patterns before installation"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 15368,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "NVIDIA",
+  "tags": [
+    "agent-security",
+    "agent-skills",
+    "agentic-ai",
+    "ai-security",
+    "claude-code",
+    "mcp",
+    "prompt-injection",
+    "security-scanner",
+    "security-tools",
+    "security-workflow"
+  ],
+  "verified": false,
+  "status": "active"
+}

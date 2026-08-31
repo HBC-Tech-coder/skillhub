@@ -1,0 +1,54 @@
+{
+  "id": "storybloq-storybloq",
+  "name": "storybloq",
+  "owner": "Storybloq",
+  "url": "https://github.com/Storybloq/storybloq",
+  "category": "workflow",
+  "description": {
+    "en": "Cross-session context for Claude Code. CLI + MCP server + /story skill that tracks tickets, issues, handovers, and roadmap in a .story/ directory.",
+    "zh": "为Claude Code提供跨会话上下文，通过CLI、MCP服务器和/story技能跟踪任务。"
+  },
+  "install": "git clone https://github.com/Storybloq/storybloq（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/Storybloq/storybloq（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "使用Claude Code进行长期项目的开发者",
+    "en": "Developers using Claude Code for long-term projects"
+  },
+  "usecases": {
+    "zh": "跨会话跟踪任务、问题、交接和路线图",
+    "en": "Track tickets, issues, handovers, and roadmap across sessions"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 698,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "Storybloq",
+  "tags": [
+    "agentic-development",
+    "ai-development",
+    "anthropic",
+    "claude-code",
+    "claude-skill",
+    "cli",
+    "context-management",
+    "developer-tools",
+    "handover",
+    "mac-app"
+  ],
+  "verified": false,
+  "status": "active"
+}

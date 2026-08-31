@@ -1,0 +1,54 @@
+{
+  "id": "junhoyeo-tokscale",
+  "name": "tokscale",
+  "owner": "junhoyeo",
+  "url": "https://github.com/junhoyeo/tokscale",
+  "category": "dev",
+  "description": {
+    "en": "🛰️ Track token usage across AI coding agents from your terminal. 🏅 Global leaderboard with trillions of tokens tracked.",
+    "zh": "在终端跟踪AI编码代理的token使用量，提供全球排行榜。"
+  },
+  "install": "git clone https://github.com/junhoyeo/tokscale（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/junhoyeo/tokscale（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "使用AI编码代理的开发者",
+    "en": "Developers using AI coding agents"
+  },
+  "usecases": {
+    "zh": "从终端跟踪token使用量，查看全球排行榜",
+    "en": "Track token usage from terminal, view global leaderboard"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 5224,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "junhoyeo",
+  "tags": [
+    "ai",
+    "ai-agents",
+    "ampcode",
+    "claude",
+    "claude-code",
+    "clawdbot",
+    "codex",
+    "cursor",
+    "cursor-ide",
+    "droid"
+  ],
+  "verified": false,
+  "status": "active"
+}

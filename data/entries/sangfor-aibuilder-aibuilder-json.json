@@ -1,0 +1,53 @@
+{
+  "id": "sangfor-aibuilder-aibuilder-json",
+  "name": "aibuilder-json",
+  "owner": "sangfor-aibuilder",
+  "url": "https://github.com/sangfor-aibuilder/aibuilder-json",
+  "category": "workflow",
+  "description": {
+    "en": " Enterprise-grade FastGPT workflow JSON generator - Works with Claude Code, OpenClaw, Costrict.ai, Trae and any skill-based AI platform",
+    "zh": "企业级FastGPT工作流JSON生成器，兼容多种AI平台"
+  },
+  "install": "git clone https://github.com/sangfor-aibuilder/aibuilder-json",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/sangfor-aibuilder/aibuilder-json"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "FastGPT用户、AI工作流开发者",
+    "en": "FastGPT users, AI workflow developers"
+  },
+  "usecases": {
+    "zh": "生成企业级FastGPT工作流JSON，兼容多种AI平台",
+    "en": "Generate enterprise-grade FastGPT workflow JSON compatible with multiple AI platforms"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 26,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "sangfor-aibuilder",
+  "tags": [
+    "agent-platform",
+    "dify",
+    "enterprise",
+    "fastgpt",
+    "json-generator",
+    "rag",
+    "sangfor",
+    "skills",
+    "workflow"
+  ],
+  "verified": false,
+  "status": "active"
+}

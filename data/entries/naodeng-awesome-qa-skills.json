@@ -1,0 +1,54 @@
+{
+  "id": "naodeng-awesome-qa-skills",
+  "name": "awesome-qa-skills",
+  "owner": "naodeng",
+  "url": "https://github.com/naodeng/awesome-qa-skills",
+  "category": "dev",
+  "description": {
+    "en": "Awesome QA Skills — a bilingual (zh/en) AI testing Agent Skills library for Codex, Cursor, Claude Code, Kiro, OpenCode, and Trae. Ships 4 testing workflows and 25 testing-type skills (58 skill folders with language parity): independently installable, composable, and eval-ready with skill-up. Covers ",
+    "zh": "中英双语 AI 测试 Agent 技能库，包含多种测试工作流和技能。"
+  },
+  "install": "git clone https://github.com/naodeng/awesome-qa-skills",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/naodeng/awesome-qa-skills"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "软件测试工程师/QA 人员",
+    "en": "Software testers and QA professionals"
+  },
+  "usecases": {
+    "zh": "使用 25 种测试技能和 4 种测试工作流进行 AI 辅助测试",
+    "en": "Use 25 testing skills and 4 testing workflows for AI-assisted testing"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 190,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "naodeng",
+  "tags": [
+    "agent-skills",
+    "ai-qa",
+    "ai-skills",
+    "ai-testing",
+    "ai-tools",
+    "awesome-list",
+    "prompt-engineering",
+    "qa",
+    "qa-skills",
+    "skills"
+  ],
+  "verified": false,
+  "status": "active"
+}

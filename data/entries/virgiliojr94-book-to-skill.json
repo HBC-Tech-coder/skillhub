@@ -1,0 +1,54 @@
+{
+  "id": "virgiliojr94-book-to-skill",
+  "name": "book-to-skill",
+  "owner": "virgiliojr94",
+  "url": "https://github.com/virgiliojr94/book-to-skill",
+  "category": "docs",
+  "description": {
+    "en": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+    "zh": "将任何技术书籍 PDF 转化为 Claude Code 技能，供学习和工作中使用。"
+  },
+  "install": "git clone https://github.com/virgiliojr94/book-to-skill（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/virgiliojr94/book-to-skill（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "learn",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "技术学习者、开发者",
+    "en": "Technical learners and developers"
+  },
+  "usecases": {
+    "zh": "将技术书籍 PDF 转化为可交互的 Claude Code 技能，便于学习和参考",
+    "en": "Convert technical book PDFs into interactive Claude Code skills for study and reference"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 27447,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "virgiliojr94",
+  "tags": [
+    "agent-skills",
+    "ai-agents",
+    "book-to-skill",
+    "context-engineering",
+    "document-processing",
+    "edtech",
+    "knowledge-base",
+    "knowledge-management",
+    "llm",
+    "pdf-to-markdown"
+  ],
+  "verified": false,
+  "status": "active"
+}

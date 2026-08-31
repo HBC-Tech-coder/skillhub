@@ -1,0 +1,43 @@
+{
+  "id": "xingkongliang-skills-manager",
+  "name": "skills-manager",
+  "owner": "xingkongliang",
+  "url": "https://github.com/xingkongliang/skills-manager",
+  "category": "workflow",
+  "description": {
+    "en": "A lightweight desktop app to manage, sync, and organize AI agent skills across 50+ coding tools — Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+    "zh": "轻量级桌面应用，用于跨多种编码工具管理和同步AI代理技能。"
+  },
+  "install": "git clone https://github.com/xingkongliang/skills-manager（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/xingkongliang/skills-manager（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "多工具AI开发者",
+    "en": "Multi-tool AI developers"
+  },
+  "usecases": {
+    "zh": "跨50多种编码工具管理和同步AI代理技能",
+    "en": "Manage and sync AI agent skills across 50+ coding tools"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 4236,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "xingkongliang",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

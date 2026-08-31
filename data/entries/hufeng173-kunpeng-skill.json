@@ -1,0 +1,54 @@
+{
+  "id": "hufeng173-kunpeng-skill",
+  "name": "kunpeng-skill",
+  "owner": "hufeng173",
+  "url": "https://github.com/hufeng173/kunpeng-skill",
+  "category": "docs",
+  "description": {
+    "en": "Kunpeng-Skill is a powerful multimodal distillation toolkit that transforms high-value insights from repositories, websites, UIs, videos, images, and documents into reusable methodologies, model-agnostic regeneration specifications, and more.",
+    "zh": "多模态蒸馏工具，将仓库、网站、UI、视频等转化为可复用的方法论和再生规范。"
+  },
+  "install": "git clone https://github.com/hufeng173/kunpeng-skill",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/hufeng173/kunpeng-skill"
+    }
+  ],
+  "scenarios": [
+    "learn",
+    "memory-knowledge"
+  ],
+  "audience": {
+    "zh": "知识工作者、AI 研究者",
+    "en": "Knowledge workers and AI researchers"
+  },
+  "usecases": {
+    "zh": "从多模态内容中提取可复用的方法论和规范",
+    "en": "Extract reusable methodologies and specs from multimodal content"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 53,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "hufeng173",
+  "tags": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "hermes-agent",
+    "knowledge-distillation",
+    "opencode",
+    "ppt-design",
+    "presentation-design",
+    "product-planning",
+    "ui-design"
+  ],
+  "verified": false,
+  "status": "active"
+}

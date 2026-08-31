@@ -1,0 +1,53 @@
+{
+  "id": "memtensor-memos",
+  "name": "MemOS",
+  "owner": "MemTensor",
+  "url": "https://github.com/MemTensor/MemOS",
+  "category": "memory",
+  "description": {
+    "en": "Self-evolving memory OS for LLM & AI Agents: ultra-persistent memory, hybrid-retrieval, and cross-task skill reuse, with 35.24% token savings and DeepSeek Harness support.",
+    "zh": "自进化记忆OS，支持超持久记忆、混合检索和跨任务技能复用。"
+  },
+  "install": "dsh plugin --profile web add github:MemTensor/MemOS",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:MemTensor/MemOS"
+    }
+  ],
+  "scenarios": [
+    "memory-knowledge"
+  ],
+  "audience": {
+    "zh": "AI开发者、LLM应用开发者",
+    "en": "AI developers, LLM application developers"
+  },
+  "usecases": {
+    "zh": "为LLM和AI代理提供自进化记忆OS",
+    "en": "Provide self-evolving memory OS for LLM and AI agents"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 11106,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "author": "MemTensor",
+  "tags": [
+    "agent",
+    "agentic-ai",
+    "ai",
+    "ai-agents",
+    "chatgpt",
+    "claude",
+    "deepseek-harness",
+    "dsh-plugin",
+    "hermes",
+    "llm"
+  ],
+  "verified": false,
+  "status": "active"
+}

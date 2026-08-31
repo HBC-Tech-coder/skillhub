@@ -1,0 +1,54 @@
+{
+  "id": "cabbage2000-lab-textbook-writer-skills",
+  "name": "textbook-writer-skills",
+  "owner": "cabbage2000-lab",
+  "url": "https://github.com/cabbage2000-lab/textbook-writer-skills",
+  "category": "docs",
+  "description": {
+    "en": "UbD 逆向设计驱动的教材写作 skill 组合，一键装进 Claude Code / Codex / WorkBuddy：教学定位 → 五件套 gate → 章节树 gate → 四段式逐章写作 → 审核定稿。学科无关内核 + 可插拔学科档案，理科真算复核、人文社科逐字核对引文出处，验证不了就标注「需作者确认」；关键决策作者拍板，中断随时续写",
+    "zh": "UbD 逆向设计驱动的教材写作技能组合，支持审核和续写"
+  },
+  "install": "git clone https://github.com/cabbage2000-lab/textbook-writer-skills",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/cabbage2000-lab/textbook-writer-skills"
+    }
+  ],
+  "scenarios": [
+    "education",
+    "learn"
+  ],
+  "audience": {
+    "zh": "教材编写者和教育工作者",
+    "en": "Textbook writers and educators"
+  },
+  "usecases": {
+    "zh": "系统化编写和审核教材",
+    "en": "Systematically writing and reviewing textbooks"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 24,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "cabbage2000-lab",
+  "tags": [
+    "agent-skills",
+    "agents-md",
+    "ai-agent",
+    "backward-design",
+    "bloom-taxonomy",
+    "claude-code",
+    "claude-skills",
+    "codex",
+    "codex-cli",
+    "curriculum-design"
+  ],
+  "verified": false,
+  "status": "active"
+}

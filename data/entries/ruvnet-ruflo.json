@@ -1,0 +1,54 @@
+{
+  "id": "ruvnet-ruflo",
+  "name": "ruflo",
+  "owner": "ruvnet",
+  "url": "https://github.com/ruvnet/ruflo",
+  "category": "workflow",
+  "description": {
+    "en": "🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+    "zh": "代理元框架，支持多智能体群、自适应记忆和RAG集成。"
+  },
+  "install": "dsh plugin --profile web add github:ruvnet/ruflo",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:ruvnet/ruflo"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "agents-roles"
+  ],
+  "audience": {
+    "zh": "AI开发者、自动化工程师",
+    "en": "AI developers, automation engineers"
+  },
+  "usecases": {
+    "zh": "部署多智能体群、协调自主工作流、构建对话式AI系统",
+    "en": "Deploy multi-agent swarms, coordinate autonomous workflows, build conversational AI systems"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 69901,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "MIT",
+  "author": "ruvnet",
+  "tags": [
+    "agentic-ai",
+    "agentic-framework",
+    "agentic-workflow",
+    "agents",
+    "ai-agents",
+    "ai-assistant",
+    "ai-skills",
+    "autonomous-agents",
+    "claude-code",
+    "codex"
+  ],
+  "verified": false,
+  "status": "active"
+}

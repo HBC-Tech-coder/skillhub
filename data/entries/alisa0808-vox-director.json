@@ -1,0 +1,54 @@
+{
+  "id": "alisa0808-vox-director",
+  "name": "vox-director",
+  "owner": "Alisa0808",
+  "url": "https://github.com/Alisa0808/vox-director",
+  "category": "tools",
+  "description": {
+    "en": "Turn one topic into a finished Vox-style paper-collage explainer/ad video — automated end to end on Atlas Cloud + ffmpeg. An agent skill.",
+    "zh": "代理技能，自动端到端制作Vox风格拼贴解说视频"
+  },
+  "install": "git clone https://github.com/Alisa0808/vox-director（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/Alisa0808/vox-director（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "video-edit",
+    "content-social"
+  ],
+  "audience": {
+    "zh": "视频创作者和营销人员",
+    "en": "Video creators and marketers"
+  },
+  "usecases": {
+    "zh": "将一个主题自动制作成Vox风格的拼贴解说视频",
+    "en": "Automatically produce a Vox-style paper-collage explainer video from a topic"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 1663,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "Alisa0808",
+  "tags": [
+    "ai",
+    "ai-video",
+    "claude-code",
+    "claude-skill",
+    "collage-video",
+    "dsh-plugin",
+    "explainer-video",
+    "ffmpeg",
+    "generative-ai",
+    "llm"
+  ],
+  "verified": false,
+  "status": "active"
+}

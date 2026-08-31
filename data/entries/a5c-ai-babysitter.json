@@ -1,0 +1,54 @@
+{
+  "id": "a5c-ai-babysitter",
+  "name": "babysitter",
+  "owner": "a5c-ai",
+  "url": "https://github.com/a5c-ai/babysitter",
+  "category": "workflow",
+  "description": {
+    "en": "Babysitter enforces obedience on agentic workforces and enables them to manage extremely complex tasks and workflows through deterministic, hallucination-free self-orchestration",
+    "zh": "通过确定性、无幻觉的自编排，让代理工作负载服从指令并管理复杂任务。"
+  },
+  "install": "git clone https://github.com/a5c-ai/babysitter（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/a5c-ai/babysitter（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "需要管理复杂任务的 AI 代理开发者和运维人员",
+    "en": "Developers and operators managing complex AI agent tasks"
+  },
+  "usecases": {
+    "zh": "通过确定性自编排管理复杂工作流，防止幻觉",
+    "en": "Manage complex workflows through deterministic self-orchestration"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 1748,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "a5c-ai",
+  "tags": [
+    "agent-orchestration",
+    "agent-skills",
+    "agentic-ai",
+    "agentic-workflow",
+    "ai-agents",
+    "ai-automation",
+    "babysitter",
+    "claude-code",
+    "claude-code-skills",
+    "claude-code-workflows"
+  ],
+  "verified": false,
+  "status": "active"
+}

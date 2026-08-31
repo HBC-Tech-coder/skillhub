@@ -1,0 +1,47 @@
+{
+  "id": "coreyhaines31-marketingskills",
+  "name": "marketingskills",
+  "owner": "coreyhaines31",
+  "url": "https://github.com/coreyhaines31/marketingskills",
+  "category": "workflow",
+  "description": {
+    "en": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+    "zh": "为Claude Code和AI代理提供的营销技能，涵盖CRO、文案、SEO、分析和增长工程。"
+  },
+  "install": "git clone https://github.com/coreyhaines31/marketingskills（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/coreyhaines31/marketingskills（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "marketing",
+    "copywriting"
+  ],
+  "audience": {
+    "zh": "营销人员、增长黑客和SEO专家",
+    "en": "Marketers, growth hackers, and SEO specialists"
+  },
+  "usecases": {
+    "zh": "用于转化率优化、文案、SEO、分析和增长工程",
+    "en": "For CRO, copywriting, SEO, analytics, and growth engineering"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 46226,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "coreyhaines31",
+  "tags": [
+    "claude",
+    "codex",
+    "marketing"
+  ],
+  "verified": false,
+  "status": "active"
+}

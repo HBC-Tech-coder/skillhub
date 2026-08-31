@@ -1,0 +1,54 @@
+{
+  "id": "kevinyoung-kw-vibe-resume-skill",
+  "name": "vibe-resume-skill",
+  "owner": "KevinYoung-Kw",
+  "url": "https://github.com/KevinYoung-Kw/vibe-resume-skill",
+  "category": "tools",
+  "description": {
+    "en": "AI 简历生成与排版 Skill｜12 套可投递 HTML/PDF 模板。AI resume builder for creating, updating and tailoring resumes to any JD via Codex, Claude Code, Cursor & Trae.",
+    "zh": "AI 简历生成与排版技能，提供 12 套可投递模板。"
+  },
+  "install": "git clone https://github.com/KevinYoung-Kw/vibe-resume-skill",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/KevinYoung-Kw/vibe-resume-skill"
+    }
+  ],
+  "scenarios": [
+    "job",
+    "copywriting"
+  ],
+  "audience": {
+    "zh": "求职者/简历制作者",
+    "en": "Job seekers and resume creators"
+  },
+  "usecases": {
+    "zh": "用 AI 创建、更新和定制简历，支持 12 套 HTML/PDF 模板",
+    "en": "Create, update, and tailor resumes with AI, with 12 HTML/PDF templates"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 62,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "KevinYoung-Kw",
+  "tags": [
+    "agent-skill",
+    "ai-resume",
+    "ai-skills",
+    "ats-resume",
+    "claude-code",
+    "codex",
+    "cursor",
+    "cv",
+    "cv-template",
+    "html-resume"
+  ],
+  "verified": false,
+  "status": "active"
+}

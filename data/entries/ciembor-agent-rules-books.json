@@ -1,0 +1,54 @@
+{
+  "id": "ciembor-agent-rules-books",
+  "name": "agent-rules-books",
+  "owner": "ciembor",
+  "url": "https://github.com/ciembor/agent-rules-books",
+  "category": "dev",
+  "description": {
+    "en": "AGENTS.md rules / skills for AI coding agents: Codex, Cursor & Claude Code. Inspired by Clean Code, Refactoring, DDD, Clean Architecture and DDIA programming books.",
+    "zh": "为 AI 编码代理提供 AGENTS.md 规则和技能，灵感来自 Clean Code 等书籍。"
+  },
+  "install": "git clone https://github.com/ciembor/agent-rules-books（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/ciembor/agent-rules-books（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "learn"
+  ],
+  "audience": {
+    "zh": "开发者、AI 代理用户",
+    "en": "Developers and AI agent users"
+  },
+  "usecases": {
+    "zh": "用于为 AI 编码代理提供规则和技能，基于经典编程书籍",
+    "en": "For providing rules and skills to AI coding agents based on classic programming books"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 2658,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "ciembor",
+  "tags": [
+    "agent-rules",
+    "agent-skills",
+    "agents-md",
+    "ai-agent",
+    "ai-skills",
+    "claude-code",
+    "claude-code-skills",
+    "code-quality",
+    "codex",
+    "codex-skills"
+  ],
+  "verified": false,
+  "status": "active"
+}

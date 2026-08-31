@@ -1,0 +1,54 @@
+{
+  "id": "gotalab-cc-sdd",
+  "name": "cc-sdd",
+  "owner": "gotalab",
+  "url": "https://github.com/gotalab/cc-sdd",
+  "category": "dev",
+  "description": {
+    "en": "Turn approved specs into long-running autonomous implementation. A minimal, adaptable SDD harness with Agent Skills for Claude Code, Codex, Cursor, Copilot, Windsurf, OpenCode, Gemini CLI, and Antigravity.",
+    "zh": "将批准的规格转化为长期自主实现的SDD工具，支持多种AI编码工具。"
+  },
+  "install": "git clone https://github.com/gotalab/cc-sdd（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/gotalab/cc-sdd（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "使用AI编码工具的开发者",
+    "en": "Developers using AI coding tools"
+  },
+  "usecases": {
+    "zh": "将规格转化为自主实现，支持多种AI编码工具",
+    "en": "Turn specs into autonomous implementation, support multiple AI coding tools"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 3645,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "gotalab",
+  "tags": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "cursor",
+    "gemini-cli",
+    "github-copilot",
+    "kiro",
+    "opencode",
+    "sdd",
+    "spec-driven-development"
+  ],
+  "verified": false,
+  "status": "active"
+}

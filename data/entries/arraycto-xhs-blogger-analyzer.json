@@ -1,0 +1,43 @@
+{
+  "id": "arraycto-xhs-blogger-analyzer",
+  "name": "xhs-blogger-analyzer",
+  "owner": "arraycto",
+  "url": "https://github.com/arraycto/xhs-blogger-analyzer",
+  "category": "workflow",
+  "description": {
+    "en": "小红书博主拆解 AI Skill — 输入博主昵称，自动爬取全量笔记并生成4份专业分析文档（博主深度拆解/内容公式总结/选题素材库/结构化数据分析）。支持对比分析、动态内容分类、多模型兼容。基于 MCP 协议，零代码安装，扫码登录即用。适配 Claude Code/WorkBuddy 等本地AI工具，macOS/Windows/Linux 全平台运行。",
+    "zh": "小红书博主拆解 AI 技能，自动爬取笔记并生成专业分析文档"
+  },
+  "install": "git clone https://github.com/arraycto/xhs-blogger-analyzer",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/arraycto/xhs-blogger-analyzer"
+    }
+  ],
+  "scenarios": [
+    "content-social",
+    "trends-monitor"
+  ],
+  "audience": {
+    "zh": "小红书运营和内容创作者",
+    "en": "Xiaohongshu operators and content creators"
+  },
+  "usecases": {
+    "zh": "分析小红书博主，生成深度拆解报告",
+    "en": "Analyzing Xiaohongshu bloggers and generating in-depth reports"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 28,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "arraycto",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

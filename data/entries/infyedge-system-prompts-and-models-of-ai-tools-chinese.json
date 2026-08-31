@@ -1,0 +1,54 @@
+{
+  "id": "infyedge-system-prompts-and-models-of-ai-tools-chinese",
+  "name": "system-prompts-and-models-of-ai-tools-chinese",
+  "owner": "InfyEdge",
+  "url": "https://github.com/InfyEdge/system-prompts-and-models-of-ai-tools-chinese",
+  "category": "docs",
+  "description": {
+    "en": "AI编程工具中文提示词合集，包含Cursor、Antigravity、VSCode Agent等多���AI编程工具的提示词，为中文开发者提供AI辅助编程参考资源。持续更新中文编程Rules和最新AI编程提示词。",
+    "zh": "AI编程工具中文提示词合集，包含多种工具的提示词，为中文开发者提供参考。"
+  },
+  "install": "git clone https://github.com/InfyEdge/system-prompts-and-models-of-ai-tools-chinese",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/InfyEdge/system-prompts-and-models-of-ai-tools-chinese"
+    }
+  ],
+  "scenarios": [
+    "learn",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "中文开发者",
+    "en": "Chinese developers"
+  },
+  "usecases": {
+    "zh": "提供中文AI编程提示词参考，辅助编程",
+    "en": "Provide Chinese AI coding prompts for reference"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 393,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "InfyEdge",
+  "tags": [
+    "antigravity",
+    "claude-code",
+    "cursor",
+    "doubao",
+    "github-copilot",
+    "kiro",
+    "system-prompts",
+    "system-prompts-leak",
+    "trae",
+    "trae-ai"
+  ],
+  "verified": false,
+  "status": "active"
+}

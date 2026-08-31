@@ -1,0 +1,53 @@
+{
+  "id": "iamzhihuix-skills-manage",
+  "name": "skills-manage",
+  "owner": "iamzhihuix",
+  "url": "https://github.com/iamzhihuix/skills-manage",
+  "category": "workflow",
+  "description": {
+    "en": "Desktop app to manage AI coding agent skills across Claude Code, Cursor, Gemini CLI, Codex, and 20+ platforms from one place.",
+    "zh": "桌面应用，用于管理跨多个平台的AI编码代理技能。"
+  },
+  "install": "git clone https://github.com/iamzhihuix/skills-manage（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/iamzhihuix/skills-manage（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "多平台AI开发者",
+    "en": "Multi-platform AI developers"
+  },
+  "usecases": {
+    "zh": "在一个地方管理多个平台的AI编码代理技能",
+    "en": "Manage AI coding agent skills across multiple platforms in one place"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 2204,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "iamzhihuix",
+  "tags": [
+    "ai",
+    "claude-code",
+    "cursor",
+    "desktop-app",
+    "llm",
+    "react",
+    "rust",
+    "skills",
+    "tauri"
+  ],
+  "verified": false,
+  "status": "active"
+}

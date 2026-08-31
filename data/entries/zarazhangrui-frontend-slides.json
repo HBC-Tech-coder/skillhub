@@ -1,0 +1,54 @@
+{
+  "id": "zarazhangrui-frontend-slides",
+  "name": "frontend-slides",
+  "owner": "zarazhangrui",
+  "url": "https://github.com/zarazhangrui/frontend-slides",
+  "category": "ui",
+  "description": {
+    "en": "Create beautiful slides on the web using a coding agent's frontend skills",
+    "zh": "使用编码代理的前端技能在网页上创建精美幻灯片"
+  },
+  "install": "git clone https://github.com/zarazhangrui/frontend-slides（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/zarazhangrui/frontend-slides（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "design",
+    "education"
+  ],
+  "audience": {
+    "zh": "需要制作演示文稿的开发者或内容创作者",
+    "en": "Developers or content creators who need to create presentations"
+  },
+  "usecases": {
+    "zh": "利用前端技能在网页上创建精美幻灯片",
+    "en": "Create beautiful slides on the web using frontend skills"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 28441,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "zarazhangrui",
+  "tags": [
+    "ai-slides",
+    "anthropic",
+    "claude",
+    "claude-code",
+    "claude-skill",
+    "generative-ui",
+    "html",
+    "presentation",
+    "slides",
+    "vibe-coding"
+  ],
+  "verified": false,
+  "status": "active"
+}

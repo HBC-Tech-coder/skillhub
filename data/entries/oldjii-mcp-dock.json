@@ -1,0 +1,54 @@
+{
+  "id": "oldjii-mcp-dock",
+  "name": "mcp-dock",
+  "owner": "OldJii",
+  "url": "https://github.com/OldJii/mcp-dock",
+  "category": "dev",
+  "description": {
+    "en": "MCP Server & Config Manager for 14 AI Clients — Cursor, VS Code, Claude Code, Gemini CLI, Windsurf, Zed, TRAE, Kiro, JetBrains & more. 8500+ servers, 4400+ skills.",
+    "zh": "为 14 种 AI 客户端提供 MCP 服务器与配置管理，支持海量服务器和技能。"
+  },
+  "install": "git clone https://github.com/OldJii/mcp-dock",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/OldJii/mcp-dock"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "使用多种 AI 客户端的开发者",
+    "en": "Developers using multiple AI clients"
+  },
+  "usecases": {
+    "zh": "集中管理 MCP 服务器和配置，跨 14 种 AI 客户端使用 8500+ 服务器和 4400+ 技能",
+    "en": "Centrally manage MCP servers and configs across 14 AI clients, using 8500+ servers and 4400+ skills"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 225,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "OldJii",
+  "tags": [
+    "ai-coding",
+    "ai-skills",
+    "claude-desktop",
+    "config-manager",
+    "cursor",
+    "developer-tools",
+    "electron",
+    "mcp",
+    "mcp-config",
+    "mcp-manager"
+  ],
+  "verified": false,
+  "status": "active"
+}

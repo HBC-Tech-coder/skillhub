@@ -1,0 +1,54 @@
+{
+  "id": "freestylefly-awesome-gpt-image-2",
+  "name": "awesome-gpt-image-2",
+  "owner": "freestylefly",
+  "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+  "category": "ui",
+  "description": {
+    "en": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ ��案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+    "zh": "GPT-Image2提示词引擎与模板库，包含530+案例和20+模板。"
+  },
+  "install": "dsh plugin --profile web add github:freestylefly/awesome-gpt-image-2",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:freestylefly/awesome-gpt-image-2"
+    }
+  ],
+  "scenarios": [
+    "design",
+    "copywriting"
+  ],
+  "audience": {
+    "zh": "设计师、提示词工程师、AI绘画爱好者",
+    "en": "Designers, prompt engineers, AI art enthusiasts"
+  },
+  "usecases": {
+    "zh": "使用工业级提示词模板生成高质量图片",
+    "en": "Generate high-quality images using industrial-grade prompt templates"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 26038,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "MIT",
+  "author": "freestylefly",
+  "tags": [
+    "agents",
+    "ai-image-generation",
+    "chatgpt",
+    "dsh-plugin",
+    "gpt-image-2",
+    "image-prompts",
+    "prompt-as-code",
+    "prompt-engineering",
+    "skills",
+    "workflow-automation"
+  ],
+  "verified": false,
+  "status": "active"
+}

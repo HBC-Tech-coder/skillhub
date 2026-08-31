@@ -1,0 +1,53 @@
+{
+  "id": "isonnymichael-bedrock",
+  "name": "bedrock",
+  "owner": "isonnymichael",
+  "url": "https://github.com/isonnymichael/bedrock",
+  "category": "dev",
+  "description": {
+    "en": "Bedrock is a CLI tool that bootstraps AI-ready project configurations by generating standardized rules, skills, and project context tailored to tools like Claude Code, Cursor, Antigravity, and Trae—so you can get consistent, instruction-driven AI behavior with a single command.",
+    "zh": "CLI工具，为AI项目生成标准化的规则、技能和上下文配置"
+  },
+  "install": "git clone https://github.com/isonnymichael/bedrock",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/isonnymichael/bedrock"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI工具使用者、开发者",
+    "en": "AI tool users, developers"
+  },
+  "usecases": {
+    "zh": "为Claude Code、Cursor等工具生成标准化的规则、技能和项目上下文",
+    "en": "Generate standardized rules, skills, and project context for tools like Claude Code, Cursor"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 44,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "GPL-3.0",
+  "author": "isonnymichael",
+  "tags": [
+    "ai-agents",
+    "ai-tools",
+    "ai-workflow",
+    "automation",
+    "cli",
+    "developer-tools",
+    "dx",
+    "prompt-engineering",
+    "scaffolding"
+  ],
+  "verified": false,
+  "status": "active"
+}

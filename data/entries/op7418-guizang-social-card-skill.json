@@ -1,0 +1,54 @@
+{
+  "id": "op7418-guizang-social-card-skill",
+  "name": "guizang-social-card-skill",
+  "owner": "op7418",
+  "url": "https://github.com/op7418/guizang-social-card-skill",
+  "category": "workflow",
+  "description": {
+    "en": "🪧 Claude Code / Codex skill — generate Xiaohongshu carousels & WeChat 21:9+1:1 cover pairs. Editorial × Swiss visual systems, 28 layouts, 10 themes, single-file HTML → PNG. 小红书图文 + 公众号封面对",
+    "zh": "Claude Code/Codex技能，生成小红书图文和公众号封面"
+  },
+  "install": "git clone https://github.com/op7418/guizang-social-card-skill（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/op7418/guizang-social-card-skill（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "content-social",
+    "design"
+  ],
+  "audience": {
+    "zh": "小红书和微信公众号运营者",
+    "en": "Operators of Xiaohongshu and WeChat official accounts"
+  },
+  "usecases": {
+    "zh": "生成小红书图文和公众号封面，支持多种布局和主题",
+    "en": "Generate Xiaohongshu carousels and WeChat cover pairs with multiple layouts and themes"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 6731,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "AGPL-3.0",
+  "author": "op7418",
+  "tags": [
+    "agent-skill",
+    "ai-agent",
+    "anthropic",
+    "claude-code",
+    "claude-skill",
+    "codex",
+    "editorial-design",
+    "html-template",
+    "image-generation",
+    "playwright"
+  ],
+  "verified": false,
+  "status": "active"
+}

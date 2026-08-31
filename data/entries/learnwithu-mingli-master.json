@@ -1,0 +1,50 @@
+{
+  "id": "learnwithu-mingli-master",
+  "name": "mingli-master",
+  "owner": "learnwithu",
+  "url": "https://github.com/learnwithu/mingli-master",
+  "category": "fun",
+  "description": {
+    "en": "紫微斗数命盘解读 skill · 基于 iztro-py 精确排盘，生成可视化命盘 HTML",
+    "zh": "紫微斗数命盘解读技能，基于iztro-py精确排盘，生成可视化命盘HTML。"
+  },
+  "install": "git clone https://github.com/learnwithu/mingli-master（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/learnwithu/mingli-master（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "fun"
+  ],
+  "audience": {
+    "zh": "对紫微斗数感兴趣的用户",
+    "en": "Users interested in Zi Wei Dou Shu (Purple Star Astrology)"
+  },
+  "usecases": {
+    "zh": "生成紫微斗数命盘并进行解读",
+    "en": "Generate Zi Wei Dou Shu chart and provide interpretation"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 701,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "learnwithu",
+  "tags": [
+    "agent-skill",
+    "chinese-astrology",
+    "claude-skill",
+    "fortune-telling",
+    "iztro",
+    "ziwei",
+    "ziwei-doushu"
+  ],
+  "verified": false,
+  "status": "active"
+}

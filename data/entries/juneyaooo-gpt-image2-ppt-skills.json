@@ -1,0 +1,54 @@
+{
+  "id": "juneyaooo-gpt-image2-ppt-skills",
+  "name": "gpt-image2-ppt-skills",
+  "owner": "JuneYaooo",
+  "url": "https://github.com/JuneYaooo/gpt-image2-ppt-skills",
+  "category": "ui",
+  "description": {
+    "en": "Clone any .pptx into your own deck — OpenAI gpt-image-2 mimics the layout, you supply the content. 10 bundled styles. | 把任何 .pptx 模板\"抄\"成你的 PPT：gpt-image-2 仿版式、你换内容，另含 10 套精选风格。Claude Code / OpenClaw skill. ",
+    "zh": "克隆PPT模板版式并生成新内容的技能，包含10套风格"
+  },
+  "install": "git clone https://github.com/JuneYaooo/gpt-image2-ppt-skills（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/JuneYaooo/gpt-image2-ppt-skills（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "design",
+    "education"
+  ],
+  "audience": {
+    "zh": "需要快速制作PPT的职场人士和学生",
+    "en": "Professionals and students who need to create PPTs quickly"
+  },
+  "usecases": {
+    "zh": "克隆任何PPT模板的版式，用gpt-image-2生成新内容",
+    "en": "Clone any PPT template layout and generate new content with gpt-image-2"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 1221,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "JuneYaooo",
+  "tags": [
+    "ai-ppt",
+    "ai-ppt-skills",
+    "ai-presentation",
+    "claude-code-skills",
+    "claude-skill",
+    "gpt-image-2",
+    "openclaw-skills",
+    "ppt-skill",
+    "ppt-skills",
+    "pptx-templater"
+  ],
+  "verified": false,
+  "status": "active"
+}

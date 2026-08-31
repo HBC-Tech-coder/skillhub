@@ -1,0 +1,54 @@
+{
+  "id": "0xnyk-council-of-high-intelligence",
+  "name": "council-of-high-intelligence",
+  "owner": "0xNyk",
+  "url": "https://github.com/0xNyk/council-of-high-intelligence",
+  "category": "identity",
+  "description": {
+    "en": "Structured multi-perspective deliberation for hard decisions. Run full councils, focused triads, or duo debates across Claude Code, Codex, Gemini CLI, and OpenCode.",
+    "zh": "结构化多视角审议，用于��杂决策，支持多种AI编码工具。"
+  },
+  "install": "git clone https://github.com/0xNyk/council-of-high-intelligence（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/0xNyk/council-of-high-intelligence（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "agents-roles",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "需要复杂决策的AI用户",
+    "en": "AI users needing complex decisions"
+  },
+  "usecases": {
+    "zh": "多视角审议复杂决策，支持多种AI编码工具",
+    "en": "Multi-perspective deliberation for hard decisions, support multiple AI coding tools"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 4181,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "0xNyk",
+  "tags": [
+    "agent-skill",
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "decision-making",
+    "deliberation",
+    "gemini-cli",
+    "llm-routing",
+    "multi-agent-systems",
+    "multi-llm"
+  ],
+  "verified": false,
+  "status": "active"
+}

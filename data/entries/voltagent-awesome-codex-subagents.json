@@ -1,0 +1,51 @@
+{
+  "id": "voltagent-awesome-codex-subagents",
+  "name": "awesome-codex-subagents",
+  "owner": "VoltAgent",
+  "url": "https://github.com/VoltAgent/awesome-codex-subagents",
+  "category": "dev",
+  "description": {
+    "en": "A collection of 130+ specialized Codex subagents covering a wide range of development use cases.",
+    "zh": "包含 130+ 个专业 Codex 子代理，覆盖广泛的开发用例。"
+  },
+  "install": "git clone https://github.com/VoltAgent/awesome-codex-subagents（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/VoltAgent/awesome-codex-subagents（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "Codex 开发者",
+    "en": "Codex developers"
+  },
+  "usecases": {
+    "zh": "用于扩展 Codex 功能，覆盖多种开发用例",
+    "en": "For extending Codex capabilities across various development use cases"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 6057,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "VoltAgent",
+  "tags": [
+    "ai-agents",
+    "awesome-list",
+    "chatgpt",
+    "codex",
+    "codex-skills",
+    "codex-subagents",
+    "subagents"
+  ],
+  "verified": false,
+  "status": "active"
+}

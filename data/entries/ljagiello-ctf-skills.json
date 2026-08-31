@@ -1,0 +1,54 @@
+{
+  "id": "ljagiello-ctf-skills",
+  "name": "ctf-skills",
+  "owner": "ljagiello",
+  "url": "https://github.com/ljagiello/ctf-skills",
+  "category": "security",
+  "description": {
+    "en": "Agent skills for solving CTF challenges - web exploitation, binary pwn, crypto, reverse engineering, forensics, OSINT, and more",
+    "zh": "用于解决CTF挑战的代理技能，涵盖web、二进制、密码学等领域。"
+  },
+  "install": "git clone https://github.com/ljagiello/ctf-skills（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/ljagiello/ctf-skills（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "security",
+    "learn"
+  ],
+  "audience": {
+    "zh": "CTF玩家、安全爱好者",
+    "en": "CTF players, security enthusiasts"
+  },
+  "usecases": {
+    "zh": "解决CTF挑战，涵盖web、二进制、密码学等",
+    "en": "Solve CTF challenges, covering web, binary, crypto, etc."
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 3142,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "ljagiello",
+  "tags": [
+    "agent-skills",
+    "claude-code",
+    "claude-code-skills",
+    "codex",
+    "codex-cli",
+    "ctf",
+    "ctf-challenges",
+    "ctf-tools",
+    "gemini",
+    "gemini-cli"
+  ],
+  "verified": false,
+  "status": "active"
+}

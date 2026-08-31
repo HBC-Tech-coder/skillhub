@@ -1,0 +1,43 @@
+{
+  "id": "shiroe120-zero-to-pass",
+  "name": "zero-to-pass",
+  "owner": "shiroe120",
+  "url": "https://github.com/shiroe120/zero-to-pass",
+  "category": "docs",
+  "description": {
+    "en": "一个简单好用的期末周速成SKILL，为Claude Code、Trae等设计",
+    "zh": "期末周速成SKILL，为Claude Code、Trae等设计"
+  },
+  "install": "git clone https://github.com/shiroe120/zero-to-pass",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/shiroe120/zero-to-pass"
+    }
+  ],
+  "scenarios": [
+    "education",
+    "learn"
+  ],
+  "audience": {
+    "zh": "学生、期末备考者",
+    "en": "Students, exam preparers"
+  },
+  "usecases": {
+    "zh": "期末周快速复习和备考",
+    "en": "Quick review and exam preparation during finals week"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 33,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "shiroe120",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "openinsighthq-one-pi",
+  "name": "one-pi",
+  "owner": "OpenInsightHQ",
+  "url": "https://github.com/OpenInsightHQ/one-pi",
+  "category": "identity",
+  "description": {
+    "en": "browser-based PI agent:  The Reasoning Engine of AI Employees",
+    "zh": "基于浏览器的 PI 代理，作为 AI 员工的推理引擎。"
+  },
+  "install": "git clone https://github.com/OpenInsightHQ/one-pi",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/OpenInsightHQ/one-pi"
+    }
+  ],
+  "scenarios": [
+    "agents-roles",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI 代理开发者、企业用户",
+    "en": "AI agent developers and enterprise users"
+  },
+  "usecases": {
+    "zh": "作为浏览器中的 AI 员工推理引擎",
+    "en": "As a reasoning engine for AI employees in the browser"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 35,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "OpenInsightHQ",
+  "tags": [
+    "agentic-ai",
+    "ai-employees",
+    "browser-based",
+    "data-agent",
+    "enterprise-ai",
+    "pi-agent",
+    "workbuddy"
+  ],
+  "verified": false,
+  "status": "active"
+}

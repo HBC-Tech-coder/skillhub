@@ -1,0 +1,49 @@
+{
+  "id": "88lin-workbuddy-auto-signin",
+  "name": "workbuddy-auto-signin",
+  "owner": "88lin",
+  "url": "https://github.com/88lin/workbuddy-auto-signin",
+  "category": "workflow",
+  "description": {
+    "en": "自动领取 WorkBuddy 每日签到积分、Buddy 旅行礼物、派 Buddy 出发、开盲盒、领任务奖励的自动化脚本",
+    "zh": "自动化脚本，自动领取 WorkBuddy 每日签到积分、旅行礼物和任务奖励。"
+  },
+  "install": "git clone https://github.com/88lin/workbuddy-auto-signin",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/88lin/workbuddy-auto-signin"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "accounts"
+  ],
+  "audience": {
+    "zh": "WorkBuddy 用户",
+    "en": "WorkBuddy users"
+  },
+  "usecases": {
+    "zh": "自动完成 WorkBuddy 每日任务和签到",
+    "en": "Automate daily sign-in and tasks in WorkBuddy"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 82,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "88lin",
+  "tags": [
+    "auto-checkin",
+    "automation",
+    "python",
+    "sign-in",
+    "workbuddy"
+  ],
+  "verified": false,
+  "status": "active"
+}

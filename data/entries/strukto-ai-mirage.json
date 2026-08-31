@@ -1,0 +1,54 @@
+{
+  "id": "strukto-ai-mirage",
+  "name": "mirage",
+  "owner": "strukto-ai",
+  "url": "https://github.com/strukto-ai/mirage",
+  "category": "dev",
+  "description": {
+    "en": "The World's First Unified Virtual Filesystem For AI Agents",
+    "zh": "为AI代理设计的统一虚拟文件系统。"
+  },
+  "install": "dsh plugin --profile web add github:strukto-ai/mirage",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:strukto-ai/mirage"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI代理开发者和系统架构师",
+    "en": "AI agent developers and system architects"
+  },
+  "usecases": {
+    "zh": "为AI代理提供统一的虚拟文件系统，简化文件访问和管理",
+    "en": "Provide a unified virtual filesystem for AI agents to simplify file access and management"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 3588,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "author": "strukto-ai",
+  "tags": [
+    "agent-sandbox",
+    "agent-tools",
+    "ai-agents",
+    "bash",
+    "claude-code",
+    "dsh",
+    "dsh-plugin",
+    "fuse",
+    "llm-agents",
+    "openai-agents"
+  ],
+  "verified": false,
+  "status": "active"
+}

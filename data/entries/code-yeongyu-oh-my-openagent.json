@@ -1,0 +1,53 @@
+{
+  "id": "code-yeongyu-oh-my-openagent",
+  "name": "oh-my-openagent",
+  "owner": "code-yeongyu",
+  "url": "https://github.com/code-yeongyu/oh-my-openagent",
+  "category": "dev",
+  "description": {
+    "en": "omo/lazycodex: The coding agent for tokenmaxxers;the one and only agent harness for complex codebases. For your Codex, for your OpenCode",
+    "zh": "面向复杂代码库的编码代理框架，优化 token 使用效率。"
+  },
+  "install": "git clone https://github.com/code-yeongyu/oh-my-openagent（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/code-yeongyu/oh-my-openagent（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "使用 Codex 等编码代理的开发者",
+    "en": "Developers using coding agents like Codex"
+  },
+  "usecases": {
+    "zh": "为复杂代码库提供高效的代理框架",
+    "en": "Provide an efficient agent harness for complex codebases"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 68543,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "code-yeongyu",
+  "tags": [
+    "ai",
+    "ai-agents",
+    "anthropic",
+    "chatgpt",
+    "claude",
+    "claude-skills",
+    "codex",
+    "cursor",
+    "gemini",
+    "ide"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "maochengsun16-code-bazi-analysis-skill",
+  "name": "bazi-analysis-skill",
+  "owner": "maochengsun16-code",
+  "url": "https://github.com/maochengsun16-code/bazi-analysis-skill",
+  "category": "fun",
+  "description": {
+    "en": "Codex 八字分析 Skill，支持排盘、实战派格局用神分析、大运流年判断，并兼容 Claude、Trae 和 Workbuddy。",
+    "zh": "Codex八字分析Skill，支持排盘和实战派分析"
+  },
+  "install": "git clone https://github.com/maochengsun16-code/bazi-analysis-skill",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/maochengsun16-code/bazi-analysis-skill"
+    }
+  ],
+  "scenarios": [
+    "fun",
+    "learn"
+  ],
+  "audience": {
+    "zh": "八字爱好者、命理学习者",
+    "en": "Bazi enthusiasts, fortune-telling learners"
+  },
+  "usecases": {
+    "zh": "进行八字排盘、格局用神分析和大运流年判断",
+    "en": "Perform Bazi charting, pattern analysis, and fortune-telling"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 38,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "maochengsun16-code",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

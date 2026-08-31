@@ -1,0 +1,54 @@
+{
+  "id": "rito-w-skills-manager",
+  "name": "skills-manager",
+  "owner": "Rito-w",
+  "url": "https://github.com/Rito-w/skills-manager",
+  "category": "dev",
+  "description": {
+    "en": "A cross-platform skills manager for AI IDEs. Search marketplace, download locally, and install to Claude, Cursor, Windsurf, and more with one click.",
+    "zh": "跨平台技能管理器，支持搜索市场、本地下载并一键安装到多种 AI IDE。"
+  },
+  "install": "git clone https://github.com/Rito-w/skills-manager",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/Rito-w/skills-manager"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI IDE 用户/技能爱好者",
+    "en": "AI IDE users and skill enthusiasts"
+  },
+  "usecases": {
+    "zh": "跨平台搜索、下载并一键安装技能到 Claude、Cursor、Windsurf 等",
+    "en": "Search, download, and install skills to Claude, Cursor, Windsurf, etc. with one click"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 195,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "Rito-w",
+  "tags": [
+    "antigravity",
+    "claude",
+    "codex",
+    "kiro",
+    "market",
+    "openclaw",
+    "openclaw-skills",
+    "qoder",
+    "skills",
+    "trae"
+  ],
+  "verified": false,
+  "status": "active"
+}

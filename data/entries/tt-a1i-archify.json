@@ -1,0 +1,54 @@
+{
+  "id": "tt-a1i-archify",
+  "name": "archify",
+  "owner": "tt-a1i",
+  "url": "https://github.com/tt-a1i/archify",
+  "category": "ui",
+  "description": {
+    "en": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+    "zh": "代理技能，用于生成美观且可验证的架构图、流程图等"
+  },
+  "install": "git clone https://github.com/tt-a1i/archify（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/tt-a1i/archify（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "design",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "软件架构师和开发者",
+    "en": "Software architects and developers"
+  },
+  "usecases": {
+    "zh": "生成美观且可验证的架构图、流程图等，支持动画和导出",
+    "en": "Generate beautiful, verifiable architecture, workflow, and sequence diagrams with motion and export"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 36484,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "tt-a1i",
+  "tags": [
+    "agent-skills",
+    "architecture-as-code",
+    "architecture-diagram",
+    "claude-skill",
+    "code-visualization",
+    "codex",
+    "coding-agents",
+    "data-flow-diagram",
+    "deepseek-harness",
+    "developer-tools"
+  ],
+  "verified": false,
+  "status": "active"
+}

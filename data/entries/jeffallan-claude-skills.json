@@ -1,0 +1,48 @@
+{
+  "id": "jeffallan-claude-skills",
+  "name": "claude-skills",
+  "owner": "Jeffallan",
+  "url": "https://github.com/Jeffallan/claude-skills",
+  "category": "dev",
+  "description": {
+    "en": "67 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert pair programmer.",
+    "zh": "为全栈开发者提供67种专业技能的Claude Code技能集"
+  },
+  "install": "git clone https://github.com/Jeffallan/claude-skills（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/Jeffallan/claude-skills（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "全栈开发者",
+    "en": "Full-stack developers"
+  },
+  "usecases": {
+    "zh": "将Claude Code变成专家结对程序员，提供67种专业技能",
+    "en": "Transform Claude Code into an expert pair programmer with 67 specialized skills"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 11254,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "Jeffallan",
+  "tags": [
+    "ai-agents",
+    "claude",
+    "claude-code",
+    "claude-marketplace",
+    "claude-skills"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "woodx9-build-your-claude-code-from-scratch",
+  "name": "build-your-claude-code-from-scratch",
+  "owner": "woodx9",
+  "url": "https://github.com/woodx9/build-your-claude-code-from-scratch",
+  "category": "dev",
+  "description": {
+    "en": "Build a Claude Code–like CLI coding agent from scratch.",
+    "zh": "从零构建类似 Claude Code 的 CLI 编码代理。"
+  },
+  "install": "git clone https://github.com/woodx9/build-your-claude-code-from-scratch",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/woodx9/build-your-claude-code-from-scratch"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "learn"
+  ],
+  "audience": {
+    "zh": "想学习构建 AI 编码代理的开发者",
+    "en": "Developers wanting to build AI coding agents"
+  },
+  "usecases": {
+    "zh": "从零构建类似 Claude Code 的 CLI 编码代理",
+    "en": "Build a Claude Code-like CLI coding agent from scratch"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 185,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "woodx9",
+  "tags": [
+    "agent",
+    "ai",
+    "ai-agents",
+    "aicoding",
+    "augment-code",
+    "claude",
+    "claudecode",
+    "codingagent",
+    "copilot",
+    "curosr"
+  ],
+  "verified": false,
+  "status": "active"
+}

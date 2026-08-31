@@ -1,0 +1,54 @@
+{
+  "id": "neolabhq-context-engineering-kit",
+  "name": "context-engineering-kit",
+  "owner": "NeoLabHQ",
+  "url": "https://github.com/NeoLabHQ/context-engineering-kit",
+  "category": "dev",
+  "description": {
+    "en": "Hand-crafted Claude Code Skills focused on improving agent results quality. Compatible with OpenCode, Cursor, Antigravity, Gemini CLI, and others. Includes CodeRabbit open-source alternative.",
+    "zh": "手工制作的Claude Code技能，专注于提升代理结果质量，兼容多种编码工具。"
+  },
+  "install": "git clone https://github.com/NeoLabHQ/context-engineering-kit（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/NeoLabHQ/context-engineering-kit（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI代理质量优化者",
+    "en": "AI agent quality optimizers"
+  },
+  "usecases": {
+    "zh": "提升AI代理结果质量，包含CodeRabbit开源替代品",
+    "en": "Improve AI agent result quality, includes CodeRabbit alternative"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 1496,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "GPL-3.0",
+  "author": "NeoLabHQ",
+  "tags": [
+    "agent",
+    "ai",
+    "claude",
+    "cline",
+    "coderabbit",
+    "cursor",
+    "llm",
+    "marketplace",
+    "opencode",
+    "windsurf"
+  ],
+  "verified": false,
+  "status": "active"
+}

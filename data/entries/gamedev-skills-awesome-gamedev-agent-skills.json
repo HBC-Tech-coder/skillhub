@@ -1,0 +1,54 @@
+{
+  "id": "gamedev-skills-awesome-gamedev-agent-skills",
+  "name": "awesome-gamedev-agent-skills",
+  "owner": "gamedev-skills",
+  "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+  "category": "dev",
+  "description": {
+    "en": "67 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill for your engine and task. Runs in Claude Code, Cursor, Kiro,",
+    "zh": "67个游戏开发技能，适用于多种游戏引擎，采用可移植的SKILL.md格式。"
+  },
+  "install": "git clone https://github.com/gamedev-skills/awesome-gamedev-agent-skills（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/gamedev-skills/awesome-gamedev-agent-skills（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "fun"
+  ],
+  "audience": {
+    "zh": "游戏开发者",
+    "en": "Game developers"
+  },
+  "usecases": {
+    "zh": "为AI编码代理提供游戏开发技能，支持多种游戏引擎",
+    "en": "Provide game-dev skills for AI coding agents, supporting multiple engines"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 764,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "gamedev-skills",
+  "tags": [
+    "agent-skills",
+    "ai-agents",
+    "antigravity",
+    "awesome-list",
+    "claude-code",
+    "cline",
+    "codex",
+    "cursor",
+    "game-dev",
+    "game-development"
+  ],
+  "verified": false,
+  "status": "active"
+}

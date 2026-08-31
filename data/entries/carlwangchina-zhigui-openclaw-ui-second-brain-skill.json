@@ -1,0 +1,54 @@
+{
+  "id": "carlwangchina-zhigui-openclaw-ui-second-brain-skill",
+  "name": "zhigui-openclaw-ui-second-brain-skill",
+  "owner": "CarlWangChina",
+  "url": "https://github.com/CarlWangChina/zhigui-openclaw-ui-second-brain-skill",
+  "category": "memory",
+  "description": {
+    "en": "An advanced, UI-powered AI second brain Agent Skill for OpenClaw, Hermes Agent, WorkBuddy, TRAE, and QClaw. ZhiGui uses long-term memory to help you make better decisions, automatically plan tomorrow, resolve conflicting notes, and deliver each day's plan through your existing agent channels.",
+    "zh": "基于 UI 的 AI 第二大脑技能，利用长期记忆辅助决策和规划。"
+  },
+  "install": "git clone https://github.com/CarlWangChina/zhigui-openclaw-ui-second-brain-skill",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/CarlWangChina/zhigui-openclaw-ui-second-brain-skill"
+    }
+  ],
+  "scenarios": [
+    "memory-knowledge",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI 助手用户/知识管理爱好者",
+    "en": "AI assistant users and knowledge management enthusiasts"
+  },
+  "usecases": {
+    "zh": "利用长期记忆辅助决策、自动规划明日、解决笔记冲突",
+    "en": "Use long-term memory for decisions, auto-plan tomorrow, resolve conflicting notes"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 105,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "CarlWangChina",
+  "tags": [
+    "agent-skills",
+    "ai-memory",
+    "daily-planner",
+    "hermes-agent",
+    "hermes-agent-skill",
+    "interactive-ai-planning",
+    "long-term-memory",
+    "openclaw",
+    "openclaw-skills",
+    "personal-ai-agent"
+  ],
+  "verified": false,
+  "status": "active"
+}

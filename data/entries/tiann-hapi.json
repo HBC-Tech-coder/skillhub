@@ -1,0 +1,50 @@
+{
+  "id": "tiann-hapi",
+  "name": "hapi",
+  "owner": "tiann",
+  "url": "https://github.com/tiann/hapi",
+  "category": "dev",
+  "description": {
+    "en": "App for Codex / Claude Code / Pi / OpenCode / Kimi Code / Grok Build, vibe coding anytime, anywhere",
+    "zh": "支持多种AI编码工具的移动应用，随时随地进行vibe coding。"
+  },
+  "install": "git clone https://github.com/tiann/hapi（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/tiann/hapi（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "移动端开发者、AI编程爱好者",
+    "en": "Mobile developers, AI coding enthusiasts"
+  },
+  "usecases": {
+    "zh": "在移动设备上使用多种AI编码工具进行vibe coding",
+    "en": "Use multiple AI coding tools on mobile for vibe coding"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 4914,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "AGPL-3.0",
+  "author": "tiann",
+  "tags": [
+    "app",
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "opencode",
+    "remote-control"
+  ],
+  "verified": false,
+  "status": "active"
+}

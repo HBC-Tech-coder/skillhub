@@ -1,0 +1,54 @@
+{
+  "id": "agents365-ai-drawio-skill",
+  "name": "drawio-skill",
+  "owner": "Agents365-ai",
+  "url": "https://github.com/Agents365-ai/drawio-skill",
+  "category": "ui",
+  "description": {
+    "en": "Generate draw.io diagrams from natural language — 11 presets (UML, SysML/MBSE, BPMN, network, C4…), 39 tools: codebase/CI/infra-to-diagram, image→editable diagram, Databricks product icons, mind maps, build-up animation, exec-view compression, click-through runbooks, PR diff bot. Vision self-check, ",
+    "zh": "从自然语言生成draw.io图表，支持多种图表类型和工具"
+  },
+  "install": "git clone https://github.com/Agents365-ai/drawio-skill（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/Agents365-ai/drawio-skill（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "design",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "需要绘制技术图表的开发者和架构师",
+    "en": "Developers and architects who need to create technical diagrams"
+  },
+  "usecases": {
+    "zh": "从自然语言生成draw.io图表，支持UML、BPMN等多种预设",
+    "en": "Generate draw.io diagrams from natural language with presets like UML, BPMN, etc."
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 8791,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "Agents365-ai",
+  "tags": [
+    "agent-skills",
+    "architecture-diagram",
+    "bpmn",
+    "claude-code",
+    "claude-code-skill",
+    "claude-skills",
+    "databricks",
+    "diagram",
+    "drawio",
+    "erd"
+  ],
+  "verified": false,
+  "status": "active"
+}

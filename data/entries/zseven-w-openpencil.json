@@ -1,0 +1,53 @@
+{
+  "id": "zseven-w-openpencil",
+  "name": "openpencil",
+  "owner": "ZSeven-W",
+  "url": "https://github.com/ZSeven-W/openpencil",
+  "category": "ui",
+  "description": {
+    "en": "The world's first open-source AI-native vector design tool and the first to feature concurrent Agent Teams. Design-as-Code. Turn prompts into UI directly on the live canvas. A modern alternative to Pencil.",
+    "zh": "开源AI原生矢量设计工具，支持设计即代码和多代理团队协作。"
+  },
+  "install": "dsh plugin --profile web add github:ZSeven-W/openpencil",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:ZSeven-W/openpencil"
+    }
+  ],
+  "scenarios": [
+    "design"
+  ],
+  "audience": {
+    "zh": "UI设计师和前端开发者",
+    "en": "UI designers and front-end developers"
+  },
+  "usecases": {
+    "zh": "通过提示词直接在画布上生成UI，支持多代理团队协作",
+    "en": "Generate UI directly on canvas from prompts, with concurrent agent teams"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 5748,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "MIT",
+  "author": "ZSeven-W",
+  "tags": [
+    "agent",
+    "agent-team",
+    "ai",
+    "claude",
+    "claude-code",
+    "codex",
+    "dsh-plugin",
+    "fimga",
+    "flutter",
+    "mcp"
+  ],
+  "verified": false,
+  "status": "active"
+}

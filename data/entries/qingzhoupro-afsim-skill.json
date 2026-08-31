@@ -1,0 +1,43 @@
+{
+  "id": "qingzhoupro-afsim-skill",
+  "name": "afsim-skill",
+  "owner": "qingzhoupro",
+  "url": "https://github.com/qingzhoupro/afsim-skill",
+  "category": "dev",
+  "description": {
+    "en": "AFSIM-SKILL 是一款专为 AFSIM（Advanced Framework for Modeling, Simulation, and Command & Control）仿真引擎设计的 AI 编程助手，让你在 Cursor / Trae / VSCode 中通过自然语言快速生成、调试和优化 AFSIM 场景代码。 AFSIM-SKILL is an AI coding assistant for AFSIM (Advanced Framework for Modeling, Simulation, and Command & Control). Generate, debug, a",
+    "zh": "专为AFSIM仿真引擎设计的AI编程助手，支持自然语言生成和优化场景代码"
+  },
+  "install": "git clone https://github.com/qingzhoupro/afsim-skill",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/qingzhoupro/afsim-skill"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "science-research"
+  ],
+  "audience": {
+    "zh": "AFSIM仿真开发者、科研人员",
+    "en": "AFSIM simulation developers, researchers"
+  },
+  "usecases": {
+    "zh": "在Cursor/Trae/VSCode中通过自然语言生成、调试和优化AFSIM场景代码",
+    "en": "Generate, debug, and optimize AFSIM scenario code via natural language in Cursor/Trae/VSCode"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 51,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "qingzhoupro",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

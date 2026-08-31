@@ -1,0 +1,52 @@
+{
+  "id": "cnproduct-workbuddy-wechat-publisher",
+  "name": "workbuddy-wechat-publisher",
+  "owner": "cnproduct",
+  "url": "https://github.com/cnproduct/workbuddy-wechat-publisher",
+  "category": "workflow",
+  "description": {
+    "en": "WorkBuddy 微信公众号全自动发布技能包：写作 → ���图 → 排版 → 发布草稿箱",
+    "zh": "WorkBuddy 技能包，实现微信公众号文章从写作到发布的自动化流程。"
+  },
+  "install": "git clone https://github.com/cnproduct/workbuddy-wechat-publisher",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/cnproduct/workbuddy-wechat-publisher"
+    }
+  ],
+  "scenarios": [
+    "content-social",
+    "copywriting",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "微信公众号运营者",
+    "en": "WeChat Official Account operators"
+  },
+  "usecases": {
+    "zh": "自动生成并发布微信公众号文章",
+    "en": "Automatically generate and publish WeChat articles"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 66,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "cnproduct",
+  "tags": [
+    "ai",
+    "automation",
+    "publisher",
+    "skill",
+    "wechat",
+    "wechat-miniprogram",
+    "workbuddy"
+  ],
+  "verified": false,
+  "status": "active"
+}

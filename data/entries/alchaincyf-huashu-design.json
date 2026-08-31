@@ -1,0 +1,43 @@
+{
+  "id": "alchaincyf-huashu-design",
+  "name": "huashu-design",
+  "owner": "alchaincyf",
+  "url": "https://github.com/alchaincyf/huashu-design",
+  "category": "ui",
+  "description": {
+    "en": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
+    "zh": "为 Claude Code 提供 HTML 原生的设计技能，包含设计哲学、评审和导出功能。"
+  },
+  "install": "git clone https://github.com/alchaincyf/huashu-design（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/alchaincyf/huashu-design（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "design",
+    "video-edit"
+  ],
+  "audience": {
+    "zh": "设计师、前端开发者、演示文稿制作者",
+    "en": "Designers, frontend developers, presentation makers"
+  },
+  "usecases": {
+    "zh": "用于生成高保真原型、幻灯片和动画，并支持 MP4 导出",
+    "en": "For generating high-fidelity prototypes, slides, animations with MP4 export"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 23735,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "alchaincyf",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

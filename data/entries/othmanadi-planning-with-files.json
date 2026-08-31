@@ -1,0 +1,54 @@
+{
+  "id": "othmanadi-planning-with-files",
+  "name": "planning-with-files",
+  "owner": "OthmanAdi",
+  "url": "https://github.com/OthmanAdi/planning-with-files",
+  "category": "workflow",
+  "description": {
+    "en": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against context rot, deterministic completion gate. Manus-style. Install from npm, the Claude Code plugin marketplace, or npx sk",
+    "zh": "基于文件的持久化规划，支持崩溃恢复和上下文防丢失。"
+  },
+  "install": "git clone https://github.com/OthmanAdi/planning-with-files（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/OthmanAdi/planning-with-files（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "AI 编程代理用户",
+    "en": "Users of AI coding agents"
+  },
+  "usecases": {
+    "zh": "持久化文件规划，防止上下文丢失",
+    "en": "Persistent file-based planning to prevent context loss"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 26482,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "OthmanAdi",
+  "tags": [
+    "agent-skills",
+    "autonomous-agents",
+    "claude",
+    "claude-code",
+    "claude-code-skills",
+    "claude-skills",
+    "codex",
+    "coding-agent",
+    "context-engineering",
+    "context-rot"
+  ],
+  "verified": false,
+  "status": "active"
+}

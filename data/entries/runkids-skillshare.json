@@ -1,0 +1,54 @@
+{
+  "id": "runkids-skillshare",
+  "name": "skillshare",
+  "owner": "runkids",
+  "url": "https://github.com/runkids/skillshare",
+  "category": "dev",
+  "description": {
+    "en": "📚 Sync skills across all AI CLI tools with one command and simplify team sharing. Supporting Codex, Claude Code, OpenClaw & more",
+    "zh": "用一条命令在多个 AI CLI 工具间同步技能，支持 Codex、Claude Code 等，简化团队共享。"
+  },
+  "install": "git clone https://github.com/runkids/skillshare（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/runkids/skillshare（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "使用多种 AI 编程工具的开发者和团队",
+    "en": "Developers and teams using multiple AI coding tools"
+  },
+  "usecases": {
+    "zh": "同步技能到多个 AI CLI 工具，简化团队共享",
+    "en": "Sync skills across AI CLI tools and simplify team sharing"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 2598,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "runkids",
+  "tags": [
+    "agenthub",
+    "ai",
+    "claude-code",
+    "cli",
+    "codex",
+    "codex-skills",
+    "copilot",
+    "cross-machine-sync",
+    "cursor",
+    "gemini"
+  ],
+  "verified": false,
+  "status": "active"
+}

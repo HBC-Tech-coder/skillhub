@@ -1,0 +1,54 @@
+{
+  "id": "teng-lin-notebooklm-py",
+  "name": "notebooklm-py",
+  "owner": "teng-lin",
+  "url": "https://github.com/teng-lin/notebooklm-py",
+  "category": "docs",
+  "description": {
+    "en": "Unofficial Python API and agentic skill for Google Gemini Notebook. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
+    "zh": "非官方 NotebookLM Python API 和代理技能，提供完整功能访问。"
+  },
+  "install": "git clone https://github.com/teng-lin/notebooklm-py（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/teng-lin/notebooklm-py（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "learn",
+    "science-research"
+  ],
+  "audience": {
+    "zh": "NotebookLM 用户、研究者",
+    "en": "NotebookLM users, researchers"
+  },
+  "usecases": {
+    "zh": "通过 Python 和 CLI 访问 NotebookLM 功能",
+    "en": "Access NotebookLM features via Python and CLI"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 19027,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "teng-lin",
+  "tags": [
+    "agentic-skill",
+    "claude-skills",
+    "gemini-notebook",
+    "gemini-notebook-api",
+    "gemini-notebook-skill",
+    "google-notebooklm",
+    "notebooklm",
+    "notebooklm-api",
+    "notebooklm-skill",
+    "openclaw-skills"
+  ],
+  "verified": false,
+  "status": "active"
+}

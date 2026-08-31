@@ -1,0 +1,54 @@
+{
+  "id": "dreambigou-eli5",
+  "name": "ELI5",
+  "owner": "DreambigOu",
+  "url": "https://github.com/DreambigOu/ELI5",
+  "category": "docs",
+  "description": {
+    "en": "ELI5 — A Claude Code skill that explains anything to anyone: kids, managers, engineers, parents. Adapts tone, vocabulary, and analogies to match the audience.",
+    "zh": "Claude Code技能，根据受众调整语气、词汇和类比，向任何人解释任何事物。"
+  },
+  "install": "git clone https://github.com/DreambigOu/ELI5（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/DreambigOu/ELI5（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "education",
+    "learn"
+  ],
+  "audience": {
+    "zh": "教育工作者、内容创作者和需要向不同受众解释复杂概念的人",
+    "en": "Educators, content creators, and anyone needing to explain complex concepts to diverse audiences"
+  },
+  "usecases": {
+    "zh": "向儿童、经理、工程师等不同人群解释复杂概念",
+    "en": "Explain complex concepts to kids, managers, engineers, etc."
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 728,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "DreambigOu",
+  "tags": [
+    "ai-skill",
+    "anthropic",
+    "claude",
+    "claude-code",
+    "claude-skill",
+    "education",
+    "eli5",
+    "explain-like-im-5",
+    "llm",
+    "prompt-engineering"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "yushui2022-mathmodel-skill",
+  "name": "MathModel-Skill",
+  "owner": "yushui2022",
+  "url": "https://github.com/yushui2022/MathModel-Skill",
+  "category": "skill",
+  "description": {
+    "en": "Agent-native mathematical modeling workflow skills for Trae, Claude Code, and Codex, covering problem parsing, modeling, code generation, evidence checks, paper writing, and Word delivery.",
+    "zh": "面向数学建模的 Agent 原生工作流技能，支持 Trae、Claude Code 和 Codex。"
+  },
+  "install": "git clone https://github.com/yushui2022/MathModel-Skill",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/yushui2022/MathModel-Skill"
+    }
+  ],
+  "scenarios": [
+    "science-research",
+    "education"
+  ],
+  "audience": {
+    "zh": "数学建模参赛者/科研人员",
+    "en": "Math modeling competitors and researchers"
+  },
+  "usecases": {
+    "zh": "覆盖问题解析、建模、代码生成、论文写作和 Word 交付的数学建模流程",
+    "en": "Math modeling workflow covering problem parsing, modeling, code generation, paper writing, and Word delivery"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 327,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "yushui2022",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

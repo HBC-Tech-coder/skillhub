@@ -1,0 +1,54 @@
+{
+  "id": "mikeyobrien-ralph-orchestrator",
+  "name": "ralph-orchestrator",
+  "owner": "mikeyobrien",
+  "url": "https://github.com/mikeyobrien/ralph-orchestrator",
+  "category": "identity",
+  "description": {
+    "en": "An improved implementation of the Ralph Wiggum technique for autonomous AI agent orchestration",
+    "zh": "改进的Ralph Wiggum技术实现，用于自主AI代理编排。"
+  },
+  "install": "git clone https://github.com/mikeyobrien/ralph-orchestrator（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/mikeyobrien/ralph-orchestrator（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "agents-roles",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI代理编排研究者",
+    "en": "AI agent orchestration researchers"
+  },
+  "usecases": {
+    "zh": "改进Ralph Wiggum技术，实现自主AI代理编排",
+    "en": "Improve Ralph Wiggum technique for autonomous AI agent orchestration"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 3117,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "mikeyobrien",
+  "tags": [
+    "ai",
+    "ai-agents",
+    "ai-agents-framework",
+    "ai-developer-tools",
+    "claude-code",
+    "claude-code-cli",
+    "codex-cli",
+    "development-tools",
+    "development-workflow",
+    "gemini-cli"
+  ],
+  "verified": false,
+  "status": "active"
+}

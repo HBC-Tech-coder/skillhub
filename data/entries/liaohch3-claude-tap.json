@@ -1,0 +1,54 @@
+{
+  "id": "liaohch3-claude-tap",
+  "name": "claude-tap",
+  "owner": "liaohch3",
+  "url": "https://github.com/liaohch3/claude-tap",
+  "category": "dev",
+  "description": {
+    "en": "Intercept and inspect Coding Agent API traffic from Claude Code, Codex CLI, Gemini CLI, Cursor CLI, OpenCode, Kimi/Kimi Code, Pi, and Hermes in a local trace viewer.",
+    "zh": "拦截和检查AI编码代理API流量的本地追踪查看器。"
+  },
+  "install": "git clone https://github.com/liaohch3/claude-tap（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/liaohch3/claude-tap（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "security"
+  ],
+  "audience": {
+    "zh": "需要调试AI代理的开发者",
+    "en": "Developers needing to debug AI agents"
+  },
+  "usecases": {
+    "zh": "拦截和检查AI编码代理的API流量",
+    "en": "Intercept and inspect API traffic of AI coding agents"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 3152,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "liaohch3",
+  "tags": [
+    "agent-debugging",
+    "agent-observability",
+    "ai-agents",
+    "ai-tools",
+    "api-debugging",
+    "claude-code",
+    "codex",
+    "codex-cli",
+    "cursor-cli",
+    "developer-tools"
+  ],
+  "verified": false,
+  "status": "active"
+}

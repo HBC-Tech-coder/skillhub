@@ -1,0 +1,54 @@
+{
+  "id": "konnga-skill-buddy",
+  "name": "skill-buddy",
+  "owner": "konnga",
+  "url": "https://github.com/konnga/skill-buddy",
+  "category": "workflow",
+  "description": {
+    "en": "AI Skills Buddy, A desktop workspace for managing, installing, and synchronizing Skills and MCP Servers across AI agents.",
+    "zh": "桌面工作区，用于跨 AI 代理管理、安装和同步 Skills 与 MCP 服务器。"
+  },
+  "install": "git clone https://github.com/konnga/skill-buddy",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/konnga/skill-buddy"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "AI 代理用户、开发者",
+    "en": "AI agent users and developers"
+  },
+  "usecases": {
+    "zh": "跨 AI 代理管理和同步 Skills 与 MCP 服务器",
+    "en": "Manage and sync Skills and MCP servers across AI agents"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 85,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "konnga",
+  "tags": [
+    "ai",
+    "claude-code",
+    "codebuddy",
+    "codex",
+    "cursor",
+    "kimi-code",
+    "skills",
+    "trae",
+    "workbuddy",
+    "zcode"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "joeanamier-xhs-downloader",
+  "name": "XHS-Downloader",
+  "owner": "JoeanAmier",
+  "url": "https://github.com/JoeanAmier/XHS-Downloader",
+  "category": "workflow",
+  "description": {
+    "en": "小红书（XiaoHongShu、RedNote）链接提取/作品采集工具",
+    "zh": "小红书链接提取和作品采集工具，支持下载小红书内容。"
+  },
+  "install": "参照仓库 README 配置 MCP 客户端",
+  "ecosystems": [
+    {
+      "id": "mcp",
+      "kind": "server",
+      "install": "参照仓库 README 配置 MCP 客户端"
+    }
+  ],
+  "scenarios": [
+    "content-social",
+    "video-download"
+  ],
+  "audience": {
+    "zh": "新媒体运营、内容创作者",
+    "en": "Social media operators, content creators"
+  },
+  "usecases": {
+    "zh": "提取小红书链接和采集作品，用于内容备份或二次创作",
+    "en": "Extract Xiaohongshu links and collect works for backup or repurposing"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 12546,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "GPL-3.0",
+  "author": "JoeanAmier",
+  "tags": [
+    "api",
+    "docker",
+    "downloader",
+    "fastapi",
+    "httpx",
+    "javascript",
+    "json",
+    "linux",
+    "macos",
+    "mcp-server"
+  ],
+  "verified": false,
+  "status": "active"
+}

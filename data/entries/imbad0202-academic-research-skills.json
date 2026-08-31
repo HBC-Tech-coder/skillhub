@@ -1,0 +1,51 @@
+{
+  "id": "imbad0202-academic-research-skills",
+  "name": "academic-research-skills",
+  "owner": "Imbad0202",
+  "url": "https://github.com/Imbad0202/academic-research-skills",
+  "category": "skill",
+  "description": {
+    "en": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+    "zh": "为 Claude Code 提供学术研究技能，覆盖从研究到定稿的完整流程。"
+  },
+  "install": "git clone https://github.com/Imbad0202/academic-research-skills（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/Imbad0202/academic-research-skills（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "science-research"
+  ],
+  "audience": {
+    "zh": "科研人员、学术写作者",
+    "en": "Researchers and academic writers"
+  },
+  "usecases": {
+    "zh": "用于学术研究流程：调研、写作、审阅、修改到定稿",
+    "en": "For academic research workflow: research, write, review, revise, finalize"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 44356,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "Imbad0202",
+  "tags": [
+    "academic-pipeline",
+    "academic-writing",
+    "ai-research",
+    "claude",
+    "claude-code",
+    "literature-review",
+    "peer-review",
+    "prompt-engineering"
+  ],
+  "verified": false,
+  "status": "active"
+}

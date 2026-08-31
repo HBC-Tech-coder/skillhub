@@ -1,0 +1,54 @@
+{
+  "id": "tencent-weknora",
+  "name": "WeKnora",
+  "owner": "Tencent",
+  "url": "https://github.com/Tencent/WeKnora",
+  "category": "memory",
+  "description": {
+    "en": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+    "zh": "开源LLM知识平台，将原始文档转化为可查询的RAG和推理代理。"
+  },
+  "install": "dsh plugin --profile web add github:Tencent/WeKnora",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:Tencent/WeKnora"
+    }
+  ],
+  "scenarios": [
+    "memory-knowledge",
+    "science-research"
+  ],
+  "audience": {
+    "zh": "知识管理、研究人员、企业用户",
+    "en": "Knowledge managers, researchers, enterprise users"
+  },
+  "usecases": {
+    "zh": "将文档转换为可查询的RAG、推理代理和自维护Wiki",
+    "en": "Turn documents into queryable RAG, reasoning agent, and self-maintaining Wiki"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 21027,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "NOASSERTION",
+  "author": "Tencent",
+  "tags": [
+    "agent",
+    "agentic",
+    "ai",
+    "chatbot",
+    "dsh-plugin",
+    "embeddings",
+    "evaluation",
+    "generative-ai",
+    "golang",
+    "knowledge-base"
+  ],
+  "verified": false,
+  "status": "active"
+}

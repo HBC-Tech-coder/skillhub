@@ -1,0 +1,53 @@
+{
+  "id": "iofficeai-aionui",
+  "name": "AionUi",
+  "owner": "iOfficeAI",
+  "url": "https://github.com/iOfficeAI/AionUi",
+  "category": "workflow",
+  "description": {
+    "en": "Open-source 24/7 Cowork app for OpenClaw, Hermes, Claude Code, Codex, OpenCode and 20+ more CLI Agent | Customize your assistants | Team them up｜Star if you like it!",
+    "zh": "开源24/7协作应用，支持多种CLI代理的定制和团队协作。"
+  },
+  "install": "git clone https://github.com/iOfficeAI/AionUi（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/iOfficeAI/AionUi（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "workflow"
+  ],
+  "audience": {
+    "zh": "使用多种CLI代理的开发者和团队",
+    "en": "Developers and teams using multiple CLI agents"
+  },
+  "usecases": {
+    "zh": "在统一应用中定制和团队协作多个CLI代理",
+    "en": "Customize and team up multiple CLI agents in a unified app"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 32457,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "iOfficeAI",
+  "tags": [
+    "acp",
+    "agent-team",
+    "ai",
+    "ai-agent",
+    "chat",
+    "chatbot",
+    "claude-code",
+    "clawdbot",
+    "codex",
+    "cowork"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "highmark-31-trae-skills",
+  "name": "TRAE-Skills",
+  "owner": "HighMark-31",
+  "url": "https://github.com/HighMark-31/TRAE-Skills",
+  "category": "dev",
+  "description": {
+    "en": "A curated collection of  150+ specialized AI Skills for software development, frontend, backend, automation, UI/UX, SEO, and DevOps. Each skill encapsulates a focused capability: generating code, templates, scripts, and production-ready workflows.",
+    "zh": "精选150+专业AI技能，涵盖软件开发、前端、后端、自动化、UI/UX、SEO和DevOps。"
+  },
+  "install": "git clone https://github.com/HighMark-31/TRAE-Skills",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/HighMark-31/TRAE-Skills"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "design",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "软件开发者、DevOps工程师",
+    "en": "Software developers, DevOps engineers"
+  },
+  "usecases": {
+    "zh": "提供150+专业AI技能，覆盖开发、自动化、UI/UX等",
+    "en": "Provide 150+ specialized AI skills for development, automation, UI/UX, etc."
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 283,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "HighMark-31",
+  "tags": [
+    "ai-skills",
+    "claude-code",
+    "claude-skills",
+    "collection",
+    "cursor-skill",
+    "cursor-skills",
+    "ide-skills",
+    "skills",
+    "skills-collection",
+    "trae"
+  ],
+  "verified": false,
+  "status": "active"
+}

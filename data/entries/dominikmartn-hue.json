@@ -1,0 +1,51 @@
+{
+  "id": "dominikmartn-hue",
+  "name": "hue",
+  "owner": "dominikmartn",
+  "url": "https://github.com/dominikmartn/hue",
+  "category": "ui",
+  "description": {
+    "en": "open-source skill that learns any brand and turns it into a complete design system. works on claude code and codex. install once, every UI your assistant builds matches your brand.",
+    "zh": "开源技能，学习品牌并生成完整设计系统，适用于Claude Code和Codex。"
+  },
+  "install": "git clone https://github.com/dominikmartn/hue（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/dominikmartn/hue（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "design"
+  ],
+  "audience": {
+    "zh": "前端开发者和使用Claude Code构建UI的团队",
+    "en": "Frontend developers and teams building UI with Claude Code"
+  },
+  "usecases": {
+    "zh": "让AI助手生成的界面自动匹配品牌设计系统",
+    "en": "Make AI-generated interfaces automatically match brand design systems"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 815,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "dominikmartn",
+  "tags": [
+    "ai-tools",
+    "anthropic",
+    "claude-code",
+    "claude-skill",
+    "codex",
+    "design-language",
+    "design-system",
+    "openai"
+  ],
+  "verified": false,
+  "status": "active"
+}

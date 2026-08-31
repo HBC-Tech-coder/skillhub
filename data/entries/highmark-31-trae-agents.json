@@ -1,0 +1,52 @@
+{
+  "id": "highmark-31-trae-agents",
+  "name": "TRAE-Agents",
+  "owner": "HighMark-31",
+  "url": "https://github.com/HighMark-31/TRAE-Agents",
+  "category": "dev",
+  "description": {
+    "en": "A collection of specialized TRAE Agents for software development, frontend, backend, automation, UI/UX, SEO, and DevOps. Each agent is ready to generate code, templates, scripts, and advanced workflows. Direct installation links included.",
+    "zh": "面向 TRAE 的专用 Agent 集合，覆盖开发、自动化、UI/UX、SEO 和 DevOps。"
+  },
+  "install": "git clone https://github.com/HighMark-31/TRAE-Agents",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/HighMark-31/TRAE-Agents"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "TRAE 用户/软件开发者",
+    "en": "TRAE users and software developers"
+  },
+  "usecases": {
+    "zh": "使用专门 Agent 生成前后端、自动化、UI/UX、SEO、DevOps 代码和模板",
+    "en": "Use specialized agents to generate code, templates, and workflows for frontend, backend, automation, UI/UX, SEO, DevOps"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 151,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "HighMark-31",
+  "tags": [
+    "agents",
+    "ai",
+    "collection",
+    "prompt",
+    "trae",
+    "trae-agents",
+    "trae-ai",
+    "trae-ide"
+  ],
+  "verified": false,
+  "status": "active"
+}

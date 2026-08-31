@@ -1,0 +1,54 @@
+{
+  "id": "egonex-ai-understand-anything",
+  "name": "Understand-Anything",
+  "owner": "Egonex-AI",
+  "url": "https://github.com/Egonex-AI/Understand-Anything",
+  "category": "dev",
+  "description": {
+    "en": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+    "zh": "将任意代码转换为可交互的知识图谱，支持探索、搜索和提问。"
+  },
+  "install": "git clone https://github.com/Egonex-AI/Understand-Anything（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/Egonex-AI/Understand-Anything（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "learn"
+  ],
+  "audience": {
+    "zh": "程序员、技术学习者",
+    "en": "Programmers, technical learners"
+  },
+  "usecases": {
+    "zh": "将代码转化为交互式知识图谱，用于探索、搜索和提问",
+    "en": "Turn code into interactive knowledge graphs for exploration, search, and Q&A"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 81141,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "Egonex-AI",
+  "tags": [
+    "antigravity-skills",
+    "business-knowledge",
+    "claude-code",
+    "claude-skills",
+    "codebase-analysis",
+    "codex",
+    "codex-skills",
+    "developer-tools-ai-agent",
+    "gemini-cli-skills",
+    "karpathy-llm-wiki"
+  ],
+  "verified": false,
+  "status": "active"
+}

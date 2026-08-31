@@ -1,0 +1,55 @@
+{
+  "id": "hao0321-claude-skill-social-post",
+  "name": "claude-skill-social-post",
+  "owner": "Hao0321",
+  "url": "https://github.com/Hao0321/claude-skill-social-post",
+  "category": "workflow",
+  "description": {
+    "en": "A Claude Code skill by Hao (駱君昊) that learns your Facebook voice and auto-posts to FB / IG / Threads / X with a 14-day content calendar. Mega-viral validated: 80K reach / 448 likes / 500 comments on first post. Includes Day 2 flop postmortem.",
+    "zh": "Claude Code技能，学习你的Facebook风格，自动发布到多个社交平台，并提供14天内容日历。"
+  },
+  "install": "git clone https://github.com/Hao0321/claude-skill-social-post（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/Hao0321/claude-skill-social-post（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "content-social",
+    "marketing",
+    "copywriting"
+  ],
+  "audience": {
+    "zh": "社交媒体运营者和内容创作者",
+    "en": "Social media managers and content creators"
+  },
+  "usecases": {
+    "zh": "学习你的Facebook风格，自动发布到FB/IG/Threads/X，并生成14天内容日历",
+    "en": "Learn your Facebook voice and auto-post to FB/IG/Threads/X with a 14-day content calendar"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 638,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "Hao0321",
+  "tags": [
+    "ai-agent",
+    "aigc",
+    "anthropic",
+    "chrome-mcp",
+    "claude-code",
+    "claude-skill",
+    "content-calendar",
+    "facebook-automation",
+    "instagram",
+    "social-media"
+  ],
+  "verified": false,
+  "status": "active"
+}

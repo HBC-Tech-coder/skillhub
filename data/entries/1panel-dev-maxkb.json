@@ -1,0 +1,55 @@
+{
+  "id": "1panel-dev-maxkb",
+  "name": "MaxKB",
+  "owner": "1Panel-dev",
+  "url": "https://github.com/1Panel-dev/MaxKB",
+  "category": "memory",
+  "description": {
+    "en": "🔥 MaxKB is an open-source platform for building enterprise-grade agents.  强大易用的开源企业级智能体平台。",
+    "zh": "开源企业级智能体平台，用于构建知识库问答等应用。"
+  },
+  "install": "参照仓库 README 配置 MCP 客户端",
+  "ecosystems": [
+    {
+      "id": "mcp",
+      "kind": "server",
+      "install": "参照仓库 README 配置 MCP 客户端"
+    }
+  ],
+  "scenarios": [
+    "memory-knowledge",
+    "agents-roles",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "企业AI应用开发者、知识管理团队",
+    "en": "Enterprise AI application developers, knowledge management teams"
+  },
+  "usecases": {
+    "zh": "构建企业级智能体平台，用于知识库问答、智能客服等",
+    "en": "Build enterprise-grade agent platform for knowledge base Q&A, intelligent customer service, etc."
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 22663,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "GPL-3.0",
+  "author": "1Panel-dev",
+  "tags": [
+    "agent",
+    "agentic-ai",
+    "chatbot",
+    "deepseek-r1",
+    "knowledgebase",
+    "langchain",
+    "llama3",
+    "llm",
+    "maxkb",
+    "mcp-server"
+  ],
+  "verified": false,
+  "status": "active"
+}

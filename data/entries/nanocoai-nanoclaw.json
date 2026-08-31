@@ -1,0 +1,49 @@
+{
+  "id": "nanocoai-nanoclaw",
+  "name": "nanoclaw",
+  "owner": "nanocoai",
+  "url": "https://github.com/nanocoai/nanoclaw",
+  "category": "workflow",
+  "description": {
+    "en": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
+    "zh": "轻量级 OpenClaw 替代品，容器化运行，支持消息应用、记忆和定时任务。"
+  },
+  "install": "git clone https://github.com/nanocoai/nanoclaw（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/nanocoai/nanoclaw（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "accounts"
+  ],
+  "audience": {
+    "zh": "需要自动化消息处理的用户",
+    "en": "Users needing automated messaging"
+  },
+  "usecases": {
+    "zh": "连接 WhatsApp、Telegram 等消息应用，实现自动化任务",
+    "en": "Connect to messaging apps like WhatsApp, Telegram for automated tasks"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 30652,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "nanocoai",
+  "tags": [
+    "ai-agents",
+    "ai-assistant",
+    "claude-code",
+    "claude-skills",
+    "openclaw"
+  ],
+  "verified": false,
+  "status": "active"
+}

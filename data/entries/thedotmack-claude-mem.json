@@ -1,0 +1,54 @@
+{
+  "id": "thedotmack-claude-mem",
+  "name": "claude-mem",
+  "owner": "thedotmack",
+  "url": "https://github.com/thedotmack/claude-mem",
+  "category": "memory",
+  "description": {
+    "en": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+    "zh": "为 AI 代理提供跨会话的持久上下文记忆，自动压缩并注入相关上下文。"
+  },
+  "install": "git clone https://github.com/thedotmack/claude-mem（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/thedotmack/claude-mem（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "memory-knowledge",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "使用 AI 编程助手的开发者",
+    "en": "Developers using AI coding assistants"
+  },
+  "usecases": {
+    "zh": "跨会话保持上下文，提升 AI 编程助手的工作效率",
+    "en": "Maintain context across sessions to improve AI coding assistant productivity"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 92704,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "thedotmack",
+  "tags": [
+    "ai",
+    "ai-agents",
+    "ai-memory",
+    "anthropic",
+    "artificial-intelligence",
+    "chromadb",
+    "claude",
+    "claude-agent-sdk",
+    "claude-agents",
+    "claude-code"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "bitcjm-workbuddy-skills",
+  "name": "workbuddy-skills",
+  "owner": "bitcjm",
+  "url": "https://github.com/bitcjm/workbuddy-skills",
+  "category": "dev",
+  "description": {
+    "en": "WorkBuddy Skills 仓库 — AI 技能集合，涵盖 AI 创作、编程、办公、通用工具等分类",
+    "zh": "WorkBuddy Skills 仓库 — AI 技能集合，涵盖 AI 创作、编程、办公、通用工具等分类"
+  },
+  "install": "git clone https://github.com/bitcjm/workbuddy-skills",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/bitcjm/workbuddy-skills"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "WorkBuddy 用户、AI 技能开发者",
+    "en": "WorkBuddy users and AI skill developers"
+  },
+  "usecases": {
+    "zh": "获取 AI 创作、编程、办公等分类的技能集合",
+    "en": "Get skill collections for AI creation, coding, office, etc."
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 18,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "bitcjm",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

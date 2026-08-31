@@ -1,0 +1,54 @@
+{
+  "id": "microsoft-mcp-for-beginners",
+  "name": "mcp-for-beginners",
+  "owner": "microsoft",
+  "url": "https://github.com/microsoft/mcp-for-beginners",
+  "category": "docs",
+  "description": {
+    "en": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workfl",
+    "zh": "开源课程，介绍MCP基础，提供多语言示例。"
+  },
+  "install": "参照仓库 README 配置 MCP 客户端",
+  "ecosystems": [
+    {
+      "id": "mcp",
+      "kind": "server",
+      "install": "参照仓库 README 配置 MCP 客户端"
+    }
+  ],
+  "scenarios": [
+    "learn",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "MCP初学者、开发者",
+    "en": "MCP beginners, developers"
+  },
+  "usecases": {
+    "zh": "学习MCP基础，通过多语言示例掌握实际应用",
+    "en": "Learn MCP fundamentals through real-world cross-language examples"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 17122,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "MIT",
+  "author": "microsoft",
+  "tags": [
+    "csharp",
+    "java",
+    "javascript",
+    "javascript-applications",
+    "mcp",
+    "mcp-client",
+    "mcp-security",
+    "mcp-server",
+    "model",
+    "model-context-protocol"
+  ],
+  "verified": false,
+  "status": "active"
+}

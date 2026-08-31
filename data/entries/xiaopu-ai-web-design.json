@@ -1,0 +1,51 @@
+{
+  "id": "xiaopu-ai-web-design",
+  "name": "web-design",
+  "owner": "xiaopu-ai",
+  "url": "https://github.com/xiaopu-ai/web-design",
+  "category": "ui",
+  "description": {
+    "en": "A Claude Code SKILL for designing beautiful, consistent web pages — spec first, code second. ",
+    "zh": "Claude Code技能，用于设计美观一致的网页，先规格后代码。"
+  },
+  "install": "git clone https://github.com/xiaopu-ai/web-design（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/xiaopu-ai/web-design（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "design",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "Web开发者和设计师",
+    "en": "Web developers and designers"
+  },
+  "usecases": {
+    "zh": "设计美观一致的网页，先规格后代码",
+    "en": "Design beautiful, consistent web pages with spec-first approach"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 710,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "xiaopu-ai",
+  "tags": [
+    "claude-code",
+    "claude-skill",
+    "design-system",
+    "we-b",
+    "web-design",
+    "webdesign",
+    "xiaopu"
+  ],
+  "verified": false,
+  "status": "active"
+}

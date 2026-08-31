@@ -1,0 +1,47 @@
+{
+  "id": "modelcontextprotocol-typescript-sdk",
+  "name": "typescript-sdk",
+  "owner": "modelcontextprotocol",
+  "url": "https://github.com/modelcontextprotocol/typescript-sdk",
+  "category": "dev",
+  "description": {
+    "en": "The official TypeScript SDK for Model Context Protocol servers and clients",
+    "zh": "Model Context Protocol 的官方 TypeScript SDK，用于构建MCP服务器和客户端。"
+  },
+  "install": "参照仓库 README 配置 MCP 客户端",
+  "ecosystems": [
+    {
+      "id": "mcp",
+      "kind": "server",
+      "install": "参照仓库 README 配置 MCP 客户端"
+    }
+  ],
+  "scenarios": [
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "TypeScript开发者",
+    "en": "TypeScript developers"
+  },
+  "usecases": {
+    "zh": "开发MCP服务器和客户端的官方SDK",
+    "en": "Official SDK for developing MCP servers and clients"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 13286,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "NOASSERTION",
+  "author": "modelcontextprotocol",
+  "tags": [
+    "mcp",
+    "mcp-client",
+    "mcp-server",
+    "typescript"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "deepseek-ai-deepseek-harness",
+  "name": "deepseek-harness",
+  "owner": "deepseek-ai",
+  "url": "https://github.com/deepseek-ai/deepseek-harness",
+  "category": "dev",
+  "description": {
+    "en": "DeepSeek Harness: Everything is a Plugin.",
+    "zh": "DeepSeek Harness：万物皆可插件。"
+  },
+  "install": "dsh plugin --profile web add github:deepseek-ai/deepseek-harness",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:deepseek-ai/deepseek-harness"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI 开发者和研究者",
+    "en": "AI developers and researchers"
+  },
+  "usecases": {
+    "zh": "将一切作为插件集成到 DeepSeek 工作流",
+    "en": "Integrate everything as plugins into DeepSeek workflows"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 205581,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "MIT",
+  "author": "deepseek-ai",
+  "tags": [
+    "ai-agents",
+    "cordis",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "verified": false,
+  "status": "active"
+}

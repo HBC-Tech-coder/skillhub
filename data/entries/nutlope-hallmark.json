@@ -1,0 +1,43 @@
+{
+  "id": "nutlope-hallmark",
+  "name": "hallmark",
+  "owner": "Nutlope",
+  "url": "https://github.com/Nutlope/hallmark",
+  "category": "ui",
+  "description": {
+    "en": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+    "zh": "为 Claude Code、Cursor 和 Codex 提供反 AI 味的设计技能。"
+  },
+  "install": "git clone https://github.com/Nutlope/hallmark（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/Nutlope/hallmark（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "design",
+    "copywriting"
+  ],
+  "audience": {
+    "zh": "设计师、内容创作者、开发者",
+    "en": "Designers, content creators, developers"
+  },
+  "usecases": {
+    "zh": "用于生成高质量、非 AI 味的设计和文案，提升作品质感",
+    "en": "For generating high-quality, non-AI-slop designs and copy"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 27590,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "Nutlope",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

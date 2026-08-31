@@ -1,0 +1,54 @@
+{
+  "id": "wshobson-agents",
+  "name": "agents",
+  "owner": "wshobson",
+  "url": "https://github.com/wshobson/agents",
+  "category": "dev",
+  "description": {
+    "en": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, and Google Antigravity",
+    "zh": "多平台代理插件市场，支持 Claude Code、Codex、Cursor 等。"
+  },
+  "install": "git clone https://github.com/wshobson/agents（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/wshobson/agents（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "多工具开发者",
+    "en": "Developers using multiple tools"
+  },
+  "usecases": {
+    "zh": "在多个 AI 编码工具间共享代理插件",
+    "en": "Share agent plugins across multiple AI coding tools"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 39288,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "wshobson",
+  "tags": [
+    "agent-skills",
+    "agentic-ai",
+    "agents",
+    "ai-agents",
+    "anthropic",
+    "antigravity",
+    "claude",
+    "claude-code",
+    "claude-code-plugins",
+    "claude-skills"
+  ],
+  "verified": false,
+  "status": "active"
+}

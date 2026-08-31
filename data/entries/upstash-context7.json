@@ -1,0 +1,48 @@
+{
+  "id": "upstash-context7",
+  "name": "context7",
+  "owner": "upstash",
+  "url": "https://github.com/upstash/context7",
+  "category": "dev",
+  "description": {
+    "en": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+    "zh": "Context7平台，为LLM和AI代码编辑器提供最新的代码文档。"
+  },
+  "install": "参照仓库 README 配置 MCP 客户端",
+  "ecosystems": [
+    {
+      "id": "mcp",
+      "kind": "server",
+      "install": "参照仓库 README 配置 MCP 客户端"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "learn"
+  ],
+  "audience": {
+    "zh": "AI编程助手用户、开发者",
+    "en": "AI coding assistant users, developers"
+  },
+  "usecases": {
+    "zh": "为LLM和AI代码编辑器提供最新的代码文档，帮助AI理解库和框架的API",
+    "en": "Provide up-to-date code documentation for LLMs and AI code editors to help AI understand APIs of libraries and frameworks"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 61435,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "MIT",
+  "author": "upstash",
+  "tags": [
+    "llm",
+    "mcp",
+    "mcp-server",
+    "vibe-coding"
+  ],
+  "verified": false,
+  "status": "active"
+}

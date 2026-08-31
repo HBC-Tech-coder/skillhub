@@ -1,0 +1,54 @@
+{
+  "id": "bytedance-ui-tars-desktop",
+  "name": "UI-TARS-desktop",
+  "owner": "bytedance",
+  "url": "https://github.com/bytedance/UI-TARS-desktop",
+  "category": "identity",
+  "description": {
+    "en": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
+    "zh": "开源多模态AI代理栈，连接前沿AI模型和代理基础设施。"
+  },
+  "install": "参照仓库 README 配置 MCP 客户端",
+  "ecosystems": [
+    {
+      "id": "mcp",
+      "kind": "server",
+      "install": "参照仓库 README 配置 MCP 客户端"
+    }
+  ],
+  "scenarios": [
+    "agents-roles",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI Agent开发者、自动化爱好者",
+    "en": "AI agent developers, automation enthusiasts"
+  },
+  "usecases": {
+    "zh": "作为开源多模态AI代理栈，连接前沿AI模型和代理基础设施，用于桌面自动化",
+    "en": "Open-source multimodal AI agent stack connecting cutting-edge AI models and agent infra for desktop automation"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 38767,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "Apache-2.0",
+  "author": "bytedance",
+  "tags": [
+    "agent",
+    "agent-tars",
+    "browser-use",
+    "computer-use",
+    "cowork",
+    "gui-agent",
+    "gui-operator",
+    "mcp",
+    "mcp-server",
+    "multimodal"
+  ],
+  "verified": false,
+  "status": "active"
+}

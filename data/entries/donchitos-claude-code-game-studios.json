@@ -1,0 +1,54 @@
+{
+  "id": "donchitos-claude-code-game-studios",
+  "name": "Claude-Code-Game-Studios",
+  "owner": "Donchitos",
+  "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+  "category": "dev",
+  "description": {
+    "en": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+    "zh": "将 Claude Code 转变为完整的游戏开发工作室，包含 49 个 AI 代理和 72 个工作流技能。"
+  },
+  "install": "git clone https://github.com/Donchitos/Claude-Code-Game-Studios（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/Donchitos/Claude-Code-Game-Studios（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "游戏开发者、AI 代理爱好者",
+    "en": "Game developers and AI agent enthusiasts"
+  },
+  "usecases": {
+    "zh": "用于游戏开发全流程，���括设计、编码、测试和项目管理",
+    "en": "For full game development workflow: design, coding, testing, project management"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 24690,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "Donchitos",
+  "tags": [
+    "ai-agents",
+    "ai-assisted-development",
+    "anthropic",
+    "claude",
+    "claude-code",
+    "game-design",
+    "game-development",
+    "gamedev",
+    "godot",
+    "indie-game-dev"
+  ],
+  "verified": false,
+  "status": "active"
+}

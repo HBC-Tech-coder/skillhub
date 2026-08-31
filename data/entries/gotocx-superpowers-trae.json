@@ -1,0 +1,43 @@
+{
+  "id": "gotocx-superpowers-trae",
+  "name": "superpowers-trae",
+  "owner": "gotocx",
+  "url": "https://github.com/gotocx/superpowers-trae",
+  "category": "dev",
+  "description": {
+    "en": "TRAE migration of obra/superpowers with rules, skills, and memory setup guidance",
+    "zh": "TRAE迁移的obra/superpowers，包含规则、技能和记忆设置指南"
+  },
+  "install": "git clone https://github.com/gotocx/superpowers-trae",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/gotocx/superpowers-trae"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI编程用户、Trae用户",
+    "en": "AI coding users, Trae users"
+  },
+  "usecases": {
+    "zh": "在Trae中迁移和使用superpowers的规则、技能和记忆设置",
+    "en": "Migrate and use superpowers rules, skills, and memory setup in Trae"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 57,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "gotocx",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

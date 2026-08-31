@@ -22,6 +22,14 @@
     <category term="dev"/>
   </entry>
   <entry>
+    <id>skillhub:deepseek-ai-deepseek-harness</id>
+    <title>deepseek-harness</title>
+    <link href="https://github.com/deepseek-ai/deepseek-harness"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>DeepSeek Harness：万物皆可插件。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
     <id>skillhub:yt-dlp</id>
     <title>yt-dlp</title>
     <link href="https://github.com/yt-dlp/yt-dlp"/>
@@ -70,12 +78,52 @@
     <category term="tools"/>
   </entry>
   <entry>
+    <id>skillhub:thedotmack-claude-mem</id>
+    <title>claude-mem</title>
+    <link href="https://github.com/thedotmack/claude-mem"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为 AI 代理提供跨会话的持久上下文记忆，自动压缩并注入相关上下文。</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
     <id>skillhub:worldmonitor</id>
     <title>worldmonitor</title>
     <link href="https://github.com/koala73/worldmonitor"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>实时全球情报看板：AI 驱动的新闻聚合、地缘政治监控与基础设施追踪，统一态势感知界面（支持 MCP 接入）。</summary>
     <category term="tools"/>
+  </entry>
+  <entry>
+    <id>skillhub:egonex-ai-understand-anything</id>
+    <title>Understand-Anything</title>
+    <link href="https://github.com/Egonex-AI/Understand-Anything"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>将任意代码转换为可交互的知识图谱，支持探索、搜索和提问。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:composiohq-awesome-claude-skills</id>
+    <title>awesome-claude-skills</title>
+    <link href="https://github.com/ComposioHQ/awesome-claude-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>精选的Claude Skills、资源和工具列表，用于定制Claude AI工作流。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:ruvnet-ruflo</id>
+    <title>ruflo</title>
+    <link href="https://github.com/ruvnet/ruflo"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>代理元框架，支持多智能体群、自适应记忆和RAG集成。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:code-yeongyu-oh-my-openagent</id>
+    <title>oh-my-openagent</title>
+    <link href="https://github.com/code-yeongyu/oh-my-openagent"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>面向复杂代码库的编码代理框架，优化 token 使用效率。</summary>
+    <category term="dev"/>
   </entry>
   <entry>
     <id>skillhub:trendradar</id>
@@ -86,6 +134,22 @@
     <category term="tools"/>
   </entry>
   <entry>
+    <id>skillhub:upstash-context7</id>
+    <title>context7</title>
+    <link href="https://github.com/upstash/context7"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Context7平台，为LLM和AI代码编辑器提供最新的代码文档。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:hesreallyhim-awesome-claude-code</id>
+    <title>awesome-claude-code</title>
+    <link href="https://github.com/hesreallyhim/awesome-claude-code"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>精选Claude Code资源列表，展示顶级技能和工具。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
     <id>skillhub:chrome-devtools-mcp</id>
     <title>chrome-devtools-mcp</title>
     <link href="https://github.com/ChromeDevTools/chrome-devtools-mcp"/>
@@ -94,12 +158,36 @@
     <category term="tools"/>
   </entry>
   <entry>
+    <id>skillhub:coreyhaines31-marketingskills</id>
+    <title>marketingskills</title>
+    <link href="https://github.com/coreyhaines31/marketingskills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为Claude Code和AI代理提供的营销技能，涵盖CRO、文案、SEO、分析和增长工程。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
     <id>skillhub:agentic-awesome-skills</id>
     <title>agentic-awesome-skills</title>
     <link href="https://github.com/sickn33/agentic-awesome-skills"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>AAS Core：本地优先的 agent 控制面，提供完整目录发现、agent 自主选型、技能栈校验与规划，内置 2,005+ 个 agentic skills。</summary>
     <category term="skill"/>
+  </entry>
+  <entry>
+    <id>skillhub:imbad0202-academic-research-skills</id>
+    <title>academic-research-skills</title>
+    <link href="https://github.com/Imbad0202/academic-research-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为 Claude Code 提供学术研究技能，覆盖从研究到定稿的完整流程。</summary>
+    <category term="skill"/>
+  </entry>
+  <entry>
+    <id>skillhub:amruthpillai-reactive-resume</id>
+    <title>reactive-resume</title>
+    <link href="https://github.com/amruthpillai/reactive-resume"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>注重隐私的开源简历生成器，完全可定制且免费。</summary>
+    <category term="tools"/>
   </entry>
   <entry>
     <id>skillhub:codebase-memory-mcp</id>
@@ -118,12 +206,52 @@
     <category term="skill"/>
   </entry>
   <entry>
+    <id>skillhub:wshobson-agents</id>
+    <title>agents</title>
+    <link href="https://github.com/wshobson/agents"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>多平台代理插件市场，支持 Claude Code、Codex、Cursor 等。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:bytedance-ui-tars-desktop</id>
+    <title>UI-TARS-desktop</title>
+    <link href="https://github.com/bytedance/UI-TARS-desktop"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>开源多模态AI代理栈，连接前沿AI模型和代理基础设施。</summary>
+    <category term="identity"/>
+  </entry>
+  <entry>
     <id>skillhub:nature-skills</id>
     <title>nature-skills</title>
     <link href="https://github.com/Yuan1z0825/nature-skills"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>符合 Nature 论文学术表达与科研绘图规范的 Skill。</summary>
     <category term="skill"/>
+  </entry>
+  <entry>
+    <id>skillhub:tt-a1i-archify</id>
+    <title>archify</title>
+    <link href="https://github.com/tt-a1i/archify"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>代理技能，用于生成美观且可验证的架构图、流程图等</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:esengine-deepseek-reasonix</id>
+    <title>DeepSeek-Reasonix</title>
+    <link href="https://github.com/esengine/DeepSeek-Reasonix"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>DeepSeek原生的终端AI编码代理，注重前缀缓存稳定性。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:volcengine-openviking</id>
+    <title>OpenViking</title>
+    <link href="https://github.com/volcengine/OpenViking"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>自进化上下文数据库，用于AI代理的记忆和知识管理。</summary>
+    <category term="memory"/>
   </entry>
   <entry>
     <id>skillhub:awesome-agent-skills</id>
@@ -134,6 +262,14 @@
     <category term="docs"/>
   </entry>
   <entry>
+    <id>skillhub:iofficeai-aionui</id>
+    <title>AionUi</title>
+    <link href="https://github.com/iOfficeAI/AionUi"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>开源24/7协作应用，支持多种CLI代理的定制和团队协作。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
     <id>skillhub:anthropic-cybersecurity-skills</id>
     <title>Anthropic-Cybersecurity-Skills</title>
     <link href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills"/>
@@ -142,11 +278,123 @@
     <category term="security"/>
   </entry>
   <entry>
+    <id>skillhub:nanocoai-nanoclaw</id>
+    <title>nanoclaw</title>
+    <link href="https://github.com/nanocoai/nanoclaw"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>轻量级 OpenClaw 替代品，容器化运行，支持消息应用、记忆和定时任务。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:assafelovic-gpt-researcher</id>
+    <title>gpt-researcher</title>
+    <link href="https://github.com/assafelovic/gpt-researcher"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>自主代理，使用任何LLM提供商对任何数据进行深度研究。</summary>
+    <category term="skill"/>
+  </entry>
+  <entry>
     <id>skillhub:serena</id>
     <title>serena</title>
     <link href="https://github.com/oraios/serena"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>强大的编程 MCP 工具集：语义检索与编辑能力——给你的 agent 一个 IDE。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:zarazhangrui-frontend-slides</id>
+    <title>frontend-slides</title>
+    <link href="https://github.com/zarazhangrui/frontend-slides"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>使用编码代理的前端技能在网页上创建精美幻灯片</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:nutlope-hallmark</id>
+    <title>hallmark</title>
+    <link href="https://github.com/Nutlope/hallmark"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为 Claude Code、Cursor 和 Codex 提供反 AI 味的设计技能。</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:virgiliojr94-book-to-skill</id>
+    <title>book-to-skill</title>
+    <link href="https://github.com/virgiliojr94/book-to-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>将任何技术书籍 PDF 转化为 Claude Code 技能，供学习和工作中使用。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:molunerfinn-picgo</id>
+    <title>PicGo</title>
+    <link href="https://github.com/Molunerfinn/PicGo"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>高效的图片上传工具，支持60多种图床服务。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:decolua-9router</id>
+    <title>9router</title>
+    <link href="https://github.com/decolua/9router"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>提供免费的AI编程API路由，支持多种模型提供商，自动回退和减少token消耗。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:othmanadi-planning-with-files</id>
+    <title>planning-with-files</title>
+    <link href="https://github.com/OthmanAdi/planning-with-files"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>基于文件的持久化规划，支持崩溃恢复和上下文防丢失。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:freestylefly-awesome-gpt-image-2</id>
+    <title>awesome-gpt-image-2</title>
+    <link href="https://github.com/freestylefly/awesome-gpt-image-2"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>GPT-Image2提示词引擎与模板库，包含530+案例和20+模板。</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:ayghri-i-have-adhd</id>
+    <title>i-have-adhd</title>
+    <link href="https://github.com/ayghri/i-have-adhd"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>让编码代理输出简洁答案，避免冗长，适合注意力分散者。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:jimliu-baoyu-skills</id>
+    <title>baoyu-skills</title>
+    <link href="https://github.com/JimLiu/baoyu-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>宝玉的技能集合，用于内容创作和文案生成。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:openai-skills</id>
+    <title>skills</title>
+    <link href="https://github.com/openai/skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Codex 的官方技能目录。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:alirezarezvani-claude-skills</id>
+    <title>claude-skills</title>
+    <link href="https://github.com/alirezarezvani/claude-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>包含 380+ Claude Code 技能、插件和自定义命令，适用于多种编码代理。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:donchitos-claude-code-game-studios</id>
+    <title>Claude-Code-Game-Studios</title>
+    <link href="https://github.com/Donchitos/Claude-Code-Game-Studios"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>将 Claude Code 转变为完整的游戏开发工作室，包含 49 个 AI 代理和 72 个工作流技能。</summary>
     <category term="dev"/>
   </entry>
   <entry>
@@ -166,12 +414,68 @@
     <category term="dev"/>
   </entry>
   <entry>
+    <id>skillhub:activepieces-activepieces</id>
+    <title>activepieces</title>
+    <link href="https://github.com/activepieces/activepieces"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>AI代理与MCP工作流自动化平台，提供大量MCP服务器集成。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:nocobase-nocobase</id>
+    <title>nocobase</title>
+    <link href="https://github.com/nocobase/nocobase"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>开源AI+无代码平台，用于快速构建业务系统。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:alchaincyf-huashu-design</id>
+    <title>huashu-design</title>
+    <link href="https://github.com/alchaincyf/huashu-design"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为 Claude Code 提供 HTML 原生的设计技能，包含设计哲学、评审和导出功能。</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
     <id>skillhub:n8n-mcp</id>
     <title>n8n-mcp</title>
     <link href="https://github.com/czlonkowski/n8n-mcp"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>面向 Claude Desktop / Claude Code / Windsurf / Cursor 的 MCP 服务：让 agent 帮你搭建 n8n 工作流。</summary>
     <category term="tools"/>
+  </entry>
+  <entry>
+    <id>skillhub:1panel-dev-maxkb</id>
+    <title>MaxKB</title>
+    <link href="https://github.com/1Panel-dev/MaxKB"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>开源企业级智能体平台，用于构建知识库问答等应用。</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
+    <id>skillhub:anywhere-labs-dsh-desktop</id>
+    <title>dsh-desktop</title>
+    <link href="https://github.com/anywhere-labs/dsh-desktop"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为DeepSeek Harness插件生态打造的现代化桌面端解决方案。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:tencent-weknora</id>
+    <title>WeKnora</title>
+    <link href="https://github.com/Tencent/WeKnora"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>开源LLM知识平台，将原始文档转化为可查询的RAG和推理代理。</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
+    <id>skillhub:kkkkhazix-khazix-skills</id>
+    <title>khazix-skills</title>
+    <link href="https://github.com/KKKKhazix/khazix-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>数字生命卡兹克开源的 AI 技能合集，包含 leader、neat-freak 等技能。</summary>
+    <category term="identity"/>
   </entry>
   <entry>
     <id>skillhub:context-mode</id>
@@ -190,11 +494,107 @@
     <category term="identity"/>
   </entry>
   <entry>
+    <id>skillhub:modelscope-funasr</id>
+    <title>FunASR</title>
+    <link href="https://github.com/modelscope/FunASR"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>开源语音识��工具包，支持多种语音处理任务和MCP服务。</summary>
+    <category term="voice"/>
+  </entry>
+  <entry>
+    <id>skillhub:nagi-ovo-voyager</id>
+    <title>voyager</title>
+    <link href="https://github.com/Nagi-ovo/voyager"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>面向多个AI平台的增强套件，包含提示词管理器。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
     <id>skillhub:ai-guide</id>
     <title>ai-guide</title>
     <link href="https://github.com/liyupi/ai-guide"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程：OpenClaw 保姆级教程、大模型玩法（DeepSeek/GPT/Gemini/Claude/GLM）、最新 AI 资讯、Prompt 提示词大全、AI 知识百科（Agent Skills/RAG/MCP/A2A）与 Harness Engineering 编程教程。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:teng-lin-notebooklm-py</id>
+    <title>notebooklm-py</title>
+    <link href="https://github.com/teng-lin/notebooklm-py"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>非官方 NotebookLM Python API 和代理技能，提供完整功能访问。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:microsoft-mcp-for-beginners</id>
+    <title>mcp-for-beginners</title>
+    <link href="https://github.com/microsoft/mcp-for-beginners"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>开源课程，介绍MCP基础，提供多语言示例。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:triggerdotdev-trigger.dev</id>
+    <title>trigger.dev</title>
+    <link href="https://github.com/triggerdotdev/trigger.dev"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Trigger.dev 是一个用于构建和部署全托管AI代理与工作流的平台。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:composio-community-awesome-codex-skills</id>
+    <title>awesome-codex-skills</title>
+    <link href="https://github.com/composio-community/awesome-codex-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>精选的实用 Codex 技能列表，用于自动化 Codex CLI 和 API 的工作流。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:xpzouying-xiaohongshu-mcp</id>
+    <title>xiaohongshu-mcp</title>
+    <link href="https://github.com/xpzouying/xiaohongshu-mcp"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为小红书提供MCP服务器，方便AI访问小红书内容。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:wanshuiyin-auto-claude-code-research-in-sleep</id>
+    <title>Auto-claude-code-research-in-sleep</title>
+    <link href="https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>ARIS 是一个轻量级 Markdown 技能集，用于自主机器学习研究，支持跨模型审查循环、想法发现和实验自动化，无框架依赖。</summary>
+    <category term="skill"/>
+  </entry>
+  <entry>
+    <id>skillhub:nvidia-skillspector</id>
+    <title>SkillSpector</title>
+    <link href="https://github.com/NVIDIA/SkillSpector"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>用于 AI 代理技能的安全扫描器，检测漏洞、恶意模式、提示注入、数据外泄和供应链风险。</summary>
+    <category term="security"/>
+  </entry>
+  <entry>
+    <id>skillhub:open-metadata-openmetadata</id>
+    <title>OpenMetadata</title>
+    <link href="https://github.com/open-metadata/OpenMetadata"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>OpenMetadata 是构建可信数据上下文和业务语义的开放平台，面向人类、AI助手和代理。</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
+    <id>skillhub:travisvn-awesome-claude-skills</id>
+    <title>awesome-claude-skills</title>
+    <link href="https://github.com/travisvn/awesome-claude-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>精选 Claude 技能、资源和工具，用于定制 Claude AI 工作流。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:yusufkaraaslan-skill_seekers</id>
+    <title>Skill_Seekers</title>
+    <link href="https://github.com/yusufkaraaslan/Skill_Seekers"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>将文档网站、GitHub 仓库和 PDF 转化为 Claude 技能，并自动检测冲突。</summary>
     <category term="docs"/>
   </entry>
   <entry>
@@ -204,6 +604,14 @@
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>Harness 工程入门教程，从 0 到 1 手把手教你理解 Agent Harness 的构造。</summary>
     <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:nevamind-ai-memu</id>
+    <title>memU</title>
+    <link href="https://github.com/NevaMind-AI/memU"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为AI代理提供跨会话的个人记忆功能</summary>
+    <category term="memory"/>
   </entry>
   <entry>
     <id>skillhub:bbdown</id>
@@ -222,12 +630,124 @@
     <category term="market"/>
   </entry>
   <entry>
+    <id>skillhub:modelcontextprotocol-typescript-sdk</id>
+    <title>typescript-sdk</title>
+    <link href="https://github.com/modelcontextprotocol/typescript-sdk"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Model Context Protocol 的官方 TypeScript SDK，用于构建MCP服务器和客户端。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:wei-shaw-claude-relay-service</id>
+    <title>claude-relay-service</title>
+    <link href="https://github.com/Wei-Shaw/claude-relay-service"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>开源中转服务，让Claude、OpenAI、Gemini等订阅统一接入，支持拼车共享。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
     <id>skillhub:everos</id>
     <title>EverOS</title>
     <link href="https://github.com/EverMind-AI/EverOS"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>面向所有 AI agent 的可移植记忆层：本地优先、Markdown 原生、用户自持，跨应用/工具/工作流自我进化。</summary>
     <category term="memory"/>
+  </entry>
+  <entry>
+    <id>skillhub:joeanamier-xhs-downloader</id>
+    <title>XHS-Downloader</title>
+    <link href="https://github.com/JoeanAmier/XHS-Downloader"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>小红书链接提取和作品采集工具，支持下载小红书内容。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:zilliztech-claude-context</id>
+    <title>claude-context</title>
+    <link href="https://github.com/zilliztech/claude-context"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为Claude Code提供代码搜索MCP，使整个代码库成为编码代理的上下文。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:orchestra-research-ai-research-skills</id>
+    <title>AI-Research-SKILLs</title>
+    <link href="https://github.com/Orchestra-Research/AI-Research-SKILLs"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>开源AI研究和工程技能库，可打包给多种AI代理使用</summary>
+    <category term="skill"/>
+  </entry>
+  <entry>
+    <id>skillhub:nidhinjs-prompt-master</id>
+    <title>prompt-master</title>
+    <link href="https://github.com/nidhinjs/prompt-master"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Claude技能，为AI工具编写精准提示词，避免浪费token</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:tadata-org-fastapi_mcp</id>
+    <title>fastapi_mcp</title>
+    <link href="https://github.com/tadata-org/fastapi_mcp"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>将FastAPI端点转换为MCP工具，支持认证，方便AI集成。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:jeffallan-claude-skills</id>
+    <title>claude-skills</title>
+    <link href="https://github.com/Jeffallan/claude-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为全栈开发者提供67种专业技能的Claude Code技能集</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:memtensor-memos</id>
+    <title>MemOS</title>
+    <link href="https://github.com/MemTensor/MemOS"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>自进化记忆OS，支持超持久记忆、混合检索和跨任务技能复用。</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
+    <id>skillhub:helloianneo-ian-xiaohei-illustrations</id>
+    <title>ian-xiaohei-illustrations</title>
+    <link href="https://github.com/helloianneo/ian-xiaohei-illustrations"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>中文黑白怪诞正文配图生成技能，16:9 白底手绘风格，带少量红橙蓝批注。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:imbad0202-academic-research-skills-codex</id>
+    <title>academic-research-skills-codex</title>
+    <link href="https://github.com/Imbad0202/academic-research-skills-codex"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>面向 Codex 的学术研究技能套件，支持人机协作的学术研究工作流。</summary>
+    <category term="skill"/>
+  </entry>
+  <entry>
+    <id>skillhub:agents365-ai-drawio-skill</id>
+    <title>drawio-skill</title>
+    <link href="https://github.com/Agents365-ai/drawio-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>从自然语言生成draw.io图表，支持多种图表类型和工具</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:nexu-io-html-anything</id>
+    <title>html-anything</title>
+    <link href="https://github.com/nexu-io/html-anything"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>代理式 HTML 编辑器，提供 75 种技能和 9 种页面类型，支持沙盒预览和一键分享到微信、X、知乎等。</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:google-labs-code-stitch-skills</id>
+    <title>stitch-skills</title>
+    <link href="https://github.com/google-labs-code/stitch-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为Stitch MCP服务器设计的Agent技能库，遵循Agent Skills开放标准，兼容多种编程代理。</summary>
+    <category term="dev"/>
   </entry>
   <entry>
     <id>skillhub:superpowers-zh</id>
@@ -238,12 +758,36 @@
     <category term="skill"/>
   </entry>
   <entry>
+    <id>skillhub:yaoapp-yao</id>
+    <title>yao</title>
+    <link href="https://github.com/YaoApp/yao"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>一个自托管的AI代理和工作区管理平台，支持任务板和多设备访问。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:refly-ai-refly</id>
+    <title>refly</title>
+    <link href="https://github.com/refly-ai/refly"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>首个开源代理技能构建器，通过 vibe 工作流定义技能，可运行于 Claude Code、Cursor、Codex 等，并支持构建 Clawdbot、API 和机器人。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
     <id>skillhub:dsh-routing-suite</id>
     <title>dsh-routing-suite</title>
     <link href="https://github.com/yjh051108/dsh-routing-suite"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>DSH 路由套件：运行时注入器 + 任务感知推理模式路由预设（实测 P1-P23）。先装注入器，再装路由预设。</summary>
     <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:op7418-guizang-social-card-skill</id>
+    <title>guizang-social-card-skill</title>
+    <link href="https://github.com/op7418/guizang-social-card-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Claude Code/Codex技能，生成小红书图文和公众号封面</summary>
+    <category term="workflow"/>
   </entry>
   <entry>
     <id>skillhub:dsh-web</id>
@@ -254,12 +798,140 @@
     <category term="market"/>
   </entry>
   <entry>
+    <id>skillhub:voltagent-awesome-codex-subagents</id>
+    <title>awesome-codex-subagents</title>
+    <link href="https://github.com/VoltAgent/awesome-codex-subagents"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>包含 130+ 个专业 Codex 子代理，覆盖广泛的开发用例。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:jacob-bd-gemini-notebook-mcp-cli</id>
+    <title>gemini-notebook-mcp-cli</title>
+    <link href="https://github.com/jacob-bd/gemini-notebook-mcp-cli"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>提供命令行、MCP服务器和AI代理技能，实现对Gemini Notebook的编程访问。</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
+    <id>skillhub:zseven-w-openpencil</id>
+    <title>openpencil</title>
+    <link href="https://github.com/ZSeven-W/openpencil"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>开源AI原生矢量设计工具，支持设计即代码和多代理团队协作。</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:q00-ouroboros</id>
+    <title>ouroboros</title>
+    <link href="https://github.com/Q00/ouroboros"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>一个代理操作系统，通过面试门控和预算进化循环让代理自主变得更聪明。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:gosom-google-maps-scraper</id>
+    <title>google-maps-scraper</title>
+    <link href="https://github.com/gosom/google-maps-scraper"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>从 Google Maps 抓取数据，提取商家名称、地址、电话、评分等信息。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:junhoyeo-tokscale</id>
+    <title>tokscale</title>
+    <link href="https://github.com/junhoyeo/tokscale"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>在终端跟踪AI编码代理的token使用量，提供全球排行榜。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:devin-axis-ipollowork</id>
+    <title>iPolloWork</title>
+    <link href="https://github.com/Devin-AXIS/iPolloWork"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>企业级本地优先的代理工作台，支持多引擎统一工作区和插件。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:internet-court-internet-court-skill</id>
+    <title>internet-court-skill</title>
+    <link href="https://github.com/internet-court/internet-court-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为代理间商业提供信任层，包括授权、支付和争议解决</summary>
+    <category term="security"/>
+  </entry>
+  <entry>
+    <id>skillhub:epoko77-ai-im-not-ai</id>
+    <title>im-not-ai</title>
+    <link href="https://github.com/epoko77-ai/im-not-ai"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>韩语AI文本人性化技能，改写翻译腔等AI痕迹</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:tiann-hapi</id>
+    <title>hapi</title>
+    <link href="https://github.com/tiann/hapi"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>支持多种AI编码工具的移动应用，随时随地进行vibe coding。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:breferrari-obsidian-mind</id>
+    <title>obsidian-mind</title>
+    <link href="https://github.com/breferrari/obsidian-mind"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>自组织的Obsidian库，为AI编码代理提供持久记忆。</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
+    <id>skillhub:eugeniughelbur-obsidian-second-brain</id>
+    <title>obsidian-second-brain</title>
+    <link href="https://github.com/eugeniughelbur/obsidian-second-brain"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为Claude Code等代理提供基于Obsidian的持久记忆</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
+    <id>skillhub:xingkongliang-skills-manager</id>
+    <title>skills-manager</title>
+    <link href="https://github.com/xingkongliang/skills-manager"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>轻量级桌面应用，用于跨多种编码工具管理和同步AI代理技能。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:samuraigpt-generative-media-skills</id>
+    <title>Generative-Media-Skills</title>
+    <link href="https://github.com/SamurAIGPT/Generative-Media-Skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为AI代理提供多模态生成媒体技能，支持图像、视频和音频生成。</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:0xnyk-council-of-high-intelligence</id>
+    <title>council-of-high-intelligence</title>
+    <link href="https://github.com/0xNyk/council-of-high-intelligence"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>结构化多视角审议，用于��杂决策，支持多种AI编码工具。</summary>
+    <category term="identity"/>
+  </entry>
+  <entry>
     <id>skillhub:petdex</id>
     <title>petdex</title>
     <link href="https://github.com/crafter-station/petdex"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>动画桌面宠物画廊：为 Codex、Claude Code、DeepSeek Harness、Hermes、OpenCode、Gemini CLI 等提供可安装的像素宠物。</summary>
     <category term="fun"/>
+  </entry>
+  <entry>
+    <id>skillhub:badrisnarayanan-antigravity-claude-proxy</id>
+    <title>antigravity-claude-proxy</title>
+    <link href="https://github.com/badrisnarayanan/antigravity-claude-proxy"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>代理将Antigravity提供的Claude/Gemini模型暴露给Claude Code等工具使用。</summary>
+    <category term="dev"/>
   </entry>
   <entry>
     <id>skillhub:modlens</id>
@@ -270,12 +942,52 @@
     <category term="vision"/>
   </entry>
   <entry>
+    <id>skillhub:yvgude-lean-ctx</id>
+    <title>lean-ctx</title>
+    <link href="https://github.com/yvgude/lean-ctx"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>上下文智能层，控制AI读取内容，记忆学习，保护数据，节省token。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:gotalab-cc-sdd</id>
+    <title>cc-sdd</title>
+    <link href="https://github.com/gotalab/cc-sdd"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>将批准的规格转化为长期自主实现的SDD工具，支持多种AI编码工具。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:strukto-ai-mirage</id>
+    <title>mirage</title>
+    <link href="https://github.com/strukto-ai/mirage"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为AI代理设计的统一虚拟文件系统。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:agentscope-ai-reme</id>
+    <title>ReMe</title>
+    <link href="https://github.com/agentscope-ai/ReMe"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>代理记忆管理工具包，帮助代理记住和优化用户信息。</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
     <id>skillhub:any-auto-register</id>
     <title>any-auto-register</title>
     <link href="https://github.com/lxf746/any-auto-register"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>为 ChatGPT、Cursor、Kiro、Grok、Windsurf、Trae 等 13+ AI 平台自动注册与管理账号：协议/浏览器双模式、插件化、Mac/Windows 一键部署。</summary>
     <category term="tools"/>
+  </entry>
+  <entry>
+    <id>skillhub:agent-of-empires-agent-of-empires</id>
+    <title>agent-of-empires</title>
+    <link href="https://github.com/agent-of-empires/agent-of-empires"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>管理多个AI编码代理的TUI/Web工具，支持移动访问。</summary>
+    <category term="dev"/>
   </entry>
   <entry>
     <id>skillhub:dsh-better-sidebar</id>
@@ -286,6 +998,38 @@
     <category term="ui"/>
   </entry>
   <entry>
+    <id>skillhub:liaohch3-claude-tap</id>
+    <title>claude-tap</title>
+    <link href="https://github.com/liaohch3/claude-tap"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>拦截和检查AI编码代理API流量的本地追踪查看器。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:ljagiello-ctf-skills</id>
+    <title>ctf-skills</title>
+    <link href="https://github.com/ljagiello/ctf-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>用于解决CTF挑战的代理技能，涵盖web、二进制、密码学等领域。</summary>
+    <category term="security"/>
+  </entry>
+  <entry>
+    <id>skillhub:mikeyobrien-ralph-orchestrator</id>
+    <title>ralph-orchestrator</title>
+    <link href="https://github.com/mikeyobrien/ralph-orchestrator"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>改进的Ralph Wiggum技术实现，用于自主AI代理编排。</summary>
+    <category term="identity"/>
+  </entry>
+  <entry>
+    <id>skillhub:ciembor-agent-rules-books</id>
+    <title>agent-rules-books</title>
+    <link href="https://github.com/ciembor/agent-rules-books"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为 AI 编码代理提供 AGENTS.md 规则和技能，灵感来自 Clean Code 等书籍。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
     <id>skillhub:workbuddyguide</id>
     <title>WorkBuddyGuide</title>
     <link href="https://github.com/AlephAITech/WorkBuddyGuide"/>
@@ -294,11 +1038,219 @@
     <category term="docs"/>
   </entry>
   <entry>
+    <id>skillhub:runkids-skillshare</id>
+    <title>skillshare</title>
+    <link href="https://github.com/runkids/skillshare"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>用一条命令在多个 AI CLI 工具间同步技能，支持 Codex、Claude Code 等，简化团队共享。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:iamzhihuix-skills-manage</id>
+    <title>skills-manage</title>
+    <link href="https://github.com/iamzhihuix/skills-manage"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>桌面应用，用于管理跨多个平台的AI编码代理技能。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:agricidaniel-claude-blog</id>
+    <title>claude-blog</title>
+    <link href="https://github.com/AgriciDaniel/claude-blog"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Claude Code博客技能套件，包含30个子技能和5个代理</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:scrapecreators-social-media-research-skills</id>
+    <title>social-media-research-skills</title>
+    <link href="https://github.com/ScrapeCreators/social-media-research-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>用于社交媒体研究的AI代理技能，涵盖多个平台，支持趋势分析和竞争情报。</summary>
+    <category term="tools"/>
+  </entry>
+  <entry>
+    <id>skillhub:a5c-ai-babysitter</id>
+    <title>babysitter</title>
+    <link href="https://github.com/a5c-ai/babysitter"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>通过确定性、无幻觉的自编排，让代理工作负载服从指令并管理复杂任务。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:prat011-awesome-llm-skills</id>
+    <title>awesome-llm-skills</title>
+    <link href="https://github.com/Prat011/awesome-llm-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>精选的LLM和AI代理技能、资源和工具列表，用于定制AI代理工作流。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:alisa0808-vox-director</id>
+    <title>vox-director</title>
+    <link href="https://github.com/Alisa0808/vox-director"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>代理技能，自动端到端制作Vox风格拼贴解说视频</summary>
+    <category term="tools"/>
+  </entry>
+  <entry>
+    <id>skillhub:zanwei-design-dna</id>
+    <title>design-dna</title>
+    <link href="https://github.com/zanwei/design-dna"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>将参考 UI 转化为量化的设计 DNA JSON，并生成匹配的界面。</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:neolabhq-context-engineering-kit</id>
+    <title>context-engineering-kit</title>
+    <link href="https://github.com/NeoLabHQ/context-engineering-kit"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>手工制作的Claude Code技能，专注于提升代理结果质量，兼容多种编码工具。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:specstoryai-getspecstory</id>
+    <title>getspecstory</title>
+    <link href="https://github.com/specstoryai/getspecstory"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为 AI IDE 或终端代理安装本地优先扩展，将历史处理为可复用技能，并同步到云端。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:juneyaooo-gpt-image2-ppt-skills</id>
+    <title>gpt-image2-ppt-skills</title>
+    <link href="https://github.com/JuneYaooo/gpt-image2-ppt-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>克隆PPT模板版式并生成新内容的技能，包含10套风格</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
     <id>skillhub:todo-for-ai</id>
     <title>todo-for-ai</title>
     <link href="https://github.com/todo-for-ai/todo-for-ai"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>专为 AI 助手设计的综合任务管理系统：项目管理、任务跟踪、团队协作与无缝 AI 集成。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:sunchaokun-ppt-design-skill</id>
+    <title>PPT-Design-Skill</title>
+    <link href="https://github.com/sunchaokun/PPT-Design-Skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>面向专业演示设计场景，提供精准 PPT 设计技能，支持 4 万+ 样式、AI 图像生成和可编辑 PPTX 交付。</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:huytieu-cog-second-brain</id>
+    <title>COG-second-brain</title>
+    <link href="https://github.com/huytieu/COG-second-brain"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>自进化第二大脑，包含33个AI技能、10个代理和人员CRM，采用V模型验证生命周期。</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
+    <id>skillhub:dpearson2699-swift-ios-skills</id>
+    <title>swift-ios-skills</title>
+    <link href="https://github.com/dpearson2699/swift-ios-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为 iOS 26+、Swift 6.3、SwiftUI 和现代 Apple 框架提供代理技能。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:917dhj-deeppapernote</id>
+    <title>DeepPaperNote</title>
+    <link href="https://github.com/917Dhj/DeepPaperNote"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>用于深度阅读单篇论文并生成高质量研究笔记的代理技能。</summary>
+    <category term="skill"/>
+  </entry>
+  <entry>
+    <id>skillhub:jiweiyeah-skills-manager</id>
+    <title>Skills-Manager</title>
+    <link href="https://github.com/jiweiyeah/Skills-Manager"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>免费开源的 AI 代理技能桌面管理器，一次编写，通过符号链接同步到 32 种 AI 编码工具，本地优先，MIT 许可。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:bhanunamikaze-agentic-seo-skill</id>
+    <title>Agentic-SEO-Skill</title>
+    <link href="https://github.com/Bhanunamikaze/Agentic-SEO-Skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>面向Antigravity、Codex、Claude的SEO分析技能，包含多个子技能和脚本</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:dominikmartn-hue</id>
+    <title>hue</title>
+    <link href="https://github.com/dominikmartn/hue"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>开源技能，学习品牌并生成完整设计系统，适用于Claude Code和Codex。</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:yanliudesign-mono-color-skill</id>
+    <title>mono-color-skill</title>
+    <link href="https://github.com/yanliudesign/mono-color-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>单色编辑印刷图像技能，包含暖纸、半调摄影、留白和克制排版。</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:magebyte-zero-spec-superflow</id>
+    <title>spec-superflow</title>
+    <link href="https://github.com/MageByte-Zero/spec-superflow"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>融合OpenSpec规划引擎和Superpowers执行纪律的AI编程工作流插件，支持17个平台。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:gamedev-skills-awesome-gamedev-agent-skills</id>
+    <title>awesome-gamedev-agent-skills</title>
+    <link href="https://github.com/gamedev-skills/awesome-gamedev-agent-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>67个游戏开发技能，适用于多种游戏引擎，采用可移植的SKILL.md格式。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:dreambigou-eli5</id>
+    <title>ELI5</title>
+    <link href="https://github.com/DreambigOu/ELI5"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Claude Code技能，根据受众调整语气、词汇和类比，向任何人解释任何事物。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:danilo-znamerovszkij-draw-your-font</id>
+    <title>draw-your-font</title>
+    <link href="https://github.com/danilo-znamerovszkij/draw-your-font"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>将手写照片转换为真实字体（TTF/WOFF/WOFF2），免费开源，无需上传。</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:xiaopu-ai-web-design</id>
+    <title>web-design</title>
+    <link href="https://github.com/xiaopu-ai/web-design"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Claude Code技能，用于设计美观一致的网页，先规格后代码。</summary>
+    <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:learnwithu-mingli-master</id>
+    <title>mingli-master</title>
+    <link href="https://github.com/learnwithu/mingli-master"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>紫微斗数命盘解读技能，基于iztro-py精确排盘，生成可视化命盘HTML。</summary>
+    <category term="fun"/>
+  </entry>
+  <entry>
+    <id>skillhub:storybloq-storybloq</id>
+    <title>storybloq</title>
+    <link href="https://github.com/Storybloq/storybloq"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为Claude Code提供跨会话上下文，通过CLI、MCP服务器和/story技能跟踪任务。</summary>
     <category term="workflow"/>
   </entry>
   <entry>
@@ -310,12 +1262,84 @@
     <category term="skill"/>
   </entry>
   <entry>
+    <id>skillhub:hao0321-claude-skill-social-post</id>
+    <title>claude-skill-social-post</title>
+    <link href="https://github.com/Hao0321/claude-skill-social-post"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Claude Code技能，学习你的Facebook风格，自动发布到多个社交平台，并提供14天内容日历。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
     <id>skillhub:wechat-openclaw-channel</id>
     <title>wechat-openclaw-channel</title>
     <link href="https://github.com/HenryXiaoYang/wechat-openclaw-channel"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>微信版 OpenClaw Channel（从开源项目 OpenClaw 抽取），现已同时支持 QClaw 与 WorkBuddy 方式登录。</summary>
     <category term="tools"/>
+  </entry>
+  <entry>
+    <id>skillhub:zhinkgit-embeddedskills</id>
+    <title>embeddedskills</title>
+    <link href="https://github.com/zhinkgit/embeddedskills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>面向嵌入式开发的技能集合，支持 Claude Code、Copilot、TRAE 等。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:crawfordxx-xiaoma-durex-copywriter</id>
+    <title>xiaoma-durex-copywriter</title>
+    <link href="https://github.com/crawfordxx/xiaoma-durex-copywriter"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>杜蕾斯式文案与海报技能，包含双层语义方法论、8个文案公式和视觉系统。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:echovic-boss-skill</id>
+    <title>boss-skill</title>
+    <link href="https://github.com/echoVic/boss-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>BMAD全自动研发流水线，通过多Agent编排实现自动化开发。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:infyedge-system-prompts-and-models-of-ai-tools-chinese</id>
+    <title>system-prompts-and-models-of-ai-tools-chinese</title>
+    <link href="https://github.com/InfyEdge/system-prompts-and-models-of-ai-tools-chinese"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>AI编程工具中文提示词合集，包含多种工具的提示词，为中文开发者提供参考。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:yushui2022-mathmodel-skill</id>
+    <title>MathModel-Skill</title>
+    <link href="https://github.com/yushui2022/MathModel-Skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>面向数学建模的 Agent 原生工作流技能，支持 Trae、Claude Code 和 Codex。</summary>
+    <category term="skill"/>
+  </entry>
+  <entry>
+    <id>skillhub:highmark-31-trae-skills</id>
+    <title>TRAE-Skills</title>
+    <link href="https://github.com/HighMark-31/TRAE-Skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>精选150+专业AI技能，涵盖软件开发、前端、后端、自动化、UI/UX、SEO和DevOps。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:jackiotyu-git-worktree-manager</id>
+    <title>git-worktree-manager</title>
+    <link href="https://github.com/jackiotyu/git-worktree-manager"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>在Visual Studio Code中轻松管理Git worktrees的扩展。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:ad-naan-adnify</id>
+    <title>Adnify</title>
+    <link href="https://github.com/ad-naan/Adnify"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>将代码库交给 AI 队友，自动完成规划、编辑、运行和交付。</summary>
+    <category term="dev"/>
   </entry>
   <entry>
     <id>skillhub:workbuddyskills</id>
@@ -350,6 +1374,22 @@
     <category term="tools"/>
   </entry>
   <entry>
+    <id>skillhub:oldjii-mcp-dock</id>
+    <title>mcp-dock</title>
+    <link href="https://github.com/OldJii/mcp-dock"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为 14 种 AI 客户端提供 MCP 服务器与配置管理，支持海量服务器和技能。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:nolan0722-trae-ollama-bridge</id>
+    <title>TRAE-Ollama-Bridge</title>
+    <link href="https://github.com/Nolan0722/TRAE-Ollama-Bridge"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>将本地 Ollama 封装为 OpenAI 兼容 API，以绕过 TRAE 等 IDE 的固定模型限制。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
     <id>skillhub:superior-skills</id>
     <title>superior-skills</title>
     <link href="https://github.com/Superior-Trade/superior-skills"/>
@@ -364,6 +1404,54 @@
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>智见 AI 蓝皮书：拆解 WorkBuddy 的提示词、记忆、插件、专家、Skill 与安全边界。</summary>
     <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:rito-w-skills-manager</id>
+    <title>skills-manager</title>
+    <link href="https://github.com/Rito-w/skills-manager"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>跨平台技能管理器，支持搜索市场、本地下载并一键安装到多种 AI IDE。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:arch3rpro-trae-proxy</id>
+    <title>Trae-Proxy</title>
+    <link href="https://github.com/arch3rPro/Trae-Proxy"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>智能 API 代理工具，拦截并重定向 OpenAI API 请求到自定义后端。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:naodeng-awesome-qa-skills</id>
+    <title>awesome-qa-skills</title>
+    <link href="https://github.com/naodeng/awesome-qa-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>中英双语 AI 测试 Agent 技能库，包含多种测试工作流和技能。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:wanniwa-editorjumper</id>
+    <title>EditorJumper</title>
+    <link href="https://github.com/wanniwa/EditorJumper"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>JetBrains 插件，可在 JetBrains IDE 与其他流行编辑器间跳转并保持编辑上下文。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:woodx9-build-your-claude-code-from-scratch</id>
+    <title>build-your-claude-code-from-scratch</title>
+    <link href="https://github.com/woodx9/build-your-claude-code-from-scratch"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>从零构建类似 Claude Code 的 CLI 编码代理。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:study8677-readme.skill</id>
+    <title>Readme.skill</title>
+    <link href="https://github.com/study8677/Readme.skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>将本地 AI 编码历史转化为可分享的匿名开发者画像和 SVG 海报。</summary>
+    <category term="dev"/>
   </entry>
   <entry>
     <id>skillhub:awesome-website-prompts-and-skills</id>
@@ -382,6 +1470,14 @@
     <category term="skill"/>
   </entry>
   <entry>
+    <id>skillhub:highmark-31-trae-agents</id>
+    <title>TRAE-Agents</title>
+    <link href="https://github.com/HighMark-31/TRAE-Agents"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>面向 TRAE 的专用 Agent 集合，覆盖开发、自动化、UI/UX、SEO 和 DevOps。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
     <id>skillhub:dsh-popout-sidebar</id>
     <title>dsh-popout-sidebar</title>
     <link href="https://github.com/e2mcc/dsh-popout-sidebar"/>
@@ -398,12 +1494,220 @@
     <category term="dev"/>
   </entry>
   <entry>
+    <id>skillhub:carlwangchina-zhigui-openclaw-ui-second-brain-skill</id>
+    <title>zhigui-openclaw-ui-second-brain-skill</title>
+    <link href="https://github.com/CarlWangChina/zhigui-openclaw-ui-second-brain-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>基于 UI 的 AI 第二大脑技能，利用长期记忆辅助决策和规划。</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
+    <id>skillhub:changexbc-workbuddy-switch</id>
+    <title>workbuddy-switch</title>
+    <link href="https://github.com/changexbc/workbuddy-switch"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>WorkBuddy 多账号切换工具，支持账号切换、会话复制、自动签到和积分监控。</summary>
+    <category term="tools"/>
+  </entry>
+  <entry>
+    <id>skillhub:lasoons-agentskillsmanager</id>
+    <title>AgentSkillsManager</title>
+    <link href="https://github.com/lasoons/AgentSkillsManager"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>多 IDE 技能管理扩展，支持浏览安装技能仓库并搜索云目录。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:konnga-skill-buddy</id>
+    <title>skill-buddy</title>
+    <link href="https://github.com/konnga/skill-buddy"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>桌面工作区，用于跨 AI 代理管理、安装和同步 Skills 与 MCP 服务器。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:88lin-workbuddy-auto-signin</id>
+    <title>workbuddy-auto-signin</title>
+    <link href="https://github.com/88lin/workbuddy-auto-signin"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>自动化脚本，自动领取 WorkBuddy 每日签到积分、旅行礼物和任务奖励。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:juneyaooo-self-media-compliance-review</id>
+    <title>self-media-compliance-review</title>
+    <link href="https://github.com/JuneYaooo/self-media-compliance-review"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>自媒体视频发布前违规风险审核，输出五级风险报告</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:cnproduct-workbuddy-wechat-publisher</id>
+    <title>workbuddy-wechat-publisher</title>
+    <link href="https://github.com/cnproduct/workbuddy-wechat-publisher"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>WorkBuddy 技能包，实现微信公众号文章从写作到发布的自动化流程。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
     <id>skillhub:openfinclaw-cli</id>
     <title>openfinclaw-cli</title>
     <link href="https://github.com/mirror29/openfinclaw-cli"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>一站式量化交易 AI agent：研究、策略、回测、模拟盘，一条命令开始。</summary>
     <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:kevinyoung-kw-vibe-resume-skill</id>
+    <title>vibe-resume-skill</title>
+    <link href="https://github.com/KevinYoung-Kw/vibe-resume-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>AI 简历生成与排版技能，提供 12 套可投递模板。</summary>
+    <category term="tools"/>
+  </entry>
+  <entry>
+    <id>skillhub:1panel-dev-cordyscrm-skills</id>
+    <title>CordysCRM-skills</title>
+    <link href="https://github.com/1Panel-dev/CordysCRM-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>AI CRM 销售助理，可集成到 OpenClaw、WorkBuddy 等代理，覆盖 L2C 全链路。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:gotocx-superpowers-trae</id>
+    <title>superpowers-trae</title>
+    <link href="https://github.com/gotocx/superpowers-trae"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>TRAE迁移的obra/superpowers，包含规则、技能和记忆设置指南</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:hufeng173-kunpeng-skill</id>
+    <title>kunpeng-skill</title>
+    <link href="https://github.com/hufeng173/kunpeng-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>多模态蒸馏工具，将仓库、网站、UI、视频等转化为可复用的方法论和再生规范。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:hanhan666666-codebuddy2openai</id>
+    <title>codebuddy2openai</title>
+    <link href="https://github.com/HanHan666666/codebuddy2openai"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>将 CodeBuddy/WorkBuddy 订阅转换为 OpenAI 兼容 API，支持在 Codex CLI 等客户端使用。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:qingzhoupro-afsim-skill</id>
+    <title>afsim-skill</title>
+    <link href="https://github.com/qingzhoupro/afsim-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>专为AFSIM仿真引擎设计的AI编程助手，支持自然语言生成和优化场景代码</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:jiang198012-workbuddian</id>
+    <title>workbuddian</title>
+    <link href="https://github.com/jiang198012/workbuddian"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Obsidian 插件，将本地 CodeBuddy CLI 或 Hermes agent 集成到 vault 内进行 AI 聊天。</summary>
+    <category term="memory"/>
+  </entry>
+  <entry>
+    <id>skillhub:isonnymichael-bedrock</id>
+    <title>bedrock</title>
+    <link href="https://github.com/isonnymichael/bedrock"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>CLI工具，为AI项目生成标准化的规则、技能和上下文配置</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:mfkyddh-zzz-simple-ai</id>
+    <title>ZZZ-Simple-AI</title>
+    <link href="https://github.com/mfkyddh/ZZZ-Simple-AI"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>用大白话讲透 AI 和 Agent，零基础也能看懂的工作指南</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:ai-practical-lab-novel-writer</id>
+    <title>novel-writer</title>
+    <link href="https://github.com/AI-Practical-Lab/novel-writer"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>全流程长篇小说AI创作引擎，支持角色追踪和伏笔管理</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:maochengsun16-code-bazi-analysis-skill</id>
+    <title>bazi-analysis-skill</title>
+    <link href="https://github.com/maochengsun16-code/bazi-analysis-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Codex八字分析Skill，支持排盘和实战派分析</summary>
+    <category term="fun"/>
+  </entry>
+  <entry>
+    <id>skillhub:whatevertogo-feishuskill</id>
+    <title>FeiShuSkill</title>
+    <link href="https://github.com/whatevertogo/FeiShuSkill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>飞书skill，需配合飞书官方MCP服务使用</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:jie023-trae-setting</id>
+    <title>trae-setting</title>
+    <link href="https://github.com/jie023/trae-setting"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Trae的智能体、技能和规则设置集合</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:lbb00-ai-rules-sync</id>
+    <title>ai-rules-sync</title>
+    <link href="https://github.com/lbb00/ai-rules-sync"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>同步、管理和分享AI规则、技能、命令和子代理的工具</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:openinsighthq-one-pi</id>
+    <title>one-pi</title>
+    <link href="https://github.com/OpenInsightHQ/one-pi"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>基于浏览器的 PI 代理，作为 AI 员工的推理引擎。</summary>
+    <category term="identity"/>
+  </entry>
+  <entry>
+    <id>skillhub:zhuang-he-workbuddy-harness</id>
+    <title>workbuddy-harness</title>
+    <link href="https://github.com/zhuang-HE/workbuddy-harness"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>AI Agent 九维基础设施框架，提供架构维度、插件、Hooks 和基准评测</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:shiroe120-zero-to-pass</id>
+    <title>zero-to-pass</title>
+    <link href="https://github.com/shiroe120/zero-to-pass"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>期末周速成SKILL，为Claude Code、Trae等设计</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:shrek-abaper-sap-engineering-skill</id>
+    <title>sap-engineering-skill</title>
+    <link href="https://github.com/shrek-abaper/sap-engineering-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>面向 SAP ABAP 的 AI 技能，支持 ADT 读写、代码审查和传输门禁</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:openinsighthq-openinsight</id>
+    <title>openinsight</title>
+    <link href="https://github.com/OpenInsightHQ/openinsight"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>企业级 Agent 操作系统，可自托管，让 AI 员工学习业务并交付成果</summary>
+    <category term="workflow"/>
   </entry>
   <entry>
     <id>skillhub:trip-planner-skill</id>
@@ -414,12 +1718,44 @@
     <category term="tools"/>
   </entry>
   <entry>
+    <id>skillhub:arraycto-xhs-blogger-analyzer</id>
+    <title>xhs-blogger-analyzer</title>
+    <link href="https://github.com/arraycto/xhs-blogger-analyzer"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>小红书博主拆解 AI 技能，自动爬取笔记并生成专业分析文档</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
+    <id>skillhub:autobcb-source-skills</id>
+    <title>source-skills</title>
+    <link href="https://github.com/autobcb/source-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>轻悦时光AI书源技能包，适配字节Trae</summary>
+    <category term="fun"/>
+  </entry>
+  <entry>
+    <id>skillhub:sangfor-aibuilder-aibuilder-json</id>
+    <title>aibuilder-json</title>
+    <link href="https://github.com/sangfor-aibuilder/aibuilder-json"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>企业级FastGPT工作流JSON生成器，兼容多种AI平台</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
     <id>skillhub:dsh-skill-picker</id>
     <title>dsh-skill-picker</title>
     <link href="https://github.com/a735624258/dsh-skill-picker"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>WorkBuddy 同款技能选择器：输入框旁可搜索的已装技能列表，点选插入 /技能名 手势。</summary>
     <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:cabbage2000-lab-textbook-writer-skills</id>
+    <title>textbook-writer-skills</title>
+    <link href="https://github.com/cabbage2000-lab/textbook-writer-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>UbD 逆向设计驱动的教材写作技能组合，支持审核和续写</summary>
+    <category term="docs"/>
   </entry>
   <entry>
     <id>skillhub:law-ye-skill</id>
@@ -430,12 +1766,36 @@
     <category term="tools"/>
   </entry>
   <entry>
+    <id>skillhub:dangooy-trade-pipeline-skill</id>
+    <title>trade-pipeline-skill</title>
+    <link href="https://github.com/Dangooy/trade-pipeline-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>AI 外贸单证自动化技能，一份询价单生成多份单证并联动</summary>
+    <category term="tools"/>
+  </entry>
+  <entry>
     <id>skillhub:awesome-workbuddy</id>
     <title>awesome-workbuddy</title>
     <link href="https://github.com/semlinker/awesome-workbuddy"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>精选腾讯 WorkBuddy 学习资料、实战案例、提示词、Skills 与 MCP 资源导航。</summary>
     <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:bitcjm-workbuddy-skills</id>
+    <title>workbuddy-skills</title>
+    <link href="https://github.com/bitcjm/workbuddy-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>WorkBuddy Skills 仓库 — AI 技能集合，涵盖 AI 创作、编程、办公、通用工具等分类</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:quantskills-skill-pandadata-api</id>
+    <title>skill-pandadata-api</title>
+    <link href="https://github.com/quantskills/skill-pandadata-api"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Pandadata API skill for Codex, Claude Code, Hermes, OpenClaw, Cursor, and WorkBuddy</summary>
+    <category term="dev"/>
   </entry>
   <entry>
     <id>skillhub:patent-skills</id>

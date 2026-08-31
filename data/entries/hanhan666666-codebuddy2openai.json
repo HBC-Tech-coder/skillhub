@@ -1,0 +1,54 @@
+{
+  "id": "hanhan666666-codebuddy2openai",
+  "name": "codebuddy2openai",
+  "owner": "HanHan666666",
+  "url": "https://github.com/HanHan666666/codebuddy2openai",
+  "category": "dev",
+  "description": {
+    "en": "Convert CodeBuddy/WorkBuddy (Tencent coding assistant) subscription into an OpenAI-compatible API. Use CodeBuddy GLM-5.2/Kimi/DeepSeek models in Codex CLI or any OpenAI client. Cross-platform, single-file, no auth changes.",
+    "zh": "将 CodeBuddy/WorkBuddy 订阅转换为 OpenAI 兼容 API，支持在 Codex CLI 等客户端使用。"
+  },
+  "install": "git clone https://github.com/HanHan666666/codebuddy2openai",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/HanHan666666/codebuddy2openai"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "使用 CodeBuddy/WorkBuddy 的开发者",
+    "en": "Developers using CodeBuddy/WorkBuddy"
+  },
+  "usecases": {
+    "zh": "将 CodeBuddy/WorkBuddy 订阅转换为 OpenAI 兼容 API",
+    "en": "Convert CodeBuddy/WorkBuddy subscription to OpenAI-compatible API"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 51,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "HanHan666666",
+  "tags": [
+    "api-gateway",
+    "codebuddy",
+    "codebuddy-api",
+    "codex",
+    "codex-cli",
+    "deepseek",
+    "fastapi",
+    "glm",
+    "kimi",
+    "llm"
+  ],
+  "verified": false,
+  "status": "active"
+}

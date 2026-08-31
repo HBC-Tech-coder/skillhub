@@ -1,0 +1,49 @@
+{
+  "id": "changexbc-workbuddy-switch",
+  "name": "workbuddy-switch",
+  "owner": "changexbc",
+  "url": "https://github.com/changexbc/workbuddy-switch",
+  "category": "tools",
+  "description": {
+    "en": "WorkBuddy（腾讯 AI 编程助手）多账号切换工具：桌面 App（Tauri）+ npm webui，支持账号切换、会话复制、自动签到、积分到期监控与 CodeBuddy CLI 自动轮换",
+    "zh": "WorkBuddy 多账号切换工具，支持账号切换、会话复制、自动签到和积分监控。"
+  },
+  "install": "git clone https://github.com/changexbc/workbuddy-switch",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/changexbc/workbuddy-switch"
+    }
+  ],
+  "scenarios": [
+    "accounts",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "WorkBuddy 多账号用户",
+    "en": "WorkBuddy users with multiple accounts"
+  },
+  "usecases": {
+    "zh": "管理多个 WorkBuddy 账号，自动签到和监控积分",
+    "en": "Manage multiple WorkBuddy accounts, auto sign-in, and monitor credits"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 96,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "changexbc",
+  "tags": [
+    "account-switcher",
+    "codebuddy",
+    "rust",
+    "tauri",
+    "workbuddy"
+  ],
+  "verified": false,
+  "status": "active"
+}

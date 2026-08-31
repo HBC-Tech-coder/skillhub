@@ -1,0 +1,53 @@
+{
+  "id": "yanliudesign-mono-color-skill",
+  "name": "mono-color-skill",
+  "owner": "yanliudesign",
+  "url": "https://github.com/yanliudesign/mono-color-skill",
+  "category": "ui",
+  "description": {
+    "en": "One-ink editorial print image skill — warm paper, halftone photography, active negative space, and restrained typography.",
+    "zh": "单色编辑印刷图像技能，包含暖纸、半调摄影、留白和克制排版。"
+  },
+  "install": "git clone https://github.com/yanliudesign/mono-color-skill（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/yanliudesign/mono-color-skill（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "design"
+  ],
+  "audience": {
+    "zh": "设计师和需要生成特定风格图像的创作者",
+    "en": "Designers and creators needing to generate specific style images"
+  },
+  "usecases": {
+    "zh": "生成单色编辑印刷风格图像，用于海报、插画等",
+    "en": "Generate one-ink editorial print style images for posters, illustrations, etc."
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 803,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "yanliudesign",
+  "tags": [
+    "agent-skill",
+    "ai-agent",
+    "claude-skill",
+    "editorial-design",
+    "generative-art",
+    "halftone",
+    "image-generation",
+    "monochrome",
+    "poster-design",
+    "prompt-engineering"
+  ],
+  "verified": false,
+  "status": "active"
+}

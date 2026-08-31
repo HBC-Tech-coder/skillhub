@@ -1,0 +1,53 @@
+{
+  "id": "amruthpillai-reactive-resume",
+  "name": "reactive-resume",
+  "owner": "amruthpillai",
+  "url": "https://github.com/amruthpillai/reactive-resume",
+  "category": "tools",
+  "description": {
+    "en": "A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever. Try it out today!",
+    "zh": "注重隐私的开源简历生成器，完全可定制且免费。"
+  },
+  "install": "dsh plugin --profile web add github:amruthpillai/reactive-resume",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:amruthpillai/reactive-resume"
+    }
+  ],
+  "scenarios": [
+    "job"
+  ],
+  "audience": {
+    "zh": "求职者、职场人士",
+    "en": "Job seekers, professionals"
+  },
+  "usecases": {
+    "zh": "创建、定制和导出简历",
+    "en": "Create, customize, and export resumes"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 41988,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "MIT",
+  "author": "amruthpillai",
+  "tags": [
+    "agent-skills",
+    "ai",
+    "dsh-plugin",
+    "hacktoberfest",
+    "javascript",
+    "mcp-server",
+    "react",
+    "resume-builder",
+    "self-hosted",
+    "typescript"
+  ],
+  "verified": false,
+  "status": "active"
+}

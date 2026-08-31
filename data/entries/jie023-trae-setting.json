@@ -1,0 +1,43 @@
+{
+  "id": "jie023-trae-setting",
+  "name": "trae-setting",
+  "owner": "jie023",
+  "url": "https://github.com/jie023/trae-setting",
+  "category": "workflow",
+  "description": {
+    "en": "智能体、skills、规则、设置",
+    "zh": "Trae的智能体、技能和规则设置集合"
+  },
+  "install": "git clone https://github.com/jie023/trae-setting",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/jie023/trae-setting"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "Trae用户、AI配置爱好者",
+    "en": "Trae users, AI configuration enthusiasts"
+  },
+  "usecases": {
+    "zh": "配置Trae的智能体、技能和规则",
+    "en": "Configure Trae agents, skills, and rules"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 37,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "jie023",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

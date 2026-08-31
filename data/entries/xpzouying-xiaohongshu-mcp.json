@@ -1,0 +1,47 @@
+{
+  "id": "xpzouying-xiaohongshu-mcp",
+  "name": "xiaohongshu-mcp",
+  "owner": "xpzouying",
+  "url": "https://github.com/xpzouying/xiaohongshu-mcp",
+  "category": "workflow",
+  "description": {
+    "en": "MCP for xiaohongshu.com",
+    "zh": "为小红书提供MCP服务器，方便AI访问小红书内容。"
+  },
+  "install": "参照仓库 README 配置 MCP 客户端",
+  "ecosystems": [
+    {
+      "id": "mcp",
+      "kind": "server",
+      "install": "参照仓库 README 配置 MCP 客户端"
+    }
+  ],
+  "scenarios": [
+    "content-social",
+    "trends-monitor"
+  ],
+  "audience": {
+    "zh": "新媒体运营、内容创作者",
+    "en": "Social media operators, content creators"
+  },
+  "usecases": {
+    "zh": "通过MCP协议访问小红书内容，用于内容创作和热点监控",
+    "en": "Access Xiaohongshu content via MCP for content creation and trend monitoring"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 15564,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "Apache-2.0",
+  "author": "xpzouying",
+  "tags": [
+    "mcp",
+    "mcp-server",
+    "xiaohongshu-mcp"
+  ],
+  "verified": false,
+  "status": "active"
+}

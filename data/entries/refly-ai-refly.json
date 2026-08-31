@@ -1,0 +1,54 @@
+{
+  "id": "refly-ai-refly",
+  "name": "refly",
+  "owner": "refly-ai",
+  "url": "https://github.com/refly-ai/refly",
+  "category": "workflow",
+  "description": {
+    "en": "The first open-source agent skills builder. Define skills by vibe workflow, run on Claude Code, Cursor, Codex & more. Build Clawdbot 🦞· APIs for Lovable · Bots for Slack & Lark/Feishu · Skills are infrastructure, not prompts.",
+    "zh": "首个开源代理技能构建器，通过 vibe 工作流定义技能，可运行于 Claude Code、Cursor、Codex 等，并支持构建 Clawdbot、API 和机器人。"
+  },
+  "install": "git clone https://github.com/refly-ai/refly（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/refly-ai/refly（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "AI 代理技能构建者和开发者",
+    "en": "AI agent skill builders and developers"
+  },
+  "usecases": {
+    "zh": "通过 vibe 工作流定义技能，并部署到多种平台",
+    "en": "Define skills via vibe workflow and deploy to multiple platforms"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 7500,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "refly-ai",
+  "tags": [
+    "agent",
+    "agent-skills",
+    "automation",
+    "claude",
+    "clawdbot",
+    "codex",
+    "cursor",
+    "lark-bot",
+    "lovable",
+    "n8n-alternative"
+  ],
+  "verified": false,
+  "status": "active"
+}

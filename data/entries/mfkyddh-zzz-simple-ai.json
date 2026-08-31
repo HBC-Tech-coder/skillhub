@@ -1,0 +1,42 @@
+{
+  "id": "mfkyddh-zzz-simple-ai",
+  "name": "ZZZ-Simple-AI",
+  "owner": "mfkyddh",
+  "url": "https://github.com/mfkyddh/ZZZ-Simple-AI",
+  "category": "docs",
+  "description": {
+    "en": "用大白话讲透 AI 和 Agent，从 ChatGPT 到智能体，零基础也能看懂的工作指南。基于 WorkBuddy 多模型协作平台创作。使用求是skill作为主要技能。",
+    "zh": "用大白话讲透 AI 和 Agent，零基础也能看懂的工作指南"
+  },
+  "install": "git clone https://github.com/mfkyddh/ZZZ-Simple-AI",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/mfkyddh/ZZZ-Simple-AI"
+    }
+  ],
+  "scenarios": [
+    "learn"
+  ],
+  "audience": {
+    "zh": "AI 零基础用户",
+    "en": "AI beginners"
+  },
+  "usecases": {
+    "zh": "用大白话学习 AI 和 Agent 基础知识",
+    "en": "Learning AI and agent basics in plain language"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 43,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "mfkyddh",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

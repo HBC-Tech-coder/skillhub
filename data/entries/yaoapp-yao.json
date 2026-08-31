@@ -1,0 +1,53 @@
+{
+  "id": "yaoapp-yao",
+  "name": "yao",
+  "owner": "YaoApp",
+  "url": "https://github.com/YaoApp/yao",
+  "category": "workflow",
+  "description": {
+    "en": "✨ All your agents and workspaces in one place, on every device you own. Track tasks on a board, accessible from desktop, mobile, browser, or API. Self-hosted.",
+    "zh": "一个自托管的AI代理和工作区管理平台，支持任务板和多设备访问。"
+  },
+  "install": "dsh plugin --profile web add github:YaoApp/yao",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:YaoApp/yao"
+    }
+  ],
+  "scenarios": [
+    "workflow"
+  ],
+  "audience": {
+    "zh": "需要统一管理多个AI代理和项目的开发者和团队",
+    "en": "Developers and teams who need to manage multiple AI agents and projects in one place"
+  },
+  "usecases": {
+    "zh": "在自托管环境中集中管理AI代理、任务板和跨设备访问",
+    "en": "Centralize AI agent management, task boards, and cross-device access in a self-hosted environment"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 7846,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "NOASSERTION",
+  "author": "YaoApp",
+  "tags": [
+    "agent-harness",
+    "agent-orchestration",
+    "agent-skills",
+    "agent-workspaces",
+    "ai-agents",
+    "ai-native",
+    "claude-code",
+    "coding-agent",
+    "deepseek",
+    "deepseek-harness"
+  ],
+  "verified": false,
+  "status": "active"
+}

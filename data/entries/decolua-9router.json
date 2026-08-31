@@ -1,0 +1,54 @@
+{
+  "id": "decolua-9router",
+  "name": "9router",
+  "owner": "decolua",
+  "url": "https://github.com/decolua/9router",
+  "category": "dev",
+  "description": {
+    "en": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
+    "zh": "提供免费的AI编程API路由，支持多种模型提供商，自动回退和减少token消耗。"
+  },
+  "install": "git clone https://github.com/decolua/9router（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/decolua/9router（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI编程开发者、使用Claude Code等工具的开发者",
+    "en": "AI coding developers, developers using tools like Claude Code"
+  },
+  "usecases": {
+    "zh": "连接多个AI模型提供商，自动回退，减少token消耗，避免限制",
+    "en": "Connect multiple AI model providers, auto-fallback, reduce token usage, avoid limits"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 26763,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "decolua",
+  "tags": [
+    "ai-agents",
+    "ai-gateway",
+    "anthropic",
+    "chatgpt",
+    "claude",
+    "claude-code",
+    "cline",
+    "codex",
+    "copilot",
+    "cursor"
+  ],
+  "verified": false,
+  "status": "active"
+}

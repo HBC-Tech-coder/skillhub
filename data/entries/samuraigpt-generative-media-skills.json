@@ -1,0 +1,55 @@
+{
+  "id": "samuraigpt-generative-media-skills",
+  "name": "Generative-Media-Skills",
+  "owner": "SamurAIGPT",
+  "url": "https://github.com/SamurAIGPT/Generative-Media-Skills",
+  "category": "ui",
+  "description": {
+    "en": "Multi-modal Generative Media Skills for AI Agents (Claude Code, Cursor, Gemini CLI). High-quality image, video, and audio generation powered by muapi.ai.",
+    "zh": "为AI代理提供多模态生成媒体技能，支持图像、视频和音频生成。"
+  },
+  "install": "git clone https://github.com/SamurAIGPT/Generative-Media-Skills（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/SamurAIGPT/Generative-Media-Skills（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "design",
+    "video-edit",
+    "voice-tts"
+  ],
+  "audience": {
+    "zh": "AI内容创作者",
+    "en": "AI content creators"
+  },
+  "usecases": {
+    "zh": "为AI代理生成高质量的图像、视频和音频",
+    "en": "Generate high-quality images, videos, and audio for AI agents"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 4196,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "SamurAIGPT",
+  "tags": [
+    "agent-skills",
+    "agent-tools",
+    "ai-agents",
+    "ai-video",
+    "claude-code",
+    "claude-code-skills",
+    "fal-ai-alternative",
+    "flux",
+    "generative-ai",
+    "image-generation"
+  ],
+  "verified": false,
+  "status": "active"
+}

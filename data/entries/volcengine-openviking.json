@@ -1,0 +1,49 @@
+{
+  "id": "volcengine-openviking",
+  "name": "OpenViking",
+  "owner": "volcengine",
+  "url": "https://github.com/volcengine/OpenViking",
+  "category": "memory",
+  "description": {
+    "en": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
+    "zh": "自进化上下文数据库，用于AI代理的记忆和知识管理。"
+  },
+  "install": "dsh plugin --profile web add github:volcengine/OpenViking",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:volcengine/OpenViking"
+    }
+  ],
+  "scenarios": [
+    "memory-knowledge"
+  ],
+  "audience": {
+    "zh": "AI开发者、知识管理从业者",
+    "en": "AI developers, knowledge management practitioners"
+  },
+  "usecases": {
+    "zh": "统一代理记忆、知识RAG和技能",
+    "en": "Unify agent memory, knowledge RAG, and skills"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 34580,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "AGPL-3.0",
+  "author": "volcengine",
+  "tags": [
+    "agent-memory",
+    "agent-plugins",
+    "agentic-rag",
+    "context-database",
+    "dsh-plugin",
+    "self-evolving"
+  ],
+  "verified": false,
+  "status": "active"
+}

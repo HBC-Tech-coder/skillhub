@@ -1,0 +1,48 @@
+{
+  "id": "1panel-dev-cordyscrm-skills",
+  "name": "CordysCRM-skills",
+  "owner": "1Panel-dev",
+  "url": "https://github.com/1Panel-dev/CordysCRM-skills",
+  "category": "workflow",
+  "description": {
+    "en": "你的专属 AI CRM 销售助理，可集成至 OpenClaw、WorkBuddy 等任何 Agent，覆盖 L2C 整个链路。",
+    "zh": "AI CRM 销售助理，可集成到 OpenClaw、WorkBuddy 等代理，覆盖 L2C 全链路。"
+  },
+  "install": "git clone https://github.com/1Panel-dev/CordysCRM-skills",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/1Panel-dev/CordysCRM-skills"
+    }
+  ],
+  "scenarios": [
+    "marketing",
+    "ecommerce"
+  ],
+  "audience": {
+    "zh": "销售、CRM 用户",
+    "en": "Sales and CRM users"
+  },
+  "usecases": {
+    "zh": "在 AI 代理中集成 CRM 销售助理，覆盖从线索到成交的流程",
+    "en": "Integrate a CRM sales assistant in AI agents covering lead-to-cash"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 60,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "1Panel-dev",
+  "tags": [
+    "claude",
+    "codex",
+    "openclaw",
+    "workbuddy"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "devin-axis-ipollowork",
+  "name": "iPolloWork",
+  "owner": "Devin-AXIS",
+  "url": "https://github.com/Devin-AXIS/iPolloWork",
+  "category": "workflow",
+  "description": {
+    "en": "Enterprise-grade, local-first Agent Workbench for people and agent teams. A unified multi-engine workspace for Codex Harness, DeepSeek Harness, and OpenCode, with unified plugins and Skills, multi-agent projects and tasks, and editable code, documents, presentations, design, and video.",
+    "zh": "企业级本地优先的代理工作台，支持多引擎统一工作区和插件。"
+  },
+  "install": "dsh plugin --profile web add github:Devin-AXIS/iPolloWork",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:Devin-AXIS/iPolloWork"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "企业和专业开发团队",
+    "en": "Enterprises and professional development teams"
+  },
+  "usecases": {
+    "zh": "在本地优先的工作台中统一管理多引擎代理项目、任务和插件",
+    "en": "Manage multi-engine agent projects, tasks, and plugins in a local-first workbench"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 5144,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "NOASSERTION",
+  "author": "Devin-AXIS",
+  "tags": [
+    "agent-collaboration",
+    "agent-skills",
+    "ai-agents",
+    "ai-work",
+    "claude-code",
+    "codex",
+    "codex-plugin",
+    "deepseek-harness",
+    "dsh-plugin",
+    "enterprise-agent-workspace"
+  ],
+  "verified": false,
+  "status": "active"
+}

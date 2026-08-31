@@ -1,0 +1,50 @@
+{
+  "id": "nolan0722-trae-ollama-bridge",
+  "name": "TRAE-Ollama-Bridge",
+  "owner": "Nolan0722",
+  "url": "https://github.com/Nolan0722/TRAE-Ollama-Bridge",
+  "category": "dev",
+  "description": {
+    "en": "Encapsulate the local Ollama into an OpenAI-compatible API to bypass the fixed model limitations in IDEs like TRAE.",
+    "zh": "将本地 Ollama 封装为 OpenAI 兼容 API，以绕过 TRAE 等 IDE 的固定模型限制。"
+  },
+  "install": "git clone https://github.com/Nolan0722/TRAE-Ollama-Bridge",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/Nolan0722/TRAE-Ollama-Bridge"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "使用本地模型的 AI IDE 用户",
+    "en": "AI IDE users with local models"
+  },
+  "usecases": {
+    "zh": "将本地 Ollama 封装为 OpenAI 兼容 API，绕过 IDE 固定模型限制",
+    "en": "Wrap local Ollama as an OpenAI-compatible API to bypass IDE model restrictions"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 221,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "Nolan0722",
+  "tags": [
+    "local-ai",
+    "ollama",
+    "openai-api",
+    "proxy",
+    "trae",
+    "web-ui"
+  ],
+  "verified": false,
+  "status": "active"
+}

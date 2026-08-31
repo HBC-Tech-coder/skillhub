@@ -1,0 +1,55 @@
+{
+  "id": "scrapecreators-social-media-research-skills",
+  "name": "social-media-research-skills",
+  "owner": "ScrapeCreators",
+  "url": "https://github.com/ScrapeCreators/social-media-research-skills",
+  "category": "tools",
+  "description": {
+    "en": "AI agent skills for social media research. Outlier posts, comment mining, competitor teardowns, ad libraries & trends across TikTok, Instagram, YouTube, Reddit, X, LinkedIn & more. Powered by ScrapeCreators. Works with Claude Code, Cursor, Codex, Gemini CLI.",
+    "zh": "用于社交媒体研究的AI代理技能，涵盖多个平台，支持趋势分析和竞争情报。"
+  },
+  "install": "git clone https://github.com/ScrapeCreators/social-media-research-skills（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/ScrapeCreators/social-media-research-skills（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "trends-monitor",
+    "content-social",
+    "marketing"
+  ],
+  "audience": {
+    "zh": "社交媒体运营/市场研究人员",
+    "en": "Social media managers and market researchers"
+  },
+  "usecases": {
+    "zh": "研究社交媒体上的热门帖子、评论、竞争对手和广告库",
+    "en": "Research social media posts, comments, competitors, and ad libraries"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 1910,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "ScrapeCreators",
+  "tags": [
+    "agent-skills",
+    "ai-agents",
+    "claude-code",
+    "claude-skills",
+    "competitor-analysis",
+    "content-marketing",
+    "cursor",
+    "influencer-marketing",
+    "market-research",
+    "social-media"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "wei-shaw-claude-relay-service",
+  "name": "claude-relay-service",
+  "owner": "Wei-Shaw",
+  "url": "https://github.com/Wei-Shaw/claude-relay-service",
+  "category": "dev",
+  "description": {
+    "en": "CRS-自建Claude Code镜像，一站式开源中转服务，让 Claude、OpenAI、Gemini、Droid 订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
+    "zh": "开源中转服务，让Claude、OpenAI、Gemini等订阅统一接入，支持拼车共享。"
+  },
+  "install": "git clone https://github.com/Wei-Shaw/claude-relay-service（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/Wei-Shaw/claude-relay-service（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "使用Claude等AI工具的开发者，需要中转服务",
+    "en": "Developers using AI tools like Claude, needing relay services"
+  },
+  "usecases": {
+    "zh": "自建Claude Code镜像，统一接入多个AI订阅，支持拼车共享",
+    "en": "Self-hosted Claude Code mirror, unify multiple AI subscriptions, support carpooling"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 12577,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "Wei-Shaw",
+  "tags": [
+    "claude",
+    "claude-api",
+    "claude-code",
+    "claude-proxy",
+    "codex-cli",
+    "crs",
+    "droid",
+    "droid-cli",
+    "droid2api",
+    "gemini-cli"
+  ],
+  "verified": false,
+  "status": "active"
+}

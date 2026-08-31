@@ -1,0 +1,54 @@
+{
+  "id": "hesreallyhim-awesome-claude-code",
+  "name": "awesome-claude-code",
+  "owner": "hesreallyhim",
+  "url": "https://github.com/hesreallyhim/awesome-claude-code",
+  "category": "docs",
+  "description": {
+    "en": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer to",
+    "zh": "精选Claude Code资源列表，展示顶级技能和工具。"
+  },
+  "install": "git clone https://github.com/hesreallyhim/awesome-claude-code（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/hesreallyhim/awesome-claude-code（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "learn",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "Claude Code用户和开发者",
+    "en": "Claude Code users and developers"
+  },
+  "usecases": {
+    "zh": "发现精选的Claude Code资源、技能和工具",
+    "en": "Discover curated resources, skills, and tools for Claude Code"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 53268,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "hesreallyhim",
+  "tags": [
+    "agent-skills",
+    "agentic-code",
+    "agentic-coding",
+    "ai-workflow-optimization",
+    "ai-workflows",
+    "anthropic",
+    "anthropic-claude",
+    "awesome",
+    "awesome-claude-code",
+    "awesome-list"
+  ],
+  "verified": false,
+  "status": "active"
+}

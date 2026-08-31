@@ -1,0 +1,53 @@
+{
+  "id": "kkkkhazix-khazix-skills",
+  "name": "khazix-skills",
+  "owner": "KKKKhazix",
+  "url": "https://github.com/KKKKhazix/khazix-skills",
+  "category": "identity",
+  "description": {
+    "en": "数字生命卡兹克开源的 AI Skills 合集 | Agent Skills: leader（帮你定义目标）, neat-freak 洁癖, hv-analysis, khazix-writer & more — Claude Code, Codex & 40+ agents",
+    "zh": "数字生命卡兹克开源的 AI 技能合集，包含 leader、neat-freak 等技能。"
+  },
+  "install": "git clone https://github.com/KKKKhazix/khazix-skills（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/KKKKhazix/khazix-skills（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "agents-roles",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI 代理用户、内容创作者",
+    "en": "AI agent users and content creators"
+  },
+  "usecases": {
+    "zh": "用于目标定义、内容分析、写作等任务，支持多种 AI 代理",
+    "en": "For goal definition, content analysis, writing, etc., compatible with multiple agents"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 20295,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "KKKKhazix",
+  "tags": [
+    "agent-skills",
+    "ai-agents",
+    "claude",
+    "claude-code",
+    "codex",
+    "developer-tools",
+    "llm",
+    "skills",
+    "vibe-coding"
+  ],
+  "verified": false,
+  "status": "active"
+}

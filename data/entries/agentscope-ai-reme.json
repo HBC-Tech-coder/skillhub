@@ -1,0 +1,50 @@
+{
+  "id": "agentscope-ai-reme",
+  "name": "ReMe",
+  "owner": "agentscope-ai",
+  "url": "https://github.com/agentscope-ai/ReMe",
+  "category": "memory",
+  "description": {
+    "en": "ReMe: Memory Management Kit for Agents - Remember Me, Refine Me.",
+    "zh": "代理记忆管理工具包，帮助代理记住和优化用户信息。"
+  },
+  "install": "dsh plugin --profile web add github:agentscope-ai/ReMe",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:agentscope-ai/ReMe"
+    }
+  ],
+  "scenarios": [
+    "memory-knowledge"
+  ],
+  "audience": {
+    "zh": "AI代理开发者和需要记忆管理的用户",
+    "en": "AI agent developers and users needing memory management"
+  },
+  "usecases": {
+    "zh": "为代理提供记忆管理，帮助记住和优化用户信息",
+    "en": "Provide memory management for agents to remember and refine user information"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 3374,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "author": "agentscope-ai",
+  "tags": [
+    "agent",
+    "ai-agents",
+    "dsh-plugin",
+    "memory",
+    "memoryscope",
+    "rag",
+    "reme"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "magebyte-zero-spec-superflow",
+  "name": "spec-superflow",
+  "owner": "MageByte-Zero",
+  "url": "https://github.com/MageByte-Zero/spec-superflow",
+  "category": "dev",
+  "description": {
+    "en": "源码级融合 OpenSpec 规划引擎 + Superpowers 执行纪律的 AI 编程工作流插件。17 平台支持，9 skills，Spec-first，契约驱动。",
+    "zh": "融合OpenSpec规划引擎和Superpowers执行纪律的AI编程工作流插件，支持17个平台。"
+  },
+  "install": "git clone https://github.com/MageByte-Zero/spec-superflow",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/MageByte-Zero/spec-superflow"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI编程开发者",
+    "en": "AI coding developers"
+  },
+  "usecases": {
+    "zh": "融合规划引擎和执行纪律的AI编程工作流插件",
+    "en": "AI coding workflow plugin combining planning and execution discipline"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 778,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "MageByte-Zero",
+  "tags": [
+    "ai-coding",
+    "amazon-q",
+    "claude-code",
+    "cline",
+    "codex",
+    "copilot-cli",
+    "cursor",
+    "gemini-cli",
+    "opencode",
+    "opensource"
+  ],
+  "verified": false,
+  "status": "active"
+}

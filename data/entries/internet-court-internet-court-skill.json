@@ -1,0 +1,54 @@
+{
+  "id": "internet-court-internet-court-skill",
+  "name": "internet-court-skill",
+  "owner": "internet-court",
+  "url": "https://github.com/internet-court/internet-court-skill",
+  "category": "security",
+  "description": {
+    "en": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution as one open, catch-all Agent Skill / Claude Code plugin.",
+    "zh": "为代理间商业提供信任层，包括授权、支付和争议解决"
+  },
+  "install": "git clone https://github.com/internet-court/internet-court-skill（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/internet-court/internet-court-skill（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "security",
+    "ecommerce"
+  ],
+  "audience": {
+    "zh": "进行代理间商业交易的用户或开发者",
+    "en": "Users or developers engaging in agent-to-agent commerce"
+  },
+  "usecases": {
+    "zh": "通过自然语言授权、支付和争议解决，实现代理间安全交易",
+    "en": "Enable secure agent-to-agent transactions with natural-language mandates, payments, and dispute resolution"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 5124,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "internet-court",
+  "tags": [
+    "a2a",
+    "adjudication",
+    "agent-payments",
+    "agent-skills",
+    "agentic-commerce",
+    "ai-agents",
+    "claude-code",
+    "claude-plugin",
+    "claude-skill",
+    "codex"
+  ],
+  "verified": false,
+  "status": "active"
+}

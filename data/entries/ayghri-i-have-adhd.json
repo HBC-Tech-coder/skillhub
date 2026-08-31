@@ -1,0 +1,49 @@
+{
+  "id": "ayghri-i-have-adhd",
+  "name": "i-have-adhd",
+  "owner": "ayghri",
+  "url": "https://github.com/ayghri/i-have-adhd",
+  "category": "dev",
+  "description": {
+    "en": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+    "zh": "让编码代理输出简洁答案，避免冗长，适合注意力分散者。"
+  },
+  "install": "git clone https://github.com/ayghri/i-have-adhd（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/ayghri/i-have-adhd（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "需要清晰输出的开发者",
+    "en": "Developers needing clear output"
+  },
+  "usecases": {
+    "zh": "让 AI 代理给出简洁直接的答案",
+    "en": "Get concise, direct answers from AI agents"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 25914,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "ayghri",
+  "tags": [
+    "adhd",
+    "claude-",
+    "claude-code-plugin",
+    "claude-skills",
+    "developer-tools",
+    "productivity"
+  ],
+  "verified": false,
+  "status": "active"
+}

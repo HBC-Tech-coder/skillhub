@@ -1,0 +1,54 @@
+{
+  "id": "jiang198012-workbuddian",
+  "name": "workbuddian",
+  "owner": "jiang198012",
+  "url": "https://github.com/jiang198012/workbuddian",
+  "category": "memory",
+  "description": {
+    "en": "Obsidian 插件:把本�� CodeBuddy CLI 或 Hermes agent 变成 vault 内 AI 聊天——流式回复、@引用、双后端切换。Obsidian plugin turning local CodeBuddy CLI or Hermes agent into an in-vault AI chat with streaming, @-references, and dual backends.",
+    "zh": "Obsidian 插件，将本地 CodeBuddy CLI 或 Hermes agent 集成到 vault 内进行 AI 聊天。"
+  },
+  "install": "git clone https://github.com/jiang198012/workbuddian",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/jiang198012/workbuddian"
+    }
+  ],
+  "scenarios": [
+    "memory-knowledge",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "Obsidian 用户、知识管理爱好者",
+    "en": "Obsidian users and knowledge management enthusiasts"
+  },
+  "usecases": {
+    "zh": "在 Obsidian 中直接与 AI 聊天并引用笔记",
+    "en": "Chat with AI directly in Obsidian and reference notes"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 49,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "jiang198012",
+  "tags": [
+    "agent",
+    "ai",
+    "ai-agent",
+    "ai-chat",
+    "chat",
+    "claude-code",
+    "codebuddy",
+    "hermes",
+    "hermes-agent",
+    "llm"
+  ],
+  "verified": false,
+  "status": "active"
+}

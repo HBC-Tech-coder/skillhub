@@ -1,0 +1,43 @@
+{
+  "id": "ai-practical-lab-novel-writer",
+  "name": "novel-writer",
+  "owner": "AI-Practical-Lab",
+  "url": "https://github.com/AI-Practical-Lab/novel-writer",
+  "category": "workflow",
+  "description": {
+    "en": "ai-novel-skill：全流程长篇小说 AI 创作引擎。从创意构思、世界观设定到逐章写作，内置 YAML 角色追踪与伏笔管理功能。具备强制验证与快照回滚机制，支持经验进化，助您高效完稿。适配 Trae/Cursor/Claude Code。",
+    "zh": "全流程长篇小说AI创作引擎，支持角色追踪和伏笔管理"
+  },
+  "install": "git clone https://github.com/AI-Practical-Lab/novel-writer",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/AI-Practical-Lab/novel-writer"
+    }
+  ],
+  "scenarios": [
+    "copywriting",
+    "fun"
+  ],
+  "audience": {
+    "zh": "小说作者、内容创作者",
+    "en": "Novel writers, content creators"
+  },
+  "usecases": {
+    "zh": "全流程长篇小说创作，包括创意构思、世界观设定、逐章写作和角色追踪",
+    "en": "Full-process novel writing, including idea generation, world-building, chapter writing, and character tracking"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 41,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "AI-Practical-Lab",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

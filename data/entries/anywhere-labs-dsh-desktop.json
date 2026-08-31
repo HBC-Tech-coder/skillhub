@@ -1,0 +1,51 @@
+{
+  "id": "anywhere-labs-dsh-desktop",
+  "name": "dsh-desktop",
+  "owner": "anywhere-labs",
+  "url": "https://github.com/anywhere-labs/dsh-desktop",
+  "category": "workflow",
+  "description": {
+    "en": "为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案。万物皆「插件」，桌面本身也是「插件」。",
+    "zh": "为DeepSeek Harness插件生态打造的现代化桌面端解决方案。"
+  },
+  "install": "dsh plugin --profile web add github:anywhere-labs/dsh-desktop",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:anywhere-labs/dsh-desktop"
+    }
+  ],
+  "scenarios": [
+    "workflow"
+  ],
+  "audience": {
+    "zh": "DeepSeek Harness用户、桌面应用开发者",
+    "en": "DeepSeek Harness users, desktop app developers"
+  },
+  "usecases": {
+    "zh": "为DSH插件生态提供桌面端解决方案",
+    "en": "Provide desktop solution for DSH plugin ecosystem"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 22284,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "MIT",
+  "author": "anywhere-labs",
+  "tags": [
+    "cordis",
+    "cordis-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "desktop",
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugin-desktop"
+  ],
+  "verified": false,
+  "status": "active"
+}

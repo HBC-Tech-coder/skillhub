@@ -1,0 +1,43 @@
+{
+  "id": "lasoons-agentskillsmanager",
+  "name": "AgentSkillsManager",
+  "owner": "lasoons",
+  "url": "https://github.com/lasoons/AgentSkillsManager",
+  "category": "dev",
+  "description": {
+    "en": "AgentSkills multi-IDE management extension: browse and install skill repositories for Antigravity, CodeBuddy, Cursor, Qoder, Trae, Windsurf (and VS Code), and search a cloud catalog (~58K skills) from https://claude-plugins.dev/.",
+    "zh": "多 IDE 技能管理扩展，支持浏览安装技能仓库并搜索云目录。"
+  },
+  "install": "git clone https://github.com/lasoons/AgentSkillsManager",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/lasoons/AgentSkillsManager"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "多 IDE 用户/技能管理者",
+    "en": "Multi-IDE users and skill managers"
+  },
+  "usecases": {
+    "zh": "浏览和安装技能仓库，搜索云目录中的约 58K 技能",
+    "en": "Browse and install skill repos, search cloud catalog of ~58K skills"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 91,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "lasoons",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

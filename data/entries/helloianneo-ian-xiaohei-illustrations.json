@@ -1,0 +1,52 @@
+{
+  "id": "helloianneo-ian-xiaohei-illustrations",
+  "name": "ian-xiaohei-illustrations",
+  "owner": "helloianneo",
+  "url": "https://github.com/helloianneo/ian-xiaohei-illustrations",
+  "category": "workflow",
+  "description": {
+    "en": "中文��黑怪诞正文配图生成 Skill | 16:9 白底手绘 | 少量红橙蓝批注 | Codex Skill",
+    "zh": "中文黑白怪诞正文配图生成技能，16:9 白底手绘风格，带少量红橙蓝批注。"
+  },
+  "install": "git clone https://github.com/helloianneo/ian-xiaohei-illustrations（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/helloianneo/ian-xiaohei-illustrations（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "content-social",
+    "design",
+    "fun"
+  ],
+  "audience": {
+    "zh": "内容创作者、插画师、社交媒体运营",
+    "en": "Content creators, illustrators, social media operators"
+  },
+  "usecases": {
+    "zh": "生成中文黑白怪诞风格的正文配图",
+    "en": "Generate Chinese black-and-white quirky illustrations for text"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 10713,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "helloianneo",
+  "tags": [
+    "ai-agent",
+    "chinese",
+    "codex-skill",
+    "handdrawn",
+    "illustration",
+    "image-generation",
+    "xiaohei"
+  ],
+  "verified": false,
+  "status": "active"
+}

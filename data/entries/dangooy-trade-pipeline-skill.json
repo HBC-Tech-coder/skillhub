@@ -1,0 +1,43 @@
+{
+  "id": "dangooy-trade-pipeline-skill",
+  "name": "trade-pipeline-skill",
+  "owner": "Dangooy",
+  "url": "https://github.com/Dangooy/trade-pipeline-skill",
+  "category": "tools",
+  "description": {
+    "en": "AI 外贸单证自动化（Skill 版）：一份询价单自动生成报价单 / PI / CI / 装箱单，改一处四单联动。Claude Code / WorkBuddy 可用。",
+    "zh": "AI 外贸单证自动化技能，一份询价单生成多份单证并联动"
+  },
+  "install": "git clone https://github.com/Dangooy/trade-pipeline-skill",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/Dangooy/trade-pipeline-skill"
+    }
+  ],
+  "scenarios": [
+    "ecommerce",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "外贸业务员和单证员",
+    "en": "Foreign trade sales and documentation staff"
+  },
+  "usecases": {
+    "zh": "自动生成外贸单证，联动更新",
+    "en": "Automatically generating trade documents with linked updates"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 22,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "Dangooy",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "composio-community-awesome-codex-skills",
+  "name": "awesome-codex-skills",
+  "owner": "composio-community",
+  "url": "https://github.com/composio-community/awesome-codex-skills",
+  "category": "workflow",
+  "description": {
+    "en": "A curated list of practical Codex skills for automating workflows across the Codex CLI and API.",
+    "zh": "精选的实用 Codex 技能列表，用于自动化 Codex CLI 和 API 的工作流。"
+  },
+  "install": "git clone https://github.com/composio-community/awesome-codex-skills（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/composio-community/awesome-codex-skills（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "Codex 用户、自动化爱好者",
+    "en": "Codex users and automation enthusiasts"
+  },
+  "usecases": {
+    "zh": "用于查找和复用 Codex 技能，自动化工作流",
+    "en": "For finding and reusing Codex skills to automate workflows"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 16140,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "composio-community",
+  "tags": [
+    "awesome",
+    "awesome-lists",
+    "awesome-resources",
+    "codex",
+    "codex-cli",
+    "codex-skills",
+    "coding-agent-skills",
+    "coding-agents",
+    "gpt-5-1-codex",
+    "gpt-5-codex"
+  ],
+  "verified": false,
+  "status": "active"
+}

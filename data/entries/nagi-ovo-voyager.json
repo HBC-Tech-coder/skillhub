@@ -1,0 +1,54 @@
+{
+  "id": "nagi-ovo-voyager",
+  "name": "voyager",
+  "owner": "Nagi-ovo",
+  "url": "https://github.com/Nagi-ovo/voyager",
+  "category": "workflow",
+  "description": {
+    "en": "Enhancement suite for Gemini, AI Studio, Claude & ChatGPT — plus a prompt manager for any web UI, DeepSeek Harness included. / 面向 Gemini、AI Studio、Claude 与 ChatGPT 的增强套件；提示词管理器可用于任意 Web UI，含 DeepSeek Harness。",
+    "zh": "面向多个AI平台的增强套件，包含提示词管理器。"
+  },
+  "install": "dsh plugin --profile web add github:Nagi-ovo/voyager",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:Nagi-ovo/voyager"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "AI工具重度用户、开发者",
+    "en": "Heavy AI tool users, developers"
+  },
+  "usecases": {
+    "zh": "增强Gemini、AI Studio、Claude和ChatGPT，管理提示词",
+    "en": "Enhance Gemini, AI Studio, Claude, and ChatGPT, manage prompts"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 19903,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "GPL-3.0",
+  "author": "Nagi-ovo",
+  "tags": [
+    "ai-studio",
+    "browser-extension",
+    "bun",
+    "chat-management",
+    "chatgpt",
+    "chrome-extension",
+    "claude-ai",
+    "dsh",
+    "dsh-plugin",
+    "edge-addon"
+  ],
+  "verified": false,
+  "status": "active"
+}

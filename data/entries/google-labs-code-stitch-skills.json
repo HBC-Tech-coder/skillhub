@@ -1,0 +1,43 @@
+{
+  "id": "google-labs-code-stitch-skills",
+  "name": "stitch-skills",
+  "owner": "google-labs-code",
+  "url": "https://github.com/google-labs-code/stitch-skills",
+  "category": "dev",
+  "description": {
+    "en": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "zh": "为Stitch MCP服务器设计的Agent技能库，遵循Agent Skills开放标准，兼容多种编程代理。"
+  },
+  "install": "git clone https://github.com/google-labs-code/stitch-skills（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/google-labs-code/stitch-skills（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "AI编程开发者",
+    "en": "AI coding developers"
+  },
+  "usecases": {
+    "zh": "配合Stitch MCP服务器使用，增强编程代理的功能",
+    "en": "Enhance coding agents with Stitch MCP server"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 8224,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "google-labs-code",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

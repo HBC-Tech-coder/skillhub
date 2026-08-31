@@ -1,0 +1,55 @@
+{
+  "id": "yvgude-lean-ctx",
+  "name": "lean-ctx",
+  "owner": "yvgude",
+  "url": "https://github.com/yvgude/lean-ctx",
+  "category": "dev",
+  "description": {
+    "en": "Control what your AI can see. LeanCTX (Lean Context) is the context intelligence layer for AI agents — one local Rust binary that decides what they read, remembers what they learn, guards what they touch, and proves what they save. 60–90% fewer tokens as the receipt. 76 MCP tools, 30+ agents, local-",
+    "zh": "上下文智能层，控制AI读取内容，记忆学习，保护数据，节省token。"
+  },
+  "install": "git clone https://github.com/yvgude/lean-ctx（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/yvgude/lean-ctx（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "security",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "关注上下文管理和安全的AI开发者",
+    "en": "AI developers concerned about context management and security"
+  },
+  "usecases": {
+    "zh": "控制AI能看到的上下文，记忆学习，保护数据",
+    "en": "Control what AI can see, remember learning, protect data"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 3683,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "yvgude",
+  "tags": [
+    "agentic-coding",
+    "ai",
+    "ai-agents",
+    "ai-coding",
+    "claude-code",
+    "context-engineering",
+    "context-intelligence",
+    "context-layer",
+    "copilot",
+    "cursor"
+  ],
+  "verified": false,
+  "status": "active"
+}

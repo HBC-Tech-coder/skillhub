@@ -1,0 +1,48 @@
+{
+  "id": "jimliu-baoyu-skills",
+  "name": "baoyu-skills",
+  "owner": "JimLiu",
+  "url": "https://github.com/JimLiu/baoyu-skills",
+  "category": "workflow",
+  "description": {
+    "en": "宝玉的技能集合，用于内容创作和文案生成。",
+    "zh": "宝玉的技能集合，用于内容创作和文案生成。"
+  },
+  "install": "git clone https://github.com/JimLiu/baoyu-skills（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/JimLiu/baoyu-skills（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "content-social",
+    "copywriting"
+  ],
+  "audience": {
+    "zh": "内容创作者、新媒体运营",
+    "en": "Content creators, social media operators"
+  },
+  "usecases": {
+    "zh": "生成爆款文案、内容创作",
+    "en": "Generate viral copy, content creation"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 25513,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "JimLiu",
+  "tags": [
+    "agent-skills",
+    "claude-skills",
+    "codex-skills",
+    "openclaw-skills"
+  ],
+  "verified": false,
+  "status": "active"
+}

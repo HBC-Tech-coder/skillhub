@@ -1,0 +1,53 @@
+{
+  "id": "badrisnarayanan-antigravity-claude-proxy",
+  "name": "antigravity-claude-proxy",
+  "owner": "badrisnarayanan",
+  "url": "https://github.com/badrisnarayanan/antigravity-claude-proxy",
+  "category": "dev",
+  "description": {
+    "en": "Proxy that exposes Antigravity provided claude / gemini models, so we can use them in Claude Code and OpenClaw (Clawdbot)",
+    "zh": "代理将Antigravity提供的Claude/Gemini模型暴露给Claude Code等工具使用。"
+  },
+  "install": "git clone https://github.com/badrisnarayanan/antigravity-claude-proxy（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/badrisnarayanan/antigravity-claude-proxy（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "使用Antigravity模型的开发者",
+    "en": "Developers using Antigravity models"
+  },
+  "usecases": {
+    "zh": "将Antigravity提供的模型用于Claude Code等工具",
+    "en": "Use Antigravity models in tools like Claude Code"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 3929,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "badrisnarayanan",
+  "tags": [
+    "antigravity",
+    "claude",
+    "claude-ai",
+    "claude-code",
+    "clawdbot",
+    "gemini",
+    "gemini-cli",
+    "openclaw",
+    "proxy"
+  ],
+  "verified": false,
+  "status": "active"
+}

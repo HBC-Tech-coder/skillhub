@@ -1,0 +1,43 @@
+{
+  "id": "whatevertogo-feishuskill",
+  "name": "FeiShuSkill",
+  "owner": "whatevertogo",
+  "url": "https://github.com/whatevertogo/FeiShuSkill",
+  "category": "workflow",
+  "description": {
+    "en": "一个飞书的skill，前置条件需要飞书官方的mcp服务。将skill添加到claude skill文件夹中，或者自己添加到codex里面，或者cursor，trae让ai读取这个skill即可使用",
+    "zh": "飞书skill，需配合飞书官方MCP服务使用"
+  },
+  "install": "git clone https://github.com/whatevertogo/FeiShuSkill",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/whatevertogo/FeiShuSkill"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "accounts"
+  ],
+  "audience": {
+    "zh": "飞书用户、AI工具使用者",
+    "en": "Feishu users, AI tool users"
+  },
+  "usecases": {
+    "zh": "在Claude、Cursor等工具中通过skill调用飞书MCP服务",
+    "en": "Use Feishu MCP service via skill in Claude, Cursor, etc."
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 38,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "whatevertogo",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

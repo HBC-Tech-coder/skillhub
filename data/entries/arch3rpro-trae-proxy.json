@@ -1,0 +1,49 @@
+{
+  "id": "arch3rpro-trae-proxy",
+  "name": "Trae-Proxy",
+  "owner": "arch3rPro",
+  "url": "https://github.com/arch3rPro/Trae-Proxy",
+  "category": "dev",
+  "description": {
+    "en": "An intelligent API proxy tool designed to intercept and redirect OpenAI API requests.一个智能的API代理工具，专门用于拦截和重定向OpenAI API请求到自定义后端服务。支持多后端配置、动态模型映射和流式响应处理��",
+    "zh": "智能 API 代理工具，拦截并重定向 OpenAI API 请求到自定义后端。"
+  },
+  "install": "git clone https://github.com/arch3rPro/Trae-Proxy",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/arch3rPro/Trae-Proxy"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "security"
+  ],
+  "audience": {
+    "zh": "开发者/API 代理使用者",
+    "en": "Developers and API proxy users"
+  },
+  "usecases": {
+    "zh": "拦截并重定向 OpenAI API 请求到自定义后端，支持多后端和动态模型映射",
+    "en": "Intercept and redirect OpenAI API requests to custom backends with multi-backend and dynamic model mapping"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 192,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "arch3rPro",
+  "tags": [
+    "ai-agent",
+    "llm-tools",
+    "openai-api",
+    "proxy-server",
+    "trae"
+  ],
+  "verified": false,
+  "status": "active"
+}

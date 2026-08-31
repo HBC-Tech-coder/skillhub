@@ -1,0 +1,53 @@
+{
+  "id": "esengine-deepseek-reasonix",
+  "name": "DeepSeek-Reasonix",
+  "owner": "esengine",
+  "url": "https://github.com/esengine/DeepSeek-Reasonix",
+  "category": "dev",
+  "description": {
+    "en": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+    "zh": "DeepSeek原生的终端AI编码代理，注重前缀缓存稳定性。"
+  },
+  "install": "dsh plugin --profile web add github:esengine/DeepSeek-Reasonix",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:esengine/DeepSeek-Reasonix"
+    }
+  ],
+  "scenarios": [
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "开发者、程序员",
+    "en": "Developers, programmers"
+  },
+  "usecases": {
+    "zh": "在终端中使用DeepSeek进行AI编程",
+    "en": "Use DeepSeek for AI coding in the terminal"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 35284,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "MIT",
+  "author": "esengine",
+  "tags": [
+    "agent",
+    "agent-framework",
+    "ai-agent",
+    "ai-coding",
+    "cli",
+    "coding-agent",
+    "deepseek",
+    "developer-tools",
+    "dsh",
+    "dsh-plugin"
+  ],
+  "verified": false,
+  "status": "active"
+}

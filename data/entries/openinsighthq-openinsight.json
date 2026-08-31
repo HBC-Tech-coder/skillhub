@@ -1,0 +1,53 @@
+{
+  "id": "openinsighthq-openinsight",
+  "name": "openinsight",
+  "owner": "OpenInsightHQ",
+  "url": "https://github.com/OpenInsightHQ/openinsight",
+  "category": "workflow",
+  "description": {
+    "en": "Enterprise Agent Operating System — AI employees that learn your business and deliver outcomes. Self-hosted, open core.",
+    "zh": "企业级 Agent 操作系统，可自托管，让 AI 员工学习业务并交付成果"
+  },
+  "install": "git clone https://github.com/OpenInsightHQ/openinsight",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/OpenInsightHQ/openinsight"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "agents-roles"
+  ],
+  "audience": {
+    "zh": "企业 IT 和业务团队",
+    "en": "Enterprise IT and business teams"
+  },
+  "usecases": {
+    "zh": "部署 AI 员工自动化业务流程",
+    "en": "Deploying AI employees to automate business processes"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 29,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "OpenInsightHQ",
+  "tags": [
+    "agentic-ai",
+    "ai-employees",
+    "browser-based",
+    "data-agent",
+    "enterprise-ai",
+    "open-core",
+    "pi-agent",
+    "self-hosted",
+    "workbuddy"
+  ],
+  "verified": false,
+  "status": "active"
+}

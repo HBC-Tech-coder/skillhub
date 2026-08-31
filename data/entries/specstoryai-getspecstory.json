@@ -1,0 +1,54 @@
+{
+  "id": "specstoryai-getspecstory",
+  "name": "getspecstory",
+  "owner": "specstoryai",
+  "url": "https://github.com/specstoryai/getspecstory",
+  "category": "dev",
+  "description": {
+    "en": "Install our local first extensions for your favorite AI IDE or Terminal Agent. Process your histories into reusable skills with Lore. Sync your conversations to the cloud. File issues and requests.",
+    "zh": "为 AI IDE 或终端代理安装本地优先扩展，将历史处理为可复用技能，并同步到云端。"
+  },
+  "install": "git clone https://github.com/specstoryai/getspecstory（按 README 导入 Codex）",
+  "ecosystems": [
+    {
+      "id": "codex",
+      "kind": "skill",
+      "install": "git clone https://github.com/specstoryai/getspecstory（按 README 导入 Codex）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "workflow"
+  ],
+  "audience": {
+    "zh": "使用 AI IDE 或终端代理的开发者",
+    "en": "Developers using AI IDEs or terminal agents"
+  },
+  "usecases": {
+    "zh": "将对话历史转化为可复用技能，同步到云端",
+    "en": "Turn conversation histories into reusable skills and sync to cloud"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 1316,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "specstoryai",
+  "tags": [
+    "agent-skills",
+    "ai",
+    "chat-history",
+    "claude",
+    "claude-code",
+    "claude-code-skills",
+    "codex",
+    "codex-cli",
+    "codex-skills",
+    "copilot"
+  ],
+  "verified": false,
+  "status": "active"
+}

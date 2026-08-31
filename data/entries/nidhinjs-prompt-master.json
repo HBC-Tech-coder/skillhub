@@ -1,0 +1,48 @@
+{
+  "id": "nidhinjs-prompt-master",
+  "name": "prompt-master",
+  "owner": "nidhinjs",
+  "url": "https://github.com/nidhinjs/prompt-master",
+  "category": "workflow",
+  "description": {
+    "en": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention",
+    "zh": "Claude技能，为AI工具编写精准提示词，避免浪费token"
+  },
+  "install": "git clone https://github.com/nidhinjs/prompt-master（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/nidhinjs/prompt-master（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "copywriting",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "需要为AI工具编写精准提示词的用户",
+    "en": "Users who need to write precise prompts for AI tools"
+  },
+  "usecases": {
+    "zh": "为任何AI工具生成准确提示词，节省token并保留上下文",
+    "en": "Generate accurate prompts for any AI tool, saving tokens and retaining context"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 12098,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "nidhinjs",
+  "tags": [
+    "claude-ai",
+    "claude-skills",
+    "llm",
+    "prompt-engineering"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "epoko77-ai-im-not-ai",
+  "name": "im-not-ai",
+  "owner": "epoko77-ai",
+  "url": "https://github.com/epoko77-ai/im-not-ai",
+  "category": "workflow",
+  "description": {
+    "en": "AI가 쓴 한글을 사람 글처럼 윤문하는 Claude 스킬 — Korean AI-text humanizer: detects and rewrites translationese, mechanical parallelism, and 71 other AI tells",
+    "zh": "韩语AI文本人性化技能，改写翻译腔等AI痕迹"
+  },
+  "install": "git clone https://github.com/epoko77-ai/im-not-ai（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/epoko77-ai/im-not-ai（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "copywriting",
+    "content-social"
+  ],
+  "audience": {
+    "zh": "需要将AI生成的韩语文本改写得更自然的用户",
+    "en": "Users who need to humanize AI-generated Korean text"
+  },
+  "usecases": {
+    "zh": "检测并改写AI韩语文本中的翻译腔和机械表达",
+    "en": "Detect and rewrite translationese and mechanical expressions in AI Korean text"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 5123,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "epoko77-ai",
+  "tags": [
+    "agent-skills",
+    "ai-detection",
+    "claude",
+    "claude-code",
+    "claude-skill",
+    "humanizer",
+    "korean",
+    "korean-nlp",
+    "llm",
+    "nlp"
+  ],
+  "verified": false,
+  "status": "active"
+}

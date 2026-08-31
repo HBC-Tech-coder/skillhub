@@ -1,0 +1,55 @@
+{
+  "id": "assafelovic-gpt-researcher",
+  "name": "gpt-researcher",
+  "owner": "assafelovic",
+  "url": "https://github.com/assafelovic/gpt-researcher",
+  "category": "skill",
+  "description": {
+    "en": "An autonomous agent that conducts deep research on any data using any LLM providers",
+    "zh": "自主代理，使用任何LLM提供商对任何数据进行深度研究。"
+  },
+  "install": "参照仓库 README 配置 MCP 客户端",
+  "ecosystems": [
+    {
+      "id": "mcp",
+      "kind": "server",
+      "install": "参照仓库 README 配置 MCP 客户端"
+    }
+  ],
+  "scenarios": [
+    "science-research",
+    "learn",
+    "content-social"
+  ],
+  "audience": {
+    "zh": "研究人员、内容创作者、分析师",
+    "en": "Researchers, content creators, analysts"
+  },
+  "usecases": {
+    "zh": "自动进行深度研究，基于任何LLM提供商，生成研究报告",
+    "en": "Autonomously conduct deep research on any data using any LLM providers, generate research reports"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 29214,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "Apache-2.0",
+  "author": "assafelovic",
+  "tags": [
+    "agent",
+    "ai",
+    "automation",
+    "deepresearch",
+    "llms",
+    "mcp",
+    "mcp-server",
+    "python",
+    "research",
+    "search"
+  ],
+  "verified": false,
+  "status": "active"
+}

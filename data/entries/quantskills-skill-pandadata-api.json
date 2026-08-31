@@ -1,0 +1,43 @@
+{
+  "id": "quantskills-skill-pandadata-api",
+  "name": "skill-pandadata-api",
+  "owner": "quantskills",
+  "url": "https://github.com/quantskills/skill-pandadata-api",
+  "category": "dev",
+  "description": {
+    "en": "Pandadata API skill for Codex, Claude Code, Hermes, OpenClaw, Cursor, and WorkBuddy",
+    "zh": "Pandadata API skill for Codex, Claude Code, Hermes, OpenClaw, Cursor, and WorkBuddy"
+  },
+  "install": "git clone https://github.com/quantskills/skill-pandadata-api",
+  "ecosystems": [
+    {
+      "id": "workbuddy",
+      "kind": "skill",
+      "install": "git clone https://github.com/quantskills/skill-pandadata-api"
+    }
+  ],
+  "scenarios": [
+    "quant",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "量化交易者、开发者",
+    "en": "Quant traders and developers"
+  },
+  "usecases": {
+    "zh": "在多个 AI 工具中调用 Pandadata API 获取金融数据",
+    "en": "Call Pandadata API for financial data in multiple AI tools"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 18,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "GPL-3.0",
+  "author": "quantskills",
+  "tags": [],
+  "verified": false,
+  "status": "active"
+}

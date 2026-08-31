@@ -1,0 +1,54 @@
+{
+  "id": "zilliztech-claude-context",
+  "name": "claude-context",
+  "owner": "zilliztech",
+  "url": "https://github.com/zilliztech/claude-context",
+  "category": "dev",
+  "description": {
+    "en": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
+    "zh": "为Claude Code提供代码搜索MCP，使整个代码库成为编码代理的上下文。"
+  },
+  "install": "git clone https://github.com/zilliztech/claude-context（按 README 导入 Gemini CLI）",
+  "ecosystems": [
+    {
+      "id": "gemini",
+      "kind": "skill",
+      "install": "git clone https://github.com/zilliztech/claude-context（按 README 导入 Gemini CLI）"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "memory-knowledge"
+  ],
+  "audience": {
+    "zh": "使用Claude Code的开发者",
+    "en": "Developers using Claude Code"
+  },
+  "usecases": {
+    "zh": "让整个代码库成为编码代理的上下文，提升代码搜索和理解",
+    "en": "Make entire codebase context for coding agents, improve code search and understanding"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 12456,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "zilliztech",
+  "tags": [
+    "agent",
+    "agentic-rag",
+    "ai-coding",
+    "claude-code",
+    "code-generation",
+    "code-search",
+    "cursor",
+    "embedding",
+    "gemini-cli",
+    "mcp"
+  ],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "crawfordxx-xiaoma-durex-copywriter",
+  "name": "xiaoma-durex-copywriter",
+  "owner": "crawfordxx",
+  "url": "https://github.com/crawfordxx/xiaoma-durex-copywriter",
+  "category": "workflow",
+  "description": {
+    "en": "杜蕾��式文案与海报 Skill for Claude Code —— 双层语义方法论 + 8 个文案公式 + 从 260 张原始海报拆解的视觉系统 + AI 出图/代码排版管线",
+    "zh": "杜蕾斯式文案与海报技能，包含双层语义方法论、8个文案公式和视觉系统。"
+  },
+  "install": "git clone https://github.com/crawfordxx/xiaoma-durex-copywriter（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/crawfordxx/xiaoma-durex-copywriter（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "copywriting",
+    "marketing",
+    "design"
+  ],
+  "audience": {
+    "zh": "文案策划、广告创意和营销人员",
+    "en": "Copywriters, advertising creatives, and marketers"
+  },
+  "usecases": {
+    "zh": "生成杜蕾斯风格的文案和海报，用于社交媒体和广告",
+    "en": "Generate Durex-style copy and posters for social media and ads"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 581,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "NOASSERTION",
+  "author": "crawfordxx",
+  "tags": [
+    "advertising",
+    "chinese-copywriting",
+    "claude-code",
+    "claude-skill",
+    "copywriting",
+    "poster-design"
+  ],
+  "verified": false,
+  "status": "active"
+}
