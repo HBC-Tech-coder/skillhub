@@ -1,0 +1,731 @@
+{
+ "updated": "2026-08-31",
+ "scenarios": {
+  "content-social": {
+   "zh": "新媒体运营",
+   "en": "Social Content",
+   "intents": [
+    "公众号",
+    "小红书",
+    "抖音",
+    "b站",
+    "bilibili",
+    "自媒体",
+    "新媒体",
+    "内容运营",
+    "宣发",
+    "涨粉",
+    "分发",
+    "wechat",
+    "xiaohongshu",
+    "social media",
+    "content ops",
+    "tiktok"
+   ]
+  },
+  "video-download": {
+   "zh": "视频下载·去水印",
+   "en": "Video Download",
+   "intents": [
+    "下载",
+    "无水印",
+    "去水印",
+    "视频下载",
+    "搬运",
+    "download",
+    "watermark",
+    "no watermark",
+    "video download"
+   ]
+  },
+  "trends-monitor": {
+   "zh": "热点抓取·舆情",
+   "en": "Trends & Monitoring",
+   "intents": [
+    "热点",
+    "热榜",
+    "舆情",
+    "监控",
+    "趋势",
+    "热搜",
+    "情报",
+    "hot topics",
+    "trending",
+    "monitoring",
+    "news",
+    "sentiment"
+   ]
+  },
+  "copywriting": {
+   "zh": "文案·脚本",
+   "en": "Copywriting",
+   "intents": [
+    "文案",
+    "标题",
+    "口播稿",
+    "脚本",
+    "写作",
+    "改写",
+    "copywriting",
+    "headline",
+    "script",
+    "writing"
+   ]
+  },
+  "video-edit": {
+   "zh": "短视频剪辑",
+   "en": "Video Editing",
+   "intents": [
+    "剪辑",
+    "短视频",
+    "卡点",
+    "混剪",
+    "剪映",
+    "editing",
+    "short video",
+    "reels"
+   ]
+  },
+  "voice-tts": {
+   "zh": "配音·口播",
+   "en": "Voice & TTS",
+   "intents": [
+    "配音",
+    "口播",
+    "语音",
+    "tts",
+    "旁白",
+    "voiceover",
+    "narration",
+    "speech"
+   ]
+  },
+  "marketing": {
+   "zh": "营销自动化",
+   "en": "Marketing",
+   "intents": [
+    "营销",
+    "推广",
+    "引流",
+    "获客",
+    "转化",
+    "私域",
+    "marketing",
+    "promotion",
+    "leads",
+    "growth"
+   ]
+  },
+  "design": {
+   "zh": "设计·UI",
+   "en": "Design",
+   "intents": [
+    "设计",
+    "ui",
+    "海报",
+    "配色",
+    "原型",
+    "换肤",
+    "落地页",
+    "design",
+    "poster",
+    "palette",
+    "prototype",
+    "landing page"
+   ]
+  },
+  "dev-coding": {
+   "zh": "编程·开发",
+   "en": "Coding & Dev",
+   "intents": [
+    "编程",
+    "代码",
+    "开发",
+    "插件",
+    "mcp",
+    "agent",
+    "调试",
+    "审查",
+    "coding",
+    "plugin",
+    "debug",
+    "review",
+    "developer"
+   ]
+  },
+  "memory-knowledge": {
+   "zh": "记忆·知识库",
+   "en": "Memory & Knowledge",
+   "intents": [
+    "记忆",
+    "知识库",
+    "上下文",
+    "检索",
+    "rag",
+    "memory",
+    "knowledge",
+    "context",
+    "retrieval"
+   ]
+  },
+  "workflow": {
+   "zh": "工作流·自动化",
+   "en": "Workflow",
+   "intents": [
+    "工作流",
+    "自动化",
+    "任务",
+    "看板",
+    "会议",
+    "日程",
+    "workflow",
+    "automation",
+    "task",
+    "kanban",
+    "meeting"
+   ]
+  },
+  "accounts": {
+   "zh": "账号管理",
+   "en": "Accounts",
+   "intents": [
+    "账号",
+    "注册",
+    "多开",
+    "account",
+    "register"
+   ]
+  },
+  "learn": {
+   "zh": "教程·学习",
+   "en": "Learning",
+   "intents": [
+    "教程",
+    "学习",
+    "指南",
+    "入门",
+    "蓝皮书",
+    "速查",
+    "tutorial",
+    "guide",
+    "learning",
+    "course"
+   ]
+  },
+  "fun": {
+   "zh": "娱乐",
+   "en": "Fun",
+   "intents": [
+    "宠物",
+    "娱乐",
+    "好玩",
+    "桌面宠物",
+    "pet",
+    "fun",
+    "mascot"
+   ]
+  },
+  "ecommerce": {
+   "zh": "电商",
+   "en": "E-commerce",
+   "intents": [
+    "电商",
+    "商品图",
+    "详情页",
+    "淘宝",
+    "带货",
+    "店铺",
+    "ecommerce",
+    "product image",
+    "listing"
+   ]
+  },
+  "agents-roles": {
+   "zh": "角色·人设",
+   "en": "Roles & Personas",
+   "intents": [
+    "角色",
+    "人设",
+    "专家",
+    "数字人",
+    "人格",
+    "persona",
+    "roles",
+    "expert"
+   ]
+  }
+ },
+ "intents": {
+  "公众号": [
+   "content-social"
+  ],
+  "小红书": [
+   "content-social"
+  ],
+  "抖音": [
+   "content-social"
+  ],
+  "b站": [
+   "content-social"
+  ],
+  "bilibili": [
+   "content-social"
+  ],
+  "自媒体": [
+   "content-social"
+  ],
+  "新媒体": [
+   "content-social"
+  ],
+  "内容运营": [
+   "content-social"
+  ],
+  "宣发": [
+   "content-social"
+  ],
+  "涨粉": [
+   "content-social"
+  ],
+  "分发": [
+   "content-social"
+  ],
+  "wechat": [
+   "content-social"
+  ],
+  "xiaohongshu": [
+   "content-social"
+  ],
+  "social media": [
+   "content-social"
+  ],
+  "content ops": [
+   "content-social"
+  ],
+  "tiktok": [
+   "content-social"
+  ],
+  "下载": [
+   "video-download"
+  ],
+  "无水印": [
+   "video-download"
+  ],
+  "去水印": [
+   "video-download"
+  ],
+  "视频下载": [
+   "video-download"
+  ],
+  "搬运": [
+   "video-download"
+  ],
+  "download": [
+   "video-download"
+  ],
+  "watermark": [
+   "video-download"
+  ],
+  "no watermark": [
+   "video-download"
+  ],
+  "video download": [
+   "video-download"
+  ],
+  "热点": [
+   "trends-monitor"
+  ],
+  "热榜": [
+   "trends-monitor"
+  ],
+  "舆情": [
+   "trends-monitor"
+  ],
+  "监控": [
+   "trends-monitor"
+  ],
+  "趋势": [
+   "trends-monitor"
+  ],
+  "热搜": [
+   "trends-monitor"
+  ],
+  "情报": [
+   "trends-monitor"
+  ],
+  "hot topics": [
+   "trends-monitor"
+  ],
+  "trending": [
+   "trends-monitor"
+  ],
+  "monitoring": [
+   "trends-monitor"
+  ],
+  "news": [
+   "trends-monitor"
+  ],
+  "sentiment": [
+   "trends-monitor"
+  ],
+  "文案": [
+   "copywriting"
+  ],
+  "标题": [
+   "copywriting"
+  ],
+  "口播稿": [
+   "copywriting"
+  ],
+  "脚本": [
+   "copywriting"
+  ],
+  "写作": [
+   "copywriting"
+  ],
+  "改写": [
+   "copywriting"
+  ],
+  "copywriting": [
+   "copywriting"
+  ],
+  "headline": [
+   "copywriting"
+  ],
+  "script": [
+   "copywriting"
+  ],
+  "writing": [
+   "copywriting"
+  ],
+  "剪辑": [
+   "video-edit"
+  ],
+  "短视频": [
+   "video-edit"
+  ],
+  "卡点": [
+   "video-edit"
+  ],
+  "混剪": [
+   "video-edit"
+  ],
+  "剪映": [
+   "video-edit"
+  ],
+  "editing": [
+   "video-edit"
+  ],
+  "short video": [
+   "video-edit"
+  ],
+  "reels": [
+   "video-edit"
+  ],
+  "配音": [
+   "voice-tts"
+  ],
+  "口播": [
+   "voice-tts"
+  ],
+  "语音": [
+   "voice-tts"
+  ],
+  "tts": [
+   "voice-tts"
+  ],
+  "旁白": [
+   "voice-tts"
+  ],
+  "voiceover": [
+   "voice-tts"
+  ],
+  "narration": [
+   "voice-tts"
+  ],
+  "speech": [
+   "voice-tts"
+  ],
+  "营销": [
+   "marketing"
+  ],
+  "推广": [
+   "marketing"
+  ],
+  "引流": [
+   "marketing"
+  ],
+  "获客": [
+   "marketing"
+  ],
+  "转化": [
+   "marketing"
+  ],
+  "私域": [
+   "marketing"
+  ],
+  "marketing": [
+   "marketing"
+  ],
+  "promotion": [
+   "marketing"
+  ],
+  "leads": [
+   "marketing"
+  ],
+  "growth": [
+   "marketing"
+  ],
+  "设计": [
+   "design"
+  ],
+  "ui": [
+   "design"
+  ],
+  "海报": [
+   "design"
+  ],
+  "配色": [
+   "design"
+  ],
+  "原型": [
+   "design"
+  ],
+  "换肤": [
+   "design"
+  ],
+  "落地页": [
+   "design"
+  ],
+  "design": [
+   "design"
+  ],
+  "poster": [
+   "design"
+  ],
+  "palette": [
+   "design"
+  ],
+  "prototype": [
+   "design"
+  ],
+  "landing page": [
+   "design"
+  ],
+  "编程": [
+   "dev-coding"
+  ],
+  "代码": [
+   "dev-coding"
+  ],
+  "开发": [
+   "dev-coding"
+  ],
+  "插件": [
+   "dev-coding"
+  ],
+  "mcp": [
+   "dev-coding"
+  ],
+  "agent": [
+   "dev-coding"
+  ],
+  "调试": [
+   "dev-coding"
+  ],
+  "审查": [
+   "dev-coding"
+  ],
+  "coding": [
+   "dev-coding"
+  ],
+  "plugin": [
+   "dev-coding"
+  ],
+  "debug": [
+   "dev-coding"
+  ],
+  "review": [
+   "dev-coding"
+  ],
+  "developer": [
+   "dev-coding"
+  ],
+  "记忆": [
+   "memory-knowledge"
+  ],
+  "知识库": [
+   "memory-knowledge"
+  ],
+  "上下文": [
+   "memory-knowledge"
+  ],
+  "检索": [
+   "memory-knowledge"
+  ],
+  "rag": [
+   "memory-knowledge"
+  ],
+  "memory": [
+   "memory-knowledge"
+  ],
+  "knowledge": [
+   "memory-knowledge"
+  ],
+  "context": [
+   "memory-knowledge"
+  ],
+  "retrieval": [
+   "memory-knowledge"
+  ],
+  "工作流": [
+   "workflow"
+  ],
+  "自动化": [
+   "workflow"
+  ],
+  "任务": [
+   "workflow"
+  ],
+  "看板": [
+   "workflow"
+  ],
+  "会议": [
+   "workflow"
+  ],
+  "日程": [
+   "workflow"
+  ],
+  "workflow": [
+   "workflow"
+  ],
+  "automation": [
+   "workflow"
+  ],
+  "task": [
+   "workflow"
+  ],
+  "kanban": [
+   "workflow"
+  ],
+  "meeting": [
+   "workflow"
+  ],
+  "账号": [
+   "accounts"
+  ],
+  "注册": [
+   "accounts"
+  ],
+  "多开": [
+   "accounts"
+  ],
+  "account": [
+   "accounts"
+  ],
+  "register": [
+   "accounts"
+  ],
+  "教程": [
+   "learn"
+  ],
+  "学习": [
+   "learn"
+  ],
+  "指南": [
+   "learn"
+  ],
+  "入门": [
+   "learn"
+  ],
+  "蓝皮书": [
+   "learn"
+  ],
+  "速查": [
+   "learn"
+  ],
+  "tutorial": [
+   "learn"
+  ],
+  "guide": [
+   "learn"
+  ],
+  "learning": [
+   "learn"
+  ],
+  "course": [
+   "learn"
+  ],
+  "宠物": [
+   "fun"
+  ],
+  "娱乐": [
+   "fun"
+  ],
+  "好玩": [
+   "fun"
+  ],
+  "桌面宠物": [
+   "fun"
+  ],
+  "pet": [
+   "fun"
+  ],
+  "fun": [
+   "fun"
+  ],
+  "mascot": [
+   "fun"
+  ],
+  "电商": [
+   "ecommerce"
+  ],
+  "商品图": [
+   "ecommerce"
+  ],
+  "详情页": [
+   "ecommerce"
+  ],
+  "淘宝": [
+   "ecommerce"
+  ],
+  "带货": [
+   "ecommerce"
+  ],
+  "店铺": [
+   "ecommerce"
+  ],
+  "ecommerce": [
+   "ecommerce"
+  ],
+  "product image": [
+   "ecommerce"
+  ],
+  "listing": [
+   "ecommerce"
+  ],
+  "角色": [
+   "agents-roles"
+  ],
+  "人设": [
+   "agents-roles"
+  ],
+  "专家": [
+   "agents-roles"
+  ],
+  "数字人": [
+   "agents-roles"
+  ],
+  "人格": [
+   "agents-roles"
+  ],
+  "persona": [
+   "agents-roles"
+  ],
+  "roles": [
+   "agents-roles"
+  ],
+  "expert": [
+   "agents-roles"
+  ]
+ }
+}

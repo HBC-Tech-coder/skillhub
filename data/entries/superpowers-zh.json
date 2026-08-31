@@ -10,7 +10,10 @@
   },
   "install": "git clone https://github.com/jnMetaCode/superpowers-zh",
   "ecosystems": [
-    { "id": "trae", "kind": "skill", "install": "git clone https://github.com/jnMetaCode/superpowers-zh（按 README 导入对应工具）" }
+    { "id": "claude-code", "kind": "skill", "install": "git clone https://github.com/jnMetaCode/superpowers-zh（按 README 导入 Claude Code）" },
+    { "id": "trae", "kind": "skill", "install": "git clone https://github.com/jnMetaCode/superpowers-zh（按 README 导入对应工具）" },
+    { "id": "cursor", "kind": "skill", "install": "git clone https://github.com/jnMetaCode/superpowers-zh（按 README 导入 Cursor）" },
+    { "id": "gemini", "kind": "skill", "install": "git clone https://github.com/jnMetaCode/superpowers-zh（按 README 导入 Gemini CLI）" }
   ],
   "added": "2026-08-31",
   "npm": null,

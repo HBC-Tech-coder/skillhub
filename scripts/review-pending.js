@@ -78,6 +78,7 @@ async function reviewSkillEco(item, eco) {
 async function reviewItem(item, eco) {
   if (eco === 'dsh') return reviewDsh(item);
   if (eco === 'mcp') return reviewMcp(item);
+  // 技能生态：workbuddy / trae / claude-code / codex / gemini / cursor 等
   return reviewSkillEco(item, eco);
 }
 

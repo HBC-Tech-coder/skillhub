@@ -1,0 +1,28 @@
+{
+  "id": "bbdown",
+  "name": "BBDown",
+  "owner": "nilaoda",
+  "url": "https://github.com/nilaoda/BBDown",
+  "category": "tools",
+  "description": {
+    "en": "Bilibili Downloader: a command-line downloader for Bilibili videos, danmaku, subtitles and high-bitrate streams.",
+    "zh": "命令行式哔哩哔哩下载器：支持视频、弹幕、字幕与高码率流下载。"
+  },
+  "install": "从 Releases 下载对应平台二进制（BBDown.exe），按 README 使用",
+  "ecosystems": [
+    { "id": "generic", "kind": "other", "install": "从 Releases 下载对应平台二进制（BBDown.exe），按 README 使用" }
+  ],
+  "scenarios": ["video-download", "content-social"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 13896,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "MIT",
+  "author": "nilaoda",
+  "tags": ["bilibili", "downloader", "danmaku", "cli"],
+  "verified": true,
+  "status": "active"
+}

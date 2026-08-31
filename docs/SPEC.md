@@ -60,9 +60,24 @@
 ]
 ```
 
-- `id`：`dsh` / `workbuddy` / `trae` / `mcp` / `skills-sh` / `generic`（可扩展）。
-- `kind`：该生态下的形态（plugin / skill / server / registry）。
+- `id`：`dsh` / `workbuddy` / `trae` / `mcp` / `claude-code` / `codex` / `gemini` / `cursor` / `skills-sh` / `generic`（可扩展）。
+- `kind`：该生态下的形态（plugin / skill / server / registry / other）。
 - `install`：该生态的安装方式（命令、面板路径或 URL）。
+
+### scenarios（功能场景）
+
+条目按「用户想干什么」挂功能场景标签（新媒体运营、视频下载·去水印、热点抓取、文案·脚本、短视频剪辑、配音·口播、营销自动化、设计·UI、编程·开发、记忆·知识库、工作流·自动化、账号管理、教程·学习、娱乐、电商、角色·人设）。场景表与意图词表见 `scripts/lib/scenarios.js`（构建时输出 `plugins.json.scenarios` 与 `site/scenarios.json`，站点意图搜索与服务器语义检索共用）。
+
+### 双语要求
+
+- `description` 必须同时提供 `zh` 与 `en`（schema 强制）；
+- `recommendations.json`（编辑推荐）每条须提供 `title/titleEn`、`text/textEn`；
+- 站点 UI 提供 中文/EN 一键切换（`site/app.js` 的 STR 表），默认中文。
+
+### recommendations.json（编辑推荐）
+
+结构：`{ updated, source: "editor"|"llm", entries: [{ id, title, titleEn, text, textEn, itemIds[], scenarios[] }] }`。
+首版为人工撰写；服务器版每日由 LLM 生成（`server/lib/recommend.js`，需 `DEEPSEEK_API_KEY`，未配置时保留人工版本）。
 
 ## 兼容说明
 

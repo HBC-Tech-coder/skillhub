@@ -10,7 +10,9 @@
   },
   "install": "git clone https://github.com/imraywang/rayskills",
   "ecosystems": [
-    { "id": "workbuddy", "kind": "skill", "install": "git clone https://github.com/imraywang/rayskills（按 README 导入）" }
+    { "id": "workbuddy", "kind": "skill", "install": "git clone https://github.com/imraywang/rayskills（按 README 导入）" },
+    { "id": "claude-code", "kind": "skill", "install": "git clone https://github.com/imraywang/rayskills（按 README 导入 Claude Code）" },
+    { "id": "codex", "kind": "skill", "install": "git clone https://github.com/imraywang/rayskills（按 README 导入 Codex）" }
   ],
   "added": "2026-08-31",
   "npm": null,

@@ -2,6 +2,7 @@
 // 用法：node scripts/build-plugins.js
 const fs = require('fs');
 const path = require('path');
+const { SCENARIOS, intentIndex } = require('./lib/scenarios.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const ENTRIES_DIR = path.join(ROOT, 'data', 'entries');
@@ -88,10 +89,20 @@ function build() {
     updated: today,
     count: entries.length,
     categories: Object.assign({}, CATEGORIES, usedCategories),
+    scenarios: Object.fromEntries(Object.entries(SCENARIOS).map(([id, s]) => [id, { zh: s.zh, en: s.en }])),
     plugins: entries,
   };
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify(out, null, 1) + '\n');
+  // 意图检索表（站点静态语义搜索回退用）
+  const siteScenarios = { updated: today, scenarios: SCENARIOS, intents: intentIndex() };
+  fs.mkdirSync(path.join(ROOT, 'site'), { recursive: true });
+  fs.writeFileSync(path.join(ROOT, 'site', 'scenarios.json'), JSON.stringify(siteScenarios, null, 1) + '\n');
+  // 编辑推荐（data/recommendations.json）复制进站点目录，供服务器与 Pages 同源读取
+  const recSrc = path.join(ROOT, 'data', 'recommendations.json');
+  if (fs.existsSync(recSrc)) {
+    fs.copyFileSync(recSrc, path.join(ROOT, 'site', 'recommendations.json'));
+  }
   buildFeed(out);
   for (const w of warnings) console.warn(`[build] WARN: ${w}`);
   console.log(`[build] OK: ${entries.length} entries -> ${path.relative(ROOT, OUT)} (updated=${today})`);

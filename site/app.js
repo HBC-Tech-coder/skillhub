@@ -1,44 +1,101 @@
-/* SkillHub 目录站引擎（零依赖）。数据来自同源 plugins.json。
-   特性：生态/分类侧栏筛选、排序、热门榜、亮色/夜间模式、卡片悬停展开、
-   #item/<id> 可分享详情链接、移动端适配。 */
+/* SkillHub 目录站引擎 v3（零依赖）
+   特性：意图搜索（自然语言→用途场景）、场景分类主导、双语（中/EN）、夜间模式、
+   编辑推荐、热门榜、卡片悬停详情、#item 分享链接、移动端适配。 */
 (function () {
   'use strict';
   const ECO_COLORS = {
-    dsh: '#4d7cfe', workbuddy: '#0aa869', trae: '#f0662f',
-    mcp: '#8b5cf6', 'skills-sh': '#d97706', generic: '#64748b',
+    dsh: '#4d7cfe', workbuddy: '#0aa869', trae: '#f0662f', mcp: '#8b5cf6',
+    'skills-sh': '#d97706', generic: '#64748b',
+    'claude-code': '#d97757', codex: '#10a37f', gemini: '#4285f4', cursor: '#7c3aed',
   };
-  const ECO_LABELS = { dsh: 'DSH', workbuddy: 'WorkBuddy', trae: 'TRAE', mcp: 'MCP', 'skills-sh': 'Skills.sh', generic: '通用' };
+  const ECO_LABELS = {
+    dsh: 'DSH', workbuddy: 'WorkBuddy', trae: 'TRAE', mcp: 'MCP', 'skills-sh': 'Skills.sh', generic: '通用/Any',
+    'claude-code': 'Claude Code', codex: 'Codex', gemini: 'Gemini', cursor: 'Cursor',
+  };
+  const STR = {
+    zh: {
+      heroTitle: '说出你想做的事，找到能干的工具',
+      searchPh: '试试：帮我下载无水印的B站、抖音视频的 Skill…',
+      stCount: '收录条目', stEco: '生态', stScenes: '用途场景', stUpdate: '最近更新',
+      scenes: '按用途找', eco: '生态', rec: '编辑推荐', recNote: '—— 装了这几个就能…',
+      rank: '热门榜', rankNote: '按 GitHub 星标排序（爬虫刷新）', about: '关于技能港',
+      aboutTxt: '跨生态插件与技能聚合目录。数据与站点完全开源，列出 ≠ 背书：安装第三方代码前请先查看源码。',
+      repo: '数据仓库', submit: '投稿', copy: '复制', copied: '已复制', source: '源码',
+      detail: '独立详情页 ↗', noMatch: '没有匹配项，换个说法试试？', verified: '已核验',
+      sortStars: '星标', sortNew: '最新', sortName: '名称', results: '共 {n} 条',
+      intentHit: '按意图匹配', intentNo: '关键词匹配',
+      examples: ['帮我下载无水印的B站、抖音视频的 Skill', '新媒体运营该装哪些工具？', '自动抓取热点并写公众号文案', '给 agent 加长期记忆'],
+      modalInstall: '安装', modalDesc: '描述', modalEn: 'English', modalSrc: '来源', modalStars: '星标', modalTags: '标签',
+    },
+    en: {
+      heroTitle: 'Say what you need — find the tool that does it',
+      searchPh: 'Try: a skill that downloads watermark-free Bilibili videos…',
+      stCount: 'Entries', stEco: 'Ecosystems', stScenes: 'Use cases', stUpdate: 'Updated',
+      scenes: 'By use case', eco: 'Ecosystem', rec: "Editor's Picks", recNote: '— install these to…',
+      rank: 'Trending', rankNote: 'Sorted by GitHub stars (crawler refreshed)', about: 'About SkillHub',
+      aboutTxt: 'Cross-ecosystem plugin & skill catalog. Open data, open site. Listing ≠ endorsement: read the source before installing third-party code.',
+      repo: 'Repository', submit: 'Submit', copy: 'Copy', copied: 'Copied', source: 'Source',
+      detail: 'Standalone page ↗', noMatch: 'No matches — try rephrasing?', verified: 'Verified',
+      sortStars: 'Stars', sortNew: 'Newest', sortName: 'Name', results: '{n} results',
+      intentHit: 'matched by intent', intentNo: 'keyword match',
+      examples: ['A skill to download watermark-free Bilibili/Douyin videos', 'What should a social media operator install?', 'Auto-grab hot topics and draft WeChat posts', 'Give my agent long-term memory'],
+      modalInstall: 'Install', modalDesc: 'About', modalEn: '中文', modalSrc: 'Source', modalStars: 'Stars', modalTags: 'Tags',
+    },
+  };
   const SORTS = {
     stars: (a, b) => ((b.stars ?? -1) - (a.stars ?? -1)) || String(b.added).localeCompare(String(a.added)),
     added: (a, b) => String(b.added).localeCompare(String(a.added)) || ((b.stars ?? -1) - (a.stars ?? -1)),
     name: (a, b) => String(a.name).localeCompare(String(b.name)),
   };
-  let DATA = null;
-  const state = { q: '', eco: '', cat: '', sort: 'stars' };
+  let DATA = null;        // plugins.json
+  let SCEN = null;        // scenarios.json（含意图词表）
+  let RECS = null;        // recommendations.json
+  let lang = 'zh';
+  const state = { q: '', eco: '', scene: '', sort: 'stars' };
 
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+  function t(k) { return (STR[lang] && STR[lang][k]) || k; }
   function ecoColor(id) { return ECO_COLORS[id] || '#64748b'; }
   function ecoLabel(id) { return ECO_LABELS[id] || id; }
-  function catName(id) { const c = DATA && DATA.categories && DATA.categories[id]; return c ? (c.zh || c.en || id) : id; }
+  function catName(id) { const c = DATA && DATA.categories && DATA.categories[id]; return c ? (c[lang] || c.zh || c.en || id) : id; }
+  function sceneName(id) { const s = SCEN && SCEN.scenarios && SCEN.scenarios[id]; return s ? (s[lang] || s.zh || id) : id; }
   function itemEcos(item) { return Array.isArray(item.ecosystems) && item.ecosystems.length ? item.ecosystems.map((e) => e.id) : ['generic']; }
   function installOf(item) { return (item.ecosystems && item.ecosystems[0] && item.ecosystems[0].install) || item.install || ''; }
+  function descOf(item) { return (item.description && (item.description[lang] || item.description.zh || item.description.en)) || ''; }
+
+  /* ---------- 意图检索 ---------- */
+  function intentHits(q) {
+    if (!SCEN || !SCEN.intents || !q) return {};
+    const lq = q.toLowerCase();
+    const hits = {};
+    for (const [w, ids] of Object.entries(SCEN.intents)) {
+      if (lq.includes(w.toLowerCase())) for (const id of ids) hits[id] = (hits[id] || 0) + 1;
+    }
+    return hits;
+  }
   function filtered() {
-    const list = DATA.plugins.filter((i) => {
-      if (state.eco && !itemEcos(i).includes(state.eco)) return false;
-      if (state.cat && i.category !== state.cat) return false;
-      if (state.q) {
-        const hay = (i.name + ' ' + (i.owner || '') + ' ' + (i.author || '') + ' ' + (i.description?.zh || '') + ' ' + (i.description?.en || '') + ' ' + (i.tags || []).join(' ')).toLowerCase();
-        if (!hay.includes(state.q.toLowerCase())) return false;
-      }
-      return true;
+    const hits = intentHits(state.q);
+    const scored = DATA.plugins.map((i) => {
+      let score = 0;
+      for (const s of i.scenarios || []) if (hits[s]) score += hits[s];
+      return { i, score };
     });
-    return list.sort(SORTS[state.sort] || SORTS.stars);
+    let list = scored.filter((x) => {
+      if (state.eco && !itemEcos(x.i).includes(state.eco)) return false;
+      if (state.scene && !(x.i.scenarios || []).includes(state.scene)) return false;
+      if (!state.q) return true;
+      if (x.score > 0) return true;
+      const hay = (x.i.name + ' ' + (x.i.owner || '') + ' ' + (x.i.author || '') + ' ' + (x.i.description?.zh || '') + ' ' + (x.i.description?.en || '') + ' ' + (x.i.tags || []).join(' ')).toLowerCase();
+      return hay.includes(state.q.toLowerCase());
+    });
+    list.sort((a, b) => (b.score - a.score) || SORTS[state.sort](a.i, b.i));
+    return { list: list.map((x) => x.i), intent: Object.keys(hits).length > 0 };
   }
 
   /* ---------- 渲染 ---------- */
   function cardHTML(i) {
     const eco = itemEcos(i)[0];
-    const desc = (i.description && (i.description.zh || i.description.en)) || '';
+    const desc = descOf(i);
     return `<div class="card" tabindex="0" onclick="openModal('${esc(i.id)}')" onkeydown="if(event.key==='Enter')openModal('${esc(i.id)}')">
       <div class="top">
         <div class="avatar">${esc((i.name || '?')[0].toUpperCase())}</div>
@@ -47,74 +104,91 @@
       </div>
       <div class="desc">${esc(desc)}</div>
       <div class="extra">
-        ${i.description?.en ? `<div class="en">${esc(i.description.en)}</div>` : ''}
-        ${(i.tags || []).length ? `<div class="tags">${i.tags.slice(0, 6).map((t) => `<span class="tag">${esc(t)}</span>`).join('')}</div>` : ''}
+        ${i.description && i.description[lang === 'zh' ? 'en' : 'zh'] ? `<div class="en">${esc(i.description[lang === 'zh' ? 'en' : 'zh'])}</div>` : ''}
+        ${(i.scenarios || []).length ? `<div class="tags">${i.scenarios.slice(0, 4).map((s) => `<span class="tag">${esc(sceneName(s))}</span>`).join('')}</div>` : ''}
         <div class="meta">
-          ${i.license ? `<span>许可 ${esc(i.license)}</span>` : ''}
-          ${i.downloads != null ? `<span>下载 ${i.downloads}</span>` : ''}
-          ${i.verified ? '<span>✓ 已核验</span>' : ''}
+          ${i.license ? `<span>${lang === 'zh' ? '许可' : 'License'} ${esc(i.license)}</span>` : ''}
+          ${i.downloads != null ? `<span>${lang === 'zh' ? '下载' : 'Downloads'} ${i.downloads}</span>` : ''}
+          ${i.verified ? '<span>✓ ' + esc(t('verified')) + '</span>' : ''}
         </div>
       </div>
-      <div class="install"><code>${esc(installOf(i))}</code><button class="copy" onclick="event.stopPropagation();copyCmd('${esc(i.id)}',0,this)">复制</button></div>
+      <div class="install"><code>${esc(installOf(i))}</code><button class="copy" onclick="event.stopPropagation();copyCmd('${esc(i.id)}',0,this)">${esc(t('copy'))}</button></div>
       <div class="foot"><span>⭐ ${i.stars ?? '—'}</span><span>${esc(catName(i.category))}</span><span>${esc(i.kind || '')}</span></div>
     </div>`;
   }
 
   function render() {
-    const list = filtered();
+    const { list, intent } = filtered();
     document.getElementById('stCount').textContent = DATA.count;
     document.getElementById('stEco').textContent = new Set(DATA.plugins.flatMap(itemEcos)).size;
-    document.getElementById('stCat').textContent = Object.keys(DATA.categories || {}).length;
+    document.getElementById('stScenes').textContent = SCEN ? Object.keys(SCEN.scenarios).length : '—';
     document.getElementById('stUpdate').textContent = DATA.updated || '—';
-    document.getElementById('resultInfo').textContent = `共 ${list.length} 条${state.q ? ` · “${state.q}”` : ''}`;
+    const info = t('results').replace('{n}', list.length);
+    document.getElementById('resultInfo').textContent = state.q ? `${info} · ${t(intent ? 'intentHit' : 'intentNo')}` : info;
     document.getElementById('empty').style.display = list.length ? 'none' : '';
     document.getElementById('grid').innerHTML = list.map(cardHTML).join('');
   }
 
   function renderFilters() {
+    if (SCEN) {
+      const count = {};
+      DATA.plugins.forEach((i) => (i.scenarios || []).forEach((s) => { count[s] = (count[s] || 0) + 1; }));
+      document.getElementById('sceneFilters').innerHTML =
+        `<div class="chip${state.scene ? '' : ' on'}" onclick="setScene('')"><span>${esc(t('stScenes')) === '收录条目' ? '全部' : 'All'}</span><span class="cnt">${DATA.count}</span></div>` +
+        Object.entries(SCEN.scenarios).map(([k, s]) =>
+          `<div class="chip${state.scene === k ? ' on' : ''}" onclick="setScene('${esc(k)}')"><span>${esc(lang === 'zh' ? s.zh : s.en)}</span><span class="cnt">${count[k] || 0}</span></div>`).join('');
+    }
     const ecoCount = {};
-    const catCount = {};
-    DATA.plugins.forEach((i) => {
-      itemEcos(i).forEach((k) => { ecoCount[k] = (ecoCount[k] || 0) + 1; });
-      catCount[i.category] = (catCount[i.category] || 0) + 1;
-    });
+    DATA.plugins.forEach((i) => itemEcos(i).forEach((k) => { ecoCount[k] = (ecoCount[k] || 0) + 1; }));
     document.getElementById('ecoFilters').innerHTML =
-      `<div class="chip${state.eco ? '' : ' on'}" onclick="setEco('')"><span>全部</span><span class="cnt">${DATA.count}</span></div>` +
+      `<div class="chip${state.eco ? '' : ' on'}" onclick="setEco('')"><span>${lang === 'zh' ? '全部' : 'All'}</span><span class="cnt">${DATA.count}</span></div>` +
       Object.entries(ecoCount).map(([k, n]) =>
         `<div class="chip${state.eco === k ? ' on' : ''}" onclick="setEco('${esc(k)}')"><span><span class="dot" style="background:${ecoColor(k)}"></span>${esc(ecoLabel(k))}</span><span class="cnt">${n}</span></div>`).join('');
-    document.getElementById('catFilters').innerHTML =
-      Object.entries(catCount).map(([k, n]) =>
-        `<div class="chip${state.cat === k ? ' on' : ''}" onclick="setCat('${esc(k)}')"><span>${esc(catName(k))}</span><span class="cnt">${n}</span></div>`).join('');
+  }
+
+  function renderRecs() {
+    if (!RECS || !RECS.entries) { document.getElementById('recBlock').style.display = 'none'; return; }
+    document.getElementById('recBlock').style.display = '';
+    document.getElementById('recGrid').innerHTML = RECS.entries.map((r) => `
+      <div class="reccard">
+        <div class="rectitle">${esc(lang === 'zh' ? r.title : (r.titleEn || r.title))}</div>
+        <div class="rectext">${esc(lang === 'zh' ? r.text : (r.textEn || r.text))}</div>
+        <div class="recitems">${r.itemIds.map((id) => {
+          const i = DATA.plugins.find((x) => x.id === id);
+          return i ? `<span class="recitem" onclick="openModal('${esc(id)}')">${esc(i.name)}</span>` : '';
+        }).join('')}</div>
+      </div>`).join('');
   }
 
   function renderRank() {
     const ranked = DATA.plugins.filter((i) => i.stars != null).sort((a, b) => b.stars - a.stars).slice(0, 10);
     document.getElementById('rank').innerHTML = ranked.length
       ? ranked.map((i, n) => `<div class="item" onclick="openModal('${esc(i.id)}')"><span class="num">${n + 1}</span><span class="nm">${esc(i.name)}</span><span class="st">⭐${i.stars}</span></div>`).join('')
-      : '<p class="note">暂无星标数据（爬虫上线后刷新）</p>';
+      : `<p class="note">${lang === 'zh' ? '暂无星标数据（爬虫上线后刷新）' : 'No star data yet'}</p>`;
   }
 
   function renderSort() {
     document.querySelectorAll('.sort button').forEach((b) => b.classList.toggle('on', b.dataset.sort === state.sort));
   }
 
-  /* ---------- 弹窗与复制 ---------- */
+  /* ---------- 弹窗 / 复制 ---------- */
   function openModal(id) {
     const i = DATA.plugins.find((x) => x.id === id);
     if (!i) return;
     const ecos = (i.ecosystems && i.ecosystems.length ? i.ecosystems : [{ id: 'generic', kind: i.kind || 'other', install: i.install || '' }]);
     document.getElementById('modal').innerHTML = `
       <h2>${esc(i.name)} ${ecos.map((e) => `<span class="badge" style="background:${ecoColor(e.id)}">${esc(ecoLabel(e.id))}</span>`).join(' ')}</h2>
-      <div class="en">${esc(i.owner || i.author || '')} · ${esc(catName(i.category))} · ${esc(i.kind || '')}${i.verified ? ' · ✓ 已核验' : ''}</div>
-      <div class="row"><b>描述</b>${esc(i.description?.zh || '')}</div>
-      <div class="row"><b>English</b>${esc(i.description?.en || '')}</div>
-      <div class="row"><b>来源</b><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.url)}</a></div>
-      <div class="row"><b>详情页</b><a href="items/${esc(i.id)}.html">独立页面（可分享）↗</a></div>
-      <div class="row"><b>星标</b>⭐ ${i.stars ?? '暂无数据'}${i.downloads != null ? ' · 下载 ' + i.downloads : ''}${i.license ? ' · ' + esc(i.license) : ''}</div>
-      ${(i.tags || []).length ? `<div class="row"><b>标签</b>${i.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join(' ')}</div>` : ''}
-      <div class="row"><b>安装</b></div>
-      <div class="ecolist">${ecos.map((e, n) => `<div class="ecoline"><span class="badge" style="background:${ecoColor(e.id)}">${esc(ecoLabel(e.id))}</span><code>${esc(e.install)}</code><button class="copy" onclick="copyCmd('${esc(i.id)}',${n},this)">复制</button></div>`).join('')}</div>
-      <button class="close" onclick="closeModal()">关闭</button>`;
+      <div class="en">${esc(i.owner || i.author || '')} · ${esc(catName(i.category))} · ${esc(i.kind || '')}${i.verified ? ' · ✓ ' + esc(t('verified')) : ''}</div>
+      <div class="row"><b>${esc(t('modalDesc'))}</b>${esc(i.description?.zh || '')}</div>
+      <div class="row"><b>${esc(t('modalEn'))}</b>${esc(i.description?.en || '')}</div>
+      <div class="row"><b>${esc(t('modalSrc'))}</b><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.url)}</a></div>
+      <div class="row"><b>${esc(t('modalStars'))}</b>⭐ ${i.stars ?? '—'}${i.downloads != null ? ' · ' + i.downloads : ''}${i.license ? ' · ' + esc(i.license) : ''}</div>
+      ${(i.scenarios || []).length ? `<div class="row"><b>${esc(t('scenes'))}</b>${i.scenarios.map((s) => `<span class="tag">${esc(sceneName(s))}</span>`).join(' ')}</div>` : ''}
+      ${(i.tags || []).length ? `<div class="row"><b>${esc(t('modalTags'))}</b>${i.tags.map((x) => `<span class="tag">${esc(x)}</span>`).join(' ')}</div>` : ''}
+      <div class="row"><b>${esc(t('modalInstall'))}</b></div>
+      <div class="ecolist">${ecos.map((e, n) => `<div class="ecoline"><span class="badge" style="background:${ecoColor(e.id)}">${esc(ecoLabel(e.id))}</span><code>${esc(e.install)}</code><button class="copy" onclick="copyCmd('${esc(i.id)}',${n},this)">${esc(t('copy'))}</button></div>`).join('')}</div>
+      <div class="row"><b>${esc(t('detail'))}</b><a href="items/${esc(i.id)}.html">${esc(t('detail'))}</a></div>
+      <button class="close" onclick="closeModal()">${lang === 'zh' ? '关闭' : 'Close'}</button>`;
     document.getElementById('mbg').style.display = 'flex';
     if (location.hash !== '#item/' + id) history.replaceState(null, '', '#item/' + id);
   }
@@ -125,18 +199,18 @@
   function copyCmd(id, n, btn) {
     const i = DATA.plugins.find((x) => x.id === id);
     const cmd = i.ecosystems && i.ecosystems[n] ? i.ecosystems[n].install : i.install;
-    const done = () => { btn.textContent = '已复制'; setTimeout(() => { btn.textContent = '复制'; }, 1200); };
+    const done = () => { btn.textContent = t('copied'); setTimeout(() => { btn.textContent = t('copy'); }, 1200); };
     if (navigator.clipboard) navigator.clipboard.writeText(cmd).then(done).catch(() => done());
     else done();
   }
 
-  /* ---------- 主题 ---------- */
+  /* ---------- 主题 / 语言 ---------- */
   function initTheme() {
-    let t = null;
-    try { t = localStorage.getItem('skillhub-theme'); } catch (e) { /* ignore */ }
-    if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    document.documentElement.dataset.theme = t;
-    document.getElementById('themeBtn').textContent = t === 'dark' ? '☀️' : '🌙';
+    let th = null;
+    try { th = localStorage.getItem('skillhub-theme'); } catch (e) { /* ignore */ }
+    if (!th) th = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.dataset.theme = th;
+    document.getElementById('themeBtn').textContent = th === 'dark' ? '☀️' : '🌙';
   }
   function toggleTheme() {
     const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
@@ -144,20 +218,32 @@
     document.getElementById('themeBtn').textContent = next === 'dark' ? '☀️' : '🌙';
     try { localStorage.setItem('skillhub-theme', next); } catch (e) { /* ignore */ }
   }
+  function setLang(l) {
+    lang = l;
+    document.getElementById('langBtn').textContent = l === 'zh' ? 'EN' : '中文';
+    document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
+    const q = document.getElementById('q');
+    if (!state.q) q.placeholder = t('searchPh');
+    renderExamples();
+    try { localStorage.setItem('skillhub-lang', l); } catch (e) { /* ignore */ }
+    renderFilters(); render(); renderRecs(); renderRank();
+  }
+  function renderExamples() {
+    document.getElementById('examples').innerHTML = STR[lang].examples.map((ex) => `<span class="exchip" onclick="runExample('${esc(ex)}')">${esc(ex)}</span>`).join('');
+  }
 
   window.openModal = openModal;
   window.closeModal = closeModal;
   window.copyCmd = copyCmd;
   window.setEco = (v) => { state.eco = v; renderFilters(); render(); };
-  window.setCat = (v) => { state.cat = v; renderFilters(); render(); };
+  window.setScene = (v) => { state.scene = v; renderFilters(); render(); };
+  window.runExample = (ex) => { state.q = ex; document.getElementById('q').value = ex; render(); };
 
   function bind() {
     const q = document.getElementById('q');
-    const hq = document.getElementById('hq');
-    const apply = (v) => { state.q = v; render(); };
-    q.addEventListener('input', (e) => apply(e.target.value));
-    hq.addEventListener('input', (e) => { q.value = e.target.value; apply(e.target.value); });
+    q.addEventListener('input', (e) => { state.q = e.target.value; render(); });
     document.getElementById('themeBtn').addEventListener('click', toggleTheme);
+    document.getElementById('langBtn').addEventListener('click', () => setLang(lang === 'zh' ? 'en' : 'zh'));
     document.querySelectorAll('.sort button').forEach((b) => b.addEventListener('click', () => { state.sort = b.dataset.sort; renderSort(); render(); }));
     document.getElementById('mbg').addEventListener('click', (e) => { if (e.target.id === 'mbg') closeModal(); });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
@@ -169,19 +255,27 @@
 
   async function load() {
     try {
-      const res = await fetch('plugins.json', { cache: 'no-store' });
+      const [res, resS, resR] = await Promise.all([
+        fetch('plugins.json', { cache: 'no-store' }),
+        fetch('scenarios.json', { cache: 'no-store' }).catch(() => null),
+        fetch('recommendations.json', { cache: 'no-store' }).catch(() => null),
+      ]);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       DATA = await res.json();
       if (!Array.isArray(DATA.plugins)) throw new Error('plugins.json 缺少 plugins 数组');
-      document.getElementById('footVer').textContent = `数据版本 ${DATA.updated || '?'} · 共 ${DATA.count} 条`;
+      if (resS && resS.ok) SCEN = await resS.json();
+      if (resR && resR.ok) RECS = await resR.json();
+      document.getElementById('footVer').textContent = `${lang === 'zh' ? '数据版本' : 'Data'} ${DATA.updated || '?'} · ${DATA.count} ${lang === 'zh' ? '条' : 'entries'}`;
       const src = DATA.source;
       document.getElementById('srcLink').href = src;
       document.getElementById('srcLink2').href = src;
-      renderFilters(); renderSort(); render(); renderRank();
+      try { lang = localStorage.getItem('skillhub-lang') || 'zh'; } catch (e) { /* ignore */ }
+      setLang(lang);
+      renderSort();
       const m = location.hash.match(/^#item\/(.+)$/);
       if (m && DATA.plugins.some((x) => x.id === m[1])) openModal(decodeURIComponent(m[1]));
     } catch (err) {
-      document.getElementById('grid').innerHTML = `<div class="empty">加载 plugins.json 失败：${esc(err.message)}。<br>请先在仓库根目录运行 node scripts/build-plugins.js，并把 data/plugins.json 与 site/ 部署在一起。</div>`;
+      document.getElementById('grid').innerHTML = `<div class="empty">加载 plugins.json 失败：${esc(err.message)}</div>`;
     }
   }
   initTheme(); bind(); load();

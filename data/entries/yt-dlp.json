@@ -1,0 +1,28 @@
+{
+  "id": "yt-dlp",
+  "name": "yt-dlp",
+  "owner": "yt-dlp",
+  "url": "https://github.com/yt-dlp/yt-dlp",
+  "category": "tools",
+  "description": {
+    "en": "A feature-rich command-line audio/video downloader supporting thousands of sites (Bilibili, Douyin, YouTube and more), with format selection, subtitles and batch playlists.",
+    "zh": "功能强大的命令行音视频下载器，支持 B 站、抖音、YouTube 等数千个站点：格式选择、字幕、批量播放列表下载。"
+  },
+  "install": "pip install -U yt-dlp（Windows 也可用官方 exe）",
+  "ecosystems": [
+    { "id": "generic", "kind": "other", "install": "pip install -U yt-dlp（Windows 也可用官方 exe）" }
+  ],
+  "scenarios": ["video-download", "content-social"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 188051,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "Unlicense",
+  "author": "yt-dlp",
+  "tags": ["downloader", "video", "audio", "bilibili", "douyin", "youtube", "cli"],
+  "verified": true,
+  "status": "active"
+}

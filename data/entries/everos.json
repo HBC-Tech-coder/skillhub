@@ -1,0 +1,28 @@
+{
+  "id": "everos",
+  "name": "EverOS",
+  "owner": "EverMind-AI",
+  "url": "https://github.com/EverMind-AI/EverOS",
+  "category": "memory",
+  "description": {
+    "en": "One portable memory layer for every AI agent: local-first, Markdown-native, user-owned, and self-evolving across apps, tools and workflows.",
+    "zh": "面向所有 AI agent 的可移植记忆层：本地优先、Markdown 原生、用户自持，跨应用/工具/工作流自我进化。"
+  },
+  "install": "git clone https://github.com/EverMind-AI/EverOS（按 README 安装）",
+  "ecosystems": [
+    { "id": "generic", "kind": "other", "install": "git clone https://github.com/EverMind-AI/EverOS（按 README 安装）" }
+  ],
+  "scenarios": ["memory-knowledge", "dev-coding"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 12576,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "Apache-2.0",
+  "author": "EverMind-AI",
+  "tags": ["memory", "markdown", "local-first", "portable"],
+  "verified": false,
+  "status": "active"
+}

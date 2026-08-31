@@ -1,0 +1,28 @@
+{
+  "id": "learn-harness-engineering",
+  "name": "learn-harness-engineering",
+  "owner": "walkinglabs",
+  "url": "https://github.com/walkinglabs/learn-harness-engineering",
+  "category": "docs",
+  "description": {
+    "en": "Harness engineering beginner tutorial, from 0 to 1.",
+    "zh": "Harness 工程入门教程，从 0 到 1 手把手教你理解 Agent Harness 的构造。"
+  },
+  "install": "在线浏览 https://github.com/walkinglabs/learn-harness-engineering",
+  "ecosystems": [
+    { "id": "generic", "kind": "other", "install": "在线浏览 https://github.com/walkinglabs/learn-harness-engineering（学习资料）" }
+  ],
+  "scenarios": ["learn", "dev-coding"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 14559,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "MIT",
+  "author": "walkinglabs",
+  "tags": ["tutorial", "harness", "beginner", "engineering"],
+  "verified": false,
+  "status": "active"
+}

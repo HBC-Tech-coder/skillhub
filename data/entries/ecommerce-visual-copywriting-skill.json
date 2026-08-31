@@ -10,7 +10,10 @@
   },
   "install": "git clone https://github.com/feichanggege/ecommerce-visual-copywriting-skill",
   "ecosystems": [
-    { "id": "workbuddy", "kind": "skill", "install": "git clone https://github.com/feichanggege/ecommerce-visual-copywriting-skill（按 README 导入）" }
+    { "id": "workbuddy", "kind": "skill", "install": "git clone https://github.com/feichanggege/ecommerce-visual-copywriting-skill（按 README 导入）" },
+    { "id": "claude-code", "kind": "skill", "install": "git clone https://github.com/feichanggege/ecommerce-visual-copywriting-skill（按 README 导入 Claude Code）" },
+    { "id": "codex", "kind": "skill", "install": "git clone https://github.com/feichanggege/ecommerce-visual-copywriting-skill（按 README 导入 Codex）" },
+    { "id": "cursor", "kind": "skill", "install": "git clone https://github.com/feichanggege/ecommerce-visual-copywriting-skill（按 README 导入 Cursor）" }
   ],
   "added": "2026-08-31",
   "npm": null,

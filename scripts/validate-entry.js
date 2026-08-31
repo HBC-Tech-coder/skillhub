@@ -34,6 +34,7 @@ function validateEntry(e, src) {
   if (e.status !== undefined) req(STATUSES.includes(e.status), `status 非法（${e.status}）`);
   if (e.verified !== undefined) req(typeof e.verified === 'boolean', 'verified 必须是布尔');
   if (e.tags !== undefined) req(Array.isArray(e.tags), 'tags 必须是数组');
+  if (e.scenarios !== undefined) req(Array.isArray(e.scenarios) && e.scenarios.every((s) => typeof s === 'string'), 'scenarios 必须是字符串数组');
   return errs;
 }
 

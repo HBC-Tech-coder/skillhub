@@ -5,6 +5,10 @@ const ECO_DEFAULTS = {
   workbuddy: { kind: 'skill', install: (r) => `git clone ${r.html_url}` },
   trae: { kind: 'skill', install: (r) => `git clone ${r.html_url}` },
   mcp: { kind: 'server', install: () => '参照仓库 README 配置 MCP 客户端' },
+  'claude-code': { kind: 'skill', install: (r) => `git clone ${r.html_url}（按 README 导入 Claude Code）` },
+  codex: { kind: 'skill', install: (r) => `git clone ${r.html_url}（按 README 导入 Codex）` },
+  gemini: { kind: 'skill', install: (r) => `git clone ${r.html_url}（按 README 导入 Gemini CLI）` },
+  cursor: { kind: 'skill', install: (r) => `git clone ${r.html_url}（按 README 导入 Cursor）` },
 };
 
 function slug(s) { return String(s).toLowerCase().replace(/[^a-z0-9._-]+/g, '-').replace(/^-+|-+$/g, ''); }

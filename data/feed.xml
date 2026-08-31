@@ -6,6 +6,14 @@
   <updated>2026-08-31T00:00:00Z</updated>
   <author><name>SkillHub</name></author>
   <entry>
+    <id>skillhub:yt-dlp</id>
+    <title>yt-dlp</title>
+    <link href="https://github.com/yt-dlp/yt-dlp"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>功能强大的命令行音视频下载器，支持 B 站、抖音、YouTube 等数千个站点：格式选择、字幕、批量播放列表下载。</summary>
+    <category term="tools"/>
+  </entry>
+  <entry>
     <id>skillhub:system-prompts-and-models-of-ai-tools</id>
     <title>system-prompts-and-models-of-ai-tools</title>
     <link href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"/>
@@ -70,6 +78,14 @@
     <category term="dev"/>
   </entry>
   <entry>
+    <id>skillhub:distilly</id>
+    <title>distilly</title>
+    <link href="https://github.com/titanwings/distilly"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Distilly：把人的工作方法蒸馏成可复用的 Skills，给任何 Agent 或 Bot 使用（原「同事 Skill」）。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
     <id>skillhub:mcp-python-sdk</id>
     <title>MCP Python SDK</title>
     <link href="https://github.com/modelcontextprotocol/python-sdk"/>
@@ -110,12 +126,36 @@
     <category term="docs"/>
   </entry>
   <entry>
+    <id>skillhub:learn-harness-engineering</id>
+    <title>learn-harness-engineering</title>
+    <link href="https://github.com/walkinglabs/learn-harness-engineering"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Harness 工程入门教程，从 0 到 1 手把手教你理解 Agent Harness 的构造。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:bbdown</id>
+    <title>BBDown</title>
+    <link href="https://github.com/nilaoda/BBDown"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>命令行式哔哩哔哩下载器：支持视频、弹幕、字幕与高码率流下载。</summary>
+    <category term="tools"/>
+  </entry>
+  <entry>
     <id>skillhub:awesome-dsh-plugin</id>
     <title>awesome-dsh-plugin</title>
     <link href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>DeepSeek Harness（dsh）插件精选列表（都可用 `dsh plugin add` 安装）；dsh-market 插件市场与 awesome-dsh-plugin.com 的数据源。</summary>
     <category term="market"/>
+  </entry>
+  <entry>
+    <id>skillhub:everos</id>
+    <title>EverOS</title>
+    <link href="https://github.com/EverMind-AI/EverOS"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>面向所有 AI agent 的可移植记忆层：本地优先、Markdown 原生、用户自持，跨应用/工具/工作流自我进化。</summary>
+    <category term="memory"/>
   </entry>
   <entry>
     <id>skillhub:superpowers-zh</id>

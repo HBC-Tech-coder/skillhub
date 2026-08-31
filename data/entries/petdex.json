@@ -10,7 +10,10 @@
   },
   "install": "在 petdex 画廊浏览并复制对应 harness 的安装命令（画廊站点本身非 dsh bundle）",
   "ecosystems": [
-    { "id": "dsh", "kind": "other", "install": "在 petdex 画廊浏览并复制对应 harness 的安装命令（画廊站点本身非 dsh bundle）" }
+    { "id": "dsh", "kind": "other", "install": "在 petdex 画廊浏览并复制对应 harness 的安装命令（画廊站点本身非 dsh bundle）" },
+    { "id": "codex", "kind": "other", "install": "在 petdex 画廊浏览并复制 Codex 的安装命令" },
+    { "id": "claude-code", "kind": "other", "install": "在 petdex 画廊浏览并复制 Claude Code 的安装命令" },
+    { "id": "gemini", "kind": "other", "install": "在 petdex 画廊浏览并复制 Gemini CLI 的安装命令" }
   ],
   "added": "2026-08-31",
   "npm": null,

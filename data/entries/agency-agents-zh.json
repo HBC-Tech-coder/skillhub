@@ -10,6 +10,8 @@
   },
   "install": "git clone https://github.com/jnMetaCode/agency-agents-zh",
   "ecosystems": [
+    { "id": "claude-code", "kind": "other", "install": "git clone https://github.com/jnMetaCode/agency-agents-zh（按 README 导入 Claude Code）" },
+    { "id": "cursor", "kind": "other", "install": "git clone https://github.com/jnMetaCode/agency-agents-zh（按 README 导入 Cursor）" },
     { "id": "generic", "kind": "other", "install": "git clone https://github.com/jnMetaCode/agency-agents-zh（按 README 导入对应工具）" }
   ],
   "added": "2026-08-31",

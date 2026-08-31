@@ -3,7 +3,7 @@
  "url": "https://hub.hibcglobal.com",
  "source": "https://github.com/HBC-Tech-coder/skillhub",
  "updated": "2026-08-31",
- "count": 40,
+ "count": 45,
  "categories": {
   "agi": {
    "en": "AGI Architecture Exploration",
@@ -98,7 +98,116 @@
    "zh": "娱乐"
   }
  },
+ "scenarios": {
+  "content-social": {
+   "zh": "新媒体运营",
+   "en": "Social Content"
+  },
+  "video-download": {
+   "zh": "视频下载·去水印",
+   "en": "Video Download"
+  },
+  "trends-monitor": {
+   "zh": "热点抓取·舆情",
+   "en": "Trends & Monitoring"
+  },
+  "copywriting": {
+   "zh": "文案·脚本",
+   "en": "Copywriting"
+  },
+  "video-edit": {
+   "zh": "短视频剪辑",
+   "en": "Video Editing"
+  },
+  "voice-tts": {
+   "zh": "配音·口播",
+   "en": "Voice & TTS"
+  },
+  "marketing": {
+   "zh": "营销自动化",
+   "en": "Marketing"
+  },
+  "design": {
+   "zh": "设计·UI",
+   "en": "Design"
+  },
+  "dev-coding": {
+   "zh": "编程·开发",
+   "en": "Coding & Dev"
+  },
+  "memory-knowledge": {
+   "zh": "记忆·知识库",
+   "en": "Memory & Knowledge"
+  },
+  "workflow": {
+   "zh": "工作流·自动化",
+   "en": "Workflow"
+  },
+  "accounts": {
+   "zh": "账号管理",
+   "en": "Accounts"
+  },
+  "learn": {
+   "zh": "教程·学习",
+   "en": "Learning"
+  },
+  "fun": {
+   "zh": "娱乐",
+   "en": "Fun"
+  },
+  "ecommerce": {
+   "zh": "电商",
+   "en": "E-commerce"
+  },
+  "agents-roles": {
+   "zh": "角色·人设",
+   "en": "Roles & Personas"
+  }
+ },
  "plugins": [
+  {
+   "id": "yt-dlp",
+   "name": "yt-dlp",
+   "owner": "yt-dlp",
+   "url": "https://github.com/yt-dlp/yt-dlp",
+   "category": "tools",
+   "description": {
+    "en": "A feature-rich command-line audio/video downloader supporting thousands of sites (Bilibili, Douyin, YouTube and more), with format selection, subtitles and batch playlists.",
+    "zh": "功能强大的命令行音视频下载器，支持 B 站、抖音、YouTube 等数千个站点：格式选择、字幕、批量播放列表下载。"
+   },
+   "install": "pip install -U yt-dlp（Windows 也可用官方 exe）",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "other",
+     "install": "pip install -U yt-dlp（Windows 也可用官方 exe）"
+    }
+   ],
+   "scenarios": [
+    "video-download",
+    "content-social"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 188051,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": "Unlicense",
+   "author": "yt-dlp",
+   "tags": [
+    "downloader",
+    "video",
+    "audio",
+    "bilibili",
+    "douyin",
+    "youtube",
+    "cli"
+   ],
+   "verified": true,
+   "status": "active"
+  },
   {
    "id": "system-prompts-and-models-of-ai-tools",
    "name": "system-prompts-and-models-of-ai-tools",
@@ -395,6 +504,46 @@
    "status": "active"
   },
   {
+   "id": "distilly",
+   "name": "distilly",
+   "owner": "titanwings",
+   "url": "https://github.com/titanwings/distilly",
+   "category": "workflow",
+   "description": {
+    "en": "Distilly: distill how people think into reusable Skills for any Agent or Bot (formerly Colleague Skill).",
+    "zh": "Distilly：把人的工作方法蒸馏成可复用的 Skills，给任何 Agent 或 Bot 使用（原「同事 Skill」）。"
+   },
+   "install": "git clone https://github.com/titanwings/distilly（按 README 使用）",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "skill",
+     "install": "git clone https://github.com/titanwings/distilly（按 README 使用）"
+    }
+   ],
+   "scenarios": [
+    "workflow",
+    "dev-coding"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 24194,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": "MIT",
+   "author": "titanwings",
+   "tags": [
+    "skills",
+    "distill",
+    "knowledge",
+    "reusable"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "mcp-python-sdk",
    "name": "MCP Python SDK",
    "owner": "modelcontextprotocol",
@@ -516,6 +665,16 @@
    "install": "git clone https://github.com/jnMetaCode/agency-agents-zh",
    "ecosystems": [
     {
+     "id": "claude-code",
+     "kind": "other",
+     "install": "git clone https://github.com/jnMetaCode/agency-agents-zh（按 README 导入 Claude Code）"
+    },
+    {
+     "id": "cursor",
+     "kind": "other",
+     "install": "git clone https://github.com/jnMetaCode/agency-agents-zh（按 README 导入 Cursor）"
+    },
+    {
      "id": "generic",
      "kind": "other",
      "install": "git clone https://github.com/jnMetaCode/agency-agents-zh（按 README 导入对应工具）"
@@ -579,6 +738,86 @@
    "status": "active"
   },
   {
+   "id": "learn-harness-engineering",
+   "name": "learn-harness-engineering",
+   "owner": "walkinglabs",
+   "url": "https://github.com/walkinglabs/learn-harness-engineering",
+   "category": "docs",
+   "description": {
+    "en": "Harness engineering beginner tutorial, from 0 to 1.",
+    "zh": "Harness 工程入门教程，从 0 到 1 手把手教你理解 Agent Harness 的构造。"
+   },
+   "install": "在线浏览 https://github.com/walkinglabs/learn-harness-engineering",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "other",
+     "install": "在线浏览 https://github.com/walkinglabs/learn-harness-engineering（学习资料）"
+    }
+   ],
+   "scenarios": [
+    "learn",
+    "dev-coding"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 14559,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": "MIT",
+   "author": "walkinglabs",
+   "tags": [
+    "tutorial",
+    "harness",
+    "beginner",
+    "engineering"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "bbdown",
+   "name": "BBDown",
+   "owner": "nilaoda",
+   "url": "https://github.com/nilaoda/BBDown",
+   "category": "tools",
+   "description": {
+    "en": "Bilibili Downloader: a command-line downloader for Bilibili videos, danmaku, subtitles and high-bitrate streams.",
+    "zh": "命令行式哔哩哔哩下载器：支持视频、弹幕、字幕与高码率流下载。"
+   },
+   "install": "从 Releases 下载对应平台二进制（BBDown.exe），按 README 使用",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "other",
+     "install": "从 Releases 下载对应平台二进制（BBDown.exe），按 README 使用"
+    }
+   ],
+   "scenarios": [
+    "video-download",
+    "content-social"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 13896,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": "MIT",
+   "author": "nilaoda",
+   "tags": [
+    "bilibili",
+    "downloader",
+    "danmaku",
+    "cli"
+   ],
+   "verified": true,
+   "status": "active"
+  },
+  {
    "id": "awesome-dsh-plugin",
    "name": "awesome-dsh-plugin",
    "owner": "awesome-dsh-plugin",
@@ -615,6 +854,46 @@
    "status": "active"
   },
   {
+   "id": "everos",
+   "name": "EverOS",
+   "owner": "EverMind-AI",
+   "url": "https://github.com/EverMind-AI/EverOS",
+   "category": "memory",
+   "description": {
+    "en": "One portable memory layer for every AI agent: local-first, Markdown-native, user-owned, and self-evolving across apps, tools and workflows.",
+    "zh": "面向所有 AI agent 的可移植记忆层：本地优先、Markdown 原生、用户自持，跨应用/工具/工作流自我进化。"
+   },
+   "install": "git clone https://github.com/EverMind-AI/EverOS（按 README 安装）",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "other",
+     "install": "git clone https://github.com/EverMind-AI/EverOS（按 README 安装）"
+    }
+   ],
+   "scenarios": [
+    "memory-knowledge",
+    "dev-coding"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 12576,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": "Apache-2.0",
+   "author": "EverMind-AI",
+   "tags": [
+    "memory",
+    "markdown",
+    "local-first",
+    "portable"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "superpowers-zh",
    "name": "superpowers-zh",
    "owner": "jnMetaCode",
@@ -627,9 +906,24 @@
    "install": "git clone https://github.com/jnMetaCode/superpowers-zh",
    "ecosystems": [
     {
+     "id": "claude-code",
+     "kind": "skill",
+     "install": "git clone https://github.com/jnMetaCode/superpowers-zh（按 README 导入 Claude Code）"
+    },
+    {
      "id": "trae",
      "kind": "skill",
      "install": "git clone https://github.com/jnMetaCode/superpowers-zh（按 README 导入对应工具）"
+    },
+    {
+     "id": "cursor",
+     "kind": "skill",
+     "install": "git clone https://github.com/jnMetaCode/superpowers-zh（按 README 导入 Cursor）"
+    },
+    {
+     "id": "gemini",
+     "kind": "skill",
+     "install": "git clone https://github.com/jnMetaCode/superpowers-zh（按 README 导入 Gemini CLI）"
     }
    ],
    "added": "2026-08-31",
@@ -739,6 +1033,21 @@
      "id": "dsh",
      "kind": "other",
      "install": "在 petdex 画廊浏览并复制对应 harness 的安装命令（画廊站点本身非 dsh bundle）"
+    },
+    {
+     "id": "codex",
+     "kind": "other",
+     "install": "在 petdex 画廊浏览并复制 Codex 的安装命令"
+    },
+    {
+     "id": "claude-code",
+     "kind": "other",
+     "install": "在 petdex 画廊浏览并复制 Claude Code 的安装命令"
+    },
+    {
+     "id": "gemini",
+     "kind": "other",
+     "install": "在 petdex 画廊浏览并复制 Gemini CLI 的安装命令"
     }
    ],
    "added": "2026-08-31",
@@ -956,6 +1265,21 @@
      "id": "workbuddy",
      "kind": "skill",
      "install": "git clone https://github.com/feichanggege/ecommerce-visual-copywriting-skill（按 README 导入）"
+    },
+    {
+     "id": "claude-code",
+     "kind": "skill",
+     "install": "git clone https://github.com/feichanggege/ecommerce-visual-copywriting-skill（按 README 导入 Claude Code）"
+    },
+    {
+     "id": "codex",
+     "kind": "skill",
+     "install": "git clone https://github.com/feichanggege/ecommerce-visual-copywriting-skill（按 README 导入 Codex）"
+    },
+    {
+     "id": "cursor",
+     "kind": "skill",
+     "install": "git clone https://github.com/feichanggege/ecommerce-visual-copywriting-skill（按 README 导入 Cursor）"
     }
    ],
    "added": "2026-08-31",
@@ -1250,6 +1574,16 @@
      "id": "workbuddy",
      "kind": "skill",
      "install": "git clone https://github.com/imraywang/rayskills（按 README 导入）"
+    },
+    {
+     "id": "claude-code",
+     "kind": "skill",
+     "install": "git clone https://github.com/imraywang/rayskills（按 README 导入 Claude Code）"
+    },
+    {
+     "id": "codex",
+     "kind": "skill",
+     "install": "git clone https://github.com/imraywang/rayskills（按 README 导入 Codex）"
     }
    ],
    "added": "2026-08-31",

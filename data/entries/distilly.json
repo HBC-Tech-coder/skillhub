@@ -1,0 +1,28 @@
+{
+  "id": "distilly",
+  "name": "distilly",
+  "owner": "titanwings",
+  "url": "https://github.com/titanwings/distilly",
+  "category": "workflow",
+  "description": {
+    "en": "Distilly: distill how people think into reusable Skills for any Agent or Bot (formerly Colleague Skill).",
+    "zh": "Distilly：把人的工作方法蒸馏成可复用的 Skills，给任何 Agent 或 Bot 使用（原「同事 Skill」）。"
+  },
+  "install": "git clone https://github.com/titanwings/distilly（按 README 使用）",
+  "ecosystems": [
+    { "id": "generic", "kind": "skill", "install": "git clone https://github.com/titanwings/distilly（按 README 使用）" }
+  ],
+  "scenarios": ["workflow", "dev-coding"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 24194,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "titanwings",
+  "tags": ["skills", "distill", "knowledge", "reusable"],
+  "verified": false,
+  "status": "active"
+}

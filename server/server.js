@@ -61,14 +61,29 @@ function handleSearch(url) {
   const cat = url.searchParams.get('cat') || '';
   const limit = Math.min(Number(url.searchParams.get('limit') || 50) || 50, 200);
   const data = readPlugins();
-  const hits = data.plugins.filter((i) => {
+  // 意图回退：意图词表命中 → 场景置顶（无 LLM 时的语义检索）
+  let intentHits = {};
+  try {
+    const scen = JSON.parse(fs.readFileSync(path.join(SITE_DIR, 'scenarios.json'), 'utf8'));
+    for (const [w, ids] of Object.entries(scen.intents || {})) {
+      if (q && q.includes(w.toLowerCase())) for (const id of ids) intentHits[id] = (intentHits[id] || 0) + 1;
+    }
+  } catch { /* scenarios.json 缺失时纯关键词 */ }
+  const scored = data.plugins.map((i) => {
+    let score = 0;
+    for (const s of i.scenarios || []) if (intentHits[s]) score += intentHits[s];
+    return { i, score };
+  });
+  const hits = scored.filter(({ i, score }) => {
     if (eco && !(i.ecosystems || []).some((e) => e.id === eco)) return false;
     if (cat && i.category !== cat) return false;
     if (!q) return true;
+    if (score > 0) return true;
     const hay = [i.name, i.owner, i.author, (i.description || {}).zh, (i.description || {}).en, (i.tags || []).join(' ')].join(' ').toLowerCase();
     return hay.includes(q);
-  });
-  return { total: hits.length, count: Math.min(hits.length, limit), items: hits.slice(0, limit).map(({ ...rest } = {}) => rest) };
+  }).sort((a, b) => (b.score - a.score) || ((b.i.stars ?? -1) - (a.i.stars ?? -1)));
+  const items = hits.slice(0, limit).map(({ i }) => i);
+  return { total: hits.length, count: items.length, intent: Object.keys(intentHits).length > 0, items };
 }
 
 async function handleAdmin(req, res, url) {
