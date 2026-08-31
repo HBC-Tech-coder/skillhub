@@ -16,6 +16,7 @@ const PORT = Number(process.env.PORT || 4290);
 const HOST = process.env.HOST || '127.0.0.1';
 const ADMIN_TOKEN = process.env.SKILLHUB_ADMIN_TOKEN || '';
 const { validateEntry } = require(path.join(ROOT, 'scripts', 'validate-entry.js'));
+const admin = require('./lib/admin');
 
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.csv': 'text/csv; charset=utf-8' };
 
@@ -41,6 +42,138 @@ function readBody(req, limit) {
     req.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));
     req.on('error', reject);
   });
+}
+
+// ---------- 超管后台（/api/panel/，会话保护） ----------
+function ipOf(req) {
+  return (req.headers['x-real-ip'] || req.socket.remoteAddress || '').split(',')[0].trim();
+}
+function originOk(req) {
+  // 变更类请求的 CSRF 防线：带 Origin 时其 host 必须与请求 host 一致（配合 SameSite=Strict cookie）
+  const o = req.headers.origin;
+  if (!o) return true;
+  try { return new URL(o).host === req.headers.host; } catch { return false; }
+}
+function setAuthCookie(res, token) {
+  res.setHeader('Set-Cookie', admin.COOKIE_NAME + '=' + token + '; Path=/; HttpOnly; SameSite=Strict; Max-Age=43200');
+}
+function clearAuthCookie(res) {
+  res.setHeader('Set-Cookie', admin.COOKIE_NAME + '=; Path=/; HttpOnly; SameSite=Strict; Max-Age=0');
+}
+function authedSession(req) {
+  return admin.sessionOf(admin.cookieOf(req));
+}
+function requireAdmin(req, res) {
+  const s = authedSession(req);
+  if (!s) { json(res, 401, { error: '未登录或会话已过期', code: 'NO_SESSION' }); return null; }
+  if (s.role !== 'admin') { json(res, 403, { error: '首次登录须先修改密码并重新登录', code: 'MUST_CHANGE' }); return null; }
+  return s;
+}
+
+async function handlePanel(req, res, url) {
+  const p = url.pathname;
+  const method = req.method;
+
+  if (p === '/api/panel/session') {
+    const s = authedSession(req);
+    return json(res, 200, s ? { user: s.user, role: s.role, mustChange: s.role === 'mustChange' } : { user: null, role: null });
+  }
+
+  if (p === '/api/panel/login' && method === 'POST') {
+    if (!originOk(req)) return json(res, 403, { error: 'origin mismatch' });
+    const ip = ipOf(req);
+    if (admin.loginBlocked(ip)) return json(res, 429, { error: '尝试过多，请 15 分钟后再试' });
+    let body;
+    try { body = JSON.parse(await readBody(req, 64 * 1024)); } catch { return json(res, 400, { error: 'invalid JSON' }); }
+    const st = admin.loadState();
+    const userOk = String(body.user || '') === st.account.user;
+    const passOk = admin.verifyPassword(String(body.pass || ''), st.account.salt, st.account.hash);
+    if (!userOk || !passOk) { admin.loginFailed(ip); return json(res, 401, { error: '用户名或密码错误' }); }
+    admin.loginOk(ip);
+    const role = st.account.mustChange ? 'mustChange' : 'admin';
+    const token = admin.createSession(role);
+    setAuthCookie(res, token);
+    return json(res, 200, { ok: true, user: st.account.user, mustChange: role === 'mustChange' });
+  }
+
+  if (p === '/api/panel/logout' && method === 'POST') {
+    if (!originOk(req)) return json(res, 403, { error: 'origin mismatch' });
+    admin.destroySession(admin.cookieOf(req));
+    clearAuthCookie(res);
+    return json(res, 200, { ok: true });
+  }
+
+  if (p === '/api/panel/change-password' && method === 'POST') {
+    if (!originOk(req)) return json(res, 403, { error: 'origin mismatch' });
+    const s = authedSession(req);
+    if (!s) return json(res, 401, { error: '未登录', code: 'NO_SESSION' });
+    let body;
+    try { body = JSON.parse(await readBody(req, 64 * 1024)); } catch { return json(res, 400, { error: 'invalid JSON' }); }
+    const st = admin.loadState();
+    if (!admin.verifyPassword(String(body.old || ''), st.account.salt, st.account.hash)) {
+      return json(res, 400, { error: '当前密码不正确' });
+    }
+    const errs = admin.policyErrors(String(body.next || ''));
+    if (errs.length) return json(res, 422, { error: '新密码不符合规则', details: errs });
+    const h = admin.hashPassword(String(body.next));
+    st.account.salt = h.salt;
+    st.account.hash = h.hash;
+    st.account.mustChange = false;
+    st.account.changedAt = new Date().toISOString();
+    admin.saveState();
+    admin.destroyAll(); // 强制所有会话（含当前）下线 → 重新登录后才有完整超管权限
+    clearAuthCookie(res);
+    admin.appendRunlog({ task: 'auth', event: 'password-changed', user: st.account.user });
+    return json(res, 200, { ok: true, relogin: true, note: '密码已更新，请重新登录' });
+  }
+
+  // —— 以下均需完整超管权限（已改密并重新登录）——
+  if (!requireAdmin(req, res)) return;
+
+  if (p === '/api/panel/config' && method === 'GET') {
+    return json(res, 200, admin.publicConfig());
+  }
+  if (p === '/api/panel/config' && method === 'POST') {
+    if (!originOk(req)) return json(res, 403, { error: 'origin mismatch' });
+    let body;
+    try { body = JSON.parse(await readBody(req, 64 * 1024)); } catch { return json(res, 400, { error: 'invalid JSON' }); }
+    try {
+      const cfg = admin.saveConfig(body || {});
+      admin.appendRunlog({ task: 'config', event: 'saved' });
+      return json(res, 200, { ok: true, config: cfg });
+    } catch (e) { return json(res, 422, { error: e.message }); }
+  }
+  if (p === '/api/panel/run' && method === 'POST') {
+    if (!originOk(req)) return json(res, 403, { error: 'origin mismatch' });
+    let body;
+    try { body = JSON.parse(await readBody(req, 16 * 1024)); } catch { return json(res, 400, { error: 'invalid JSON' }); }
+    try {
+      admin.createRequest(String(body.task || ''));
+      admin.appendRunlog({ task: String(body.task || ''), event: 'queued' });
+      return json(res, 200, { ok: true, note: '已排队，tick 定时器 ≤5 分钟内执行，可在概览查看运行日志' });
+    } catch (e) { return json(res, 400, { error: e.message }); }
+  }
+  if (p === '/api/panel/status') {
+    const cfg = admin.publicConfig();
+    return json(res, 200, {
+      ok: true,
+      now: new Date().toISOString(),
+      dataUpdated: (() => { try { return readPlugins().updated; } catch { return null; } })(),
+      count: (() => { try { return readPlugins().count; } catch { return null; } })(),
+      config: cfg,
+      runs: admin.readRunlog(50),
+      drafts: admin.listDrafts().slice(0, 20),
+    });
+  }
+  if (p === '/api/panel/promo-drafts') {
+    return json(res, 200, { drafts: admin.listDrafts().slice(0, 50) });
+  }
+  if (p === '/api/panel/promo-draft') {
+    try {
+      return json(res, 200, { name: String(url.searchParams.get('name') || ''), content: admin.readDraft(String(url.searchParams.get('name') || '')) });
+    } catch (e) { return json(res, 404, { error: e.message }); }
+  }
+  return json(res, 404, { error: 'not found' });
 }
 
 function serveStatic(req, res, pathname) {
@@ -134,7 +267,16 @@ const server = http.createServer(async (req, res) => {
     const item = data.plugins.find((x) => x.id === id);
     return item ? json(res, 200, item) : json(res, 404, { error: 'not found' });
   }
+  if (p.startsWith('/api/panel/')) return handlePanel(req, res, url);
   if (p.startsWith('/api/admin/')) return handleAdmin(req, res, url);
+  if (p === '/admin' || p === '/admin/') {
+    fs.readFile(path.join(SITE_DIR, 'admin.html'), (err, buf) => {
+      if (err) { res.writeHead(404); return res.end('not found'); }
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-cache' });
+      res.end(buf);
+    });
+    return;
+  }
   if (p === '/plugins.json' || p === '/feed.xml' || p === '/skillhub.csv') {
     const file = path.join(DATA_DIR, p.slice(1));
     const type = { '/plugins.json': 'application/json; charset=utf-8', '/feed.xml': 'application/atom+xml; charset=utf-8', '/skillhub.csv': 'text/csv; charset=utf-8' }[p];

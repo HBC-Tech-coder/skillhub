@@ -5,3 +5,4 @@ npm-debug.log*
 server/.env
 data/pending/
 data/rejected/
+data/.ops/

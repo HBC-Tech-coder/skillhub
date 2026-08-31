@@ -1,12 +1,25 @@
 #!/usr/bin/env bash
-# SkillHub 每日管线（每天 04:00）：爬取 → AI 推荐 → AI 打标 → 自动收录 → 构建 → 推送。
-# 依赖：DEEPSEEK_API_KEY（推荐/打标，缺失时跳过并显式告警）、GITHUB_TOKEN（推送）。
+# SkillHub 每日管线（默认 04:00，超管后台可改）：爬取 → AI 推荐 → AI 打标 → 自动收录 → 构建 → 推送。
+# 依赖：DEEPSEEK_API_KEY（推荐/打标，缺失时跳过并显式告警）、GITHUB_TOKEN（推送）；
+#       均来自 systemd EnvironmentFile 或超管后台 app.env。调度权威：后台配置（gate 判定开关/时间）。
 set -euo pipefail
 APP=/opt/skillhub
 cd "$APP"
 
 exec 9>"$APP/data/.sync.lock"
 flock -n 9 || { echo "[daily] $(date -u +%T) 另一实例运行中，跳过"; exit 0; }
+
+# 超管后台配置门禁：禁用/未到时间/当日已跑 → 跳过（退出 42）
+if ! node "$APP/scripts/lib/pipeline-gate.js" gate daily; then
+  echo "[daily] $(date -u +%T) gate 判定跳过（见上）"
+  exit 0
+fi
+
+# 超管后台写入的密钥（覆盖 systemd EnvironmentFile 引导值）
+if [ -f "$APP/data/.ops/app.env" ]; then set -a; . "$APP/data/.ops/app.env"; set +a; fi
+
+# 收尾记录运行日志；成功时更新 last-runs（gate 判定"当日已跑"的依据）
+trap 'RC=$?; node "$APP/scripts/lib/pipeline-gate.js" log daily "$RC"' EXIT
 
 echo "[daily] $(date -u +%T) 开始每日管线"
 

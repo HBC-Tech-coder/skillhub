@@ -1,0 +1,10 @@
+[Unit]
+Description=SkillHub 超管后台 tick（消费立即执行请求 + 到期任务调度）
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=skillhub
+Group=skillhub
+EnvironmentFile=/opt/skillhub/.ops/runtime.env
+ExecStart=/usr/bin/node /opt/skillhub/scripts/pipeline-scheduler.js

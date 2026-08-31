@@ -1,12 +1,25 @@
 #!/usr/bin/env bash
 # SkillHub 每小时同步：构建 + 有变更则推送回 GitHub（服务器为源的管线）。
-# 依赖：GITHUB_TOKEN（经 systemd EnvironmentFile 注入）；flock 互斥；失败显式退出非零。
+# 依赖：GITHUB_TOKEN（systemd EnvironmentFile 或超管后台 app.env）；flock 互斥；失败显式退出非零。
+# 调度权威：超管后台 data/.ops/admin.json（gate 判定开关/间隔）；tick 调度器与 systemd 定时器并存，重复触发安全。
 set -euo pipefail
 APP=/opt/skillhub
 cd "$APP"
 
 exec 9>"$APP/data/.sync.lock"
 flock -n 9 || { echo "[sync] $(date -u +%T) 另一实例运行中，跳过"; exit 0; }
+
+# 超管后台配置门禁：禁用/未到期 → 跳过（退出 42）
+if ! node "$APP/scripts/lib/pipeline-gate.js" gate sync; then
+  echo "[sync] $(date -u +%T) gate 判定跳过（见上）"
+  exit 0
+fi
+
+# 超管后台写入的密钥（覆盖 systemd EnvironmentFile 引导值）
+if [ -f "$APP/data/.ops/app.env" ]; then set -a; . "$APP/data/.ops/app.env"; set +a; fi
+
+# 收尾记录运行日志；成功时更新 last-runs（gate 判定间隔的依据）
+trap 'RC=$?; node "$APP/scripts/lib/pipeline-gate.js" log sync "$RC"' EXIT
 
 node scripts/build-plugins.js
 node scripts/export-csv.js
