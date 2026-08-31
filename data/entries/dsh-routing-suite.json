@@ -1,0 +1,27 @@
+{
+  "id": "dsh-routing-suite",
+  "name": "dsh-routing-suite",
+  "owner": "yjh051108",
+  "url": "https://github.com/yjh051108/dsh-routing-suite",
+  "category": "dev",
+  "description": {
+    "en": "DSH routing suite: runtime injector + task-aware reasoning-mode router preset kit (measured P1-P23). Install the injector first, then the router preset.",
+    "zh": "DSH 路由套件：运行时注入器 + 任务感知推理模式路由预设（实测 P1-P23）。先装注入器，再装路由预设。"
+  },
+  "install": "dsh plugin --profile web add github:yjh051108/dsh-routing-suite",
+  "ecosystems": [
+    { "id": "dsh", "kind": "plugin", "install": "dsh plugin --profile web add github:yjh051108/dsh-routing-suite" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 6985,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "MIT",
+  "author": "yjh051108",
+  "tags": ["routing", "preset", "reasoning-mode", "injector"],
+  "verified": true,
+  "status": "active"
+}

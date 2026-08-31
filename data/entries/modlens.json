@@ -22,6 +22,6 @@
   "license": null,
   "author": "liustack",
   "tags": ["vision", "ocr", "multimodal"],
-  "verified": false,
+  "verified": true,
   "status": "active"
 }

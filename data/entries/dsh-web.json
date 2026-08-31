@@ -1,0 +1,27 @@
+{
+  "id": "dsh-web",
+  "name": "dsh-web",
+  "owner": "zhu1090093659",
+  "url": "https://github.com/zhu1090093659/dsh-web",
+  "category": "market",
+  "description": {
+    "en": "DeepSeek Harness (DSH) Web Plugin Aggregation Ecosystem: everything is a plugin, distributed via the Creative Workshop.",
+    "zh": "DSH Web 插件聚合生态：万物皆插件，经「创作工坊」分发。"
+  },
+  "install": "dsh plugin --profile web add github:zhu1090093659/dsh-web",
+  "ecosystems": [
+    { "id": "dsh", "kind": "plugin", "install": "dsh plugin --profile web add github:zhu1090093659/dsh-web" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 6553,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "Apache-2.0",
+  "author": "zhu1090093659",
+  "tags": ["aggregation", "ecosystem", "workshop", "web"],
+  "verified": true,
+  "status": "active"
+}

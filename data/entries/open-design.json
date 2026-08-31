@@ -5,12 +5,12 @@
   "url": "https://github.com/nexu-io/open-design",
   "category": "tools",
   "description": {
-    "en": "Best DeepSeek Harness Design Plugin: local-first desktop app, your coding agent becomes the design engine — prototypes, landing pages, dashboards, slides, images and video as real files (HTML/PDF/PPTX/MP4 export).",
-    "zh": "DeepSeek Harness 设计插件：本地优先的桌面应用，让 coding agent 成为设计引擎——原型、落地页、看板、幻灯片、图片与视频，导出为真实文件（HTML/PDF/PPTX/MP4）。"
+    "en": "Local-first design app for DeepSeek Harness and other coding agents: your agent becomes the design engine — prototypes, landing pages, dashboards, slides, images and video as real files (HTML/PDF/PPTX/MP4 export).",
+    "zh": "面向 DeepSeek Harness 等 coding agent 的本地优先设计应用：让 agent 成为设计引擎——原型、落地页、看板、幻灯片、图片与视频，导出为真实文件（HTML/PDF/PPTX/MP4）。"
   },
-  "install": "dsh plugin --profile web add github:nexu-io/open-design",
+  "install": "按仓库 QUICKSTART.md 安装（独立桌面应用 + DSH 集成，非 dsh plugin add bundle）",
   "ecosystems": [
-    { "id": "dsh", "kind": "plugin", "install": "dsh plugin --profile web add github:nexu-io/open-design" }
+    { "id": "dsh", "kind": "other", "install": "按仓库 QUICKSTART.md 安装（独立桌面应用 + DSH 集成，非 dsh plugin add bundle）" }
   ],
   "added": "2026-08-31",
   "npm": null,
@@ -18,7 +18,7 @@
   "stars": 92932,
   "downloads": null,
   "screenshots": [],
-  "kind": "plugin",
+  "kind": "other",
   "license": "Apache-2.0",
   "author": "nexu-io",
   "tags": ["design", "prototype", "dashboard", "slides", "byok", "local-first"],

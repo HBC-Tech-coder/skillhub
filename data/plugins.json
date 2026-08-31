@@ -3,7 +3,7 @@
  "url": "https://hub.hibcglobal.com",
  "source": "https://github.com/HBC-Tech-coder/skillhub",
  "updated": "2026-08-31",
- "count": 11,
+ "count": 14,
  "categories": {
   "agi": {
    "en": "AGI Architecture Exploration",
@@ -106,15 +106,15 @@
    "url": "https://github.com/nexu-io/open-design",
    "category": "tools",
    "description": {
-    "en": "Best DeepSeek Harness Design Plugin: local-first desktop app, your coding agent becomes the design engine — prototypes, landing pages, dashboards, slides, images and video as real files (HTML/PDF/PPTX/MP4 export).",
-    "zh": "DeepSeek Harness 设计插件：本地优先的桌面应用，让 coding agent 成为设计引擎——原型、落地页、看板、幻灯片、图片与视频，导出为真实文件（HTML/PDF/PPTX/MP4）。"
+    "en": "Local-first design app for DeepSeek Harness and other coding agents: your agent becomes the design engine — prototypes, landing pages, dashboards, slides, images and video as real files (HTML/PDF/PPTX/MP4 export).",
+    "zh": "面向 DeepSeek Harness 等 coding agent 的本地优先设计应用：让 agent 成为设计引擎——原型、落地页、看板、幻灯片、图片与视频，导出为真实文件（HTML/PDF/PPTX/MP4）。"
    },
-   "install": "dsh plugin --profile web add github:nexu-io/open-design",
+   "install": "按仓库 QUICKSTART.md 安装（独立桌面应用 + DSH 集成，非 dsh plugin add bundle）",
    "ecosystems": [
     {
      "id": "dsh",
-     "kind": "plugin",
-     "install": "dsh plugin --profile web add github:nexu-io/open-design"
+     "kind": "other",
+     "install": "按仓库 QUICKSTART.md 安装（独立桌面应用 + DSH 集成，非 dsh plugin add bundle）"
     }
    ],
    "added": "2026-08-31",
@@ -123,7 +123,7 @@
    "stars": 92932,
    "downloads": null,
    "screenshots": [],
-   "kind": "plugin",
+   "kind": "other",
    "license": "Apache-2.0",
    "author": "nexu-io",
    "tags": [
@@ -174,6 +174,115 @@
    "status": "active"
   },
   {
+   "id": "dsh-routing-suite",
+   "name": "dsh-routing-suite",
+   "owner": "yjh051108",
+   "url": "https://github.com/yjh051108/dsh-routing-suite",
+   "category": "dev",
+   "description": {
+    "en": "DSH routing suite: runtime injector + task-aware reasoning-mode router preset kit (measured P1-P23). Install the injector first, then the router preset.",
+    "zh": "DSH 路由套件：运行时注入器 + 任务感知推理模式路由预设（实测 P1-P23）。先装注入器，再装路由预设。"
+   },
+   "install": "dsh plugin --profile web add github:yjh051108/dsh-routing-suite",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add github:yjh051108/dsh-routing-suite"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 6985,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": "MIT",
+   "author": "yjh051108",
+   "tags": [
+    "routing",
+    "preset",
+    "reasoning-mode",
+    "injector"
+   ],
+   "verified": true,
+   "status": "active"
+  },
+  {
+   "id": "dsh-web",
+   "name": "dsh-web",
+   "owner": "zhu1090093659",
+   "url": "https://github.com/zhu1090093659/dsh-web",
+   "category": "market",
+   "description": {
+    "en": "DeepSeek Harness (DSH) Web Plugin Aggregation Ecosystem: everything is a plugin, distributed via the Creative Workshop.",
+    "zh": "DSH Web 插件聚合生态：万物皆插件，经「创作工坊」分发。"
+   },
+   "install": "dsh plugin --profile web add github:zhu1090093659/dsh-web",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add github:zhu1090093659/dsh-web"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 6553,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": "Apache-2.0",
+   "author": "zhu1090093659",
+   "tags": [
+    "aggregation",
+    "ecosystem",
+    "workshop",
+    "web"
+   ],
+   "verified": true,
+   "status": "active"
+  },
+  {
+   "id": "petdex",
+   "name": "petdex",
+   "owner": "crafter-station",
+   "url": "https://github.com/crafter-station/petdex",
+   "category": "fun",
+   "description": {
+    "en": "A public gallery of animated pets for Codex, Claude Code, DeepSeek Harness, Hermes, OpenCode, Gemini CLI and more.",
+    "zh": "动画桌面宠物画廊：为 Codex、Claude Code、DeepSeek Harness、Hermes、OpenCode、Gemini CLI 等提供可安装的像素宠物。"
+   },
+   "install": "在 petdex 画廊浏览并复制对应 harness 的安装命令（画廊站点本身非 dsh bundle）",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "other",
+     "install": "在 petdex 画廊浏览并复制对应 harness 的安装命令（画廊站点本身非 dsh bundle）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 4007,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": "MIT",
+   "author": "crafter-station",
+   "tags": [
+    "pet",
+    "mascot",
+    "pixel-art",
+    "gallery",
+    "fun"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "modlens",
    "name": "modlens",
    "owner": "liustack",
@@ -205,7 +314,7 @@
     "ocr",
     "multimodal"
    ],
-   "verified": false,
+   "verified": true,
    "status": "active"
   },
   {
@@ -242,7 +351,7 @@
     "git",
     "subagents"
    ],
-   "verified": false,
+   "verified": true,
    "status": "active"
   },
   {

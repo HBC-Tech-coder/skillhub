@@ -1,0 +1,27 @@
+{
+  "id": "petdex",
+  "name": "petdex",
+  "owner": "crafter-station",
+  "url": "https://github.com/crafter-station/petdex",
+  "category": "fun",
+  "description": {
+    "en": "A public gallery of animated pets for Codex, Claude Code, DeepSeek Harness, Hermes, OpenCode, Gemini CLI and more.",
+    "zh": "动画桌面宠物画廊：为 Codex、Claude Code、DeepSeek Harness、Hermes、OpenCode、Gemini CLI 等提供可安装的像素宠物。"
+  },
+  "install": "在 petdex 画廊浏览并复制对应 harness 的安装命令（画廊站点本身非 dsh bundle）",
+  "ecosystems": [
+    { "id": "dsh", "kind": "other", "install": "在 petdex 画廊浏览并复制对应 harness 的安装命令（画廊站点本身非 dsh bundle）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 4007,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "MIT",
+  "author": "crafter-station",
+  "tags": ["pet", "mascot", "pixel-art", "gallery", "fun"],
+  "verified": false,
+  "status": "active"
+}

@@ -22,6 +22,6 @@
   "license": "MIT",
   "author": "omdsh-dev",
   "tags": ["sidebar", "file-tree", "terminal", "git", "subagents"],
-  "verified": false,
+  "verified": true,
   "status": "active"
 }
