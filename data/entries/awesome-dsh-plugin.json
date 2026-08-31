@@ -1,0 +1,27 @@
+{
+  "id": "awesome-dsh-plugin",
+  "name": "awesome-dsh-plugin",
+  "owner": "awesome-dsh-plugin",
+  "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+  "category": "market",
+  "description": {
+    "en": "Curated list of DeepSeek Harness (dsh) plugins, installable via `dsh plugin add`; powers the dsh-market plugin market and awesome-dsh-plugin.com.",
+    "zh": "DeepSeek Harness（dsh）插件精选列表（都可用 `dsh plugin add` 安装）；dsh-market 插件市场与 awesome-dsh-plugin.com 的数据源。"
+  },
+  "install": "dsh plugin --profile web add github:awesome-dsh-plugin/dsh-find-plugin",
+  "ecosystems": [
+    { "id": "dsh", "kind": "registry", "install": "浏览 https://awesome-dsh-plugin.com ；或装配套查找插件：dsh plugin --profile web add dsh-find-plugin" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 13812,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "registry",
+  "license": "CC0-1.0",
+  "author": "awesome-dsh-plugin",
+  "tags": ["awesome-list", "registry", "market", "curated"],
+  "verified": false,
+  "status": "active"
+}

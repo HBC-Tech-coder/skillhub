@@ -1,0 +1,27 @@
+{
+  "id": "dsh-better-sidebar",
+  "name": "DSH-better-sidebar",
+  "owner": "omdsh-dev",
+  "url": "https://github.com/omdsh-dev/DSH-better-sidebar",
+  "category": "ui",
+  "description": {
+    "en": "Open sidebar foundation: third-party extensions can register new sidebar pages. Built-in file rendering/editing, terminal, side chat, Git and sub-agent pages.",
+    "zh": "开放的侧边栏基座：支持第三方扩展注册新侧边栏页；内置文件渲染/编辑、终端、侧边对话、Git 与子代理页面。"
+  },
+  "install": "dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar",
+  "ecosystems": [
+    { "id": "dsh", "kind": "plugin", "install": "dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 3156,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "MIT",
+  "author": "omdsh-dev",
+  "tags": ["sidebar", "file-tree", "terminal", "git", "subagents"],
+  "verified": false,
+  "status": "active"
+}

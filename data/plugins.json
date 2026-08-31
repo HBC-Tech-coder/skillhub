@@ -3,7 +3,7 @@
  "url": "https://hub.hibcglobal.com",
  "source": "https://github.com/HBC-Tech-coder/skillhub",
  "updated": "2026-08-31",
- "count": 8,
+ "count": 11,
  "categories": {
   "agi": {
    "en": "AGI Architecture Exploration",
@@ -99,6 +99,152 @@
   }
  },
  "plugins": [
+  {
+   "id": "open-design",
+   "name": "open-design",
+   "owner": "nexu-io",
+   "url": "https://github.com/nexu-io/open-design",
+   "category": "tools",
+   "description": {
+    "en": "Best DeepSeek Harness Design Plugin: local-first desktop app, your coding agent becomes the design engine — prototypes, landing pages, dashboards, slides, images and video as real files (HTML/PDF/PPTX/MP4 export).",
+    "zh": "DeepSeek Harness 设计插件：本地优先的桌面应用，让 coding agent 成为设计引擎——原型、落地页、看板、幻灯片、图片与视频，导出为真实文件（HTML/PDF/PPTX/MP4）。"
+   },
+   "install": "dsh plugin --profile web add github:nexu-io/open-design",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add github:nexu-io/open-design"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 92932,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": "Apache-2.0",
+   "author": "nexu-io",
+   "tags": [
+    "design",
+    "prototype",
+    "dashboard",
+    "slides",
+    "byok",
+    "local-first"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "awesome-dsh-plugin",
+   "name": "awesome-dsh-plugin",
+   "owner": "awesome-dsh-plugin",
+   "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+   "category": "market",
+   "description": {
+    "en": "Curated list of DeepSeek Harness (dsh) plugins, installable via `dsh plugin add`; powers the dsh-market plugin market and awesome-dsh-plugin.com.",
+    "zh": "DeepSeek Harness（dsh）插件精选列表（都可用 `dsh plugin add` 安装）；dsh-market 插件市场与 awesome-dsh-plugin.com 的数据源。"
+   },
+   "install": "dsh plugin --profile web add github:awesome-dsh-plugin/dsh-find-plugin",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "registry",
+     "install": "浏览 https://awesome-dsh-plugin.com ；或装配套查找插件：dsh plugin --profile web add dsh-find-plugin"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 13812,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "registry",
+   "license": "CC0-1.0",
+   "author": "awesome-dsh-plugin",
+   "tags": [
+    "awesome-list",
+    "registry",
+    "market",
+    "curated"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "modlens",
+   "name": "modlens",
+   "owner": "liustack",
+   "url": "https://github.com/liustack/modlens",
+   "category": "vision",
+   "description": {
+    "en": "First vision plugin for DeepSeek Harness: bolts visual understanding onto text-only models, returning structured JSON evidence.",
+    "zh": "DeepSeek Harness 首个视觉插件：给纯文本模型加视觉理解，返回 OCR/布局/语义的结构化 JSON。"
+   },
+   "install": "dsh plugin --profile web add @liustack/modlens",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add @liustack/modlens"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": "@liustack/modlens",
+   "tarball": null,
+   "stars": 3789,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": null,
+   "author": "liustack",
+   "tags": [
+    "vision",
+    "ocr",
+    "multimodal"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "dsh-better-sidebar",
+   "name": "DSH-better-sidebar",
+   "owner": "omdsh-dev",
+   "url": "https://github.com/omdsh-dev/DSH-better-sidebar",
+   "category": "ui",
+   "description": {
+    "en": "Open sidebar foundation: third-party extensions can register new sidebar pages. Built-in file rendering/editing, terminal, side chat, Git and sub-agent pages.",
+    "zh": "开放的侧边栏基座：支持第三方扩展注册新侧边栏页；内置文件渲染/编辑、终端、侧边对话、Git 与子代理页面。"
+   },
+   "install": "dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add github:omdsh-dev/DSH-better-sidebar"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 3156,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": "MIT",
+   "author": "omdsh-dev",
+   "tags": [
+    "sidebar",
+    "file-tree",
+    "terminal",
+    "git",
+    "subagents"
+   ],
+   "verified": false,
+   "status": "active"
+  },
   {
    "id": "dsh-popout-sidebar",
    "name": "dsh-popout-sidebar",
@@ -305,41 +451,6 @@
     "github",
     "repos",
     "issues"
-   ],
-   "verified": false,
-   "status": "active"
-  },
-  {
-   "id": "modlens",
-   "name": "modlens",
-   "owner": "liustack",
-   "url": "https://github.com/liustack/modlens",
-   "category": "vision",
-   "description": {
-    "en": "First vision plugin for DeepSeek Harness: bolts visual understanding onto text-only models, returning structured JSON evidence.",
-    "zh": "DeepSeek Harness 首个视觉插件：给纯文本模型加视觉理解，返回 OCR/布局/语义的结构化 JSON。"
-   },
-   "install": "dsh plugin --profile web add @liustack/modlens",
-   "ecosystems": [
-    {
-     "id": "dsh",
-     "kind": "plugin",
-     "install": "dsh plugin --profile web add @liustack/modlens"
-    }
-   ],
-   "added": "2026-08-31",
-   "npm": "@liustack/modlens",
-   "tarball": null,
-   "stars": null,
-   "downloads": null,
-   "screenshots": [],
-   "kind": "plugin",
-   "license": null,
-   "author": "liustack",
-   "tags": [
-    "vision",
-    "ocr",
-    "multimodal"
    ],
    "verified": false,
    "status": "active"
