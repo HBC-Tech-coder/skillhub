@@ -63,12 +63,12 @@
   let SCEN = null;        // scenarios.json（含意图词表）
   let RECS = null;        // recommendations.json
   let lang = 'zh';
-  const state = { q: '', eco: '', scene: '', sort: 'stars', tab: 'profession' };
+  const state = { q: '', eco: '', scene: '', sort: 'stars', tab: 'eco' };
   const TAB_INFO = [
+    { id: 'eco', icon: '🌐', color: '#0aa869', labelKey: 'eco' },
+    { id: 'feature', icon: '⚙️', color: '#8b5cf6', labelKey: 'scenesFeature' },
     { id: 'profession', icon: '💼', color: '#4d7cfe', labelKey: 'scenesProfession' },
     { id: 'task', icon: '🎯', color: '#f0662f', labelKey: 'scenesTask' },
-    { id: 'feature', icon: '⚙️', color: '#8b5cf6', labelKey: 'scenesFeature' },
-    { id: 'eco', icon: '🌐', color: '#0aa869', labelKey: 'eco' },
   ];
   let rotationTimer = null;
   let rotatePausedUntil = 0;
