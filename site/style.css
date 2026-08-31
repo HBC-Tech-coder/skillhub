@@ -199,4 +199,11 @@ footer a{color:var(--accent);text-decoration:none;}
   .grid{grid-template-columns:1fr;}
   .hero{padding-top:16px;}
   .headstats{display:none;}
+  .tabbtn{font-size:12px;gap:3px;padding:0 6px;min-width:0;}
+  .tabico{display:none;}
+  .tabcard,.tabbody,.tabbar,.filters-top,.center,.layout,.recgrid,.grid,.search,.examples{max-width:100%;}
+  .chip{white-space:nowrap;max-width:calc(100vw - 64px);overflow:hidden;text-overflow:ellipsis;}
+  .searchbtn{padding:9px 14px;}
+  .toolbar{flex-wrap:wrap;gap:6px;}
+  body{overflow-x:hidden;overflow-x:clip;}
 }
