@@ -5,7 +5,7 @@
 
 :root{
   --bg:#f7f8fa; --panel:#ffffff; --line:#d9dce3; --line-soft:#eef0f4;
-  --text:#111827; --sub:#374151; --accent:#5b5bd6; --accent-soft:#eef0fe;
+  --text:#111827; --sub:#1f2937; --accent:#5b5bd6; --accent-soft:#eef0fe;
   --code-bg:#f3f4f6; --code-text:#374151; --hover-shadow:0 10px 30px rgba(0,0,0,.09);
   --modal-bg:rgba(17,24,39,.45); --head-bg:rgba(247,248,250,.92);
   --rank-num:#c3c8e0; --rank-line:#e8eaf2;

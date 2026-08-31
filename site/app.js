@@ -25,12 +25,6 @@
       detail: '独立详情页 ↗', noMatch: '没有匹配项，换个说法试试？', verified: '已核验',
       sortStars: '星标', sortNew: '最新', sortName: '名称', results: '共 {n} 条',
       intentHit: '按意图匹配', intentNo: '关键词匹配',
-      examples: [
-        '帮我找能下载无水印 B站、抖音视频的 Skill',
-        '我是新媒体运营，每天盯热点、写公众号文案，该装哪些？',
-        '有没有自动抓热点、写口播稿、一键分发公众号和 X 的组合？',
-        '想给 Claude Code 加长期记忆和代码库知识图谱，推荐几个？',
-      ],
       modalInstall: '安装', modalDesc: '描述', modalEn: 'English', modalSrc: '来源', modalStars: '星标', modalTags: '标签',
     },
     en: {
@@ -45,17 +39,53 @@
       detail: 'Standalone page ↗', noMatch: 'No matches — try rephrasing?', verified: 'Verified',
       sortStars: 'Stars', sortNew: 'Newest', sortName: 'Name', results: '{n} results',
       intentHit: 'matched by intent', intentNo: 'keyword match',
-      examples: [
+      modalInstall: 'Install', modalDesc: 'About', modalEn: '中文', modalSrc: 'Source', modalStars: 'Stars', modalTags: 'Tags',
+    },
+  };
+  // 示例提问组（3 组轮换，8 秒换一组；用户交互暂停 30 秒）
+  const EXAMPLE_SETS = {
+    zh: [
+      [
+        '帮我找能下载无水印 B站、抖音视频的 Skill',
+        '我是新媒体运营，每天盯热点、写公众号文案，该装哪些？',
+        '有没有自动抓热点、写口播稿、一键分发公众号和 X 的组合？',
+        '想给 Claude Code 加长期记忆和代码库知识图谱，推荐几个？',
+      ],
+      [
+        '适合会计/财务的 AI 工具有哪些？能自动对账、出报表的',
+        '律师日常：合同审查、案例检索、法律文书，有什么 skill？',
+        '想找量化交易相关 skill：策略研究、回测、模拟盘',
+        '出国旅行规划：签证、行程、机票酒店，有没有一键搞定的？',
+      ],
+      [
+        '有没有能自动写小红书爆款标题和笔记的 skill？',
+        '给抖音短视频配口播稿、字幕的工具推荐',
+        '想抓全平台热点并生成每日简报，装什么？',
+        '适合教师的备课、出题、改作业的 AI 工具？',
+      ],
+    ],
+    en: [
+      [
         'Find a skill to download watermark-free Bilibili / Douyin videos',
         'I run social media — what should I install for daily trends and WeChat posts?',
         'A combo that grabs hot topics, writes voiceover scripts, publishes to WeChat and X?',
         'Want long-term memory plus a codebase knowledge graph for Claude Code — which ones?',
       ],
-      modalInstall: 'Install', modalDesc: 'About', modalEn: '中文', modalSrc: 'Source', modalStars: 'Stars', modalTags: 'Tags',
-    },
+      [
+        'Any AI tools for accounting: auto-reconciliation and financial reports?',
+        'For lawyers: contract review, case research, legal drafting — which skills?',
+        'Looking for quant trading skills: research, backtest, paper trading',
+        'Trip planning abroad: visa, itinerary, flights and hotels in one go?',
+      ],
+      [
+        'A skill that writes viral Xiaohongshu titles and notes?',
+        'Tools for Douyin voiceover scripts and subtitles',
+        'Grab all-platform hot topics and generate a daily briefing — what to install?',
+        'AI tools for teachers: lesson plans, quizzes, grading?',
+      ],
+    ],
   };
-  const SORTS = {
-    stars: (a, b) => ((b.stars ?? -1) - (a.stars ?? -1)) || String(b.added).localeCompare(String(a.added)),
+  const SORTS = {    stars: (a, b) => ((b.stars ?? -1) - (a.stars ?? -1)) || String(b.added).localeCompare(String(a.added)),
     added: (a, b) => String(b.added).localeCompare(String(a.added)) || ((b.stars ?? -1) - (a.stars ?? -1)),
     name: (a, b) => String(a.name).localeCompare(String(b.name)),
   };
@@ -314,8 +344,23 @@
     try { localStorage.setItem('skillhub-lang', l); } catch (e) { /* ignore */ }
     renderFilters(); render(); renderRecs(); renderRank();
   }
+  let exampleSetIdx = 0;
+  let exampleTimer = null;
+  let examplePausedUntil = 0;
   function renderExamples() {
-    document.getElementById('examples').innerHTML = STR[lang].examples.map((ex) => `<span class="exchip" onclick="runExample('${esc(ex)}')">${esc(ex)}</span>`).join('');
+    const sets = EXAMPLE_SETS[lang] || EXAMPLE_SETS.zh;
+    const set = sets[exampleSetIdx % sets.length];
+    document.getElementById('examples').innerHTML = set.map((ex) => `<span class="exchip" onclick="runExample('${esc(ex)}')">${esc(ex)}</span>`).join('');
+  }
+  function startExampleRotation() {
+    if (exampleTimer) return;
+    exampleTimer = setInterval(() => {
+      if (Date.now() < examplePausedUntil) return;
+      exampleSetIdx = (exampleSetIdx + 1) % (EXAMPLE_SETS[lang] || EXAMPLE_SETS.zh).length;
+      const el = document.getElementById('examples');
+      if (el) { el.classList.remove('fadein'); void el.offsetWidth; el.classList.add('fadein'); }
+      renderExamples();
+    }, 8000);
   }
 
   window.openModal = openModal;
@@ -342,6 +387,8 @@
       const el = document.getElementById(id);
       if (el) el.addEventListener('pointerdown', () => { rotatePausedUntil = Date.now() + 20000; });
     });
+    const examplesEl = document.getElementById('examples');
+    if (examplesEl) examplesEl.addEventListener('pointerdown', () => { examplePausedUntil = Date.now() + 30000; });
     const rankEl = document.getElementById('rank');
     if (rankEl) rankEl.addEventListener('pointerdown', () => { rankPausedUntil = Date.now() + 30000; });
     document.getElementById('themeBtn').addEventListener('click', toggleTheme);
@@ -378,6 +425,7 @@
       renderSort();
       startRotation();
       startRankRotation();
+      startExampleRotation();
       const m = location.hash.match(/^#item\/(.+)$/);
       if (m && DATA.plugins.some((x) => x.id === m[1])) openModal(decodeURIComponent(m[1]));
     } catch (err) {
