@@ -4,3 +4,4 @@ npm-debug.log*
 *.tgz
 server/.env
 data/pending/
+data/rejected/

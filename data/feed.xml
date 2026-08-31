@@ -182,14 +182,6 @@
     <category term="skill"/>
   </entry>
   <entry>
-    <id>skillhub:amruthpillai-reactive-resume</id>
-    <title>reactive-resume</title>
-    <link href="https://github.com/amruthpillai/reactive-resume"/>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <summary>注重隐私的开源简历生成器，完全可定制且免费。</summary>
-    <category term="tools"/>
-  </entry>
-  <entry>
     <id>skillhub:codebase-memory-mcp</id>
     <title>codebase-memory-mcp</title>
     <link href="https://github.com/DeusData/codebase-memory-mcp"/>
@@ -326,14 +318,6 @@
     <category term="docs"/>
   </entry>
   <entry>
-    <id>skillhub:molunerfinn-picgo</id>
-    <title>PicGo</title>
-    <link href="https://github.com/Molunerfinn/PicGo"/>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <summary>高效的图片上传工具，支持60多种图床服务。</summary>
-    <category term="workflow"/>
-  </entry>
-  <entry>
     <id>skillhub:decolua-9router</id>
     <title>9router</title>
     <link href="https://github.com/decolua/9router"/>
@@ -414,22 +398,6 @@
     <category term="dev"/>
   </entry>
   <entry>
-    <id>skillhub:activepieces-activepieces</id>
-    <title>activepieces</title>
-    <link href="https://github.com/activepieces/activepieces"/>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <summary>AI代理与MCP工作流自动化平台，提供大量MCP服务器集成。</summary>
-    <category term="workflow"/>
-  </entry>
-  <entry>
-    <id>skillhub:nocobase-nocobase</id>
-    <title>nocobase</title>
-    <link href="https://github.com/nocobase/nocobase"/>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <summary>开源AI+无代码平台，用于快速构建业务系统。</summary>
-    <category term="workflow"/>
-  </entry>
-  <entry>
     <id>skillhub:alchaincyf-huashu-design</id>
     <title>huashu-design</title>
     <link href="https://github.com/alchaincyf/huashu-design"/>
@@ -492,14 +460,6 @@
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>267 个即插即用的 AI 专家角色，支持 Hermes Agent / Claude Code / Cursor / Copilot 等 18 种工具，覆盖工程/设计/营销/金融等 20 个部门；含 52 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）。</summary>
     <category term="identity"/>
-  </entry>
-  <entry>
-    <id>skillhub:modelscope-funasr</id>
-    <title>FunASR</title>
-    <link href="https://github.com/modelscope/FunASR"/>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <summary>开源语音识��工具包，支持多种语音处理任务和MCP服务。</summary>
-    <category term="voice"/>
   </entry>
   <entry>
     <id>skillhub:nagi-ovo-voyager</id>
@@ -572,14 +532,6 @@
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>用于 AI 代理技能的安全扫描器，检测漏洞、恶意模式、提示注入、数据外泄和供应链风险。</summary>
     <category term="security"/>
-  </entry>
-  <entry>
-    <id>skillhub:open-metadata-openmetadata</id>
-    <title>OpenMetadata</title>
-    <link href="https://github.com/open-metadata/OpenMetadata"/>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <summary>OpenMetadata 是构建可信数据上下文和业务语义的开放平台，面向人类、AI助手和代理。</summary>
-    <category term="memory"/>
   </entry>
   <entry>
     <id>skillhub:travisvn-awesome-claude-skills</id>
@@ -828,14 +780,6 @@
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>一个代理操作系统，通过面试门控和预算进化循环让代理自主变得更聪明。</summary>
     <category term="dev"/>
-  </entry>
-  <entry>
-    <id>skillhub:gosom-google-maps-scraper</id>
-    <title>google-maps-scraper</title>
-    <link href="https://github.com/gosom/google-maps-scraper"/>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <summary>从 Google Maps 抓取数据，提取商家名称、地址、电话、评分等信息。</summary>
-    <category term="workflow"/>
   </entry>
   <entry>
     <id>skillhub:junhoyeo-tokscale</id>
@@ -1222,14 +1166,6 @@
     <category term="docs"/>
   </entry>
   <entry>
-    <id>skillhub:danilo-znamerovszkij-draw-your-font</id>
-    <title>draw-your-font</title>
-    <link href="https://github.com/danilo-znamerovszkij/draw-your-font"/>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <summary>将手写照片转换为真实字体（TTF/WOFF/WOFF2），免费开源，无需上传。</summary>
-    <category term="ui"/>
-  </entry>
-  <entry>
     <id>skillhub:xiaopu-ai-web-design</id>
     <title>web-design</title>
     <link href="https://github.com/xiaopu-ai/web-design"/>
@@ -1326,14 +1262,6 @@
     <category term="dev"/>
   </entry>
   <entry>
-    <id>skillhub:jackiotyu-git-worktree-manager</id>
-    <title>git-worktree-manager</title>
-    <link href="https://github.com/jackiotyu/git-worktree-manager"/>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <summary>在Visual Studio Code中轻松管理Git worktrees的扩展。</summary>
-    <category term="dev"/>
-  </entry>
-  <entry>
     <id>skillhub:ad-naan-adnify</id>
     <title>Adnify</title>
     <link href="https://github.com/ad-naan/Adnify"/>
@@ -1427,14 +1355,6 @@
     <link href="https://github.com/naodeng/awesome-qa-skills"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>中英双语 AI 测试 Agent 技能库，包含多种测试工作流和技能。</summary>
-    <category term="dev"/>
-  </entry>
-  <entry>
-    <id>skillhub:wanniwa-editorjumper</id>
-    <title>EditorJumper</title>
-    <link href="https://github.com/wanniwa/EditorJumper"/>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <summary>JetBrains 插件，可在 JetBrains IDE 与其他流行编辑器间跳转并保持编辑上下文。</summary>
     <category term="dev"/>
   </entry>
   <entry>
