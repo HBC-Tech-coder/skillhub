@@ -24,6 +24,7 @@
   <div class="search">
     <span class="sicon" aria-hidden="true">🔍</span>
     <input id="q" data-i18n-ph="searchPh" aria-label="搜索">
+    <button id="searchBtn" class="searchbtn" data-i18n="searchBtn">搜 索</button>
   </div>
   <div class="examples" id="examples"></div>
   <div class="stats">
@@ -38,8 +39,16 @@
   <section class="center">
     <div class="filters-top">
       <div class="fpanel">
-        <h3 data-i18n="scenes">按用途找</h3>
-        <div class="chips" id="sceneFilters"></div>
+        <h3>💼 <span data-i18n="scenesProfession">按职位</span></h3>
+        <div class="chips" id="sceneFiltersP"></div>
+      </div>
+      <div class="fpanel">
+        <h3>🎯 <span data-i18n="scenesTask">按任务</span></h3>
+        <div class="chips" id="sceneFiltersT"></div>
+      </div>
+      <div class="fpanel">
+        <h3>⚙️ <span data-i18n="scenesFeature">按功能</span></h3>
+        <div class="chips" id="sceneFiltersF"></div>
       </div>
       <div class="fpanel">
         <h3 data-i18n="eco">生态</h3>

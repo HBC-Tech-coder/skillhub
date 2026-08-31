@@ -1,0 +1,28 @@
+{
+  "id": "law-ye-skill",
+  "name": "law-ye-skill",
+  "owner": "Jarvis-starcloud",
+  "url": "https://github.com/Jarvis-starcloud/law-ye-skill",
+  "category": "tools",
+  "description": {
+    "en": "AI legal-consultant Skill proficient in the Chinese legal system (WorkBuddy/OpenClaw compatible).",
+    "zh": "精通中国法律体系的 AI 法律顾问 Skill（WorkBuddy/OpenClaw 兼容）。"
+  },
+  "install": "git clone https://github.com/Jarvis-starcloud/law-ye-skill（按 README 导入）",
+  "ecosystems": [
+    { "id": "workbuddy", "kind": "skill", "install": "git clone https://github.com/Jarvis-starcloud/law-ye-skill（按 README 导入）" }
+  ],
+  "scenarios": ["legal"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 24,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "Jarvis-starcloud",
+  "tags": ["legal", "law", "consultant", "china"],
+  "verified": false,
+  "status": "active"
+}

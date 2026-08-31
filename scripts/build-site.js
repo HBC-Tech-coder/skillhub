@@ -100,6 +100,7 @@ const DEMO_IDS = [
   'wechat-openclaw-channel', 'serena', 'codebase-memory-mcp', 'context-mode',
   'open-design', 'ui-ux-pro-max-skill', 'codedrobe-skills',
   'graphify', 'superpowers-zh', 'caveman', 'agency-agents-zh',
+  'trip-planner-skill', 'superior-skills', 'law-ye-skill',
 ];
 function buildDemo() {
   const plugins = DATA.plugins.filter((p) => DEMO_IDS.includes(p.id));

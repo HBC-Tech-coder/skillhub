@@ -3,7 +3,7 @@
  "url": "https://hub.hibcglobal.com",
  "source": "https://github.com/HBC-Tech-coder/skillhub",
  "updated": "2026-08-31",
- "count": 54,
+ "count": 59,
  "categories": {
   "agi": {
    "en": "AGI Architecture Exploration",
@@ -101,75 +101,123 @@
  "scenarios": {
   "content-social": {
    "zh": "新媒体运营",
-   "en": "Social Content"
+   "en": "Social Media Ops",
+   "group": "profession"
   },
-  "video-download": {
-   "zh": "视频下载·去水印",
-   "en": "Video Download"
+  "accounting": {
+   "zh": "会计·财务",
+   "en": "Accounting & Finance",
+   "group": "profession"
   },
-  "trends-monitor": {
-   "zh": "热点抓取·舆情",
-   "en": "Trends & Monitoring"
-  },
-  "copywriting": {
-   "zh": "文案·脚本",
-   "en": "Copywriting"
-  },
-  "video-edit": {
-   "zh": "短视频剪辑",
-   "en": "Video Editing"
-  },
-  "voice-tts": {
-   "zh": "配音·口播",
-   "en": "Voice & TTS"
-  },
-  "marketing": {
-   "zh": "营销自动化",
-   "en": "Marketing"
-  },
-  "design": {
-   "zh": "设计·UI",
-   "en": "Design"
-  },
-  "dev-coding": {
-   "zh": "编程·开发",
-   "en": "Coding & Dev"
-  },
-  "memory-knowledge": {
-   "zh": "记忆·知识库",
-   "en": "Memory & Knowledge"
-  },
-  "workflow": {
-   "zh": "工作流·自动化",
-   "en": "Workflow"
-  },
-  "accounts": {
-   "zh": "账号管理",
-   "en": "Accounts"
-  },
-  "learn": {
-   "zh": "教程·学习",
-   "en": "Learning"
-  },
-  "fun": {
-   "zh": "娱乐",
-   "en": "Fun"
-  },
-  "ecommerce": {
-   "zh": "电商",
-   "en": "E-commerce"
-  },
-  "agents-roles": {
-   "zh": "角色·人设",
-   "en": "Roles & Personas"
+  "legal": {
+   "zh": "律师·法务",
+   "en": "Legal",
+   "group": "profession"
   },
   "science-research": {
    "zh": "科研·学术",
-   "en": "Science & Research"
+   "en": "Science & Research",
+   "group": "profession"
+  },
+  "education": {
+   "zh": "教师·教育",
+   "en": "Teaching & Education",
+   "group": "profession"
+  },
+  "video-download": {
+   "zh": "视频下载·去水印",
+   "en": "Video Download",
+   "group": "task"
+  },
+  "trends-monitor": {
+   "zh": "热点抓取·舆情",
+   "en": "Trends & Monitoring",
+   "group": "task"
+  },
+  "copywriting": {
+   "zh": "文案·脚本",
+   "en": "Copywriting",
+   "group": "task"
+  },
+  "video-edit": {
+   "zh": "短视频剪辑",
+   "en": "Video Editing",
+   "group": "task"
+  },
+  "voice-tts": {
+   "zh": "配音·口播",
+   "en": "Voice & TTS",
+   "group": "task"
+  },
+  "marketing": {
+   "zh": "营销自动化",
+   "en": "Marketing",
+   "group": "task"
+  },
+  "travel": {
+   "zh": "出国旅行",
+   "en": "Travel Abroad",
+   "group": "task"
+  },
+  "quant": {
+   "zh": "量化交易·投资",
+   "en": "Quant & Investing",
+   "group": "task"
+  },
+  "job": {
+   "zh": "求职·招聘",
+   "en": "Job & Hiring",
+   "group": "task"
+  },
+  "ecommerce": {
+   "zh": "电商",
+   "en": "E-commerce",
+   "group": "task"
+  },
+  "accounts": {
+   "zh": "账号管理",
+   "en": "Accounts",
+   "group": "task"
+  },
+  "design": {
+   "zh": "设计·UI",
+   "en": "Design",
+   "group": "feature"
+  },
+  "dev-coding": {
+   "zh": "编程·开发",
+   "en": "Coding & Dev",
+   "group": "feature"
+  },
+  "memory-knowledge": {
+   "zh": "记忆·知识库",
+   "en": "Memory & Knowledge",
+   "group": "feature"
+  },
+  "workflow": {
+   "zh": "工作流·自动化",
+   "en": "Workflow",
+   "group": "feature"
   },
   "security": {
    "zh": "安全·审计",
-   "en": "Security"
+   "en": "Security",
+   "group": "feature"
+  },
+  "agents-roles": {
+   "zh": "角色·人设",
+   "en": "Roles & Personas",
+   "group": "feature"
+  },
+  "learn": {
+   "zh": "教程·学习",
+   "en": "Learning",
+   "group": "feature"
+  },
+  "fun": {
+   "zh": "娱乐",
+   "en": "Fun",
+   "group": "feature"
   }
  },
  "plugins": [
@@ -1900,6 +1948,46 @@
    "status": "active"
   },
   {
+   "id": "superior-skills",
+   "name": "superior-skills",
+   "owner": "Superior-Trade",
+   "url": "https://github.com/Superior-Trade/superior-skills",
+   "category": "dev",
+   "description": {
+    "en": "Open agent skills and tool schemas for Superior Trade: build, backtest and deploy trading strategies.",
+    "zh": "Superior Trade 的开源 agent skills 与工具 schema：构建、回测并部署交易策略。"
+   },
+   "install": "git clone https://github.com/Superior-Trade/superior-skills（按 README 导入）",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "skill",
+     "install": "git clone https://github.com/Superior-Trade/superior-skills（按 README 导入）"
+    }
+   ],
+   "scenarios": [
+    "quant",
+    "dev-coding"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 206,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": null,
+   "author": "Superior-Trade",
+   "tags": [
+    "quant",
+    "trading",
+    "backtest",
+    "strategy"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "zhijian-ai-bluebook-workbuddy-harness",
    "name": "zhijian-ai-bluebook-workbuddy-harness",
    "owner": "zjp1997720",
@@ -2092,6 +2180,99 @@
    "status": "active"
   },
   {
+   "id": "openfinclaw-cli",
+   "name": "openfinclaw-cli",
+   "owner": "mirror29",
+   "url": "https://github.com/mirror29/openfinclaw-cli",
+   "category": "dev",
+   "description": {
+    "en": "One-stop quant-trading AI agent: research, strategy, backtest and paper trade from one prompt.",
+    "zh": "一站式量化交易 AI agent：研究、策略、回测、模拟盘，一条命令开始。"
+   },
+   "install": "git clone https://github.com/mirror29/openfinclaw-cli（按 README 使用）",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "skill",
+     "install": "git clone https://github.com/mirror29/openfinclaw-cli（按 README 使用）"
+    }
+   ],
+   "scenarios": [
+    "quant",
+    "dev-coding"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 63,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": null,
+   "author": "mirror29",
+   "tags": [
+    "quant",
+    "trading",
+    "backtest",
+    "paper-trade"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "trip-planner-skill",
+   "name": "trip-planner-skill",
+   "owner": "skywain",
+   "url": "https://github.com/skywain/trip-planner-skill",
+   "category": "tools",
+   "description": {
+    "en": "Agent skill for AI trip planning (Claude Code · Codex · Gemini CLI · Cursor · Copilot and more): generate full itineraries automatically.",
+    "zh": "AI 旅行规划 Skill（Claude Code · Codex · Gemini CLI · Cursor · Copilot 等）：自动生成完整行程。"
+   },
+   "install": "git clone https://github.com/skywain/trip-planner-skill（按 README 导入）",
+   "ecosystems": [
+    {
+     "id": "claude-code",
+     "kind": "skill",
+     "install": "git clone https://github.com/skywain/trip-planner-skill（按 README 导入）"
+    },
+    {
+     "id": "codex",
+     "kind": "skill",
+     "install": "git clone https://github.com/skywain/trip-planner-skill（按 README 导入）"
+    },
+    {
+     "id": "gemini",
+     "kind": "skill",
+     "install": "git clone https://github.com/skywain/trip-planner-skill（按 README 导入）"
+    },
+    {
+     "id": "generic",
+     "kind": "skill",
+     "install": "git clone https://github.com/skywain/trip-planner-skill（按 README 导入）"
+    }
+   ],
+   "scenarios": [
+    "travel"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 29,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": null,
+   "author": "skywain",
+   "tags": [
+    "travel",
+    "itinerary",
+    "planning"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "dsh-skill-picker",
    "name": "dsh-skill-picker",
    "owner": "a735624258",
@@ -2122,6 +2303,45 @@
     "skills",
     "composer",
     "picker"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "law-ye-skill",
+   "name": "law-ye-skill",
+   "owner": "Jarvis-starcloud",
+   "url": "https://github.com/Jarvis-starcloud/law-ye-skill",
+   "category": "tools",
+   "description": {
+    "en": "AI legal-consultant Skill proficient in the Chinese legal system (WorkBuddy/OpenClaw compatible).",
+    "zh": "精通中国法律体系的 AI 法律顾问 Skill（WorkBuddy/OpenClaw 兼容）。"
+   },
+   "install": "git clone https://github.com/Jarvis-starcloud/law-ye-skill（按 README 导入）",
+   "ecosystems": [
+    {
+     "id": "workbuddy",
+     "kind": "skill",
+     "install": "git clone https://github.com/Jarvis-starcloud/law-ye-skill（按 README 导入）"
+    }
+   ],
+   "scenarios": [
+    "legal"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 24,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": null,
+   "author": "Jarvis-starcloud",
+   "tags": [
+    "legal",
+    "law",
+    "consultant",
+    "china"
    ],
    "verified": false,
    "status": "active"
@@ -2158,6 +2378,45 @@
     "registry",
     "workbuddy",
     "navigation"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "patent-skills",
+   "name": "patent-skills",
+   "owner": "Obviously-Not",
+   "url": "https://github.com/Obviously-Not/patent-skills",
+   "category": "tools",
+   "description": {
+    "en": "Open-source Agent Skills for patent and innovation research: discover distinctive technical solutions.",
+    "zh": "开源专利与创新研究 Agent Skills：发现独特技术方案、辅助专利检索与分析。"
+   },
+   "install": "git clone https://github.com/Obviously-Not/patent-skills（按 README 导入）",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "skill",
+     "install": "git clone https://github.com/Obviously-Not/patent-skills（按 README 导入）"
+    }
+   ],
+   "scenarios": [
+    "legal",
+    "science-research"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 16,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": null,
+   "author": "Obviously-Not",
+   "tags": [
+    "patent",
+    "innovation",
+    "research"
    ],
    "verified": false,
    "status": "active"

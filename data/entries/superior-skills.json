@@ -1,0 +1,28 @@
+{
+  "id": "superior-skills",
+  "name": "superior-skills",
+  "owner": "Superior-Trade",
+  "url": "https://github.com/Superior-Trade/superior-skills",
+  "category": "dev",
+  "description": {
+    "en": "Open agent skills and tool schemas for Superior Trade: build, backtest and deploy trading strategies.",
+    "zh": "Superior Trade 的开源 agent skills 与工具 schema：构建、回测并部署交易策略。"
+  },
+  "install": "git clone https://github.com/Superior-Trade/superior-skills（按 README 导入）",
+  "ecosystems": [
+    { "id": "generic", "kind": "skill", "install": "git clone https://github.com/Superior-Trade/superior-skills（按 README 导入）" }
+  ],
+  "scenarios": ["quant", "dev-coding"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 206,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "Superior-Trade",
+  "tags": ["quant", "trading", "backtest", "strategy"],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "trip-planner-skill",
+  "name": "trip-planner-skill",
+  "owner": "skywain",
+  "url": "https://github.com/skywain/trip-planner-skill",
+  "category": "tools",
+  "description": {
+    "en": "Agent skill for AI trip planning (Claude Code · Codex · Gemini CLI · Cursor · Copilot and more): generate full itineraries automatically.",
+    "zh": "AI 旅行规划 Skill（Claude Code · Codex · Gemini CLI · Cursor · Copilot 等）：自动生成完整行程。"
+  },
+  "install": "git clone https://github.com/skywain/trip-planner-skill（按 README 导入）",
+  "ecosystems": [
+    { "id": "claude-code", "kind": "skill", "install": "git clone https://github.com/skywain/trip-planner-skill（按 README 导入）" },
+    { "id": "codex", "kind": "skill", "install": "git clone https://github.com/skywain/trip-planner-skill（按 README 导入）" },
+    { "id": "gemini", "kind": "skill", "install": "git clone https://github.com/skywain/trip-planner-skill（按 README 导入）" },
+    { "id": "generic", "kind": "skill", "install": "git clone https://github.com/skywain/trip-planner-skill（按 README 导入）" }
+  ],
+  "scenarios": ["travel"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 29,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "skywain",
+  "tags": ["travel", "itinerary", "planning"],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "patent-skills",
+  "name": "patent-skills",
+  "owner": "Obviously-Not",
+  "url": "https://github.com/Obviously-Not/patent-skills",
+  "category": "tools",
+  "description": {
+    "en": "Open-source Agent Skills for patent and innovation research: discover distinctive technical solutions.",
+    "zh": "开源专利与创新研究 Agent Skills：发现独特技术方案、辅助专利检索与分析。"
+  },
+  "install": "git clone https://github.com/Obviously-Not/patent-skills（按 README 导入）",
+  "ecosystems": [
+    { "id": "generic", "kind": "skill", "install": "git clone https://github.com/Obviously-Not/patent-skills（按 README 导入）" }
+  ],
+  "scenarios": ["legal", "science-research"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 16,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "Obviously-Not",
+  "tags": ["patent", "innovation", "research"],
+  "verified": false,
+  "status": "active"
+}

@@ -350,6 +350,14 @@
     <category term="tools"/>
   </entry>
   <entry>
+    <id>skillhub:superior-skills</id>
+    <title>superior-skills</title>
+    <link href="https://github.com/Superior-Trade/superior-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Superior Trade 的开源 agent skills 与工具 schema：构建、回测并部署交易策略。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
     <id>skillhub:zhijian-ai-bluebook-workbuddy-harness</id>
     <title>zhijian-ai-bluebook-workbuddy-harness</title>
     <link href="https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness"/>
@@ -390,6 +398,22 @@
     <category term="dev"/>
   </entry>
   <entry>
+    <id>skillhub:openfinclaw-cli</id>
+    <title>openfinclaw-cli</title>
+    <link href="https://github.com/mirror29/openfinclaw-cli"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>一站式量化交易 AI agent：研究、策略、回测、模拟盘，一条命令开始。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:trip-planner-skill</id>
+    <title>trip-planner-skill</title>
+    <link href="https://github.com/skywain/trip-planner-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>AI 旅行规划 Skill（Claude Code · Codex · Gemini CLI · Cursor · Copilot 等）：自动生成完整行程。</summary>
+    <category term="tools"/>
+  </entry>
+  <entry>
     <id>skillhub:dsh-skill-picker</id>
     <title>dsh-skill-picker</title>
     <link href="https://github.com/a735624258/dsh-skill-picker"/>
@@ -398,12 +422,28 @@
     <category term="ui"/>
   </entry>
   <entry>
+    <id>skillhub:law-ye-skill</id>
+    <title>law-ye-skill</title>
+    <link href="https://github.com/Jarvis-starcloud/law-ye-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>精通中国法律体系的 AI 法律顾问 Skill（WorkBuddy/OpenClaw 兼容）。</summary>
+    <category term="tools"/>
+  </entry>
+  <entry>
     <id>skillhub:awesome-workbuddy</id>
     <title>awesome-workbuddy</title>
     <link href="https://github.com/semlinker/awesome-workbuddy"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>精选腾讯 WorkBuddy 学习资料、实战案例、提示词、Skills 与 MCP 资源导航。</summary>
     <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:patent-skills</id>
+    <title>patent-skills</title>
+    <link href="https://github.com/Obviously-Not/patent-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>开源专利与创新研究 Agent Skills：发现独特技术方案、辅助专利检索与分析。</summary>
+    <category term="tools"/>
   </entry>
   <entry>
     <id>skillhub:dsh-tui-pi</id>

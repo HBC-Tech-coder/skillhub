@@ -17,7 +17,8 @@
       heroTitle: '说出你想做的事，找到能干的工具',
       searchPh: '试试：帮我下载无水印的B站、抖音视频的 Skill…',
       stCount: '收录条目', stEco: '生态', stScenes: '用途场景', stUpdate: '最近更新',
-      scenes: '按用途找', eco: '生态', rec: '编辑推荐', recNote: '—— 装了这几个就能…',
+      scenes: '按用途找', scenesProfession: '按职位', scenesTask: '按任务', scenesFeature: '按功能', searchBtn: '搜 索',
+      eco: '生态', rec: '编辑推荐', recNote: '—— 装了这几个就能…',
       rank: '热门榜', rankNote: '按 GitHub 星标排序（爬虫刷新）', about: '关于技能港',
       aboutTxt: '跨生态插件与技能聚合目录。数据与站点完全开源，列出 ≠ 背书：安装第三方代码前请先查看源码。',
       repo: '数据仓库', submit: '投稿', copy: '复制', copied: '已复制', source: '源码',
@@ -31,7 +32,8 @@
       heroTitle: 'Say what you need — find the tool that does it',
       searchPh: 'Try: a skill that downloads watermark-free Bilibili videos…',
       stCount: 'Entries', stEco: 'Ecosystems', stScenes: 'Use cases', stUpdate: 'Updated',
-      scenes: 'By use case', eco: 'Ecosystem', rec: "Editor's Picks", recNote: '— install these to…',
+      scenes: 'By use case', scenesProfession: 'By profession', scenesTask: 'By task', scenesFeature: 'By capability', searchBtn: 'Search',
+      eco: 'Ecosystem', rec: "Editor's Picks", recNote: '— install these to…',
       rank: 'Trending', rankNote: 'Sorted by GitHub stars (crawler refreshed)', about: 'About SkillHub',
       aboutTxt: 'Cross-ecosystem plugin & skill catalog. Open data, open site. Listing ≠ endorsement: read the source before installing third-party code.',
       repo: 'Repository', submit: 'Submit', copy: 'Copy', copied: 'Copied', source: 'Source',
@@ -133,10 +135,15 @@
     if (SCEN) {
       const count = {};
       DATA.plugins.forEach((i) => (i.scenarios || []).forEach((s) => { count[s] = (count[s] || 0) + 1; }));
-      document.getElementById('sceneFilters').innerHTML =
-        `<div class="chip${state.scene ? '' : ' on'}" onclick="setScene('')"><span>${esc(t('stScenes')) === '收录条目' ? '全部' : 'All'}</span><span class="cnt">${DATA.count}</span></div>` +
-        Object.entries(SCEN.scenarios).map(([k, s]) =>
-          `<div class="chip${state.scene === k ? ' on' : ''}" onclick="setScene('${esc(k)}')"><span>${esc(lang === 'zh' ? s.zh : s.en)}</span><span class="cnt">${count[k] || 0}</span></div>`).join('');
+      const chip = (id, name, n, on) => `<div class="chip${on ? ' on' : ''}" onclick="setScene('${esc(id)}')"><span>${esc(name)}</span><span class="cnt">${n}</span></div>`;
+      const allChip = () => `<div class="chip${state.scene ? '' : ' on'}" onclick="setScene('')"><span>${lang === 'zh' ? '全部' : 'All'}</span><span class="cnt">${DATA.count}</span></div>`;
+      const groups = { profession: 'sceneFiltersP', task: 'sceneFiltersT', feature: 'sceneFiltersF' };
+      for (const [g, elId] of Object.entries(groups)) {
+        const entries = Object.entries(SCEN.scenarios).filter(([, s]) => s.group === g);
+        document.getElementById(elId).innerHTML =
+          allChip() +
+          entries.map(([k, s]) => chip(k, lang === 'zh' ? s.zh : s.en, count[k] || 0, state.scene === k)).join('');
+      }
     }
     const ecoCount = {};
     DATA.plugins.forEach((i) => itemEcos(i).forEach((k) => { ecoCount[k] = (ecoCount[k] || 0) + 1; }));
@@ -237,11 +244,19 @@
   window.copyCmd = copyCmd;
   window.setEco = (v) => { state.eco = v; renderFilters(); render(); };
   window.setScene = (v) => { state.scene = v; renderFilters(); render(); };
-  window.runExample = (ex) => { state.q = ex; document.getElementById('q').value = ex; render(); };
+  window.runExample = (ex) => { state.q = ex; document.getElementById('q').value = ex; render(); scrollToResults(); };
+  function scrollToResults() {
+    state.q = document.getElementById('q').value;
+    render();
+    const el = document.getElementById('resultInfo');
+    if (el && el.scrollIntoView) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 
   function bind() {
     const q = document.getElementById('q');
     q.addEventListener('input', (e) => { state.q = e.target.value; render(); });
+    q.addEventListener('keydown', (e) => { if (e.key === 'Enter') scrollToResults(); });
+    document.getElementById('searchBtn').addEventListener('click', scrollToResults);
     document.getElementById('themeBtn').addEventListener('click', toggleTheme);
     document.getElementById('langBtn').addEventListener('click', () => setLang(lang === 'zh' ? 'en' : 'zh'));
     document.querySelectorAll('.sort button').forEach((b) => b.addEventListener('click', () => { state.sort = b.dataset.sort; renderSort(); render(); }));

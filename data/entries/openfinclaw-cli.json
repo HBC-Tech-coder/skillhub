@@ -1,0 +1,28 @@
+{
+  "id": "openfinclaw-cli",
+  "name": "openfinclaw-cli",
+  "owner": "mirror29",
+  "url": "https://github.com/mirror29/openfinclaw-cli",
+  "category": "dev",
+  "description": {
+    "en": "One-stop quant-trading AI agent: research, strategy, backtest and paper trade from one prompt.",
+    "zh": "一站式量化交易 AI agent：研究、策略、回测、模拟盘，一条命令开始。"
+  },
+  "install": "git clone https://github.com/mirror29/openfinclaw-cli（按 README 使用）",
+  "ecosystems": [
+    { "id": "generic", "kind": "skill", "install": "git clone https://github.com/mirror29/openfinclaw-cli（按 README 使用）" }
+  ],
+  "scenarios": ["quant", "dev-coding"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 63,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "mirror29",
+  "tags": ["quant", "trading", "backtest", "paper-trade"],
+  "verified": false,
+  "status": "active"
+}
