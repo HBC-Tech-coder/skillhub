@@ -1,0 +1,28 @@
+{
+  "id": "awesome-agent-skills",
+  "name": "awesome-agent-skills",
+  "owner": "VoltAgent",
+  "url": "https://github.com/VoltAgent/awesome-agent-skills",
+  "category": "docs",
+  "description": {
+    "en": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor and more.",
+    "zh": "精选 1000+ 个 agent skills 合集（官方团队 + 社区），兼容 Claude Code、Codex、Gemini CLI、Cursor 等。"
+  },
+  "install": "在线浏览 https://github.com/VoltAgent/awesome-agent-skills",
+  "ecosystems": [
+    { "id": "generic", "kind": "registry", "install": "在线浏览 https://github.com/VoltAgent/awesome-agent-skills" }
+  ],
+  "scenarios": ["dev-coding", "learn"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 33433,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "registry",
+  "license": "MIT",
+  "author": "VoltAgent",
+  "tags": ["awesome-list", "registry", "curated", "multi-tool"],
+  "verified": false,
+  "status": "active"
+}

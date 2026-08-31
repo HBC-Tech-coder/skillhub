@@ -1,0 +1,29 @@
+{
+  "id": "nature-skills",
+  "name": "nature-skills",
+  "owner": "Yuan1z0825",
+  "url": "https://github.com/Yuan1z0825/nature-skills",
+  "category": "skill",
+  "description": {
+    "en": "Skills for Nature-style academic writing and scientific figure preparation.",
+    "zh": "符合 Nature 论文学术表达与科研绘图规范的 Skill。"
+  },
+  "install": "git clone https://github.com/Yuan1z0825/nature-skills（按 README 导入）",
+  "ecosystems": [
+    { "id": "codex", "kind": "skill", "install": "git clone https://github.com/Yuan1z0825/nature-skills（按 README 导入）" },
+    { "id": "claude-code", "kind": "skill", "install": "git clone https://github.com/Yuan1z0825/nature-skills（按 README 导入）" }
+  ],
+  "scenarios": ["science-research", "copywriting"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 38062,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "Yuan1z0825",
+  "tags": ["nature", "academic", "writing", "figures"],
+  "verified": false,
+  "status": "active"
+}

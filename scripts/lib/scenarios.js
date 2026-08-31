@@ -19,6 +19,8 @@ const SCENARIOS = {
   'fun': { zh: '娱乐', en: 'Fun', intents: ['宠物', '娱乐', '好玩', '桌面宠物', 'pet', 'fun', 'mascot'] },
   'ecommerce': { zh: '电商', en: 'E-commerce', intents: ['电商', '商品图', '详情页', '淘宝', '带货', '店铺', 'ecommerce', 'product image', 'listing'] },
   'agents-roles': { zh: '角色·人设', en: 'Roles & Personas', intents: ['角色', '人设', '专家', '数字人', '人格', 'persona', 'roles', 'expert'] },
+  'science-research': { zh: '科研·学术', en: 'Science & Research', intents: ['科研', '学术', '论文', '科学', 'nature', 'paper', 'research', 'science', 'scientist', '绘图'] },
+  'security': { zh: '安全·审计', en: 'Security', intents: ['安全', '渗透', '审计', '漏洞', 'security', 'cybersecurity', 'pentest', 'audit', 'att&ck'] },
 };
 
 // 意图词 → 场景 id（构建时由 SCENARIOS 反查生成）

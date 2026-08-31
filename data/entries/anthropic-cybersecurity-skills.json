@@ -1,0 +1,29 @@
+{
+  "id": "anthropic-cybersecurity-skills",
+  "name": "Anthropic-Cybersecurity-Skills",
+  "owner": "mukul975",
+  "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+  "category": "security",
+  "description": {
+    "en": "817 structured cybersecurity skills for AI agents, mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF and MITRE F3 (Fight Fraud).",
+    "zh": "817 个面向 AI agent 的结构化网络安全 skills，映射 MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF、MITRE F3 六大框架。"
+  },
+  "install": "git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills（按 README 导入）",
+  "ecosystems": [
+    { "id": "codex", "kind": "skill", "install": "git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills（按 README 导入）" },
+    { "id": "claude-code", "kind": "skill", "install": "git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills（按 README 导入）" }
+  ],
+  "scenarios": ["security", "dev-coding"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 31763,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "Apache-2.0",
+  "author": "mukul975",
+  "tags": ["cybersecurity", "mitre", "att&ck", "nist", "audit"],
+  "verified": false,
+  "status": "active"
+}

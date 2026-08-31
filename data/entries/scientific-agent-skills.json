@@ -1,0 +1,29 @@
+{
+  "id": "scientific-agent-skills",
+  "name": "scientific-agent-skills",
+  "owner": "K-Dense-AI",
+  "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "category": "skill",
+  "description": {
+    "en": "Turn any AI agent into an AI Scientist: the #1 Agent Skills library for science, used by 190,000+ scientists worldwide, with 165 ready-to-use validated skills.",
+    "zh": "把任意 AI agent 变成 AI 科学家：科学领域头号 Agent Skills 库，190,000+ 科研人员使用，含 165 个即用且经验证的 skills。"
+  },
+  "install": "git clone https://github.com/K-Dense-AI/scientific-agent-skills（按 README 导入）",
+  "ecosystems": [
+    { "id": "codex", "kind": "skill", "install": "git clone https://github.com/K-Dense-AI/scientific-agent-skills（按 README 导入）" },
+    { "id": "claude-code", "kind": "skill", "install": "git clone https://github.com/K-Dense-AI/scientific-agent-skills（按 README 导入）" }
+  ],
+  "scenarios": ["science-research", "dev-coding"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 40172,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "K-Dense-AI",
+  "tags": ["science", "research", "scientist", "validated"],
+  "verified": false,
+  "status": "active"
+}

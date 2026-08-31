@@ -1,0 +1,29 @@
+{
+  "id": "agentic-awesome-skills",
+  "name": "agentic-awesome-skills",
+  "owner": "sickn33",
+  "url": "https://github.com/sickn33/agentic-awesome-skills",
+  "category": "skill",
+  "description": {
+    "en": "AAS Core: the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation and planning, backed by 2,005+ agentic skills.",
+    "zh": "AAS Core：本地优先的 agent 控制面，提供完整目录发现、agent 自主选型、技能栈校验与规划，内置 2,005+ 个 agentic skills。"
+  },
+  "install": "git clone https://github.com/sickn33/agentic-awesome-skills（按 README 使用）",
+  "ecosystems": [
+    { "id": "codex", "kind": "skill", "install": "git clone https://github.com/sickn33/agentic-awesome-skills（按 README 使用）" },
+    { "id": "generic", "kind": "skill", "install": "git clone https://github.com/sickn33/agentic-awesome-skills（按 README 使用）" }
+  ],
+  "scenarios": ["dev-coding", "workflow"],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 45736,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "sickn33",
+  "tags": ["catalog", "discovery", "selection", "validation", "control-plane"],
+  "verified": false,
+  "status": "active"
+}

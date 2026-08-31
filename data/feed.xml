@@ -94,12 +94,52 @@
     <category term="tools"/>
   </entry>
   <entry>
+    <id>skillhub:agentic-awesome-skills</id>
+    <title>agentic-awesome-skills</title>
+    <link href="https://github.com/sickn33/agentic-awesome-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>AAS Core：本地优先的 agent 控制面，提供完整目录发现、agent 自主选型、技能栈校验与规划，内置 2,005+ 个 agentic skills。</summary>
+    <category term="skill"/>
+  </entry>
+  <entry>
     <id>skillhub:codebase-memory-mcp</id>
     <title>codebase-memory-mcp</title>
     <link href="https://github.com/DeusData/codebase-memory-mcp"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>高性能代码智能 MCP 服务：把代码库索引为持久知识图谱（普通仓库毫秒级），支持 158 种语言、亚毫秒查询、节省 99% token，单静态二进制部署。</summary>
     <category term="tools"/>
+  </entry>
+  <entry>
+    <id>skillhub:scientific-agent-skills</id>
+    <title>scientific-agent-skills</title>
+    <link href="https://github.com/K-Dense-AI/scientific-agent-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>把任意 AI agent 变成 AI 科学家：科学领域头号 Agent Skills 库，190,000+ 科研人员使用，含 165 个即用且经验证的 skills。</summary>
+    <category term="skill"/>
+  </entry>
+  <entry>
+    <id>skillhub:nature-skills</id>
+    <title>nature-skills</title>
+    <link href="https://github.com/Yuan1z0825/nature-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>符合 Nature 论文学术表达与科研绘图规范的 Skill。</summary>
+    <category term="skill"/>
+  </entry>
+  <entry>
+    <id>skillhub:awesome-agent-skills</id>
+    <title>awesome-agent-skills</title>
+    <link href="https://github.com/VoltAgent/awesome-agent-skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>精选 1000+ 个 agent skills 合集（官方团队 + 社区），兼容 Claude Code、Codex、Gemini CLI、Cursor 等。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:anthropic-cybersecurity-skills</id>
+    <title>Anthropic-Cybersecurity-Skills</title>
+    <link href="https://github.com/mukul975/Anthropic-Cybersecurity-Skills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>817 个面向 AI agent 的结构化网络安全 skills，映射 MITRE ATT&amp;CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF、MITRE F3 六大框架。</summary>
+    <category term="security"/>
   </entry>
   <entry>
     <id>skillhub:serena</id>

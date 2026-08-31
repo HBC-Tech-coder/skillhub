@@ -3,7 +3,7 @@
  "url": "https://hub.hibcglobal.com",
  "source": "https://github.com/HBC-Tech-coder/skillhub",
  "updated": "2026-08-31",
- "count": 49,
+ "count": 54,
  "categories": {
   "agi": {
    "en": "AGI Architecture Exploration",
@@ -162,6 +162,14 @@
   "agents-roles": {
    "zh": "角色·人设",
    "en": "Roles & Personas"
+  },
+  "science-research": {
+   "zh": "科研·学术",
+   "en": "Science & Research"
+  },
+  "security": {
+   "zh": "安全·审计",
+   "en": "Security"
   }
  },
  "plugins": [
@@ -617,6 +625,52 @@
    "status": "active"
   },
   {
+   "id": "agentic-awesome-skills",
+   "name": "agentic-awesome-skills",
+   "owner": "sickn33",
+   "url": "https://github.com/sickn33/agentic-awesome-skills",
+   "category": "skill",
+   "description": {
+    "en": "AAS Core: the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation and planning, backed by 2,005+ agentic skills.",
+    "zh": "AAS Core：本地优先的 agent 控制面，提供完整目录发现、agent 自主选型、技能栈校验与规划，内置 2,005+ 个 agentic skills。"
+   },
+   "install": "git clone https://github.com/sickn33/agentic-awesome-skills（按 README 使用）",
+   "ecosystems": [
+    {
+     "id": "codex",
+     "kind": "skill",
+     "install": "git clone https://github.com/sickn33/agentic-awesome-skills（按 README 使用）"
+    },
+    {
+     "id": "generic",
+     "kind": "skill",
+     "install": "git clone https://github.com/sickn33/agentic-awesome-skills（按 README 使用）"
+    }
+   ],
+   "scenarios": [
+    "dev-coding",
+    "workflow"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 45736,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": "MIT",
+   "author": "sickn33",
+   "tags": [
+    "catalog",
+    "discovery",
+    "selection",
+    "validation",
+    "control-plane"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "codebase-memory-mcp",
    "name": "codebase-memory-mcp",
    "owner": "DeusData",
@@ -650,6 +704,182 @@
     "memory"
    ],
    "verified": true,
+   "status": "active"
+  },
+  {
+   "id": "scientific-agent-skills",
+   "name": "scientific-agent-skills",
+   "owner": "K-Dense-AI",
+   "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+   "category": "skill",
+   "description": {
+    "en": "Turn any AI agent into an AI Scientist: the #1 Agent Skills library for science, used by 190,000+ scientists worldwide, with 165 ready-to-use validated skills.",
+    "zh": "把任意 AI agent 变成 AI 科学家：科学领域头号 Agent Skills 库，190,000+ 科研人员使用，含 165 个即用且经验证的 skills。"
+   },
+   "install": "git clone https://github.com/K-Dense-AI/scientific-agent-skills（按 README 导入）",
+   "ecosystems": [
+    {
+     "id": "codex",
+     "kind": "skill",
+     "install": "git clone https://github.com/K-Dense-AI/scientific-agent-skills（按 README 导入）"
+    },
+    {
+     "id": "claude-code",
+     "kind": "skill",
+     "install": "git clone https://github.com/K-Dense-AI/scientific-agent-skills（按 README 导入）"
+    }
+   ],
+   "scenarios": [
+    "science-research",
+    "dev-coding"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 40172,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": "MIT",
+   "author": "K-Dense-AI",
+   "tags": [
+    "science",
+    "research",
+    "scientist",
+    "validated"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "nature-skills",
+   "name": "nature-skills",
+   "owner": "Yuan1z0825",
+   "url": "https://github.com/Yuan1z0825/nature-skills",
+   "category": "skill",
+   "description": {
+    "en": "Skills for Nature-style academic writing and scientific figure preparation.",
+    "zh": "符合 Nature 论文学术表达与科研绘图规范的 Skill。"
+   },
+   "install": "git clone https://github.com/Yuan1z0825/nature-skills（按 README 导入）",
+   "ecosystems": [
+    {
+     "id": "codex",
+     "kind": "skill",
+     "install": "git clone https://github.com/Yuan1z0825/nature-skills（按 README 导入）"
+    },
+    {
+     "id": "claude-code",
+     "kind": "skill",
+     "install": "git clone https://github.com/Yuan1z0825/nature-skills（按 README 导入）"
+    }
+   ],
+   "scenarios": [
+    "science-research",
+    "copywriting"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 38062,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": "Apache-2.0",
+   "author": "Yuan1z0825",
+   "tags": [
+    "nature",
+    "academic",
+    "writing",
+    "figures"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "awesome-agent-skills",
+   "name": "awesome-agent-skills",
+   "owner": "VoltAgent",
+   "url": "https://github.com/VoltAgent/awesome-agent-skills",
+   "category": "docs",
+   "description": {
+    "en": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor and more.",
+    "zh": "精选 1000+ 个 agent skills 合集（官方团队 + 社区），兼容 Claude Code、Codex、Gemini CLI、Cursor 等。"
+   },
+   "install": "在线浏览 https://github.com/VoltAgent/awesome-agent-skills",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "registry",
+     "install": "在线浏览 https://github.com/VoltAgent/awesome-agent-skills"
+    }
+   ],
+   "scenarios": [
+    "dev-coding",
+    "learn"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 33433,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "registry",
+   "license": "MIT",
+   "author": "VoltAgent",
+   "tags": [
+    "awesome-list",
+    "registry",
+    "curated",
+    "multi-tool"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "anthropic-cybersecurity-skills",
+   "name": "Anthropic-Cybersecurity-Skills",
+   "owner": "mukul975",
+   "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+   "category": "security",
+   "description": {
+    "en": "817 structured cybersecurity skills for AI agents, mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF and MITRE F3 (Fight Fraud).",
+    "zh": "817 个面向 AI agent 的结构化网络安全 skills，映射 MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF、MITRE F3 六大框架。"
+   },
+   "install": "git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills（按 README 导入）",
+   "ecosystems": [
+    {
+     "id": "codex",
+     "kind": "skill",
+     "install": "git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills（按 README 导入）"
+    },
+    {
+     "id": "claude-code",
+     "kind": "skill",
+     "install": "git clone https://github.com/mukul975/Anthropic-Cybersecurity-Skills（按 README 导入）"
+    }
+   ],
+   "scenarios": [
+    "security",
+    "dev-coding"
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 31763,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": "Apache-2.0",
+   "author": "mukul975",
+   "tags": [
+    "cybersecurity",
+    "mitre",
+    "att&ck",
+    "nist",
+    "audit"
+   ],
+   "verified": false,
    "status": "active"
   },
   {

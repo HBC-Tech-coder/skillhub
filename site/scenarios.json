@@ -253,6 +253,37 @@
     "roles",
     "expert"
    ]
+  },
+  "science-research": {
+   "zh": "科研·学术",
+   "en": "Science & Research",
+   "intents": [
+    "科研",
+    "学术",
+    "论文",
+    "科学",
+    "nature",
+    "paper",
+    "research",
+    "science",
+    "scientist",
+    "绘图"
+   ]
+  },
+  "security": {
+   "zh": "安全·审计",
+   "en": "Security",
+   "intents": [
+    "安全",
+    "渗透",
+    "审计",
+    "漏洞",
+    "security",
+    "cybersecurity",
+    "pentest",
+    "audit",
+    "att&ck"
+   ]
   }
  },
  "intents": {
@@ -726,6 +757,63 @@
   ],
   "expert": [
    "agents-roles"
+  ],
+  "科研": [
+   "science-research"
+  ],
+  "学术": [
+   "science-research"
+  ],
+  "论文": [
+   "science-research"
+  ],
+  "科学": [
+   "science-research"
+  ],
+  "nature": [
+   "science-research"
+  ],
+  "paper": [
+   "science-research"
+  ],
+  "research": [
+   "science-research"
+  ],
+  "science": [
+   "science-research"
+  ],
+  "scientist": [
+   "science-research"
+  ],
+  "绘图": [
+   "science-research"
+  ],
+  "安全": [
+   "security"
+  ],
+  "渗透": [
+   "security"
+  ],
+  "审计": [
+   "security"
+  ],
+  "漏洞": [
+   "security"
+  ],
+  "security": [
+   "security"
+  ],
+  "cybersecurity": [
+   "security"
+  ],
+  "pentest": [
+   "security"
+  ],
+  "audit": [
+   "security"
+  ],
+  "att&ck": [
+   "security"
   ]
  }
 }
