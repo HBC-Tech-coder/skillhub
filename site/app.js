@@ -16,7 +16,7 @@
     zh: {
       heroTitle: '说出你想做的事，找到能干的工具',
       searchPh: '试试：帮我下载无水印的B站、抖音视频的 Skill…',
-      stCount: '收录条目', stEco: '生态', stScenes: '用途场景', stUpdate: '最近更新',
+      stCount: '收录', stEco: '生态', stScenes: '场景', stUpdate: '更新',
       scenes: '按用途找', scenesProfession: '按职位', scenesTask: '按任务', scenesFeature: '按功能', searchBtn: '搜 索',
       eco: '生态', rec: '编辑推荐', recNote: '—— 装了这几个就能…',
       rank: '热门榜', rankNote: '按 GitHub 星标排序（爬虫刷新）', about: '关于技能港',
@@ -37,7 +37,7 @@
     en: {
       heroTitle: 'Say what you need — find the tool that does it',
       searchPh: 'Try: a skill that downloads watermark-free Bilibili videos…',
-      stCount: 'Entries', stEco: 'Ecosystems', stScenes: 'Use cases', stUpdate: 'Updated',
+      stCount: 'Items', stEco: 'Ecos', stScenes: 'Scenes', stUpdate: 'Updated',
       scenes: 'By use case', scenesProfession: 'By profession', scenesTask: 'By task', scenesFeature: 'By capability', searchBtn: 'Search',
       eco: 'Ecosystem', rec: "Editor's Picks", recNote: '— install these to…',
       rank: 'Trending', rankNote: 'Sorted by GitHub stars (crawler refreshed)', about: 'About SkillHub',
@@ -148,7 +148,7 @@
     document.getElementById('stCount').textContent = DATA.count;
     document.getElementById('stEco').textContent = new Set(DATA.plugins.flatMap(itemEcos)).size;
     document.getElementById('stScenes').textContent = SCEN ? Object.keys(SCEN.scenarios).length : '—';
-    document.getElementById('stUpdate').textContent = DATA.updated || '—';
+    document.getElementById('stUpdate').textContent = DATA.updated ? String(DATA.updated).slice(5) : '—';
     const info = t('results').replace('{n}', list.length);
     document.getElementById('resultInfo').textContent = state.q ? `${info} · ${t(intent ? 'intentHit' : 'intentNo')}` : info;
     document.getElementById('empty').style.display = list.length ? 'none' : '';
@@ -245,11 +245,52 @@
     }, 12000);
   }
 
-  function renderRank() {
-    const ranked = DATA.plugins.filter((i) => i.stars != null).sort((a, b) => b.stars - a.stars).slice(0, 10);
-    document.getElementById('rank').innerHTML = ranked.length
+  /* ---------- 热门榜（榜单 ⇄ 文字说明 交替轮播） ---------- */
+  let rankMode = 'list';   // 'list' | 'desc'
+  let rankIdx = 0;
+  let rankTimer = null;
+  let rankPausedUntil = 0;
+  function rankedItems() {
+    return DATA.plugins.filter((i) => i.stars != null).sort((a, b) => b.stars - a.stars).slice(0, 10);
+  }
+  function rankListHTML() {
+    const ranked = rankedItems();
+    return ranked.length
       ? ranked.map((i, n) => `<div class="item" onclick="openModal('${esc(i.id)}')"><span class="num">${n + 1}</span><span class="nm">${esc(i.name)}</span><span class="st">⭐${i.stars}</span></div>`).join('')
       : `<p class="note">${lang === 'zh' ? '暂无星标数据（爬虫上线后刷新）' : 'No star data yet'}</p>`;
+  }
+  function rankDescHTML() {
+    const ranked = rankedItems();
+    if (!ranked.length) return rankListHTML();
+    const i = ranked[rankIdx % ranked.length];
+    const desc = descOf(i);
+    return `<div class="rankdesc">
+      <div class="rd-top"><span class="rd-name">${esc(i.name)}</span><span class="rd-star">⭐${i.stars}</span></div>
+      <div class="rd-text">${esc(desc)}</div>
+      <div class="rd-more" onclick="openModal('${esc(i.id)}')">${lang === 'zh' ? '查看详情 →' : 'View →'}</div>
+    </div>`;
+  }
+  function renderRank() {
+    const el = document.getElementById('rank');
+    if (!el) return;
+    el.innerHTML = rankMode === 'desc' ? rankDescHTML() : rankListHTML();
+  }
+  function startRankRotation() {
+    if (rankTimer) return;
+    const next = () => {
+      if (Date.now() < rankPausedUntil) { rankTimer = setTimeout(next, 2000); return; }
+      if (rankMode === 'list') {
+        rankMode = 'desc';
+        renderRank();
+        rankTimer = setTimeout(next, 6000);
+      } else {
+        rankMode = 'list';
+        rankIdx = (rankIdx + 1) % Math.max(1, rankedItems().length);
+        renderRank();
+        rankTimer = setTimeout(next, 8000);
+      }
+    };
+    rankTimer = setTimeout(next, 8000);
   }
 
   function renderSort() {
@@ -343,6 +384,8 @@
     });
     const hotStripEl = document.getElementById('hotStrip');
     if (hotStripEl) hotStripEl.addEventListener('pointerdown', () => { hotPausedUntil = Date.now() + 30000; });
+    const rankEl = document.getElementById('rank');
+    if (rankEl) rankEl.addEventListener('pointerdown', () => { rankPausedUntil = Date.now() + 30000; });
     window.addEventListener('resize', () => renderHot());
     document.getElementById('themeBtn').addEventListener('click', toggleTheme);
     document.getElementById('langBtn').addEventListener('click', () => setLang(lang === 'zh' ? 'en' : 'zh'));
@@ -382,6 +425,7 @@
       renderHot();
       startRotation();
       startHotRotation();
+      startRankRotation();
       const m = location.hash.match(/^#item\/(.+)$/);
       if (m && DATA.plugins.some((x) => x.id === m[1])) openModal(decodeURIComponent(m[1]));
     } catch (err) {

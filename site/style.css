@@ -47,8 +47,8 @@ header{background:var(--head-bg);backdrop-filter:blur(8px);border-bottom:1px sol
 .search input{flex:1;border:none;outline:none;background:transparent;color:var(--text);font:inherit;font-size:15.5px;padding:8px 10px;}
 .searchbtn{background:linear-gradient(90deg,#5b5bd6,#8b5cf6);color:#fff;border:none;border-radius:10px;padding:9px 22px;font:inherit;font-size:14.5px;cursor:pointer;white-space:nowrap;}
 .searchbtn:hover{filter:brightness(1.06);}
-.examples{max-width:760px;margin:10px auto 0;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;}
-.exchip{padding:4px 12px;border:1px dashed var(--line);border-radius:999px;font-size:12.5px;color:var(--sub);cursor:pointer;user-select:none;}
+.examples{max-width:760px;margin:10px auto 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
+.exchip{padding:5px 12px;border:1px dashed var(--line);border-radius:12px;font-size:12.5px;color:var(--sub);cursor:pointer;user-select:none;text-align:left;}
 .exchip:hover{border-color:var(--accent);color:var(--accent);}
 
 /* ---------- 热门速览（两行轮播） ---------- */
@@ -136,6 +136,13 @@ header{background:var(--head-bg);backdrop-filter:blur(8px);border-bottom:1px sol
 .rank .num{font-weight:800;color:var(--rank-num);font-size:14px;width:20px;text-align:center;flex:none;}
 .rank .nm{font-size:13px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .rank .st{color:#f59e0b;font-size:12px;flex:none;}
+.rankdesc{animation:fadein .4s ease;}
+.rd-top{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+.rd-name{font-weight:700;font-size:14px;}
+.rd-star{color:#f59e0b;font-size:12px;}
+.rd-text{color:var(--sub);font-size:12.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden;min-height:96px;}
+.rd-more{color:var(--accent);font-size:12.5px;cursor:pointer;margin-top:6px;}
+.rd-more:hover{text-decoration:underline;}
 .panel .note{color:var(--sub);font-size:11.5px;margin-top:8px;}
 .about-txt{color:var(--sub);font-size:12.5px;}
 .about-links{display:flex;gap:12px;margin-top:8px;font-size:13px;}
@@ -165,6 +172,7 @@ footer a{color:var(--accent);text-decoration:none;}
   .side{position:static;}
   .hero h1{font-size:22px;}
   .headstats i{display:none;}
+  .examples{grid-template-columns:1fr;}
 }
 @media (max-width:560px){
   .grid{grid-template-columns:1fr;}
