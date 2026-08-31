@@ -1,0 +1,27 @@
+{
+  "id": "mcp-python-sdk",
+  "name": "MCP Python SDK",
+  "owner": "modelcontextprotocol",
+  "url": "https://github.com/modelcontextprotocol/python-sdk",
+  "category": "dev",
+  "description": {
+    "en": "The official Python SDK for Model Context Protocol servers and clients.",
+    "zh": "Model Context Protocol 官方 Python SDK，用于构建 MCP 服务器与客户端。"
+  },
+  "install": "pip install mcp（或 uv add \"mcp[cli]\"，按官方 README）",
+  "ecosystems": [
+    { "id": "mcp", "kind": "other", "install": "pip install mcp（或 uv add \"mcp[cli]\"，按官方 README）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 24167,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "MIT",
+  "author": "modelcontextprotocol",
+  "tags": ["sdk", "python", "official", "servers", "clients"],
+  "verified": true,
+  "status": "active"
+}

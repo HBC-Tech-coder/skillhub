@@ -62,6 +62,38 @@
     <category term="tools"/>
   </entry>
   <entry>
+    <id>skillhub:serena</id>
+    <title>serena</title>
+    <link href="https://github.com/oraios/serena"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>强大的编程 MCP 工具集：语义检索与编辑能力——给你的 agent 一个 IDE。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:mcp-python-sdk</id>
+    <title>MCP Python SDK</title>
+    <link href="https://github.com/modelcontextprotocol/python-sdk"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Model Context Protocol 官方 Python SDK，用于构建 MCP 服务器与客户端。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
+    <id>skillhub:n8n-mcp</id>
+    <title>n8n-mcp</title>
+    <link href="https://github.com/czlonkowski/n8n-mcp"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>面向 Claude Desktop / Claude Code / Windsurf / Cursor 的 MCP 服务：让 agent 帮你搭建 n8n 工作流。</summary>
+    <category term="tools"/>
+  </entry>
+  <entry>
+    <id>skillhub:context-mode</id>
+    <title>context-mode</title>
+    <link href="https://github.com/mksglu/context-mode"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>AI 编程 agent 的上下文窗口优化：沙箱化工具输出（减少 98%）、持久化会话记忆，经 MCP + hooks 覆盖 17 个平台的上下文路由。</summary>
+    <category term="dev"/>
+  </entry>
+  <entry>
     <id>skillhub:agency-agents-zh</id>
     <title>agency-agents-zh</title>
     <link href="https://github.com/jnMetaCode/agency-agents-zh"/>
@@ -126,6 +158,14 @@
     <category term="vision"/>
   </entry>
   <entry>
+    <id>skillhub:any-auto-register</id>
+    <title>any-auto-register</title>
+    <link href="https://github.com/lxf746/any-auto-register"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>为 ChatGPT、Cursor、Kiro、Grok、Windsurf、Trae 等 13+ AI 平台自动注册与管理账号：协议/浏览器双模式、插件化、Mac/Windows 一键部署。</summary>
+    <category term="tools"/>
+  </entry>
+  <entry>
     <id>skillhub:dsh-better-sidebar</id>
     <title>DSH-better-sidebar</title>
     <link href="https://github.com/omdsh-dev/DSH-better-sidebar"/>
@@ -140,6 +180,14 @@
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>WorkBuddy 实战开源蓝皮书：教程、真实工作流、Skills、MCP、自动化与多智能体实践。</summary>
     <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:todo-for-ai</id>
+    <title>todo-for-ai</title>
+    <link href="https://github.com/todo-for-ai/todo-for-ai"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>专为 AI 助手设计的综合任务管理系统：项目管理、任务跟踪、团队协作与无缝 AI 集成。</summary>
+    <category term="workflow"/>
   </entry>
   <entry>
     <id>skillhub:ecommerce-visual-copywriting-skill</id>

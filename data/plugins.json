@@ -3,7 +3,7 @@
  "url": "https://hub.hibcglobal.com",
  "source": "https://github.com/HBC-Tech-coder/skillhub",
  "updated": "2026-08-31",
- "count": 34,
+ "count": 40,
  "categories": {
   "agi": {
    "en": "AGI Architecture Exploration",
@@ -359,6 +359,151 @@
    "status": "active"
   },
   {
+   "id": "serena",
+   "name": "serena",
+   "owner": "oraios",
+   "url": "https://github.com/oraios/serena",
+   "category": "dev",
+   "description": {
+    "en": "A powerful MCP toolkit for coding: semantic retrieval and editing capabilities — the IDE for your agent.",
+    "zh": "强大的编程 MCP 工具集：语义检索与编辑能力——给你的 agent 一个 IDE。"
+   },
+   "install": "uvx --from git+https://github.com/oraios/serena serena start-mcp-server（按 README）",
+   "ecosystems": [
+    {
+     "id": "mcp",
+     "kind": "server",
+     "install": "uvx --from git+https://github.com/oraios/serena serena start-mcp-server（按 README 配置）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 28677,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "server",
+   "license": "MIT",
+   "author": "oraios",
+   "tags": [
+    "coding",
+    "semantic-retrieval",
+    "editing",
+    "ide"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "mcp-python-sdk",
+   "name": "MCP Python SDK",
+   "owner": "modelcontextprotocol",
+   "url": "https://github.com/modelcontextprotocol/python-sdk",
+   "category": "dev",
+   "description": {
+    "en": "The official Python SDK for Model Context Protocol servers and clients.",
+    "zh": "Model Context Protocol 官方 Python SDK，用于构建 MCP 服务器与客户端。"
+   },
+   "install": "pip install mcp（或 uv add \"mcp[cli]\"，按官方 README）",
+   "ecosystems": [
+    {
+     "id": "mcp",
+     "kind": "other",
+     "install": "pip install mcp（或 uv add \"mcp[cli]\"，按官方 README）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 24167,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": "MIT",
+   "author": "modelcontextprotocol",
+   "tags": [
+    "sdk",
+    "python",
+    "official",
+    "servers",
+    "clients"
+   ],
+   "verified": true,
+   "status": "active"
+  },
+  {
+   "id": "n8n-mcp",
+   "name": "n8n-mcp",
+   "owner": "czlonkowski",
+   "url": "https://github.com/czlonkowski/n8n-mcp",
+   "category": "tools",
+   "description": {
+    "en": "An MCP server for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you.",
+    "zh": "面向 Claude Desktop / Claude Code / Windsurf / Cursor 的 MCP 服务：让 agent 帮你搭建 n8n 工作流。"
+   },
+   "install": "npx n8n-mcp（或按 README 配置远程端点）",
+   "ecosystems": [
+    {
+     "id": "mcp",
+     "kind": "server",
+     "install": "npx n8n-mcp（或按 README 配置远程端点）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 22813,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "server",
+   "license": "MIT",
+   "author": "czlonkowski",
+   "tags": [
+    "n8n",
+    "workflow",
+    "automation"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "context-mode",
+   "name": "context-mode",
+   "owner": "mksglu",
+   "url": "https://github.com/mksglu/context-mode",
+   "category": "dev",
+   "description": {
+    "en": "Context window optimization for AI coding agents: sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+    "zh": "AI 编程 agent 的上下文窗口优化：沙箱化工具输出（减少 98%）、持久化会话记忆，经 MCP + hooks 覆盖 17 个平台的上下文路由。"
+   },
+   "install": "git clone https://github.com/mksglu/context-mode（按 README 安装）",
+   "ecosystems": [
+    {
+     "id": "mcp",
+     "kind": "other",
+     "install": "git clone https://github.com/mksglu/context-mode（按 README 安装）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 20267,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": null,
+   "author": "mksglu",
+   "tags": [
+    "context",
+    "optimization",
+    "memory",
+    "routing",
+    "17-platforms"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "agency-agents-zh",
    "name": "agency-agents-zh",
    "owner": "jnMetaCode",
@@ -651,6 +796,42 @@
    "status": "active"
   },
   {
+   "id": "any-auto-register",
+   "name": "any-auto-register",
+   "owner": "lxf746",
+   "url": "https://github.com/lxf746/any-auto-register",
+   "category": "tools",
+   "description": {
+    "en": "Auto-register and manage accounts for ChatGPT, Cursor, Kiro, Grok, Windsurf, Trae and 13+ AI platforms: protocol/browser dual-mode, plugin-based, one-click Mac/Windows deployment.",
+    "zh": "为 ChatGPT、Cursor、Kiro、Grok、Windsurf、Trae 等 13+ AI 平台自动注册与管理账号：协议/浏览器双模式、插件化、Mac/Windows 一键部署。"
+   },
+   "install": "git clone https://github.com/lxf746/any-auto-register（按 README 部署）",
+   "ecosystems": [
+    {
+     "id": "trae",
+     "kind": "other",
+     "install": "git clone https://github.com/lxf746/any-auto-register（按 README 部署）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 3218,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": "AGPL-3.0",
+   "author": "lxf746",
+   "tags": [
+    "account",
+    "automation",
+    "multi-platform",
+    "registration"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "dsh-better-sidebar",
    "name": "DSH-better-sidebar",
    "owner": "omdsh-dev",
@@ -720,6 +901,41 @@
     "workflows",
     "mcp",
     "automation"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "todo-for-ai",
+   "name": "todo-for-ai",
+   "owner": "todo-for-ai",
+   "url": "https://github.com/todo-for-ai/todo-for-ai",
+   "category": "workflow",
+   "description": {
+    "en": "A comprehensive task management system specifically designed for AI assistants: project management, task tracking, team collaboration and seamless AI integration.",
+    "zh": "专为 AI 助手设计的综合任务管理系统：项目管理、任务跟踪、团队协作与无缝 AI 集成。"
+   },
+   "install": "git clone https://github.com/todo-for-ai/todo-for-ai（按 README 部署）",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "other",
+     "install": "git clone https://github.com/todo-for-ai/todo-for-ai（按 README 部署）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 1177,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": "Apache-2.0",
+   "author": "todo-for-ai",
+   "tags": [
+    "tasks",
+    "project-management",
+    "collaboration"
    ],
    "verified": false,
    "status": "active"

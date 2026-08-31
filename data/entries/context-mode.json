@@ -1,0 +1,27 @@
+{
+  "id": "context-mode",
+  "name": "context-mode",
+  "owner": "mksglu",
+  "url": "https://github.com/mksglu/context-mode",
+  "category": "dev",
+  "description": {
+    "en": "Context window optimization for AI coding agents: sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+    "zh": "AI 编程 agent 的上下文窗口优化：沙箱化工具输出（减少 98%）、持久化会话记忆，经 MCP + hooks 覆盖 17 个平台的上下文路由。"
+  },
+  "install": "git clone https://github.com/mksglu/context-mode（按 README 安装）",
+  "ecosystems": [
+    { "id": "mcp", "kind": "other", "install": "git clone https://github.com/mksglu/context-mode（按 README 安装）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 20267,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": null,
+  "author": "mksglu",
+  "tags": ["context", "optimization", "memory", "routing", "17-platforms"],
+  "verified": false,
+  "status": "active"
+}

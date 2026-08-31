@@ -15,6 +15,7 @@
 | `data/plugins.json` | 构建产物（`node scripts/build-plugins.js` 生成，勿手改） |
 | `scripts/` | 构建、校验、草稿审阅脚本（`review-pending.js` 用 GitHub API 机械核验草稿是否真为 DSH bundle） |
 | `site/` | 静态目录站（同一套代码部署到服务器与 GitHub Pages） |
+| `docs/` | 架构（ARCHITECTURE）、数据规范（SPEC）、API 参考（API）、维护手册（MAINTENANCE） |
 | `server/` | 服务器端：静态托管 + 检索 API + 管理 API + 爬虫 |
 | `contrib/` | 投稿模板与投稿指南 |
 | `plugins/dsh-skillhub/` | 推广用 DSH 插件（浏览/检索/安装 SkillHub 资源） |

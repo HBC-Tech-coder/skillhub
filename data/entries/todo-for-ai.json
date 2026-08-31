@@ -1,0 +1,27 @@
+{
+  "id": "todo-for-ai",
+  "name": "todo-for-ai",
+  "owner": "todo-for-ai",
+  "url": "https://github.com/todo-for-ai/todo-for-ai",
+  "category": "workflow",
+  "description": {
+    "en": "A comprehensive task management system specifically designed for AI assistants: project management, task tracking, team collaboration and seamless AI integration.",
+    "zh": "专为 AI 助手设计的综合任务管理系统：项目管理、任务跟踪、团队协作与无缝 AI 集成。"
+  },
+  "install": "git clone https://github.com/todo-for-ai/todo-for-ai（按 README 部署）",
+  "ecosystems": [
+    { "id": "generic", "kind": "other", "install": "git clone https://github.com/todo-for-ai/todo-for-ai（按 README 部署）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 1177,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "Apache-2.0",
+  "author": "todo-for-ai",
+  "tags": ["tasks", "project-management", "collaboration"],
+  "verified": false,
+  "status": "active"
+}

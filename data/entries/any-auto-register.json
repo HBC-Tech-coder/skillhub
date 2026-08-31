@@ -1,0 +1,27 @@
+{
+  "id": "any-auto-register",
+  "name": "any-auto-register",
+  "owner": "lxf746",
+  "url": "https://github.com/lxf746/any-auto-register",
+  "category": "tools",
+  "description": {
+    "en": "Auto-register and manage accounts for ChatGPT, Cursor, Kiro, Grok, Windsurf, Trae and 13+ AI platforms: protocol/browser dual-mode, plugin-based, one-click Mac/Windows deployment.",
+    "zh": "为 ChatGPT、Cursor、Kiro、Grok、Windsurf、Trae 等 13+ AI 平台自动注册与管理账号：协议/浏览器双模式、插件化、Mac/Windows 一键部署。"
+  },
+  "install": "git clone https://github.com/lxf746/any-auto-register（按 README 部署）",
+  "ecosystems": [
+    { "id": "trae", "kind": "other", "install": "git clone https://github.com/lxf746/any-auto-register（按 README 部署）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 3218,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "AGPL-3.0",
+  "author": "lxf746",
+  "tags": ["account", "automation", "multi-platform", "registration"],
+  "verified": false,
+  "status": "active"
+}

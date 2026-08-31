@@ -1,0 +1,27 @@
+{
+  "id": "n8n-mcp",
+  "name": "n8n-mcp",
+  "owner": "czlonkowski",
+  "url": "https://github.com/czlonkowski/n8n-mcp",
+  "category": "tools",
+  "description": {
+    "en": "An MCP server for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you.",
+    "zh": "面向 Claude Desktop / Claude Code / Windsurf / Cursor 的 MCP 服务：让 agent 帮你搭建 n8n 工作流。"
+  },
+  "install": "npx n8n-mcp（或按 README 配置远程端点）",
+  "ecosystems": [
+    { "id": "mcp", "kind": "server", "install": "npx n8n-mcp（或按 README 配置远程端点）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 22813,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "MIT",
+  "author": "czlonkowski",
+  "tags": ["n8n", "workflow", "automation"],
+  "verified": false,
+  "status": "active"
+}

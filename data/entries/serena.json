@@ -1,0 +1,27 @@
+{
+  "id": "serena",
+  "name": "serena",
+  "owner": "oraios",
+  "url": "https://github.com/oraios/serena",
+  "category": "dev",
+  "description": {
+    "en": "A powerful MCP toolkit for coding: semantic retrieval and editing capabilities — the IDE for your agent.",
+    "zh": "强大的编程 MCP 工具集：语义检索与编辑能力——给你的 agent 一个 IDE。"
+  },
+  "install": "uvx --from git+https://github.com/oraios/serena serena start-mcp-server（按 README）",
+  "ecosystems": [
+    { "id": "mcp", "kind": "server", "install": "uvx --from git+https://github.com/oraios/serena serena start-mcp-server（按 README 配置）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 28677,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "MIT",
+  "author": "oraios",
+  "tags": ["coding", "semantic-retrieval", "editing", "ide"],
+  "verified": false,
+  "status": "active"
+}
