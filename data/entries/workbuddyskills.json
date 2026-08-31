@@ -1,0 +1,27 @@
+{
+  "id": "workbuddyskills",
+  "name": "WorkBuddy Skills Archive",
+  "owner": "infometa",
+  "url": "https://github.com/infometa/workbuddyskills",
+  "category": "skill",
+  "description": {
+    "en": "WorkBuddy skills / connectors / experts archive for offline study.",
+    "zh": "WorkBuddy 技能 / 连接器 / 专家归档，供离线学习与参考。"
+  },
+  "install": "git clone https://github.com/infometa/workbuddyskills",
+  "ecosystems": [
+    { "id": "workbuddy", "kind": "skill", "install": "git clone https://github.com/infometa/workbuddyskills" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": null,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": null,
+  "author": "infometa",
+  "tags": ["workbuddy", "skills", "archive", "connectors", "experts"],
+  "verified": false,
+  "status": "active"
+}

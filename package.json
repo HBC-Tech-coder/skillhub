@@ -1,0 +1,14 @@
+{
+  "name": "skillhub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SkillHub 技能港：跨生态 AI 插件与技能聚合平台（数据规范 + 静态目录站 + 服务器端 + 推广插件）",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build-plugins.js",
+    "validate": "node scripts/validate-all.js",
+    "serve": "cd server && node server.js",
+    "crawl": "node server/crawlers/dsh.js && node server/crawlers/workbuddy.js && node server/crawlers/trae.js && node server/crawlers/mcp.js"
+  },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "dsh-skill-picker",
+  "name": "dsh-skill-picker",
+  "owner": "a735624258",
+  "url": "https://github.com/a735624258/dsh-skill-picker",
+  "category": "ui",
+  "description": {
+    "en": "WorkBuddy-style skill picker: a searchable list of installed skills beside the composer.",
+    "zh": "WorkBuddy 同款技能选择器：输入框旁可搜索的已装技能列表，点选插入 /技能名 手势。"
+  },
+  "install": "dsh plugin --profile web add dsh-skill-picker",
+  "ecosystems": [
+    { "id": "dsh", "kind": "plugin", "install": "dsh plugin --profile web add dsh-skill-picker" }
+  ],
+  "added": "2026-08-31",
+  "npm": "dsh-skill-picker",
+  "tarball": null,
+  "stars": 25,
+  "downloads": 1422,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": null,
+  "author": "a735624258",
+  "tags": ["skills", "composer", "picker"],
+  "verified": false,
+  "status": "active"
+}

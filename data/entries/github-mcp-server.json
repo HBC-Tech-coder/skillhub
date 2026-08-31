@@ -1,0 +1,27 @@
+{
+  "id": "github-mcp-server",
+  "name": "GitHub MCP Server",
+  "owner": "github",
+  "url": "https://github.com/github/github-mcp-server",
+  "category": "tools",
+  "description": {
+    "en": "Official GitHub MCP server: repos, issues and PRs for any MCP-capable agent.",
+    "zh": "GitHub 官方 MCP 服务：让任意支持 MCP 的 agent 读写仓库 / issue / PR。"
+  },
+  "install": "docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/github-mcp-server",
+  "ecosystems": [
+    { "id": "mcp", "kind": "server", "install": "docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/github-mcp-server" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": null,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "MIT",
+  "author": "github",
+  "tags": ["mcp", "github", "repos", "issues"],
+  "verified": false,
+  "status": "active"
+}

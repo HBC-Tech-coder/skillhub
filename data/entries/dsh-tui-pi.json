@@ -1,0 +1,27 @@
+{
+  "id": "dsh-tui-pi",
+  "name": "dsh-tui-pi",
+  "owner": "fan56",
+  "url": "https://github.com/fan56/dsh-tui-pi",
+  "category": "dev",
+  "description": {
+    "en": "Full-featured TUI for DeepSeek Harness: streaming conversation, powerline status bar, think/tool/todo panels.",
+    "zh": "DeepSeek Harness 全功能终端界面：流式对话、powerline 状态栏、实时思考/工具/待办面板。"
+  },
+  "install": "dsh plugin --profile web add @aiwayds/dsh-tui-pi",
+  "ecosystems": [
+    { "id": "dsh", "kind": "plugin", "install": "dsh plugin --profile web add @aiwayds/dsh-tui-pi" }
+  ],
+  "added": "2026-08-31",
+  "npm": "@aiwayds/dsh-tui-pi",
+  "tarball": null,
+  "stars": 2,
+  "downloads": 10033,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": null,
+  "author": "fan56",
+  "tags": ["tui", "terminal"],
+  "verified": false,
+  "status": "active"
+}

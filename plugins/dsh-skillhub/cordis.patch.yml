@@ -1,0 +1,4 @@
+# dsh-skillhub bundle patch：把插件行插入所选 profile。
+- insert:
+    - id: skillhub
+      name: dsh-skillhub

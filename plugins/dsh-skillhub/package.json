@@ -1,0 +1,22 @@
+{
+  "name": "dsh-skillhub",
+  "version": "0.1.0",
+  "description": "SkillHub（技能港）入口：在 DSH Web UI 里搜索、浏览跨生态（DSH/WorkBuddy/TRAE/MCP）插件与技能，一键复制安装命令。",
+  "type": "module",
+  "files": ["lib", "cordis.patch.yml", "README.md", "LICENSE"],
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "keywords": ["dsh", "deepseek-harness", "dsh-plugin", "skillhub", "market", "discovery"],
+  "author": "HBC-Tech-coder",
+  "repository": { "type": "git", "url": "git+https://github.com/HBC-Tech-coder/skillhub.git" },
+  "homepage": "https://hub.hibcglobal.com",
+  "license": "MIT",
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "inject": [], "immediately": true }
+  }
+}

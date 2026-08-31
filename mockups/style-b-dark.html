@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>技能港 SkillHub — 风格 B：暗色开发者</title>
+<style>
+  :root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--text:#e6edf3;--sub:#8b949e;--accent:#2ea043;--link:#58a6ff;--mono:ui-monospace,SFMono-Regular,Consolas,"Cascadia Code",monospace;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font:14px/1.55 -apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;}
+  header{background:#010409;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;}
+  .head{max-width:1120px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:12px;}
+  .logo{font-family:var(--mono);font-weight:700;color:var(--accent);font-size:15px;} .logo span{color:var(--text);}
+  .head .spacer{flex:1;}
+  .head input{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:6px;padding:6px 12px;font-family:var(--mono);font-size:13px;width:min(320px,40vw);outline:none;}
+  .head input:focus{border-color:var(--link);}
+  .wrap{max-width:1120px;margin:0 auto;padding:26px 20px 60px;}
+  .meta{display:flex;gap:22px;color:var(--sub);font-family:var(--mono);font-size:12.5px;border-bottom:1px solid var(--line);padding-bottom:14px;}
+  .meta b{color:var(--text);}
+  .searchrow{display:flex;gap:10px;margin:18px 0 12px;}
+  .searchrow input{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:6px;color:var(--text);padding:10px 14px;font-family:var(--mono);font-size:14px;outline:none;}
+  .searchrow input:focus{border-color:var(--link);box-shadow:0 0 0 3px rgba(88,166,255,.15);}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
+  .chip{font-family:var(--mono);font-size:12px;padding:4px 11px;border:1px solid var(--line);border-radius:999px;color:var(--sub);cursor:pointer;user-select:none;}
+  .chip.on{background:var(--link);border-color:var(--link);color:#fff;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px;}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px;cursor:pointer;}
+  .card:hover{border-color:var(--link);}
+  .card .top{display:flex;align-items:baseline;gap:8px;font-family:var(--mono);}
+  .card .name{color:var(--link);font-weight:600;font-size:14px;}
+  .card .author{color:var(--sub);font-size:12px;margin-left:auto;}
+  .tag{font-size:10.5px;font-family:var(--mono);padding:1px 7px;border-radius:4px;border:1px solid var(--line);color:var(--sub);}
+  .desc{color:var(--text);font-size:13px;margin:8px 0;min-height:40px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .code{background:#010409;border:1px solid var(--line);border-radius:6px;padding:7px 10px;display:flex;gap:8px;align-items:center;font-family:var(--mono);font-size:12px;}
+  .code .p{color:var(--accent);} .code code{flex:1;color:#c9d1d9;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .copy{background:var(--accent);color:#fff;border:none;border-radius:5px;padding:3px 9px;font-size:11.5px;cursor:pointer;}
+  .foot{display:flex;gap:14px;margin-top:10px;color:var(--sub);font-size:12px;font-family:var(--mono);}
+  .modal-bg{position:fixed;inset:0;background:rgba(1,4,9,.7);display:none;align-items:center;justify-content:center;z-index:50;padding:20px;}
+  .modal{background:var(--panel);border:1px solid var(--line);border-radius:10px;max-width:600px;width:100%;padding:22px;max-height:86vh;overflow:auto;}
+  .modal h2{font-family:var(--mono);color:var(--link);font-size:18px;margin-bottom:2px;}
+  .modal .sub{color:var(--sub);font-family:var(--mono);font-size:12.5px;margin-bottom:12px;}
+  .modal p{color:var(--text);font-size:14px;margin-bottom:12px;}
+  .modal .k{color:var(--sub);font-family:var(--mono);font-size:12.5px;margin:6px 0 4px;}
+  .close{margin-top:16px;width:100%;background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:6px;padding:9px;cursor:pointer;}
+  .empty{color:var(--sub);font-family:var(--mono);text-align:center;padding:46px 0;}
+  footer{max-width:1120px;margin:0 auto;padding:18px 20px 34px;color:var(--sub);font-family:var(--mono);font-size:12px;border-top:1px solid var(--line);}
+</style>
+</head>
+<body>
+<header><div class="head">
+  <div class="logo">$ skillhub <span>· 技能港</span></div>
+  <div class="spacer"></div>
+  <input id="hq" placeholder="grep -i "dsh"">
+</div></header>
+
+<div class="wrap">
+  <div class="meta"><span>catalog: <b>v0.1-demo</b></span><span>ecosystems: <b>4</b></span><span>entries: <b id="m1">0</b></span><span>mirror: <b>github pages ⇄ self-host</b></span></div>
+  <div class="searchrow"><input id="q" placeholder="搜索名称 / 描述 / 作者，如 modlens、视觉、workbuddy…"></div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none">no results — try another keyword</div>
+</div>
+
+<div class="modal-bg" id="mbg"><div class="modal" id="modal"></div></div>
+<footer>$ skillhub — 风格 B（暗色开发者） · 本页为 UI 参考示意，全部条目为示例数据</footer>
+
+<script>
+const ECOS={dsh:{label:'DSH',color:'#4d7cfe'},workbuddy:{label:'WorkBuddy',color:'#0aa869'},trae:{label:'TRAE',color:'#f0662f'},mcp:{label:'MCP',color:'#8b5cf6'}};
+const CATS={market:'market',ui:'ui',dev:'dev',vision:'vision',skill:'skill',tools:'tools',server:'server'};
+const ITEMS=[
+ {id:'dsh-market',name:'dsh-market',ecosystem:'dsh',kind:'plugin',category:'market',author:'dsh-market',stars:null,install:'dsh plugin --profile web add dshmarket',
+  zh:'DSH 网页界面内的插件市场：浏览、搜索、一键安装、主题切换、备份与恢复。',en:'Plugin market inside DeepSeek Harness: browse, search, one-click install, themes, backup.'},
+ {id:'modlens',name:'modlens',ecosystem:'dsh',kind:'plugin',category:'vision',author:'liustack',stars:null,install:'dsh plugin --profile web add @liustack/modlens',
+  zh:'首个视觉插件：给纯文本模型加视觉理解，OCR / 布局 / 语义结构化 JSON。',en:'First vision plugin: visual understanding for text-only models.'},
+ {id:'dsh-popout-sidebar',name:'dsh-popout-sidebar',ecosystem:'dsh',kind:'plugin',category:'ui',author:'e2mcc',stars:145,install:'dsh plugin --profile web add dsh-popout-sidebar',
+  zh:'可弹出侧边栏：文件树 + 多格式预览，可弹出独立浏览器标签拖到另一块屏幕。',en:'Pop-out sidebar with file tree and multi-format previews.'},
+ {id:'dsh-tui-pi',name:'dsh-tui-pi',ecosystem:'dsh',kind:'plugin',category:'dev',author:'fan56',stars:2,install:'dsh plugin --profile web add @aiwayds/dsh-tui-pi',
+  zh:'全功能终端界面：流式对话、状态栏、实时思考/工具/待办面板。',en:'Full-featured TUI for DeepSeek Harness.'},
+ {id:'workbuddyskills',name:'WorkBuddy Skills Archive',ecosystem:'workbuddy',kind:'skill',category:'skill',author:'infometa',stars:null,install:'git clone https://github.com/infometa/workbuddyskills',
+  zh:'WorkBuddy 技能/连接器/专家归档，供离线学习与部署到 ~/.workbuddy。',en:'WorkBuddy skills/connectors/experts archive for offline study.'},
+ {id:'find-skills',name:'find-skills',ecosystem:'trae',kind:'skill',category:'skill',author:'community',stars:null,install:'（TRAE 插件面板内安装）',
+  zh:'TRAE 的「能力商店」：把 Skills.sh 接进 Trae，搜索并安装社区技能。',en:'Skills.sh "capability store" for Trae.'},
+ {id:'github-mcp-server',name:'GitHub MCP Server',ecosystem:'mcp',kind:'server',category:'tools',author:'github',stars:null,install:'npx -y @github/github-mcp-server（或远程端点）',
+  zh:'官方 GitHub MCP：让任意 agent 读写仓库 / issue / PR。',en:'Official GitHub MCP server: repos, issues, PRs for any agent.'},
+ {id:'dsh-find-plugin',name:'dsh-find-plugin',ecosystem:'dsh',kind:'plugin',category:'market',author:'awesome-dsh-plugin',stars:null,install:'dsh plugin --profile web add dsh-find-plugin',
+  zh:'让 agent 帮你找插件：聊天里直接发现、评估、安装社区插件。',en:'Let your agent find plugins for you.'},
+];
+let state={q:'',eco:''};
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function filtered(){return ITEMS.filter(i=>(!state.eco||i.ecosystem===state.eco)&&(!state.q||(i.name+i.zh+i.en+i.author).toLowerCase().includes(state.q.toLowerCase())));}
+function render(){
+  const grid=document.getElementById('grid');const list=filtered();
+  document.getElementById('m1').textContent=ITEMS.length;
+  document.getElementById('empty').style.display=list.length?'none':'';
+  grid.innerHTML=list.map(i=>`
+   <div class="card" onclick="openModal('${i.id}')">
+     <div class="top"><span class="name">${esc(i.name)}</span><span class="tag" style="color:${ECOS[i.ecosystem].color}">${ECOS[i.ecosystem].label}</span><span class="tag">${CATS[i.category]}</span><span class="author">@${esc(i.author)}</span></div>
+     <div class="desc">${esc(i.zh)}</div>
+     <div class="code"><span class="p">$</span><code>${esc(i.install)}</code><button class="copy" onclick="event.stopPropagation();copyCmd('${i.id}',this)">copy</button></div>
+     <div class="foot"><span>★ ${i.stars??'n/a'}</span><span>${i.kind}</span><span>demo-data</span></div>
+   </div>`).join('');
+}
+function setEco(v){state.eco=v;renderChips();render();}
+function renderChips(){
+  document.getElementById('chips').innerHTML='<div class="chip'+(state.eco?'':' on')+'" onclick="setEco(\'\')">all</div>'
+   +Object.entries(ECOS).map(([k,v])=>`<div class="chip${state.eco===k?' on':''}" onclick="setEco('${k}')">${v.label.toLowerCase()}</div>`).join('');
+}
+function copyCmd(id,btn){
+  const i=ITEMS.find(x=>x.id===id);const done=()=>{btn.textContent='✓';setTimeout(()=>btn.textContent='copy',1200);};
+  if(navigator.clipboard) navigator.clipboard.writeText(i.install).then(done); else done();
+}
+function openModal(id){
+  const i=ITEMS.find(x=>x.id===id);
+  document.getElementById('modal').innerHTML=`
+   <h2>${esc(i.name)}</h2><div class="sub">@${esc(i.author)} · ${ECOS[i.ecosystem].label} · ${CATS[i.category]} · ${i.kind}</div>
+   <p>${esc(i.zh)}</p><p style="color:var(--sub)">${esc(i.en)}</p>
+   <div class="k">install</div>
+   <div class="code"><span class="p">$</span><code>${esc(i.install)}</code><button class="copy" onclick="copyCmd('${i.id}',this)">copy</button></div>
+   <div class="k">stars: ${i.stars??'n/a'}</div>
+   <button class="close" onclick="document.getElementById('mbg').style.display='none'">[ close ]</button>`;
+  document.getElementById('mbg').style.display='flex';
+}
+document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value;render();});
+document.getElementById('hq').addEventListener('input',e=>{state.q=e.target.value;document.getElementById('q').value=e.target.value;render();});
+document.getElementById('mbg').addEventListener('click',e=>{if(e.target.id==='mbg')document.getElementById('mbg').style.display='none';});
+renderChips();render();
+</script>
+</body>
+</html>

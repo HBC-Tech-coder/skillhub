@@ -1,0 +1,27 @@
+{
+  "id": "your-plugin-id",
+  "name": "展示名",
+  "owner": "GitHub owner",
+  "url": "https://github.com/owner/repo",
+  "category": "tools",
+  "description": {
+    "en": "One-line English description.",
+    "zh": "一句中文描述。"
+  },
+  "install": "dsh plugin --profile web add your-package",
+  "ecosystems": [
+    { "id": "dsh", "kind": "plugin", "install": "dsh plugin --profile web add your-package" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": null,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "MIT",
+  "author": "owner",
+  "tags": ["example"],
+  "verified": false,
+  "status": "active"
+}

@@ -1,0 +1,385 @@
+{
+ "name": "skillhub",
+ "url": "https://hub.hibcglobal.com",
+ "source": "https://github.com/HBC-Tech-coder/skillhub",
+ "updated": "2026-08-31",
+ "count": 8,
+ "categories": {
+  "agi": {
+   "en": "AGI Architecture Exploration",
+   "zh": "AGI 架构探索"
+  },
+  "ui": {
+   "en": "UI Enhancements",
+   "zh": "UI 增强"
+  },
+  "usage": {
+   "en": "Usage & Billing",
+   "zh": "用量与计费"
+  },
+  "theme": {
+   "en": "Themes & Appearance",
+   "zh": "主题与外观"
+  },
+  "model": {
+   "en": "Models & Providers",
+   "zh": "模型与账号接入"
+  },
+  "identity": {
+   "en": "Identity & Communication",
+   "zh": "身份与通信"
+  },
+  "session": {
+   "en": "Sessions & Messages",
+   "zh": "会话与消息"
+  },
+  "memory": {
+   "en": "Memory",
+   "zh": "记忆"
+  },
+  "tools": {
+   "en": "Tools & Capabilities",
+   "zh": "工具与能力"
+  },
+  "wsl": {
+   "en": "WSL & Windows Interop",
+   "zh": "WSL 与 Windows 互操作"
+  },
+  "browser": {
+   "en": "Browser & Web",
+   "zh": "浏览器与网页"
+  },
+  "vision": {
+   "en": "Vision & Multimodal",
+   "zh": "视觉与多模态"
+  },
+  "voice": {
+   "en": "Voice & Audio",
+   "zh": "语音与音频"
+  },
+  "docs": {
+   "en": "Docs & Rendering",
+   "zh": "文档与渲染"
+  },
+  "skill": {
+   "en": "Skills",
+   "zh": "技能包"
+  },
+  "workflow": {
+   "en": "Workflow & Automation",
+   "zh": "工作流与自动化"
+  },
+  "git": {
+   "en": "Git & Code Review",
+   "zh": "Git 与代码评审"
+  },
+  "notify": {
+   "en": "Notifications & Integrations",
+   "zh": "通知与集成"
+  },
+  "dev": {
+   "en": "Development & Runtime",
+   "zh": "开发与运行时"
+  },
+  "security": {
+   "en": "Security & Permissions",
+   "zh": "安全与权限"
+  },
+  "remote": {
+   "en": "Remote & Mobile",
+   "zh": "远程与移动端"
+  },
+  "market": {
+   "en": "Plugin Markets & Managers",
+   "zh": "插件市场与管理"
+  },
+  "fun": {
+   "en": "Just for Fun",
+   "zh": "娱乐"
+  }
+ },
+ "plugins": [
+  {
+   "id": "dsh-popout-sidebar",
+   "name": "dsh-popout-sidebar",
+   "owner": "e2mcc",
+   "url": "https://github.com/e2mcc/dsh-popout-sidebar",
+   "category": "ui",
+   "description": {
+    "en": "Pop-out sidebar: file tree with multiple preview formats, pops out into a separate browser tab.",
+    "zh": "可弹出侧边栏：文件树 + 多格式预览，可弹出独立浏览器标签页拖到另一块屏幕。"
+   },
+   "install": "dsh plugin --profile web add dsh-popout-sidebar",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add dsh-popout-sidebar"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": "dsh-popout-sidebar",
+   "tarball": null,
+   "stars": 145,
+   "downloads": 521,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": null,
+   "author": "e2mcc",
+   "tags": [
+    "sidebar",
+    "file-tree",
+    "preview"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "dsh-skill-picker",
+   "name": "dsh-skill-picker",
+   "owner": "a735624258",
+   "url": "https://github.com/a735624258/dsh-skill-picker",
+   "category": "ui",
+   "description": {
+    "en": "WorkBuddy-style skill picker: a searchable list of installed skills beside the composer.",
+    "zh": "WorkBuddy 同款技能选择器：输入框旁可搜索的已装技能列表，点选插入 /技能名 手势。"
+   },
+   "install": "dsh plugin --profile web add dsh-skill-picker",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add dsh-skill-picker"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": "dsh-skill-picker",
+   "tarball": null,
+   "stars": 25,
+   "downloads": 1422,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": null,
+   "author": "a735624258",
+   "tags": [
+    "skills",
+    "composer",
+    "picker"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "dsh-tui-pi",
+   "name": "dsh-tui-pi",
+   "owner": "fan56",
+   "url": "https://github.com/fan56/dsh-tui-pi",
+   "category": "dev",
+   "description": {
+    "en": "Full-featured TUI for DeepSeek Harness: streaming conversation, powerline status bar, think/tool/todo panels.",
+    "zh": "DeepSeek Harness 全功能终端界面：流式对话、powerline 状态栏、实时思考/工具/待办面板。"
+   },
+   "install": "dsh plugin --profile web add @aiwayds/dsh-tui-pi",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add @aiwayds/dsh-tui-pi"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": "@aiwayds/dsh-tui-pi",
+   "tarball": null,
+   "stars": 2,
+   "downloads": 10033,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": null,
+   "author": "fan56",
+   "tags": [
+    "tui",
+    "terminal"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "dsh-find-plugin",
+   "name": "dsh-find-plugin",
+   "owner": "awesome-dsh-plugin",
+   "url": "https://github.com/awesome-dsh-plugin/dsh-find-plugin",
+   "category": "market",
+   "description": {
+    "en": "Lets your agent find plugins for you: discover, evaluate and install community plugins from chat.",
+    "zh": "让 agent 帮你找插件：在对话里直接发现、评估、安装社区插件。"
+   },
+   "install": "dsh plugin --profile web add dsh-find-plugin",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add dsh-find-plugin"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": "dsh-find-plugin",
+   "tarball": null,
+   "stars": null,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": null,
+   "author": "awesome-dsh-plugin",
+   "tags": [
+    "market",
+    "discovery",
+    "skill"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "dsh-market",
+   "name": "dsh-market",
+   "owner": "dsh-market",
+   "url": "https://github.com/dsh-market/dsh-market",
+   "category": "market",
+   "description": {
+    "en": "Plugin market inside DeepSeek Harness: browse, search, one-click install, themes, backup and restore.",
+    "zh": "DeepSeek Harness 设置内的插件市场：浏览、搜索、一键安装、主题切换、备份与恢复。"
+   },
+   "install": "dsh plugin --profile web add dshmarket",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add dshmarket"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": "dshmarket",
+   "tarball": null,
+   "stars": null,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": "MIT",
+   "author": "dsh-market",
+   "tags": [
+    "market",
+    "installer",
+    "themes"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "github-mcp-server",
+   "name": "GitHub MCP Server",
+   "owner": "github",
+   "url": "https://github.com/github/github-mcp-server",
+   "category": "tools",
+   "description": {
+    "en": "Official GitHub MCP server: repos, issues and PRs for any MCP-capable agent.",
+    "zh": "GitHub 官方 MCP 服务：让任意支持 MCP 的 agent 读写仓库 / issue / PR。"
+   },
+   "install": "docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/github-mcp-server",
+   "ecosystems": [
+    {
+     "id": "mcp",
+     "kind": "server",
+     "install": "docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/github-mcp-server"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": null,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "server",
+   "license": "MIT",
+   "author": "github",
+   "tags": [
+    "mcp",
+    "github",
+    "repos",
+    "issues"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "modlens",
+   "name": "modlens",
+   "owner": "liustack",
+   "url": "https://github.com/liustack/modlens",
+   "category": "vision",
+   "description": {
+    "en": "First vision plugin for DeepSeek Harness: bolts visual understanding onto text-only models, returning structured JSON evidence.",
+    "zh": "DeepSeek Harness 首个视觉插件：给纯文本模型加视觉理解，返回 OCR/布局/语义的结构化 JSON。"
+   },
+   "install": "dsh plugin --profile web add @liustack/modlens",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add @liustack/modlens"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": "@liustack/modlens",
+   "tarball": null,
+   "stars": null,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": null,
+   "author": "liustack",
+   "tags": [
+    "vision",
+    "ocr",
+    "multimodal"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "workbuddyskills",
+   "name": "WorkBuddy Skills Archive",
+   "owner": "infometa",
+   "url": "https://github.com/infometa/workbuddyskills",
+   "category": "skill",
+   "description": {
+    "en": "WorkBuddy skills / connectors / experts archive for offline study.",
+    "zh": "WorkBuddy 技能 / 连接器 / 专家归档，供离线学习与参考。"
+   },
+   "install": "git clone https://github.com/infometa/workbuddyskills",
+   "ecosystems": [
+    {
+     "id": "workbuddy",
+     "kind": "skill",
+     "install": "git clone https://github.com/infometa/workbuddyskills"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": null,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": null,
+   "author": "infometa",
+   "tags": [
+    "workbuddy",
+    "skills",
+    "archive",
+    "connectors",
+    "experts"
+   ],
+   "verified": false,
+   "status": "active"
+  }
+ ]
+}

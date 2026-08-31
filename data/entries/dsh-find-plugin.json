@@ -1,0 +1,27 @@
+{
+  "id": "dsh-find-plugin",
+  "name": "dsh-find-plugin",
+  "owner": "awesome-dsh-plugin",
+  "url": "https://github.com/awesome-dsh-plugin/dsh-find-plugin",
+  "category": "market",
+  "description": {
+    "en": "Lets your agent find plugins for you: discover, evaluate and install community plugins from chat.",
+    "zh": "让 agent 帮你找插件：在对话里直接发现、评估、安装社区插件。"
+  },
+  "install": "dsh plugin --profile web add dsh-find-plugin",
+  "ecosystems": [
+    { "id": "dsh", "kind": "plugin", "install": "dsh plugin --profile web add dsh-find-plugin" }
+  ],
+  "added": "2026-08-31",
+  "npm": "dsh-find-plugin",
+  "tarball": null,
+  "stars": null,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": null,
+  "author": "awesome-dsh-plugin",
+  "tags": ["market", "discovery", "skill"],
+  "verified": false,
+  "status": "active"
+}

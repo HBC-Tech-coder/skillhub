@@ -1,0 +1,27 @@
+{
+  "id": "dsh-market",
+  "name": "dsh-market",
+  "owner": "dsh-market",
+  "url": "https://github.com/dsh-market/dsh-market",
+  "category": "market",
+  "description": {
+    "en": "Plugin market inside DeepSeek Harness: browse, search, one-click install, themes, backup and restore.",
+    "zh": "DeepSeek Harness 设置内的插件市场：浏览、搜索、一键安装、主题切换、备份与恢复。"
+  },
+  "install": "dsh plugin --profile web add dshmarket",
+  "ecosystems": [
+    { "id": "dsh", "kind": "plugin", "install": "dsh plugin --profile web add dshmarket" }
+  ],
+  "added": "2026-08-31",
+  "npm": "dshmarket",
+  "tarball": null,
+  "stars": null,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "MIT",
+  "author": "dsh-market",
+  "tags": ["market", "installer", "themes"],
+  "verified": false,
+  "status": "active"
+}

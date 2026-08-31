@@ -1,0 +1,27 @@
+{
+  "id": "dsh-popout-sidebar",
+  "name": "dsh-popout-sidebar",
+  "owner": "e2mcc",
+  "url": "https://github.com/e2mcc/dsh-popout-sidebar",
+  "category": "ui",
+  "description": {
+    "en": "Pop-out sidebar: file tree with multiple preview formats, pops out into a separate browser tab.",
+    "zh": "可弹出侧边栏：文件树 + 多格式预览，可弹出独立浏览器标签页拖到另一块屏幕。"
+  },
+  "install": "dsh plugin --profile web add dsh-popout-sidebar",
+  "ecosystems": [
+    { "id": "dsh", "kind": "plugin", "install": "dsh plugin --profile web add dsh-popout-sidebar" }
+  ],
+  "added": "2026-08-31",
+  "npm": "dsh-popout-sidebar",
+  "tarball": null,
+  "stars": 145,
+  "downloads": 521,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": null,
+  "author": "e2mcc",
+  "tags": ["sidebar", "file-tree", "preview"],
+  "verified": false,
+  "status": "active"
+}

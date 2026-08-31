@@ -1,0 +1,27 @@
+{
+  "id": "modlens",
+  "name": "modlens",
+  "owner": "liustack",
+  "url": "https://github.com/liustack/modlens",
+  "category": "vision",
+  "description": {
+    "en": "First vision plugin for DeepSeek Harness: bolts visual understanding onto text-only models, returning structured JSON evidence.",
+    "zh": "DeepSeek Harness 首个视觉插件：给纯文本模型加视觉理解，返回 OCR/布局/语义的结构化 JSON。"
+  },
+  "install": "dsh plugin --profile web add @liustack/modlens",
+  "ecosystems": [
+    { "id": "dsh", "kind": "plugin", "install": "dsh plugin --profile web add @liustack/modlens" }
+  ],
+  "added": "2026-08-31",
+  "npm": "@liustack/modlens",
+  "tarball": null,
+  "stars": null,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": null,
+  "author": "liustack",
+  "tags": ["vision", "ocr", "multimodal"],
+  "verified": false,
+  "status": "active"
+}
