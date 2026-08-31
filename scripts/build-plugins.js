@@ -89,7 +89,7 @@ function build() {
     updated: today,
     count: entries.length,
     categories: Object.assign({}, CATEGORIES, usedCategories),
-    scenarios: Object.fromEntries(Object.entries(SCENARIOS).map(([id, s]) => [id, { zh: s.zh, en: s.en, group: s.group }])),
+    scenarios: Object.fromEntries(Object.entries(SCENARIOS).map(([id, s]) => [id, { zh: s.zh, en: s.en, group: s.group, icon: s.icon }])),
     plugins: entries,
   };
   fs.mkdirSync(path.dirname(OUT), { recursive: true });

@@ -53,7 +53,15 @@
   let SCEN = null;        // scenarios.json（含意图词表）
   let RECS = null;        // recommendations.json
   let lang = 'zh';
-  const state = { q: '', eco: '', scene: '', sort: 'stars' };
+  const state = { q: '', eco: '', scene: '', sort: 'stars', tab: 'profession' };
+  const TAB_INFO = [
+    { id: 'profession', icon: '💼', color: '#4d7cfe', labelKey: 'scenesProfession' },
+    { id: 'task', icon: '🎯', color: '#f0662f', labelKey: 'scenesTask' },
+    { id: 'feature', icon: '⚙️', color: '#8b5cf6', labelKey: 'scenesFeature' },
+    { id: 'eco', icon: '🌐', color: '#0aa869', labelKey: 'eco' },
+  ];
+  let rotationTimer = null;
+  let rotatePausedUntil = 0;
 
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
   function t(k) { return (STR[lang] && STR[lang][k]) || k; }
@@ -132,25 +140,45 @@
   }
 
   function renderFilters() {
-    if (SCEN) {
-      const count = {};
-      DATA.plugins.forEach((i) => (i.scenarios || []).forEach((s) => { count[s] = (count[s] || 0) + 1; }));
-      const chip = (id, name, n, on) => `<div class="chip${on ? ' on' : ''}" onclick="setScene('${esc(id)}')"><span>${esc(name)}</span><span class="cnt">${n}</span></div>`;
-      const allChip = () => `<div class="chip${state.scene ? '' : ' on'}" onclick="setScene('')"><span>${lang === 'zh' ? '全部' : 'All'}</span><span class="cnt">${DATA.count}</span></div>`;
-      const groups = { profession: 'sceneFiltersP', task: 'sceneFiltersT', feature: 'sceneFiltersF' };
-      for (const [g, elId] of Object.entries(groups)) {
-        const entries = Object.entries(SCEN.scenarios).filter(([, s]) => s.group === g);
-        document.getElementById(elId).innerHTML =
-          allChip() +
-          entries.map(([k, s]) => chip(k, lang === 'zh' ? s.zh : s.en, count[k] || 0, state.scene === k)).join('');
-      }
+    document.getElementById('tabbar').innerHTML = TAB_INFO.map((tb) => {
+      const on = state.tab === tb.id;
+      return `<div class="tabbtn${on ? ' on' : ''}" data-tab="${tb.id}"${on ? ` style="--tabcolor:${tb.color}"` : ''}>
+        <span class="tabico">${tb.icon}</span><span>${esc(t(tb.labelKey))}</span>
+      </div>`;
+    }).join('');
+    document.querySelectorAll('.tabbtn').forEach((el) => el.addEventListener('click', () => setTab(el.dataset.tab)));
+    const box = document.getElementById('tabChips');
+    if (state.tab === 'eco') {
+      const ecoCount = {};
+      DATA.plugins.forEach((i) => itemEcos(i).forEach((k) => { ecoCount[k] = (ecoCount[k] || 0) + 1; }));
+      box.innerHTML =
+        `<div class="chip${state.eco ? '' : ' on'}" onclick="setEco('')"><span>${lang === 'zh' ? '全部' : 'All'}</span><span class="cnt">${DATA.count}</span></div>` +
+        Object.entries(ecoCount).map(([k, n]) =>
+          `<div class="chip${state.eco === k ? ' on' : ''}" onclick="setEco('${esc(k)}')"><span><span class="dot" style="background:${ecoColor(k)}"></span>${esc(ecoLabel(k))}</span><span class="cnt">${n}</span></div>`).join('');
+      return;
     }
-    const ecoCount = {};
-    DATA.plugins.forEach((i) => itemEcos(i).forEach((k) => { ecoCount[k] = (ecoCount[k] || 0) + 1; }));
-    document.getElementById('ecoFilters').innerHTML =
-      `<div class="chip${state.eco ? '' : ' on'}" onclick="setEco('')"><span>${lang === 'zh' ? '全部' : 'All'}</span><span class="cnt">${DATA.count}</span></div>` +
-      Object.entries(ecoCount).map(([k, n]) =>
-        `<div class="chip${state.eco === k ? ' on' : ''}" onclick="setEco('${esc(k)}')"><span><span class="dot" style="background:${ecoColor(k)}"></span>${esc(ecoLabel(k))}</span><span class="cnt">${n}</span></div>`).join('');
+    if (!SCEN) return;
+    const count = {};
+    DATA.plugins.forEach((i) => (i.scenarios || []).forEach((s) => { count[s] = (count[s] || 0) + 1; }));
+    const entries = Object.entries(SCEN.scenarios).filter(([, s]) => s.group === state.tab);
+    box.innerHTML =
+      `<div class="chip${state.scene ? '' : ' on'}" onclick="setScene('')"><span>${lang === 'zh' ? '全部' : 'All'}</span><span class="cnt">${DATA.count}</span></div>` +
+      entries.map(([k, s]) =>
+        `<div class="chip${state.scene === k ? ' on' : ''}" onclick="setScene('${esc(k)}')"><span>${s.icon || ''} ${esc(lang === 'zh' ? s.zh : s.en)}</span><span class="cnt">${count[k] || 0}</span></div>`).join('');
+  }
+
+  function setTab(v, fromRotation) {
+    if (state.tab !== v) { state.tab = v; state.scene = ''; state.eco = ''; }
+    if (!fromRotation) rotatePausedUntil = Date.now() + 20000;
+    renderFilters(); render();
+  }
+  function startRotation() {
+    if (rotationTimer) return;
+    rotationTimer = setInterval(() => {
+      if (Date.now() < rotatePausedUntil) return;
+      const i = TAB_INFO.findIndex((t) => t.id === state.tab);
+      setTab(TAB_INFO[(i + 1) % TAB_INFO.length].id, true);
+    }, 5000);
   }
 
   function renderRecs() {
@@ -242,8 +270,9 @@
   window.openModal = openModal;
   window.closeModal = closeModal;
   window.copyCmd = copyCmd;
-  window.setEco = (v) => { state.eco = v; renderFilters(); render(); };
-  window.setScene = (v) => { state.scene = v; renderFilters(); render(); };
+  window.setEco = (v) => { state.eco = v; rotatePausedUntil = Date.now() + 20000; renderFilters(); render(); };
+  window.setScene = (v) => { state.scene = v; rotatePausedUntil = Date.now() + 20000; renderFilters(); render(); };
+  window.setTab = setTab;
   window.runExample = (ex) => { state.q = ex; document.getElementById('q').value = ex; render(); scrollToResults(); };
   function scrollToResults() {
     state.q = document.getElementById('q').value;
@@ -257,6 +286,11 @@
     q.addEventListener('input', (e) => { state.q = e.target.value; render(); });
     q.addEventListener('keydown', (e) => { if (e.key === 'Enter') scrollToResults(); });
     document.getElementById('searchBtn').addEventListener('click', scrollToResults);
+    // 用户交互时暂停 tab 自动轮播 20 秒
+    ['tabbar', 'tabChips', 'q', 'examples'].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('pointerdown', () => { rotatePausedUntil = Date.now() + 20000; });
+    });
     document.getElementById('themeBtn').addEventListener('click', toggleTheme);
     document.getElementById('langBtn').addEventListener('click', () => setLang(lang === 'zh' ? 'en' : 'zh'));
     document.querySelectorAll('.sort button').forEach((b) => b.addEventListener('click', () => { state.sort = b.dataset.sort; renderSort(); render(); }));
@@ -289,6 +323,7 @@
       try { lang = localStorage.getItem('skillhub-lang') || 'zh'; } catch (e) { /* ignore */ }
       setLang(lang);
       renderSort();
+      startRotation();
       const m = location.hash.match(/^#item\/(.+)$/);
       if (m && DATA.plugins.some((x) => x.id === m[1])) openModal(decodeURIComponent(m[1]));
     } catch (err) {

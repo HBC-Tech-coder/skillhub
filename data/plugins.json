@@ -102,122 +102,146 @@
   "content-social": {
    "zh": "新媒体运营",
    "en": "Social Media Ops",
-   "group": "profession"
+   "group": "profession",
+   "icon": "📱"
   },
   "accounting": {
    "zh": "会计·财务",
    "en": "Accounting & Finance",
-   "group": "profession"
+   "group": "profession",
+   "icon": "💰"
   },
   "legal": {
    "zh": "律师·法务",
    "en": "Legal",
-   "group": "profession"
+   "group": "profession",
+   "icon": "⚖️"
   },
   "science-research": {
    "zh": "科研·学术",
    "en": "Science & Research",
-   "group": "profession"
+   "group": "profession",
+   "icon": "🔬"
   },
   "education": {
    "zh": "教师·教育",
    "en": "Teaching & Education",
-   "group": "profession"
+   "group": "profession",
+   "icon": "🎓"
   },
   "video-download": {
    "zh": "视频下载·去水印",
    "en": "Video Download",
-   "group": "task"
+   "group": "task",
+   "icon": "🎬"
   },
   "trends-monitor": {
    "zh": "热点抓取·舆情",
    "en": "Trends & Monitoring",
-   "group": "task"
+   "group": "task",
+   "icon": "🔥"
   },
   "copywriting": {
    "zh": "文案·脚本",
    "en": "Copywriting",
-   "group": "task"
+   "group": "task",
+   "icon": "✍️"
   },
   "video-edit": {
    "zh": "短视频剪辑",
    "en": "Video Editing",
-   "group": "task"
+   "group": "task",
+   "icon": "✂️"
   },
   "voice-tts": {
    "zh": "配音·口播",
    "en": "Voice & TTS",
-   "group": "task"
+   "group": "task",
+   "icon": "🎙️"
   },
   "marketing": {
    "zh": "营销自动化",
    "en": "Marketing",
-   "group": "task"
+   "group": "task",
+   "icon": "📈"
   },
   "travel": {
    "zh": "出国旅行",
    "en": "Travel Abroad",
-   "group": "task"
+   "group": "task",
+   "icon": "✈️"
   },
   "quant": {
    "zh": "量化交易·投资",
    "en": "Quant & Investing",
-   "group": "task"
+   "group": "task",
+   "icon": "📊"
   },
   "job": {
    "zh": "求职·招聘",
    "en": "Job & Hiring",
-   "group": "task"
+   "group": "task",
+   "icon": "📋"
   },
   "ecommerce": {
    "zh": "电商",
    "en": "E-commerce",
-   "group": "task"
+   "group": "task",
+   "icon": "🛒"
   },
   "accounts": {
    "zh": "账号管理",
    "en": "Accounts",
-   "group": "task"
+   "group": "task",
+   "icon": "🔑"
   },
   "design": {
    "zh": "设计·UI",
    "en": "Design",
-   "group": "feature"
+   "group": "feature",
+   "icon": "🎨"
   },
   "dev-coding": {
    "zh": "编程·开发",
    "en": "Coding & Dev",
-   "group": "feature"
+   "group": "feature",
+   "icon": "💻"
   },
   "memory-knowledge": {
    "zh": "记忆·知识库",
    "en": "Memory & Knowledge",
-   "group": "feature"
+   "group": "feature",
+   "icon": "🧠"
   },
   "workflow": {
    "zh": "工作流·自动化",
    "en": "Workflow",
-   "group": "feature"
+   "group": "feature",
+   "icon": "🔄"
   },
   "security": {
    "zh": "安全·审计",
    "en": "Security",
-   "group": "feature"
+   "group": "feature",
+   "icon": "🛡️"
   },
   "agents-roles": {
    "zh": "角色·人设",
    "en": "Roles & Personas",
-   "group": "feature"
+   "group": "feature",
+   "icon": "🎭"
   },
   "learn": {
    "zh": "教程·学习",
    "en": "Learning",
-   "group": "feature"
+   "group": "feature",
+   "icon": "📚"
   },
   "fun": {
    "zh": "娱乐",
    "en": "Fun",
-   "group": "feature"
+   "group": "feature",
+   "icon": "🐱"
   }
  },
  "plugins": [
