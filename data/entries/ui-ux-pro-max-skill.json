@@ -1,0 +1,27 @@
+{
+  "id": "ui-ux-pro-max-skill",
+  "name": "ui-ux-pro-max-skill",
+  "owner": "nextlevelbuilder",
+  "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+  "category": "skill",
+  "description": {
+    "en": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
+    "zh": "AI 设计智能 Skill：为跨平台构建专业 UI/UX 提供设计知识库（配色、字体、布局、图表等规则）。"
+  },
+  "install": "git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+  "ecosystems": [
+    { "id": "generic", "kind": "skill", "install": "git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill（按 README 导入对应工具）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 123336,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "nextlevelbuilder",
+  "tags": ["design", "ui-ux", "palette", "typography", "skill"],
+  "verified": false,
+  "status": "active"
+}

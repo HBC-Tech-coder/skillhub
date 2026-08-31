@@ -6,6 +6,22 @@
   <updated>2026-08-31T00:00:00Z</updated>
   <author><name>SkillHub</name></author>
   <entry>
+    <id>skillhub:system-prompts-and-models-of-ai-tools</id>
+    <title>system-prompts-and-models-of-ai-tools</title>
+    <link href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>AI 编程工具系统提示词与模型速查大全：覆盖 Augment Code、Claude Code、Cursor、Devin AI、Kiro、Lovable、Manus、NotionAI、Replit 等数十款工具。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:ui-ux-pro-max-skill</id>
+    <title>ui-ux-pro-max-skill</title>
+    <link href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>AI 设计智能 Skill：为跨平台构建专业 UI/UX 提供设计知识库（配色、字体、布局、图表等规则）。</summary>
+    <category term="skill"/>
+  </entry>
+  <entry>
     <id>skillhub:open-design</id>
     <title>open-design</title>
     <link href="https://github.com/nexu-io/open-design"/>
@@ -134,6 +150,14 @@
     <category term="skill"/>
   </entry>
   <entry>
+    <id>skillhub:wechat-openclaw-channel</id>
+    <title>wechat-openclaw-channel</title>
+    <link href="https://github.com/HenryXiaoYang/wechat-openclaw-channel"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>微信版 OpenClaw Channel（从开源项目 OpenClaw 抽取），现已同时支持 QClaw 与 WorkBuddy 方式登录。</summary>
+    <category term="tools"/>
+  </entry>
+  <entry>
     <id>skillhub:workbuddyskills</id>
     <title>WorkBuddy Skills Archive</title>
     <link href="https://github.com/infometa/workbuddyskills"/>
@@ -196,6 +220,14 @@
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>可弹出侧边栏：文件树 + 多格式预览，可弹出独立浏览器标签页拖到另一块屏幕。</summary>
     <category term="ui"/>
+  </entry>
+  <entry>
+    <id>skillhub:linkcode</id>
+    <title>linkcode</title>
+    <link href="https://github.com/arcboxlabs/linkcode"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>Codex App / WorkBuddy 的开源平替：支持 Codex、Claude Code、OpenCode、Pi 与 Grok Build。</summary>
+    <category term="dev"/>
   </entry>
   <entry>
     <id>skillhub:dsh-skill-picker</id>

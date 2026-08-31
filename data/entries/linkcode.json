@@ -1,0 +1,27 @@
+{
+  "id": "linkcode",
+  "name": "linkcode",
+  "owner": "arcboxlabs",
+  "url": "https://github.com/arcboxlabs/linkcode",
+  "category": "dev",
+  "description": {
+    "en": "Open-source alternative to Codex App / WorkBuddy, supporting Codex, Claude Code, OpenCode, Pi, and Grok Build.",
+    "zh": "Codex App / WorkBuddy 的开源平替：支持 Codex、Claude Code、OpenCode、Pi 与 Grok Build。"
+  },
+  "install": "git clone https://github.com/arcboxlabs/linkcode",
+  "ecosystems": [
+    { "id": "generic", "kind": "other", "install": "git clone https://github.com/arcboxlabs/linkcode（按 README 安装）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 140,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": null,
+  "author": "arcboxlabs",
+  "tags": ["agent-gui", "multi-engine", "codex", "grok", "open-source"],
+  "verified": false,
+  "status": "active"
+}

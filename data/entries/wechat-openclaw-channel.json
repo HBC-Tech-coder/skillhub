@@ -1,0 +1,27 @@
+{
+  "id": "wechat-openclaw-channel",
+  "name": "wechat-openclaw-channel",
+  "owner": "HenryXiaoYang",
+  "url": "https://github.com/HenryXiaoYang/wechat-openclaw-channel",
+  "category": "tools",
+  "description": {
+    "en": "WeChat channel extracted from the open-source project OpenClaw, now supporting both QClaw and WorkBuddy login methods.",
+    "zh": "微信版 OpenClaw Channel（从开源项目 OpenClaw 抽取），现已同时支持 QClaw 与 WorkBuddy 方式登录。"
+  },
+  "install": "git clone https://github.com/HenryXiaoYang/wechat-openclaw-channel",
+  "ecosystems": [
+    { "id": "workbuddy", "kind": "other", "install": "git clone https://github.com/HenryXiaoYang/wechat-openclaw-channel（按 README 配置）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 637,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": null,
+  "author": "HenryXiaoYang",
+  "tags": ["wechat", "channel", "openclaw", "qclaw", "bot"],
+  "verified": false,
+  "status": "active"
+}

@@ -3,7 +3,7 @@
  "url": "https://hub.hibcglobal.com",
  "source": "https://github.com/HBC-Tech-coder/skillhub",
  "updated": "2026-08-31",
- "count": 30,
+ "count": 34,
  "categories": {
   "agi": {
    "en": "AGI Architecture Exploration",
@@ -99,6 +99,79 @@
   }
  },
  "plugins": [
+  {
+   "id": "system-prompts-and-models-of-ai-tools",
+   "name": "system-prompts-and-models-of-ai-tools",
+   "owner": "x1xhlol",
+   "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+   "category": "docs",
+   "description": {
+    "en": "Comprehensive collection of system prompts and model references for AI coding tools: Augment Code, Claude Code, Cursor, Devin AI, Kiro, Lovable, Manus, NotionAI, Replit and dozens more.",
+    "zh": "AI 编程工具系统提示词与模型速查大全：覆盖 Augment Code、Claude Code、Cursor、Devin AI、Kiro、Lovable、Manus、NotionAI、Replit 等数十款工具。"
+   },
+   "install": "在线浏览 https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "other",
+     "install": "在线浏览 https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools（学习资料）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 143254,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": "GPL-3.0",
+   "author": "x1xhlol",
+   "tags": [
+    "system-prompts",
+    "models",
+    "reference",
+    "collection"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "ui-ux-pro-max-skill",
+   "name": "ui-ux-pro-max-skill",
+   "owner": "nextlevelbuilder",
+   "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+   "category": "skill",
+   "description": {
+    "en": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
+    "zh": "AI 设计智能 Skill：为跨平台构建专业 UI/UX 提供设计知识库（配色、字体、布局、图表等规则）。"
+   },
+   "install": "git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "skill",
+     "install": "git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill（按 README 导入对应工具）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 123336,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": "MIT",
+   "author": "nextlevelbuilder",
+   "tags": [
+    "design",
+    "ui-ux",
+    "palette",
+    "typography",
+    "skill"
+   ],
+   "verified": false,
+   "status": "active"
+  },
   {
    "id": "open-design",
    "name": "open-design",
@@ -688,6 +761,43 @@
    "status": "active"
   },
   {
+   "id": "wechat-openclaw-channel",
+   "name": "wechat-openclaw-channel",
+   "owner": "HenryXiaoYang",
+   "url": "https://github.com/HenryXiaoYang/wechat-openclaw-channel",
+   "category": "tools",
+   "description": {
+    "en": "WeChat channel extracted from the open-source project OpenClaw, now supporting both QClaw and WorkBuddy login methods.",
+    "zh": "微信版 OpenClaw Channel（从开源项目 OpenClaw 抽取），现已同时支持 QClaw 与 WorkBuddy 方式登录。"
+   },
+   "install": "git clone https://github.com/HenryXiaoYang/wechat-openclaw-channel",
+   "ecosystems": [
+    {
+     "id": "workbuddy",
+     "kind": "other",
+     "install": "git clone https://github.com/HenryXiaoYang/wechat-openclaw-channel（按 README 配置）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 637,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": null,
+   "author": "HenryXiaoYang",
+   "tags": [
+    "wechat",
+    "channel",
+    "openclaw",
+    "qclaw",
+    "bot"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "workbuddyskills",
    "name": "WorkBuddy Skills Archive",
    "owner": "infometa",
@@ -975,6 +1085,43 @@
     "sidebar",
     "file-tree",
     "preview"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "linkcode",
+   "name": "linkcode",
+   "owner": "arcboxlabs",
+   "url": "https://github.com/arcboxlabs/linkcode",
+   "category": "dev",
+   "description": {
+    "en": "Open-source alternative to Codex App / WorkBuddy, supporting Codex, Claude Code, OpenCode, Pi, and Grok Build.",
+    "zh": "Codex App / WorkBuddy 的开源平替：支持 Codex、Claude Code、OpenCode、Pi 与 Grok Build。"
+   },
+   "install": "git clone https://github.com/arcboxlabs/linkcode",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "other",
+     "install": "git clone https://github.com/arcboxlabs/linkcode（按 README 安装）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 140,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": null,
+   "author": "arcboxlabs",
+   "tags": [
+    "agent-gui",
+    "multi-engine",
+    "codex",
+    "grok",
+    "open-source"
    ],
    "verified": false,
    "status": "active"

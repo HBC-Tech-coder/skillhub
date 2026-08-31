@@ -1,0 +1,27 @@
+{
+  "id": "system-prompts-and-models-of-ai-tools",
+  "name": "system-prompts-and-models-of-ai-tools",
+  "owner": "x1xhlol",
+  "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+  "category": "docs",
+  "description": {
+    "en": "Comprehensive collection of system prompts and model references for AI coding tools: Augment Code, Claude Code, Cursor, Devin AI, Kiro, Lovable, Manus, NotionAI, Replit and dozens more.",
+    "zh": "AI 编程工具系统提示词与模型速查大全：覆盖 Augment Code、Claude Code、Cursor、Devin AI、Kiro、Lovable、Manus、NotionAI、Replit 等数十款工具。"
+  },
+  "install": "在线浏览 https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+  "ecosystems": [
+    { "id": "generic", "kind": "other", "install": "在线浏览 https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools（学习资料）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 143254,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": "GPL-3.0",
+  "author": "x1xhlol",
+  "tags": ["system-prompts", "models", "reference", "collection"],
+  "verified": false,
+  "status": "active"
+}

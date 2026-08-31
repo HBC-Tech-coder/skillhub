@@ -35,6 +35,17 @@ npx --yes serve site                 # 或任意静态服务器，浏览器打�
 cd server && node server.js          # 默认 4290 端口，见 server/README.md
 ```
 
+## dsh-market 镜像接入
+
+本仓库的 `data/plugins.json` 与 dshmarket 数据源同构，dsh-market 用户可把技能港挂为镜像（浏览全部目录；安装受 dsh-market 自身的 awesome-dsh-plugin 白名单约束，未收录来源会被拒绝安装）：
+
+```sh
+# 服务器版
+DSHM_REGISTRY_URL=https://hub.hibcglobal.com/plugins.json dsh web
+# GitHub Pages 镜像（服务器不可达时）
+DSHM_REGISTRY_URL=https://hbc-tech-coder.github.io/skillhub/plugins.json dsh web
+```
+
 ## 收录与投稿
 
 - 收录标准：可安装、描述属实、分类正确、在维护（同 awesome-dsh-plugin 标准）。
