@@ -83,14 +83,16 @@ header{background:var(--head-bg);backdrop-filter:blur(8px);border-bottom:1px sol
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px;margin-bottom:14px;}
 .panel h3{font-size:14px;margin-bottom:10px;display:flex;align-items:center;gap:7px;}
 
-/* ---------- 顶部横排筛选（tab 栏 + 自动轮播） ---------- */
+/* ---------- 顶部横排筛选（卡片式选项卡） ---------- */
 .filters-top{margin-bottom:4px;}
-.tabbar{display:flex;gap:4px;border:1px solid var(--line);border-radius:14px;background:var(--line-soft);padding:4px;}
-.tabbtn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:7px;height:38px;padding:0 10px;border:none;border-radius:10px;background:transparent;cursor:pointer;font-size:13.5px;font-weight:600;color:var(--sub);user-select:none;white-space:nowrap;transition:background .15s,color .15s,box-shadow .15s;}
+.tabcard{border:1px solid var(--line);border-radius:16px;background:var(--panel);box-shadow:0 1px 3px rgba(0,0,0,.05);overflow:hidden;}
+.tabbar{display:flex;gap:2px;border-bottom:1px solid var(--line);background:var(--line-soft);padding:6px 8px 0;}
+.tabbtn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:7px;height:40px;padding:0 10px;border:none;border-top:2px solid transparent;border-radius:10px 10px 0 0;background:transparent;cursor:pointer;font-size:13.5px;font-weight:600;color:var(--sub);user-select:none;white-space:nowrap;transition:background .15s,color .15s;}
 .tabbtn:hover{color:var(--text);}
-.tabbtn.on{background:var(--tabcolor, #5b5bd6);color:#fff;box-shadow:0 2px 8px color-mix(in srgb, var(--tabcolor, #5b5bd6) 35%, transparent);}
+.tabbtn.on{background:var(--panel);color:var(--tabcolor, #5b5bd6);border-top-color:var(--tabcolor, #5b5bd6);}
 .tabico{font-size:15px;}
-.chips-tab{min-height:36px;padding:8px 0 2px;}
+.tabbody{padding:10px 14px 12px;min-height:48px;}
+.chips-tab{padding:0;min-height:auto;}
 .chips{display:flex;flex-wrap:wrap;gap:7px;}
 .chip{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border:1px solid var(--line);border-radius:999px;background:var(--panel);cursor:pointer;font-size:13px;color:var(--sub);user-select:none;}
 .chip:hover{border-color:var(--accent);color:var(--text);}
