@@ -91,7 +91,7 @@ header{background:var(--head-bg);backdrop-filter:blur(8px);border-bottom:1px sol
 .tabbtn:hover{color:var(--text);}
 .tabbtn.on{background:var(--panel);color:var(--tabcolor, #5b5bd6);border-top-color:var(--tabcolor, #5b5bd6);}
 .tabico{font-size:15px;}
-.tabbody{padding:10px 14px 12px;min-height:48px;}
+.tabbody{padding:10px 14px 12px;height:92px;box-sizing:border-box;overflow-y:auto;}
 .chips-tab{padding:0;min-height:auto;}
 .chips{display:flex;flex-wrap:wrap;gap:7px;}
 .chip{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border:1px solid var(--line);border-radius:999px;background:var(--panel);cursor:pointer;font-size:13px;color:var(--sub);user-select:none;}
