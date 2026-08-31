@@ -1,0 +1,9 @@
+[Unit]
+Description=SkillHub 每日数据管线（爬取+AI推荐+打标+收录）
+
+[Timer]
+OnBootSec=15min
+OnCalendar=*-*-* 04:00:00
+
+[Install]
+WantedBy=timers.target

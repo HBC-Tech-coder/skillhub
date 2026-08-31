@@ -1,21 +1,15 @@
 #!/usr/bin/env bash
-# SkillHub 数据同步周期：构建 + 提交推送回 GitHub（服务器为源的管线）。
-# 由 skillhub-sync.timer 每天/每小时触发；需要 skillhub 用户对 GitHub 有推送权限
-# （部署时由 host owner 配置 GITHUB_TOKEN 或 deploy key，本脚本不内置任何凭据）。
+# SkillHub 每小时同步：构建 + 有变更则推送回 GitHub（服务器为源的管线）。
 set -euo pipefail
 APP=/opt/skillhub
 cd "$APP"
-# 每日推荐（有 DEEPSEEK_API_KEY 时生成，无则保留现有版本）
-node server/lib/recommend.js || true
-# AI 自动打标 + 自动收录（有 key 时；无 key 跳过）
-node server/lib/label.js || true
-node server/lib/ingest.js || true
 node scripts/build-plugins.js
 node scripts/export-csv.js
-if ! git diff --quiet data/plugins.json; then
-  git add data/plugins.json data/entries
+node scripts/build-site.js
+if ! git diff --quiet data/plugins.json data/skillhub.csv site/; then
+  git add data/plugins.json data/skillhub.csv data/feed.xml site/
   git -c user.name="skillhub-server" -c user.email="skillhub-server@hibcglobal.com" \
-      commit -m "data: 服务器侧数据同步 $(date -u +%Y-%m-%dT%H:%MZ)" || true
+      commit -m "data: 服务器每小时同步 $(date -u +%Y-%m-%dT%H:%MZ)" || true
   git push origin main || echo "push failed（检查 GITHUB_TOKEN/deploy key）"
 else
   echo "no data change"

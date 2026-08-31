@@ -1,0 +1,9 @@
+[Unit]
+Description=SkillHub 每日数据管线一次性任务
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=skillhub
+Group=skillhub
+ExecStart=/bin/bash /opt/skillhub/server/deploy/daily-cycle.sh
