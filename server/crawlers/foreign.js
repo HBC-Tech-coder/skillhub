@@ -6,6 +6,7 @@ const { searchRepos } = require('../lib/github.js');
 const { repoToDraft } = require('../lib/draft.js');
 
 const TOKEN = process.env.GITHUB_TOKEN || '';
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const QUERIES = {
   'claude-code': ['topic:claude-skills', 'topic:claude-skill', 'claude code skills in:name,description'],
   codex: ['topic:codex-skills', 'codex skills in:name,description'],
@@ -30,6 +31,7 @@ const NOISE = /interview|test|demo|example-only/i;
       } catch (e) {
         console.error(`[crawler:${eco}] ${q} failed: ${e.message}`);
       }
+      await sleep(3000);
     }
     const drafts = [...seen.values()].map((r) => repoToDraft(r, eco));
     const dir = path.resolve(__dirname, '..', '..', 'data', 'pending');
