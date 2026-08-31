@@ -3,7 +3,7 @@
  "url": "https://hub.hibcglobal.com",
  "source": "https://github.com/HBC-Tech-coder/skillhub",
  "updated": "2026-08-31",
- "count": 27,
+ "count": 30,
  "categories": {
   "agi": {
    "en": "AGI Architecture Exploration",
@@ -318,6 +318,44 @@
     "chinese",
     "multi-tool",
     "orchestration"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "ai-guide",
+   "name": "ai-guide",
+   "owner": "liyupi",
+   "url": "https://github.com/liyupi/ai-guide",
+   "category": "docs",
+   "description": {
+    "en": "AI resource encyclopedia and zero-basics Vibe Coding tutorial: OpenClaw guides, model playbooks (DeepSeek/GPT/Gemini/Claude/GLM), AI news, prompt collections, AI knowledge base (Agent Skills/RAG/MCP/A2A) and Harness Engineering coding tutorials.",
+    "zh": "程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程：OpenClaw 保姆级教程、大模型玩法（DeepSeek/GPT/Gemini/Claude/GLM）、最新 AI 资讯、Prompt 提示词大全、AI 知识百科（Agent Skills/RAG/MCP/A2A）与 Harness Engineering 编程教程。"
+   },
+   "install": "在线浏览 https://github.com/liyupi/ai-guide",
+   "ecosystems": [
+    {
+     "id": "generic",
+     "kind": "other",
+     "install": "在线浏览 https://github.com/liyupi/ai-guide（学习资料）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 19332,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": null,
+   "author": "liyupi",
+   "tags": [
+    "guide",
+    "tutorial",
+    "prompts",
+    "rag",
+    "mcp",
+    "vibe-coding"
    ],
    "verified": false,
    "status": "active"
@@ -797,6 +835,42 @@
    "status": "active"
   },
   {
+   "id": "zhijian-ai-bluebook-workbuddy-harness",
+   "name": "zhijian-ai-bluebook-workbuddy-harness",
+   "owner": "zjp1997720",
+   "url": "https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness",
+   "category": "docs",
+   "description": {
+    "en": "Zhijian AI Bluebook: dissects WorkBuddy's prompts, memory, plugins, experts, Skills and security boundaries.",
+    "zh": "智见 AI 蓝皮书：拆解 WorkBuddy 的提示词、记忆、插件、专家、Skill 与安全边界。"
+   },
+   "install": "在线浏览 https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness",
+   "ecosystems": [
+    {
+     "id": "workbuddy",
+     "kind": "other",
+     "install": "在线浏览 https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness（学习资料）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 196,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "other",
+   "license": null,
+   "author": "zjp1997720",
+   "tags": [
+    "bluebook",
+    "analysis",
+    "security",
+    "workbuddy"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "awesome-website-prompts-and-skills",
    "name": "awesome-website-prompts-and-skills",
    "owner": "TencentEdgeOne",
@@ -830,6 +904,42 @@
     "edgeone",
     "official",
     "challenge"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "rayskills",
+   "name": "rayskills",
+   "owner": "imraywang",
+   "url": "https://github.com/imraywang/rayskills",
+   "category": "skill",
+   "description": {
+    "en": "Practical Skill toolbox for AI Builders: 10 executable, verifiable, recoverable workflows, /ray routing plus a content-production pipeline straight into WeChat official account and X Articles drafts; works with Claude Code, Codex and WorkBuddy.",
+    "zh": "面向 AI Builder 的实战 Skill 工具箱：10 个可执行、可验证、可恢复的工作流，/ray 路由 + 内容生产管线直达公众号与 X Articles 草稿箱；支持 Claude Code、Codex 与 WorkBuddy。"
+   },
+   "install": "git clone https://github.com/imraywang/rayskills",
+   "ecosystems": [
+    {
+     "id": "workbuddy",
+     "kind": "skill",
+     "install": "git clone https://github.com/imraywang/rayskills（按 README 导入）"
+    }
+   ],
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 158,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": null,
+   "author": "imraywang",
+   "tags": [
+    "workflows",
+    "content",
+    "wechat",
+    "routing"
    ],
    "verified": false,
    "status": "active"

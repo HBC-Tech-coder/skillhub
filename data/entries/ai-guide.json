@@ -1,0 +1,27 @@
+{
+  "id": "ai-guide",
+  "name": "ai-guide",
+  "owner": "liyupi",
+  "url": "https://github.com/liyupi/ai-guide",
+  "category": "docs",
+  "description": {
+    "en": "AI resource encyclopedia and zero-basics Vibe Coding tutorial: OpenClaw guides, model playbooks (DeepSeek/GPT/Gemini/Claude/GLM), AI news, prompt collections, AI knowledge base (Agent Skills/RAG/MCP/A2A) and Harness Engineering coding tutorials.",
+    "zh": "程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程：OpenClaw 保姆级教程、大模型玩法（DeepSeek/GPT/Gemini/Claude/GLM）、最新 AI 资讯、Prompt 提示词大全、AI 知识百科（Agent Skills/RAG/MCP/A2A）与 Harness Engineering 编程教程。"
+  },
+  "install": "在线浏览 https://github.com/liyupi/ai-guide",
+  "ecosystems": [
+    { "id": "generic", "kind": "other", "install": "在线浏览 https://github.com/liyupi/ai-guide（学习资料）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 19332,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": null,
+  "author": "liyupi",
+  "tags": ["guide", "tutorial", "prompts", "rag", "mcp", "vibe-coding"],
+  "verified": false,
+  "status": "active"
+}

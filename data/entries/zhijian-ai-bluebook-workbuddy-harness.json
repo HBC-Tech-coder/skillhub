@@ -1,0 +1,27 @@
+{
+  "id": "zhijian-ai-bluebook-workbuddy-harness",
+  "name": "zhijian-ai-bluebook-workbuddy-harness",
+  "owner": "zjp1997720",
+  "url": "https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness",
+  "category": "docs",
+  "description": {
+    "en": "Zhijian AI Bluebook: dissects WorkBuddy's prompts, memory, plugins, experts, Skills and security boundaries.",
+    "zh": "智见 AI 蓝皮书：拆解 WorkBuddy 的提示词、记忆、插件、专家、Skill 与安全边界。"
+  },
+  "install": "在线浏览 https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness",
+  "ecosystems": [
+    { "id": "workbuddy", "kind": "other", "install": "在线浏览 https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness（学习资料）" }
+  ],
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 196,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "other",
+  "license": null,
+  "author": "zjp1997720",
+  "tags": ["bluebook", "analysis", "security", "workbuddy"],
+  "verified": false,
+  "status": "active"
+}

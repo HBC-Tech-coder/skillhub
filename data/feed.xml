@@ -54,6 +54,14 @@
     <category term="identity"/>
   </entry>
   <entry>
+    <id>skillhub:ai-guide</id>
+    <title>ai-guide</title>
+    <link href="https://github.com/liyupi/ai-guide"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程：OpenClaw 保姆级教程、大模型玩法（DeepSeek/GPT/Gemini/Claude/GLM）、最新 AI 资讯、Prompt 提示词大全、AI 知识百科（Agent Skills/RAG/MCP/A2A）与 Harness Engineering 编程教程。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
     <id>skillhub:awesome-dsh-plugin</id>
     <title>awesome-dsh-plugin</title>
     <link href="https://github.com/awesome-dsh-plugin/awesome-dsh-plugin"/>
@@ -158,12 +166,28 @@
     <category term="tools"/>
   </entry>
   <entry>
+    <id>skillhub:zhijian-ai-bluebook-workbuddy-harness</id>
+    <title>zhijian-ai-bluebook-workbuddy-harness</title>
+    <link href="https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>智见 AI 蓝皮书：拆解 WorkBuddy 的提示词、记忆、插件、专家、Skill 与安全边界。</summary>
+    <category term="docs"/>
+  </entry>
+  <entry>
     <id>skillhub:awesome-website-prompts-and-skills</id>
     <title>awesome-website-prompts-and-skills</title>
     <link href="https://github.com/TencentEdgeOne/awesome-website-prompts-and-skills"/>
     <updated>2026-08-31T00:00:00Z</updated>
     <summary>腾讯 EdgeOne 官方资源合集：给 AI 编程工具一个 Prompt 或 Skill，即可生成精美酷炫的网页，或带登录、支付、AI 能力的完整网站（WorkBuddy × EdgeOne AI Prompts × Skills 挑战赛官方作品池）。</summary>
     <category term="docs"/>
+  </entry>
+  <entry>
+    <id>skillhub:rayskills</id>
+    <title>rayskills</title>
+    <link href="https://github.com/imraywang/rayskills"/>
+    <updated>2026-08-31T00:00:00Z</updated>
+    <summary>面向 AI Builder 的实战 Skill 工具箱：10 个可执行、可验证、可恢复的工作流，/ray 路由 + 内容生产管线直达公众号与 X Articles 草稿箱；支持 Claude Code、Codex 与 WorkBuddy。</summary>
+    <category term="skill"/>
   </entry>
   <entry>
     <id>skillhub:dsh-popout-sidebar</id>

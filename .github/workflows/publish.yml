@@ -26,6 +26,8 @@ jobs:
         run: node scripts/build-plugins.js
       - name: Export CSV
         run: node scripts/export-csv.js
+      - name: Build item pages + sitemap
+        run: node scripts/build-site.js
       - name: Assemble dist (site + data)
         run: |
           mkdir -p dist

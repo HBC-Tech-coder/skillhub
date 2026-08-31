@@ -109,6 +109,7 @@
       <div class="row"><b>描述</b>${esc(i.description?.zh || '')}</div>
       <div class="row"><b>English</b>${esc(i.description?.en || '')}</div>
       <div class="row"><b>来源</b><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.url)}</a></div>
+      <div class="row"><b>详情页</b><a href="items/${esc(i.id)}.html">独立页面（可分享）↗</a></div>
       <div class="row"><b>星标</b>⭐ ${i.stars ?? '暂无数据'}${i.downloads != null ? ' · 下载 ' + i.downloads : ''}${i.license ? ' · ' + esc(i.license) : ''}</div>
       ${(i.tags || []).length ? `<div class="row"><b>标签</b>${i.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join(' ')}</div>` : ''}
       <div class="row"><b>安装</b></div>
