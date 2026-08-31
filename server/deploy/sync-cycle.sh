@@ -7,7 +7,11 @@ APP=/opt/skillhub
 cd "$APP"
 # 每日推荐（有 DEEPSEEK_API_KEY 时生成，无则保留现有版本）
 node server/lib/recommend.js || true
+# AI 自动打标 + 自动收录（有 key 时；无 key 跳过）
+node server/lib/label.js || true
+node server/lib/ingest.js || true
 node scripts/build-plugins.js
+node scripts/export-csv.js
 if ! git diff --quiet data/plugins.json; then
   git add data/plugins.json data/entries
   git -c user.name="skillhub-server" -c user.email="skillhub-server@hibcglobal.com" \

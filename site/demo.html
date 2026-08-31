@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>技能港 SkillHub（Demo 预览版）— 跨生态 AI 插件与技能聚合</title>
+<meta name="description" content="聚合 DSH · WorkBuddy · TRAE · MCP · Claude Code · Codex · Gemini 生态的插件与技能：说出你想做的事，找到能干的工具。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235b5bd6'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3E技%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="head">
+    <div class="logo">技</div>
+    <div class="brand">技能港 <small>SkillHub</small></div>
+    <div class="spacer"></div>
+    <button id="langBtn" class="iconbtn" title="中文 / English">EN</button>
+    <button id="themeBtn" class="iconbtn" title="切换 亮色/夜间 模式" aria-label="切换主题">🌙</button>
+  </div>
+</header>
+
+<section class="hero">
+  <h1 data-i18n="heroTitle">说出你想做的事，<b>找到能干的工具</b></h1>
+  <div class="search">
+    <span class="sicon" aria-hidden="true">🔍</span>
+    <input id="q" data-i18n-ph="searchPh" aria-label="搜索">
+  </div>
+  <div class="examples" id="examples"></div>
+  <div class="stats">
+    <div><b id="stCount">—</b><span data-i18n="stCount">收录条目</span></div>
+    <div><b id="stEco">—</b><span data-i18n="stEco">生态</span></div>
+    <div><b id="stScenes">—</b><span data-i18n="stScenes">用途场景</span></div>
+    <div><b id="stUpdate">—</b><span data-i18n="stUpdate">最近更新</span></div>
+  </div>
+</section>
+
+<main class="layout">
+  <section class="center">
+    <div class="filters-top">
+      <div class="fpanel">
+        <h3 data-i18n="scenes">按用途找</h3>
+        <div class="chips" id="sceneFilters"></div>
+      </div>
+      <div class="fpanel">
+        <h3 data-i18n="eco">生态</h3>
+        <div class="chips" id="ecoFilters"></div>
+      </div>
+    </div>
+
+    <div class="recblock" id="recBlock">
+      <h3>📱 <span data-i18n="rec">编辑推荐</span> <span class="note" data-i18n="recNote">—— 装了这几个就能…</span></h3>
+      <div class="recgrid" id="recGrid"></div>
+    </div>
+
+    <div class="toolbar">
+      <span id="resultInfo" class="resultinfo"></span>
+      <div class="sort" role="group" aria-label="排序">
+        <button data-sort="stars" data-i18n="sortStars">星标</button>
+        <button data-sort="added" data-i18n="sortNew">最新</button>
+        <button data-sort="name" data-i18n="sortName">名称</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" style="display:none" data-i18n="noMatch">没有匹配项，换个说法试试？</div>
+  </section>
+
+  <aside class="side side-right">
+    <div class="panel rank">
+      <h3>🔥 <span data-i18n="rank">热门榜</span></h3>
+      <div id="rank"></div>
+      <p class="note" data-i18n="rankNote">按 GitHub 星标排序（爬虫刷新）</p>
+    </div>
+    <div class="panel about">
+      <h3 data-i18n="about">关于技能港</h3>
+      <p class="about-txt" data-i18n="aboutTxt">跨生态插件与技能聚合目录。数据与站点完全开源，列出 ≠ 背书：安装第三方代码前请先查看源码。</p>
+      <div class="about-links">
+        <a id="srcLink" target="_blank" rel="noopener" data-i18n="repo">数据仓库</a>
+        <a href="https://github.com/HBC-Tech-coder/skillhub/blob/main/contrib/CONTRIBUTING.md" target="_blank" rel="noopener" data-i18n="submit">投稿</a>
+      </div>
+    </div>
+  </aside>
+</main>
+
+<div class="modal-bg" id="mbg"><div class="modal" id="modal" role="dialog" aria-modal="true"></div></div>
+
+<footer>
+  <div>技能港 SkillHub · 同一套站点部署于自有服务器与 GitHub Pages 镜像 · <span id="footVer"></span></div>
+  <div class="foot-links">
+    <a id="srcLink2" target="_blank" rel="noopener">数据仓库</a>
+    <span class="sep">·</span>
+    <a href="https://github.com/HBC-Tech-coder/skillhub/blob/main/contrib/CONTRIBUTING.md" target="_blank" rel="noopener">投稿</a>
+    <span class="sep">·</span>
+    <a href="feed.xml">RSS</a>
+    <span class="sep">·</span>
+    <span>待备案号</span>
+  </div>
+</footer>
+
+<script>window.SKILLHUB_DATASET='demo.json';window.SKILLHUB_RECS='demo-recommendations.json';window.SKILLHUB_IS_DEMO=true;</script>
+<script src="app.js"></script>
+</body>
+</html>

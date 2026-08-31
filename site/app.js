@@ -255,10 +255,12 @@
 
   async function load() {
     try {
+      const dataset = (typeof window !== 'undefined' && window.SKILLHUB_DATASET) || 'plugins.json';
+      const recFile = (typeof window !== 'undefined' && window.SKILLHUB_RECS) || 'recommendations.json';
       const [res, resS, resR] = await Promise.all([
-        fetch('plugins.json', { cache: 'no-store' }),
+        fetch(dataset, { cache: 'no-store' }),
         fetch('scenarios.json', { cache: 'no-store' }).catch(() => null),
-        fetch('recommendations.json', { cache: 'no-store' }).catch(() => null),
+        fetch(recFile, { cache: 'no-store' }).catch(() => null),
       ]);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       DATA = await res.json();

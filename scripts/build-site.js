@@ -90,7 +90,36 @@ ${urls.map((u) => `  <url><loc>${esc(u)}</loc><lastmod>${DATA.updated}</lastmod>
 </urlset>
 `;
   fs.writeFileSync(path.join(SITE, 'sitemap.xml'), sitemap);
+  buildDemo();
   console.log(`[site] ${DATA.plugins.length} item pages -> site/items/ ; sitemap.xml (${urls.length} urls)`);
+}
+
+// 精选 demo 数据集（Founder 审设计用）：site/demo.json + site/demo-recommendations.json
+const DEMO_IDS = [
+  'yt-dlp', 'bbdown', 'trendradar', 'ecommerce-visual-copywriting-skill', 'rayskills',
+  'wechat-openclaw-channel', 'serena', 'codebase-memory-mcp', 'context-mode',
+  'open-design', 'ui-ux-pro-max-skill', 'codedrobe-skills',
+  'graphify', 'superpowers-zh', 'caveman', 'agency-agents-zh',
+];
+function buildDemo() {
+  const plugins = DATA.plugins.filter((p) => DEMO_IDS.includes(p.id));
+  fs.writeFileSync(path.join(SITE, 'demo.json'), JSON.stringify({
+    name: DATA.name + '-demo', url: DATA.url, source: DATA.source, updated: DATA.updated,
+    count: plugins.length, categories: DATA.categories, scenarios: DATA.scenarios, plugins,
+  }, null, 1) + '\n');
+  let recs = null;
+  try {
+    const raw = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'recommendations.json'), 'utf8'));
+    recs = { updated: raw.updated, source: raw.source, entries: (raw.entries || []).filter((r) => (r.itemIds || []).every((id) => DEMO_IDS.includes(id))) };
+  } catch { /* 无推荐文件时忽略 */ }
+  if (recs && recs.entries.length) fs.writeFileSync(path.join(SITE, 'demo-recommendations.json'), JSON.stringify(recs, null, 1) + '\n');
+  // demo.html 由 index.html 注入数据集覆盖生成（保持单一模板源）
+  const index = fs.readFileSync(path.join(SITE, 'index.html'), 'utf8');
+  const demoHtml = index
+    .replace(/<title>.*?<\/title>/, '<title>技能港 SkillHub（Demo 预览版）— 跨生态 AI 插件与技能聚合</title>')
+    .replace('<script src="app.js"></script>', "<script>window.SKILLHUB_DATASET='demo.json';window.SKILLHUB_RECS='demo-recommendations.json';window.SKILLHUB_IS_DEMO=true;</script>\n<script src=\"app.js\"></script>");
+  fs.writeFileSync(path.join(SITE, 'demo.html'), demoHtml);
+  console.log(`[site] demo 数据集 ${plugins.length} 条 -> site/demo.json + demo.html${recs && recs.entries.length ? '（含 ' + recs.entries.length + ' 条推荐）' : ''}`);
 }
 
 buildPages();

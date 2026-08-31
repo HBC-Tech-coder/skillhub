@@ -34,4 +34,13 @@ function intentIndex() {
   return idx;
 }
 
-module.exports = { SCENARIOS, intentIndex };
+// 场景 → 默认分类（LLM 打标自动收录时用；人工投稿仍自选 category）
+const CATEGORY_BY_SCENARIO = {
+  'content-social': 'workflow', 'video-download': 'tools', 'trends-monitor': 'tools',
+  copywriting: 'workflow', 'video-edit': 'tools', 'voice-tts': 'voice',
+  marketing: 'workflow', design: 'ui', 'dev-coding': 'dev', 'memory-knowledge': 'memory',
+  workflow: 'workflow', accounts: 'tools', learn: 'docs', fun: 'fun',
+  ecommerce: 'tools', 'agents-roles': 'identity', 'science-research': 'skill', security: 'security',
+};
+
+module.exports = { SCENARIOS, intentIndex, CATEGORY_BY_SCENARIO };
