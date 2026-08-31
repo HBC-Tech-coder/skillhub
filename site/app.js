@@ -25,7 +25,13 @@
       detail: '独立详情页 ↗', noMatch: '没有匹配项，换个说法试试？', verified: '已核验',
       sortStars: '星标', sortNew: '最新', sortName: '名称', results: '共 {n} 条',
       intentHit: '按意图匹配', intentNo: '关键词匹配',
-      examples: ['帮我下载无水印的B站、抖音视频的 Skill', '新媒体运营该装哪些工具？', '自动抓取热点并写公众号文案', '给 agent 加长期记忆'],
+      hotTitle: '大家最近在装', hotNote: '—— 按热度与新鲜度轮播，点击可查看',
+      examples: [
+        '帮我找能下载无水印 B站、抖音视频的 Skill，最好支持批量下载和字幕',
+        '我是做新媒体运营的，每天要盯全网热点、写公众号和小红书文案，该装哪些工具？',
+        '有没有能自动抓热点、写口播稿、再一键分发到公众号和 X 的组合？',
+        '我想给 Claude Code 加长期记忆和代码库知识图谱，推荐几个？',
+      ],
       modalInstall: '安装', modalDesc: '描述', modalEn: 'English', modalSrc: '来源', modalStars: '星标', modalTags: '标签',
     },
     en: {
@@ -40,7 +46,13 @@
       detail: 'Standalone page ↗', noMatch: 'No matches — try rephrasing?', verified: 'Verified',
       sortStars: 'Stars', sortNew: 'Newest', sortName: 'Name', results: '{n} results',
       intentHit: 'matched by intent', intentNo: 'keyword match',
-      examples: ['A skill to download watermark-free Bilibili/Douyin videos', 'What should a social media operator install?', 'Auto-grab hot topics and draft WeChat posts', 'Give my agent long-term memory'],
+      hotTitle: 'Trending now', hotNote: '— rotating by popularity & freshness, click to view',
+      examples: [
+        'Find me a skill that downloads watermark-free Bilibili / Douyin videos, ideally with batch mode and subtitles',
+        'I run social media accounts — what should I install to track trends and draft WeChat / Xiaohongshu posts daily?',
+        'Is there a combo that grabs hot topics, writes voiceover scripts, and publishes to WeChat and X automatically?',
+        'I want long-term memory plus a codebase knowledge graph for Claude Code — what do you recommend?',
+      ],
       modalInstall: 'Install', modalDesc: 'About', modalEn: '中文', modalSrc: 'Source', modalStars: 'Stars', modalTags: 'Tags',
     },
   };
@@ -52,7 +64,11 @@
   let DATA = null;        // plugins.json
   let SCEN = null;        // scenarios.json（含意图词表）
   let RECS = null;        // recommendations.json
+  let HOT = null;         // hot.json（热门速览）
   let lang = 'zh';
+  let hotPage = 0;
+  let hotTimer = null;
+  let hotPausedUntil = 0;
   const state = { q: '', eco: '', scene: '', sort: 'stars', tab: 'profession' };
   const TAB_INFO = [
     { id: 'profession', icon: '💼', color: '#4d7cfe', labelKey: 'scenesProfession' },
@@ -195,6 +211,40 @@
       </div>`).join('');
   }
 
+  /* ---------- 热门速览（两行 × 一批，慢速轮播） ---------- */
+  function hotCols() {
+    const w = window.innerWidth || 1200;
+    return w >= 980 ? 6 : (w >= 640 ? 4 : 3);
+  }
+  function renderHot() {
+    const box = document.getElementById('hotBlock');
+    const strip = document.getElementById('hotStrip');
+    if (!HOT || !HOT.items || !HOT.items.length) { box.style.display = 'none'; return; }
+    const items = HOT.items.map((id) => DATA.plugins.find((x) => x.id === id)).filter(Boolean);
+    if (!items.length) { box.style.display = 'none'; return; }
+    box.style.display = '';
+    const size = hotCols() * 2;
+    const pages = Math.max(1, Math.ceil(items.length / size));
+    hotPage = hotPage % pages;
+    const view = items.slice(hotPage * size, hotPage * size + size);
+    strip.style.gridTemplateColumns = `repeat(${hotCols()}, 1fr)`;
+    strip.innerHTML = view.map((i) => {
+      let ico = '';
+      if (SCEN && i.scenarios && i.scenarios[0] && SCEN.scenarios[i.scenarios[0]]) ico = SCEN.scenarios[i.scenarios[0]].icon || '';
+      return `<div class="hotitem" onclick="openModal('${esc(i.id)}')"><span class="hi-ico">${ico}</span><span class="hi-name">${esc(i.name)}</span><span class="hi-star">⭐${i.stars ?? '—'}</span></div>`;
+    }).join('');
+  }
+  function startHotRotation() {
+    if (hotTimer) return;
+    hotTimer = setInterval(() => {
+      if (Date.now() < hotPausedUntil) return;
+      hotPage++;
+      const strip = document.getElementById('hotStrip');
+      if (strip) { strip.classList.remove('fadein'); void strip.offsetWidth; strip.classList.add('fadein'); }
+      renderHot();
+    }, 12000);
+  }
+
   function renderRank() {
     const ranked = DATA.plugins.filter((i) => i.stars != null).sort((a, b) => b.stars - a.stars).slice(0, 10);
     document.getElementById('rank').innerHTML = ranked.length
@@ -286,11 +336,14 @@
     q.addEventListener('input', (e) => { state.q = e.target.value; render(); });
     q.addEventListener('keydown', (e) => { if (e.key === 'Enter') scrollToResults(); });
     document.getElementById('searchBtn').addEventListener('click', scrollToResults);
-    // 用户交互时暂停 tab 自动轮播 20 秒
+    // 用户交互时暂停 tab 自动轮播 20 秒；热门速览交互暂停 30 秒
     ['tabbar', 'tabChips', 'q', 'examples'].forEach((id) => {
       const el = document.getElementById(id);
       if (el) el.addEventListener('pointerdown', () => { rotatePausedUntil = Date.now() + 20000; });
     });
+    const hotStripEl = document.getElementById('hotStrip');
+    if (hotStripEl) hotStripEl.addEventListener('pointerdown', () => { hotPausedUntil = Date.now() + 30000; });
+    window.addEventListener('resize', () => renderHot());
     document.getElementById('themeBtn').addEventListener('click', toggleTheme);
     document.getElementById('langBtn').addEventListener('click', () => setLang(lang === 'zh' ? 'en' : 'zh'));
     document.querySelectorAll('.sort button').forEach((b) => b.addEventListener('click', () => { state.sort = b.dataset.sort; renderSort(); render(); }));
@@ -306,16 +359,19 @@
     try {
       const dataset = (typeof window !== 'undefined' && window.SKILLHUB_DATASET) || 'plugins.json';
       const recFile = (typeof window !== 'undefined' && window.SKILLHUB_RECS) || 'recommendations.json';
-      const [res, resS, resR] = await Promise.all([
+      const hotFile = (typeof window !== 'undefined' && window.SKILLHUB_HOT) || 'hot.json';
+      const [res, resS, resR, resH] = await Promise.all([
         fetch(dataset, { cache: 'no-store' }),
         fetch('scenarios.json', { cache: 'no-store' }).catch(() => null),
         fetch(recFile, { cache: 'no-store' }).catch(() => null),
+        fetch(hotFile, { cache: 'no-store' }).catch(() => null),
       ]);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       DATA = await res.json();
       if (!Array.isArray(DATA.plugins)) throw new Error('plugins.json 缺少 plugins 数组');
       if (resS && resS.ok) SCEN = await resS.json();
       if (resR && resR.ok) RECS = await resR.json();
+      if (resH && resH.ok) HOT = await resH.json();
       document.getElementById('footVer').textContent = `${lang === 'zh' ? '数据版本' : 'Data'} ${DATA.updated || '?'} · ${DATA.count} ${lang === 'zh' ? '条' : 'entries'}`;
       const src = DATA.source;
       document.getElementById('srcLink').href = src;
@@ -323,7 +379,9 @@
       try { lang = localStorage.getItem('skillhub-lang') || 'zh'; } catch (e) { /* ignore */ }
       setLang(lang);
       renderSort();
+      renderHot();
       startRotation();
+      startHotRotation();
       const m = location.hash.match(/^#item\/(.+)$/);
       if (m && DATA.plugins.some((x) => x.id === m[1])) openModal(decodeURIComponent(m[1]));
     } catch (err) {
