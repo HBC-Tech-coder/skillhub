@@ -48,14 +48,24 @@ function readBody(req, limit) {
 function ipOf(req) {
   return (req.headers['x-real-ip'] || req.socket.remoteAddress || '').split(',')[0].trim();
 }
+function isHttps(req) {
+  return String(req.headers['x-forwarded-proto'] || '').split(',')[0].trim().toLowerCase() === 'https';
+}
 function originOk(req) {
-  // 变更类请求的 CSRF 防线：带 Origin 时其 host 必须与请求 host 一致（配合 SameSite=Strict cookie）
+  // 变更类请求的 CSRF 防线（配合 SameSite=Strict cookie）：
+  //   带 Origin 时：协议合法、HTTPS 前端必须 https、host 与请求 host 一致；无 Origin（非浏览器客户端）放行。
   const o = req.headers.origin;
   if (!o) return true;
-  try { return new URL(o).host === req.headers.host; } catch { return false; }
+  let u;
+  try { u = new URL(o); } catch { return false; }
+  if (u.protocol !== 'https:' && u.protocol !== 'http:') return false;
+  if (isHttps(req) && u.protocol !== 'https:') return false;
+  return u.host === req.headers.host;
 }
-function setAuthCookie(res, token) {
-  res.setHeader('Set-Cookie', admin.COOKIE_NAME + '=' + token + '; Path=/; HttpOnly; SameSite=Strict; Max-Age=43200');
+function setAuthCookie(res, req, token) {
+  // 生产经 nginx TLS 终止 + X-Forwarded-Proto → 加 Secure；loopback http 调试不加（保持可用）。
+  const secure = isHttps(req) ? '; Secure' : '';
+  res.setHeader('Set-Cookie', admin.COOKIE_NAME + '=' + token + '; Path=/; HttpOnly; SameSite=Strict; Max-Age=43200' + secure);
 }
 function clearAuthCookie(res) {
   res.setHeader('Set-Cookie', admin.COOKIE_NAME + '=; Path=/; HttpOnly; SameSite=Strict; Max-Age=0');
@@ -92,7 +102,7 @@ async function handlePanel(req, res, url) {
     admin.loginOk(ip);
     const role = st.account.mustChange ? 'mustChange' : 'admin';
     const token = admin.createSession(role);
-    setAuthCookie(res, token);
+    setAuthCookie(res, req, token);
     return json(res, 200, { ok: true, user: st.account.user, mustChange: role === 'mustChange' });
   }
 
@@ -267,7 +277,13 @@ const server = http.createServer(async (req, res) => {
     const item = data.plugins.find((x) => x.id === id);
     return item ? json(res, 200, item) : json(res, 404, { error: 'not found' });
   }
-  if (p.startsWith('/api/panel/')) return handlePanel(req, res, url);
+  if (p.startsWith('/api/panel/')) {
+    // handlePanel 为 async：同步 throw 会成为 rejected promise，必须 .catch；
+    // fail-closed：账号状态损坏/不可读时面板整体 503，绝不重置为默认口令，公开站点不受影响。
+    return handlePanel(req, res, url).catch(() => {
+      try { json(res, 503, { error: 'ADMIN_STATE_UNAVAILABLE', code: 'STATE_ERROR' }); } catch { /* res 已结束则忽略 */ }
+    });
+  }
   if (p.startsWith('/api/admin/')) return handleAdmin(req, res, url);
   if (p === '/admin' || p === '/admin/') {
     fs.readFile(path.join(SITE_DIR, 'admin.html'), (err, buf) => {
@@ -294,4 +310,9 @@ const server = http.createServer(async (req, res) => {
 server.listen(PORT, HOST, () => {
   console.log(`[skillhub] listening http://${HOST}:${PORT}`);
   console.log(`[skillhub] admin ${ADMIN_TOKEN ? 'enabled (loopback + token)' : 'DISABLED (set SKILLHUB_ADMIN_TOKEN)'}`);
+});
+
+// 防御：未处理拒绝只记日志、不打崩整站（公开站点与检索 API 必须保持在线）
+process.on('unhandledRejection', (err) => {
+  console.error('[skillhub] unhandledRejection:', err && err.message ? err.message : err);
 });

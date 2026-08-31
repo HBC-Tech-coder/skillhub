@@ -13,6 +13,7 @@
 3. nginx：把 `skillhub.nginx.conf` 作为**新 vhost** 合入，`nginx -t` 通过后 reload；TLS 用 certbot 补（免费证书，不要动其他域名证书）。
 4. DNS（由 DNS owner 执行）：阿里云云解析 `hub.hibcglobal.com` A → `39.105.17.219`。
 5. 启用同步周期：`cp skillhub-sync.timer skillhub-sync.service skillhub-daily.timer skillhub-daily.service skillhub-tick.timer skillhub-tick.service /etc/systemd/system/ && systemctl daemon-reload && systemctl enable --now skillhub-sync.timer skillhub-daily.timer skillhub-tick.timer`——每小时：构建 → 有变更则 commit+push 回 GitHub；每天 04:00：7 生态爬取 + AI 每日推荐 + AI 打标 + 自动收录 + push；每 5 分钟 tick：消费超管后台"立即执行"请求并按后台配置触发到期任务（需要 `DEEPSEEK_API_KEY` 与 `GITHUB_TOKEN`，经受保护的 EnvironmentFile 注入，不落任何共享文件）。三个周期脚本都先经 `scripts/lib/pipeline-gate.js` 门禁判定（超管后台配置为调度权威），重复触发安全。
+   - **Git push 契约**：周期脚本优先调用 `SKILLHUB_GIT_ADAPTER`（若配置且可执行，宿主安全适配器）；否则用 `GIT_ASKPASS=server/deploy/git-askpass.sh` + `https://x-access-token@github.com` 推送——token 只存在于环境变量与 askpass 脚本，**绝不进入命令行参数/ps**。如宿主为 sync/daily 单元配置过 Git 适配 drop-in，请给 tick 单元配置同样内容，三条触发路径（sync/daily/tick）共享同一环境。
 6. 验证：`curl -s http://127.0.0.1:4290/api/health`；`curl -s https://hub.hibcglobal.com/plugins.json`；浏览器打开 `https://hub.hibcglobal.com/admin`（超管后台登录页）。
 
 ## 超管后台（Founder 使用）

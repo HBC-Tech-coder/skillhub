@@ -31,9 +31,17 @@ fi
 git add data/plugins.json data/skillhub.csv data/feed.xml data/recommendations-history.json site/
 git -c user.name="skillhub-server" -c user.email="skillhub-server@hibcglobal.com" \
     commit -m "data: 服务器每小时同步 $(date -u +%Y-%m-%dT%H:%MZ)" || true
-if [ -n "${GITHUB_TOKEN:-}" ]; then
-  git -c "http.extraHeader=Authorization: Bearer ${GITHUB_TOKEN}" push origin main \
-    || { echo "[sync] PUSH FAILED（检查 GITHUB_TOKEN 权限）"; exit 1; }
+
+# push：优先宿主安全 Git 适配器（SKILLHUB_GIT_ADAPTER，可经 runtime.env 或 unit drop-in 注入，
+#       sync/daily/tick 三条触发路径继承同一环境）；否则用 GIT_ASKPASS 提供凭据，
+#       token 只在环境变量与 askpass 脚本中，绝不进入命令行参数/ps。
+if [ -n "${SKILLHUB_GIT_ADAPTER:-}" ] && [ -x "$SKILLHUB_GIT_ADAPTER" ]; then
+  "$SKILLHUB_GIT_ADAPTER" \
+    || { echo "[sync] PUSH FAILED（宿主适配器返回非零）"; exit 1; }
+elif [ -n "${SKILLHUB_GIT_TOKEN:-${GITHUB_TOKEN:-}}" ]; then
+  GIT_TERMINAL_PROMPT=0 GIT_ASKPASS="$APP/server/deploy/git-askpass.sh" \
+    git push "https://x-access-token@github.com/HBC-Tech-coder/skillhub.git" main \
+    || { echo "[sync] PUSH FAILED（检查 token 权限）"; exit 1; }
 else
   echo "[sync] GITHUB_TOKEN 未配置，跳过 push"
   exit 1

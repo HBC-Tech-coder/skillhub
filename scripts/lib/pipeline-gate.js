@@ -16,7 +16,14 @@ const LAST_FILE = path.join(OPS, 'last-runs.json');
 const RUNLOG = path.join(OPS, 'runlog.jsonl');
 
 function loadState() {
-  try { return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8')); } catch { return null; }
+  let raw;
+  try { raw = fs.readFileSync(STATE_FILE, 'utf8'); }
+  catch (e) {
+    // ENOENT=从未配置（旧行为，按默认放行）；其它读取失败 fail-closed（跳过并告警）
+    return e.code === 'ENOENT' ? null : { __error: 'unreadable (' + (e.code || e.message) + ')' };
+  }
+  try { return JSON.parse(raw.replace(/^\uFEFF/, '')); } // 容忍 BOM
+  catch (e) { return { __error: 'corrupted JSON' }; }
 }
 function loadLast() {
   try { return JSON.parse(fs.readFileSync(LAST_FILE, 'utf8')); } catch { return {}; }
@@ -33,6 +40,10 @@ function hhmm(now) {
   const d = now || new Date();
   return String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
 }
+// 时间一致性：gate 与 tick/systemd 定时器同机、同本地时区（CST），统一用 new Date() 本地时间。
+// 判定用"到期以来"（due-since）而非分钟精确相等：tick 每 5 分钟、systemd 每日 04:00，
+// 精确相等会让 02:01 这类时刻永远不触发。任务在时间点之后的第一个触发点执行（≤5 分钟偏差），
+// 当日已成功执行（last-runs 日期 == 今天）则不再重复。
 
 // 返回 {ok:bool, reason:string}
 function shouldRun(task, now) {
@@ -40,7 +51,8 @@ function shouldRun(task, now) {
   // 超管后台"立即执行"请求：tick 调度器带 SKILLHUB_FORCE=1 触发，绕过开关/时间判定
   if (process.env.SKILLHUB_FORCE === '1') return { ok: true, reason: 'forced by admin request' };
   const cfg = loadState();
-  // 无配置（从未打开过后台）→ 按默认放行，保持旧行为
+  // 无配置（从未打开过后台）→ 按默认放行，保持旧行为；配置损坏 → fail-closed 跳过（不违背管理员意图）
+  if (cfg && cfg.__error) return { ok: false, reason: 'config ' + cfg.__error + ' — skipping (fail closed)' };
   if (!cfg || !cfg.pipeline) return { ok: true, reason: 'no config, default allow' };
   const p = cfg.pipeline;
   const last = loadLast();
@@ -54,16 +66,16 @@ function shouldRun(task, now) {
   if (task === 'daily') {
     if (p.dailyEnabled === false) return { ok: false, reason: 'daily disabled by admin' };
     const time = p.dailyTime || '04:00';
-    if (hhmm(t) !== time) return { ok: false, reason: 'daily scheduled at ' + time + ', now ' + hhmm(t) };
+    if (hhmm(t) < time) return { ok: false, reason: 'daily scheduled at ' + time + ', now ' + hhmm(t) };
     if (last.daily === todayStr(t)) return { ok: false, reason: 'daily already ran today' };
-    return { ok: true, reason: 'due' };
+    return { ok: true, reason: 'due since ' + time + ' (now ' + hhmm(t) + ')' };
   }
   if (task === 'promo') {
     if (p.promoEnabled === false) return { ok: false, reason: 'promo disabled by admin' };
     const time = p.promoTime || '05:00';
-    if (hhmm(t) !== time) return { ok: false, reason: 'promo scheduled at ' + time + ', now ' + hhmm(t) };
+    if (hhmm(t) < time) return { ok: false, reason: 'promo scheduled at ' + time + ', now ' + hhmm(t) };
     if (last.promo === todayStr(t)) return { ok: false, reason: 'promo already ran today' };
-    return { ok: true, reason: 'due' };
+    return { ok: true, reason: 'due since ' + time + ' (now ' + hhmm(t) + ')' };
   }
   return { ok: false, reason: 'unknown task ' + task };
 }

@@ -8,3 +8,8 @@ User=skillhub
 Group=skillhub
 EnvironmentFile=/opt/skillhub/.ops/runtime.env
 ExecStart=/usr/bin/node /opt/skillhub/scripts/pipeline-scheduler.js
+# 调度器同步等待任务完成并传播退出码（不用 detached/unref，不放松 KillMode）；
+# 每日管线（爬取+打标+构建+推送）最长可达数十分钟，禁用默认 90s 超时。
+TimeoutStartSec=0
+# 宿主注意：如为 sync/daily 单元配置了安全 Git 适配 drop-in（SKILLHUB_GIT_ADAPTER 或
+# GIT_* 环境），请给本单元配置同样内容，保证 tick 触发的管线与既有定时器同路径。

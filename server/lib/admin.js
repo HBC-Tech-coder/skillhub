@@ -54,14 +54,31 @@ function defaultState() {
 }
 
 let state = null;
+let stateError = null;
+// 状态加载 fail-closed：
+//   ENOENT（首次运行）→ 创建默认 admin/admin888（mustChange）；
+//   其它读取/解析错误 → 保留原文件、置 stateError 并抛出，面板返回 503，绝不重置为默认口令。
 function loadState() {
   ensureOps();
   if (state) return state;
+  if (stateError) throw stateError;
+  let raw;
   try {
-    state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
-  } catch {
-    state = defaultState();
-    saveState();
+    raw = fs.readFileSync(STATE_FILE, 'utf8');
+  } catch (e) {
+    if (e.code === 'ENOENT') {
+      state = defaultState();
+      saveState();
+      return state;
+    }
+    stateError = new Error('admin state unreadable (' + (e.code || e.message) + ') — file preserved, no reset');
+    throw stateError;
+  }
+  try {
+    state = JSON.parse(raw.replace(/^\uFEFF/, '')); // 容忍手写文件 BOM；语义损坏仍 fail-closed
+  } catch (e) {
+    stateError = new Error('admin state corrupted — file preserved, no reset to default password');
+    throw stateError;
   }
   applyKeysToEnv();
   return state;
@@ -77,10 +94,16 @@ function saveState() {
 }
 
 // data/.ops/app.env：供 sync/daily 周期脚本 source（脚本是 bash，读不了 JSON）。
+// 双重防护：① 密钥字符集严格校验（仅字母数字 . _ -）——不合法直接拒绝，不落盘；
+//           ② 写入时单引号包裹 + ' 转义，即使未来放宽校验也不会产生 shell 注入。
+const KEY_CHARSET_RE = /^[A-Za-z0-9._-]+$/;
+function shellQuote(s) {
+  return "'" + String(s).replace(/'/g, "'\\''") + "'";
+}
 function writeAppEnv() {
   const lines = [];
-  if (state.keys.deepseek) lines.push('DEEPSEEK_API_KEY=' + state.keys.deepseek);
-  if (state.keys.github) lines.push('GITHUB_TOKEN=' + state.keys.github);
+  if (state.keys.deepseek) lines.push('DEEPSEEK_API_KEY=' + shellQuote(state.keys.deepseek));
+  if (state.keys.github) lines.push('GITHUB_TOKEN=' + shellQuote(state.keys.github));
   fs.writeFileSync(APP_ENV, lines.join('\n') + (lines.length ? '\n' : ''), { mode: 0o600 });
 }
 
@@ -196,12 +219,18 @@ function saveConfig(patch) {
   if (patch && patch.keys) {
     const k = patch.keys;
     if (typeof k.deepseek === 'string' && k.deepseek.trim() && k.deepseek !== '__KEEP__') {
-      if (k.deepseek.length > 300 || /[\r\n]/.test(k.deepseek)) throw new Error('DeepSeek key 非法');
-      state.keys.deepseek = k.deepseek.trim();
+      const v = k.deepseek.trim();
+      if (v.length < 8 || v.length > 300 || !KEY_CHARSET_RE.test(v)) {
+        throw new Error('DeepSeek key 非法：仅允许 8-300 位字母/数字/点/下划线/连字符（防 shell 注入）');
+      }
+      state.keys.deepseek = v;
     }
     if (typeof k.github === 'string' && k.github.trim() && k.github !== '__KEEP__') {
-      if (k.github.length > 300 || /[\r\n]/.test(k.github)) throw new Error('GitHub token 非法');
-      state.keys.github = k.github.trim();
+      const v = k.github.trim();
+      if (v.length < 8 || v.length > 300 || !KEY_CHARSET_RE.test(v)) {
+        throw new Error('GitHub token 非法：仅允许 8-300 位字母/数字/点/下划线/连字符（防 shell 注入）');
+      }
+      state.keys.github = v;
     }
   }
   if (patch && patch.pipeline) {
