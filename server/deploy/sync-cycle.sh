@@ -25,8 +25,13 @@ node scripts/build-plugins.js
 node scripts/export-csv.js
 node scripts/build-site.js
 if git diff --quiet data/plugins.json data/skillhub.csv site/; then
-  echo "[sync] $(date -u +%T) no data change"
-  exit 0
+  # 无新变更——但本地可能有历史遗留的"已提交未推送"数据（如 push 失败后的 066ecc9），
+  # 若本地领先远端仍需补推，否则数据将卡在服务器直到下一次新变更。
+  if [ "$(git rev-parse @ 2>/dev/null)" = "$(git rev-parse @{u} 2>/dev/null)" ]; then
+    echo "[sync] $(date -u +%T) no data change"
+    exit 0
+  fi
+  echo "[sync] $(date -u +%T) no new change but local ahead of origin, pushing pending commits"
 fi
 git add data/plugins.json data/skillhub.csv data/feed.xml data/recommendations-history.json site/
 git -c user.name="skillhub-server" -c user.email="skillhub-server@hibcglobal.com" \
