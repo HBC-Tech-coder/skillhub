@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const { CATEGORY_BY_SCENARIO } = require('../../scripts/lib/scenarios.js');
+const { localDate } = require('../../scripts/lib/dates.js');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const PENDING_DIR = path.join(ROOT, 'data', 'pending');
@@ -31,7 +32,7 @@ function main() {
       (d.items || []).forEach((i) => { if (!byId[i.id]) byId[i.id] = i; });
     } catch { /* ignore */ }
   }
-  const today = new Date().toISOString().slice(0, 10);
+  const today = localDate(); // 本地日历日（勿用 UTC）
   // URL 级去重：已收录条目（含不同 slug 的同仓库）不重复入库
   const existingUrls = new Set();
   for (const f of fs.readdirSync(ENTRIES_DIR)) {

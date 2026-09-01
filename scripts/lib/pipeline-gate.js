@@ -8,6 +8,7 @@
 //       配合 flock 互斥，超管 UI 的开关/间隔/时间即唯一权威调度配置。
 const fs = require('fs');
 const path = require('path');
+const { localDate } = require('./dates');
 
 const ROOT = path.join(__dirname, '..', '..');
 const OPS = path.join(ROOT, 'data', '.ops');
@@ -33,8 +34,10 @@ function saveLast(last) {
   fs.writeFileSync(LAST_FILE, JSON.stringify(last, null, 2), { mode: 0o600 });
 }
 function todayStr(now) {
-  const d = now || new Date();
-  return d.toISOString().slice(0, 10);
+  // 本地日历日（与 hhmm() 的本地时间一致；生产主机 Asia/Shanghai）。
+  // 修正历史缺陷：原 toISOString().slice(0,10) 取 UTC 日，本地 00:00–07:59 记账成前一天，
+  // 同一天 08:05 后 daily/promo 又被判"到期"→ 模型管线重复执行。
+  return localDate(now);
 }
 function hhmm(now) {
   const d = now || new Date();

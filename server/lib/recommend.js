@@ -5,6 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const llm = require('./llm.js');
+const { localDate } = require('../../scripts/lib/dates.js');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const REC_FILE = path.join(ROOT, 'data', 'recommendations.json');
@@ -46,7 +47,7 @@ ${JSON.stringify(compact)}`;
     return;
   }
   const out = {
-    updated: result.updated || new Date().toISOString().slice(0, 10),
+    updated: result.updated || localDate(), // 本地日历日（勿用 UTC）
     source: 'llm',
     entries,
   };

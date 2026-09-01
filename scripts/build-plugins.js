@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { SCENARIOS, intentIndex } = require('./lib/scenarios.js');
+const { localDate } = require('./lib/dates.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const ENTRIES_DIR = path.join(ROOT, 'data', 'entries');
@@ -81,7 +82,7 @@ function build() {
       usedCategories[e.category] = { en: e.category, zh: e.category };
     }
   }
-  const today = new Date().toISOString().slice(0, 10);
+  const today = localDate(); // 本地日历日（勿用 UTC：本地 00:00–07:59 会记成前一天）
   const out = {
     name: 'skillhub',
     url: 'https://hub.hibcglobal.com',

@@ -1,5 +1,6 @@
 // GitHub 仓库 -> SkillHub 条目草稿（爬虫共用）。
 // 草稿进入 data/pending/ 待人工/AI 审阅，不直接进 entries/。
+const { localDate } = require('../../scripts/lib/dates.js');
 const ECO_DEFAULTS = {
   dsh: { kind: 'plugin', install: (r) => `dsh plugin --profile web add github:${r.full_name}` },
   workbuddy: { kind: 'skill', install: (r) => `git clone ${r.html_url}` },
@@ -16,7 +17,7 @@ function slug(s) { return String(s).toLowerCase().replace(/[^a-z0-9._-]+/g, '-')
 function repoToDraft(repo, eco) {
   const [owner, name] = (repo.full_name || '/').split('/');
   const def = ECO_DEFAULTS[eco] || ECO_DEFAULTS.generic || { kind: 'other', install: (r) => r.html_url };
-  const today = new Date().toISOString().slice(0, 10);
+  const today = localDate(); // 本地日历日（勿用 UTC）
   return {
     id: slug(repo.full_name),
     name: name || repo.full_name,

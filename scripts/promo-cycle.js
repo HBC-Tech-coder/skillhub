@@ -11,9 +11,7 @@ const ROOT = path.join(__dirname, '..');
 const OPS = gate.OPS;
 const DRAFTS = path.join(OPS, 'promo-drafts');
 
-function todayStr() {
-  return new Date().toISOString().slice(0, 10);
-}
+// 草稿文件名与"当日已跑"去重统一用 gate.todayStr()（本地日历日，勿用 UTC）。
 
 function esc(s) {
   return String(s == null ? '' : s).replace(/[\\`*_{}\[\]()#+\-.!|]/g, '\\$&');
@@ -37,7 +35,7 @@ function buildDraft() {
     plugins = (j.plugins || []).slice().sort((a, b) => (b.stars || 0) - (a.stars || 0)).slice(0, 5);
   } catch { /* ignore */ }
 
-  const date = todayStr();
+  const date = gate.todayStr();
   const lines = [];
   lines.push('# SkillHub 推广草稿 ' + date + '（自动生成 · 人工发布）');
   lines.push('');
@@ -96,7 +94,7 @@ function main() {
     process.exit(0);
   }
   fs.mkdirSync(DRAFTS, { recursive: true, mode: 0o700 });
-  const file = path.join(DRAFTS, 'promo-' + todayStr() + '.md');
+  const file = path.join(DRAFTS, 'promo-' + gate.todayStr() + '.md');
   const content = buildDraft();
   fs.writeFileSync(file, content, { mode: 0o600 });
   gate.recordResult('promo', 0);
