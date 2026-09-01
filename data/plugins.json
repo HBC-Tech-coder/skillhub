@@ -3,7 +3,7 @@
  "url": "https://hub.hibcglobal.com",
  "source": "https://github.com/HBC-Tech-coder/skillhub",
  "updated": "2026-09-01",
- "count": 219,
+ "count": 229,
  "categories": {
   "agi": {
    "en": "AGI Architecture Exploration",
@@ -1259,6 +1259,59 @@
    "status": "active"
   },
   {
+   "id": "amruthpillai-reactive-resume",
+   "name": "reactive-resume",
+   "owner": "amruthpillai",
+   "url": "https://github.com/amruthpillai/reactive-resume",
+   "category": "tools",
+   "description": {
+    "en": "A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever. Try it out today!",
+    "zh": "开源简历生成器，安全、可定制、免费。"
+   },
+   "install": "dsh plugin --profile web add github:amruthpillai/reactive-resume",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add github:amruthpillai/reactive-resume"
+    }
+   ],
+   "scenarios": [
+    "job"
+   ],
+   "audience": {
+    "zh": "求职者、职场人士",
+    "en": "Job seekers, professionals"
+   },
+   "usecases": {
+    "zh": "创建、定制和导出简历，注重隐私和可移植性",
+    "en": "Create, customize, and export resumes with privacy and portability"
+   },
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 42008,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": "MIT",
+   "author": "amruthpillai",
+   "tags": [
+    "agent-skills",
+    "ai",
+    "dsh-plugin",
+    "hacktoberfest",
+    "javascript",
+    "mcp-server",
+    "react",
+    "resume-builder",
+    "self-hosted",
+    "typescript"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "codebase-memory-mcp",
    "name": "codebase-memory-mcp",
    "owner": "DeusData",
@@ -2079,6 +2132,59 @@
    "status": "active"
   },
   {
+   "id": "molunerfinn-picgo",
+   "name": "PicGo",
+   "owner": "Molunerfinn",
+   "url": "https://github.com/Molunerfinn/PicGo",
+   "category": "workflow",
+   "description": {
+    "en": ":rocket: The Ultimate Image Uploader for Efficient Creators. Supports Obsidian, Typora, VS Code etc. and 60+ image hosting services  (S3, GitHub, Cloudflare R2, Imgur, Aliyun OSS...). Paste, upload, done.",
+    "zh": "高效的图片上传工具，支持多种图床和编辑器。"
+   },
+   "install": "dsh plugin --profile web add github:Molunerfinn/PicGo",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add github:Molunerfinn/PicGo"
+    }
+   ],
+   "scenarios": [
+    "content-social"
+   ],
+   "audience": {
+    "zh": "内容创作者、笔记用户",
+    "en": "Content creators, note-taking users"
+   },
+   "usecases": {
+    "zh": "快速上传图片到图床，支持多种编辑器",
+    "en": "Quickly upload images to image hosting services, supporting multiple editors"
+   },
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 27103,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": "MIT",
+   "author": "Molunerfinn",
+   "tags": [
+    "aliyun-oss",
+    "cloudflare-r2",
+    "dsh-plugin",
+    "electron",
+    "electron-app",
+    "electron-vue",
+    "github",
+    "image",
+    "imageuploader",
+    "imgur"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "decolua-9router",
    "name": "9router",
    "owner": "decolua",
@@ -2566,6 +2672,114 @@
    "status": "active"
   },
   {
+   "id": "activepieces-activepieces",
+   "name": "activepieces",
+   "owner": "activepieces",
+   "url": "https://github.com/activepieces/activepieces",
+   "category": "workflow",
+   "description": {
+    "en": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+    "zh": "AI代理和MCP工作流自动化平台，提供约400个MCP服务器。"
+   },
+   "install": "参照仓库 README 配置 MCP 客户端",
+   "ecosystems": [
+    {
+     "id": "mcp",
+     "kind": "server",
+     "install": "参照仓库 README 配置 MCP 客户端"
+    }
+   ],
+   "scenarios": [
+    "workflow",
+    "marketing"
+   ],
+   "audience": {
+    "zh": "自动化爱好者、业务运营人员",
+    "en": "Automation enthusiasts, business operations"
+   },
+   "usecases": {
+    "zh": "构建AI工作流和自动化，集成400多个MCP服务器",
+    "en": "Build AI workflows and automation, integrate 400+ MCP servers"
+   },
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 24149,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "server",
+   "license": "NOASSERTION",
+   "author": "activepieces",
+   "tags": [
+    "ai-agent",
+    "ai-agent-tools",
+    "ai-agents",
+    "ai-agents-framework",
+    "mcp",
+    "mcp-server",
+    "mcp-tools",
+    "mcps",
+    "n8n-alternative",
+    "no-code-automation"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "nocobase-nocobase",
+   "name": "nocobase",
+   "owner": "nocobase",
+   "url": "https://github.com/nocobase/nocobase",
+   "category": "workflow",
+   "description": {
+    "en": "NocoBase is an open-source AI + no-code platform for building business systems fast. Instead of generating everything from scratch, AI works on top of production-proven infrastructure and a WYSIWYG no-code interface, so you get both speed and reliability.",
+    "zh": "开源 AI + 无代码平台，用于快速构建业务系统。"
+   },
+   "install": "dsh plugin --profile web add github:nocobase/nocobase",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add github:nocobase/nocobase"
+    }
+   ],
+   "scenarios": [
+    "workflow",
+    "dev-coding"
+   ],
+   "audience": {
+    "zh": "业务系统构建者、低代码开发者",
+    "en": "Business system builders, low-code developers"
+   },
+   "usecases": {
+    "zh": "使用 AI 和可视化界面快速构建业务系统",
+    "en": "Build business systems quickly with AI and visual interface"
+   },
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 23958,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": "NOASSERTION",
+   "author": "nocobase",
+   "tags": [
+    "admin-dashboard",
+    "ai-agent",
+    "ai-agents",
+    "ai-assistant",
+    "ai-tools",
+    "crm",
+    "crud",
+    "dsh-plugin",
+    "erp",
+    "internal-tool"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "alchaincyf-huashu-design",
    "name": "huashu-design",
    "owner": "alchaincyf",
@@ -2936,6 +3150,59 @@
     "chinese",
     "multi-tool",
     "orchestration"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "modelscope-funasr",
+   "name": "FunASR",
+   "owner": "modelscope",
+   "url": "https://github.com/modelscope/FunASR",
+   "category": "voice",
+   "description": {
+    "en": "Open-source speech recognition toolkit for training, inference, streaming ASR, VAD, punctuation, speaker diarization pipelines, and OpenAI-compatible/MCP serving.",
+    "zh": "开源语音识别工具包，支持训练、推理、流式ASR、VAD、标点、说话人分离，并提供OpenAI兼容/MCP服务。"
+   },
+   "install": "参照仓库 README 配置 MCP 客户端",
+   "ecosystems": [
+    {
+     "id": "mcp",
+     "kind": "server",
+     "install": "参照仓库 README 配置 MCP 客户端"
+    }
+   ],
+   "scenarios": [
+    "voice-tts"
+   ],
+   "audience": {
+    "zh": "语音识别开发者、AI应用开发者",
+    "en": "Speech recognition developers, AI app developers"
+   },
+   "usecases": {
+    "zh": "构建语音识别、语音转写、说话人分离等应用",
+    "en": "Build speech recognition, transcription, speaker diarization applications"
+   },
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 20098,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "server",
+   "license": "MIT",
+   "author": "modelscope",
+   "tags": [
+    "asr",
+    "audio",
+    "chinese",
+    "emotion-recognition",
+    "funasr",
+    "mcp-server",
+    "multilingual-asr",
+    "openai-compatible-api",
+    "paraformer",
+    "punctuation"
    ],
    "verified": false,
    "status": "active"
@@ -3398,6 +3665,60 @@
     "security-scanner",
     "security-tools",
     "security-workflow"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "open-metadata-openmetadata",
+   "name": "OpenMetadata",
+   "owner": "open-metadata",
+   "url": "https://github.com/open-metadata/OpenMetadata",
+   "category": "dev",
+   "description": {
+    "en": "The Open Context Layer for Data and AI ,  OpenMetadata is the open platform for building trusted data context and business semantics for humans, AI assistants, and agents.",
+    "zh": "OpenMetadata 是一个开放平台，用于构建可信的数据上下文和业务语义，供人类、AI 助手和代理使用。"
+   },
+   "install": "参照仓库 README 配置 MCP 客户端",
+   "ecosystems": [
+    {
+     "id": "mcp",
+     "kind": "server",
+     "install": "参照仓库 README 配置 MCP 客户端"
+    }
+   ],
+   "scenarios": [
+    "dev-coding",
+    "memory-knowledge"
+   ],
+   "audience": {
+    "zh": "数据工程师、AI应用开发者",
+    "en": "Data engineers, AI application developers"
+   },
+   "usecases": {
+    "zh": "构建数据上下文和业务语义层，供AI助手和代理使用",
+    "en": "Build data context and business semantics layer for AI assistants and agents"
+   },
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 15045,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "server",
+   "license": "Apache-2.0",
+   "author": "open-metadata",
+   "tags": [
+    "context",
+    "context-layer",
+    "data-catalog",
+    "data-collaboration",
+    "data-contracts",
+    "data-discovery",
+    "data-governance",
+    "data-lineage",
+    "data-observability",
+    "data-profiling"
    ],
    "verified": false,
    "status": "active"
@@ -4925,6 +5246,60 @@
     "coding-agent",
     "deepseek",
     "developer-tools"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "gosom-google-maps-scraper",
+   "name": "google-maps-scraper",
+   "owner": "gosom",
+   "url": "https://github.com/gosom/google-maps-scraper",
+   "category": "workflow",
+   "description": {
+    "en": "scrape data  from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews number, latitude and longitude, reviews,email and more for each place",
+    "zh": "从Google Maps抓取数据，提取名称、地址、电话、评分、评论等信息"
+   },
+   "install": "git clone https://github.com/gosom/google-maps-scraper（按 README 导入 Codex）",
+   "ecosystems": [
+    {
+     "id": "codex",
+     "kind": "skill",
+     "install": "git clone https://github.com/gosom/google-maps-scraper（按 README 导入 Codex）"
+    }
+   ],
+   "scenarios": [
+    "marketing",
+    "ecommerce"
+   ],
+   "audience": {
+    "zh": "市场营销人员、数据分析师",
+    "en": "Marketers and data analysts"
+   },
+   "usecases": {
+    "zh": "从Google Maps提取地点数据，如名称、地址、电话、评分等",
+    "en": "Extract place data from Google Maps like name, address, phone, rating, etc."
+   },
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 5676,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": "MIT",
+   "author": "gosom",
+   "tags": [
+    "agent-skills",
+    "claude-skills",
+    "codex-skills",
+    "distributed-scraper",
+    "distributed-scraping",
+    "golang",
+    "google-maps",
+    "google-maps-scraping",
+    "web-scraper",
+    "web-scraping"
    ],
    "verified": false,
    "status": "active"
@@ -7411,6 +7786,58 @@
    "status": "active"
   },
   {
+   "id": "danilo-znamerovszkij-draw-your-font",
+   "name": "draw-your-font",
+   "owner": "danilo-znamerovszkij",
+   "url": "https://github.com/danilo-znamerovszkij/draw-your-font",
+   "category": "ui",
+   "description": {
+    "en": "Turn a photo of your handwriting into a real font (TTF/WOFF/WOFF2) - free, open source, no uploads. Node CLI + Claude Code skill.",
+    "zh": "将手写照片转换为真实字体（TTF/WOFF/WOFF2），免费开源，无需上传"
+   },
+   "install": "git clone https://github.com/danilo-znamerovszkij/draw-your-font（按 README 导入 Claude Code）",
+   "ecosystems": [
+    {
+     "id": "claude-code",
+     "kind": "skill",
+     "install": "git clone https://github.com/danilo-znamerovszkij/draw-your-font（按 README 导入 Claude Code）"
+    }
+   ],
+   "scenarios": [
+    "design",
+    "fun"
+   ],
+   "audience": {
+    "zh": "设计师、创意爱好者",
+    "en": "Designers, creative enthusiasts"
+   },
+   "usecases": {
+    "zh": "将手写照片转换为可用的字体文件，用于个性化设计",
+    "en": "Convert handwriting photos into usable font files for personalized design"
+   },
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 713,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": "MIT",
+   "author": "danilo-znamerovszkij",
+   "tags": [
+    "claude-code",
+    "claude-skill",
+    "font",
+    "handwriting",
+    "handwriting-font",
+    "potrace",
+    "ttf",
+    "woff2"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "xiaopu-ai-web-design",
    "name": "web-design",
    "owner": "xiaopu-ai",
@@ -8016,6 +8443,54 @@
    "status": "active"
   },
   {
+   "id": "jackiotyu-git-worktree-manager",
+   "name": "git-worktree-manager",
+   "owner": "jackiotyu",
+   "url": "https://github.com/jackiotyu/git-worktree-manager",
+   "category": "dev",
+   "description": {
+    "en": "Effortlessly manage Git worktrees in Visual Studio Code! 🚀",
+    "zh": "在 Visual Studio Code 中轻松管理 Git worktrees 的扩展。"
+   },
+   "install": "git clone https://github.com/jackiotyu/git-worktree-manager",
+   "ecosystems": [
+    {
+     "id": "trae",
+     "kind": "skill",
+     "install": "git clone https://github.com/jackiotyu/git-worktree-manager"
+    }
+   ],
+   "scenarios": [
+    "dev-coding"
+   ],
+   "audience": {
+    "zh": "Git用户、VS Code开发者",
+    "en": "Git users, VS Code developers"
+   },
+   "usecases": {
+    "zh": "在VS Code中轻松管理Git worktrees",
+    "en": "Effortlessly manage Git worktrees in VS Code"
+   },
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 279,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": "MIT",
+   "author": "jackiotyu",
+   "tags": [
+    "cursor",
+    "git-worktree",
+    "trae",
+    "vscode",
+    "vscode-extension"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
    "id": "ad-naan-adnify",
    "name": "Adnify",
    "owner": "ad-naan",
@@ -8549,6 +9024,56 @@
     "qa",
     "qa-skills",
     "skills"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "wanniwa-editorjumper",
+   "name": "EditorJumper",
+   "owner": "wanniwa",
+   "url": "https://github.com/wanniwa/EditorJumper",
+   "category": "dev",
+   "description": {
+    "en": "EditorJumper is a JetBrains IDE plugin that allows you to seamlessly jump between JetBrains IDE and other popular code editors (such as VS Code, Cursor, Trae, and Windsurf). It maintains your cursor position and editing context, greatly improving development efficiency in multi-editor environments.",
+    "zh": "JetBrains插件，可在JetBrains IDE与VS Code、Cursor等编辑器间跳转并保持上下文。"
+   },
+   "install": "git clone https://github.com/wanniwa/EditorJumper",
+   "ecosystems": [
+    {
+     "id": "trae",
+     "kind": "skill",
+     "install": "git clone https://github.com/wanniwa/EditorJumper"
+    }
+   ],
+   "scenarios": [
+    "dev-coding"
+   ],
+   "audience": {
+    "zh": "多编辑器开发者",
+    "en": "Developers using multiple editors"
+   },
+   "usecases": {
+    "zh": "在JetBrains IDE和其他编辑器间无缝跳转",
+    "en": "Seamlessly jump between JetBrains IDE and other editors"
+   },
+   "added": "2026-08-31",
+   "npm": null,
+   "tarball": null,
+   "stars": 185,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "skill",
+   "license": "MIT",
+   "author": "wanniwa",
+   "tags": [
+    "cursor",
+    "kiro",
+    "qcoder",
+    "trae",
+    "void",
+    "vscode",
+    "windsurf"
    ],
    "verified": false,
    "status": "active"
