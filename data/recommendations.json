@@ -1,36 +1,40 @@
 {
-  "updated": "2026-08-31",
-  "source": "editor",
+  "updated": "2025-04-11",
+  "source": "llm",
   "entries": [
     {
-      "id": "rec-newmedia-1",
-      "added": "2026-08-31",
-      "title": "新媒体运营起步套装：热点 → 文案 → 分发一条龙",
-      "titleEn": "Social Media Starter Kit: trends → copy → publish in one flow",
-      "text": "装上这 4 个：TrendRadar 自动盯全网热点、电商视觉文案 Skill 出商品图文案、rayskills 把内容直接排进公众号/X 草稿箱、微信 OpenClaw 通道让 WorkBuddy 直连微信。从选题到发布，每天省 2 小时。",
-      "textEn": "Install these 4: TrendRadar watches all-platform hot topics, the e-commerce copywriting Skill produces product copy, rayskills pipes drafts straight into WeChat/X, and the OpenClaw WeChat channel connects WorkBuddy to WeChat. Save 2 hours a day from ideation to publish.",
-      "itemIds": ["trendradar", "ecommerce-visual-copywriting-skill", "rayskills", "wechat-openclaw-channel"],
-      "scenarios": ["content-social", "trends-monitor", "copywriting"]
+      "id": "rec-2",
+      "title": "开发者效率神器：让AI记住你的代码库，少写废话",
+      "titleEn": "Dev Efficiency: Let AI Remember Your Codebase and Cut the Fluff",
+      "text": "写代码时最烦AI忘了之前的上下文，重复解释。这套组合让AI真正懂你的项目：graphify把整个代码库变成可查询的知识图谱，问什么答什么；claude-mem提供跨会话的持久记忆，不用每次重新交代背景；caveman让AI说话更简洁，token消耗直降65%。装上这几个，编码体验丝滑到飞起。",
+      "textEn": "The most annoying thing when coding is AI forgetting context and making you repeat yourself. This bundle makes AI truly understand your project: graphify turns your entire codebase into a queryable knowledge graph; claude-mem provides persistent cross-session memory; caveman makes AI speak concisely, cutting token usage by 65%. Install these for a silky smooth coding experience.",
+      "itemIds": [
+        "graphify",
+        "thedotmack-claude-mem",
+        "caveman"
+      ],
+      "scenarios": [
+        "dev-coding",
+        "memory-knowledge",
+        "workflow"
+      ]
     },
     {
-      "id": "rec-dev-1",
-      "added": "2026-08-31",
-      "title": "开发者效率三件套：让 agent 真正读懂你的代码库",
-      "titleEn": "Developer Trio: make your agent actually understand the codebase",
-      "text": "Serena 提供语义级代码检索编辑，codebase-memory-mcp 把代码库索引成持久知识图谱，context-mode 再把工具输出压缩 98%。三者叠加，长会话不爆上下文、agent 改代码不再瞎猜。",
-      "textEn": "Serena adds semantic code retrieval/editing, codebase-memory-mcp indexes your repo into a persistent knowledge graph, and context-mode compresses tool output by 98%. Together: no context blowups, no more guessing.",
-      "itemIds": ["serena", "codebase-memory-mcp", "context-mode"],
-      "scenarios": ["dev-coding", "memory-knowledge"]
-    },
-    {
-      "id": "rec-design-1",
-      "added": "2026-08-31",
-      "title": "设计产出套装：从原型到落地页，全给 agent 装上",
-      "titleEn": "Design Output Kit: prototypes to landing pages for your agent",
-      "text": "open-design 把 agent 变成设计引擎（原型/看板/幻灯片导出真实文件），ui-ux-pro-max-skill 提供配色/字体/布局知识库，CodeDrobe Skills 负责给桌面应用换肤。设计师的活，AI 也能出一版。",
-      "textEn": "open-design turns the agent into a design engine (real HTML/PDF/PPTX/MP4 exports), ui-ux-pro-max-skill adds palette/typography/layout knowledge, CodeDrobe Skills themes desktop apps. A credible AI first pass on design work.",
-      "itemIds": ["open-design", "ui-ux-pro-max-skill", "codedrobe-skills"],
-      "scenarios": ["design"]
+      "id": "rec-3",
+      "title": "设计师的AI副驾：从0到1产出��业UI和PPT",
+      "titleEn": "Design Copilot: From Zero to Professional UI and Slides",
+      "text": "设计新手也能做出专业级作品？这套组合帮你实现：ui-ux-pro-max-skill提供设计知识库，配色、字体、布局规则一应俱全；open-design让AI成为设计引擎，直接生成原型、落地页和幻灯片；sunchaokun-ppt-design-skill支持4万+样式，一键输出可编辑的PPTX。装上这几个，设计产出又快又好。",
+      "textEn": "Can design newbies produce professional work? This bundle makes it happen: ui-ux-pro-max-skill provides a design knowledge base with color, font, layout rules; open-design turns AI into a design engine for prototypes, landing pages, and slides; sunchaokun-ppt-design-skill supports 40,000+ styles and outputs editable PPTX. Install these for fast, high-quality design output.",
+      "itemIds": [
+        "ui-ux-pro-max-skill",
+        "open-design",
+        "sunchaokun-ppt-design-skill"
+      ],
+      "scenarios": [
+        "design",
+        "education",
+        "marketing"
+      ]
     }
   ]
 }

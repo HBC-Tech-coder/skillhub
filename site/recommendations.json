@@ -1,57 +1,39 @@
 {
-  "updated": "2025-04-10",
+  "updated": "2025-04-11",
   "source": "llm",
   "entries": [
     {
-      "id": "rec-1",
-      "title": "自媒体爆款流水线：从热点追踪到一键分发",
-      "titleEn": "Social Media Content Pipeline: From Trend Tracking to Auto-Publishing",
-      "text": "做新媒体最头疼的是找选题、写文案、做封面、发多平台。这套组合拳帮你打通全流程：TrendRadar 实时监控全网热点，AI 自动筛选和翻译；marketingskills 提供专业的文案和 SEO 技巧，让内容更吸睛；guizang-social-card-skill 一键生成小红书图文和公众号封面；最后用 claude-skill-social-post 学习你的风格，自动发布到多个平台，还能提前排好 14 天内容日历。装上这几个，你就能从选题到发布全自动，专注内容本身，流量自然来。",
-      "textEn": "The toughest part of social media is finding topics, writing copy, making covers, and posting across platforms. This combo streamlines the entire workflow: TrendRadar monitors hot topics in real-time with AI filtering and translation; marketingskills provides professional copywriting and SEO techniques to make content pop; guizang-social-card-skill generates Xiaohongshu and WeChat cover images with one click; and claude-skill-social-post learns your style and auto-publishes to multiple platforms, even planning a 14-day content calendar. With these installed, you can go from topic discovery to publishing automatically, focusing on content itself while traffic flows in.",
-      "itemIds": [
-        "trendradar",
-        "coreyhaines31-marketingskills",
-        "op7418-guizang-social-card-skill",
-        "hao0321-claude-skill-social-post"
-      ],
-      "scenarios": [
-        "content-social",
-        "trends-monitor",
-        "marketing",
-        "copywriting"
-      ]
-    },
-    {
       "id": "rec-2",
-      "title": "让 AI 编码助手记住一切：代码库记忆增强包",
-      "titleEn": "Make Your AI Coding Assistant Remember Everything: Codebase Memory Enhancement Pack",
-      "text": "每次让 AI 改代码，它总是忘了之前的上下文？这套工具让 AI 拥有长期记忆：claude-mem 提供跨会话持久记忆，自动压缩并注入相关上下文；graphify 把整个代码库变成可查询的知识图谱，支持文档、SQL schema 等；context7 提供最新代码文档，避免 AI 用旧 API。装上这几个，AI 助手就能记住你的项目历史，理解全局，写出更靠谱的代码。",
-      "textEn": "Tired of AI forgetting context every time you ask it to modify code? This toolkit gives AI long-term memory: claude-mem provides persistent cross-session memory with automatic compression and injection; graphify turns the entire codebase into a queryable knowledge graph, including docs and SQL schemas; context7 supplies up-to-date code documentation to prevent outdated API usage. With these installed, your AI assistant can remember project history, understand the big picture, and write more reliable code.",
+      "title": "开发者效率神器：让AI记住你的代码库，少写废话",
+      "titleEn": "Dev Efficiency: Let AI Remember Your Codebase and Cut the Fluff",
+      "text": "写代码时最烦AI忘了之前的上下文，重复解释。这套组合让AI真正懂你的项目：graphify把整个代码库变成可查询的知识图谱，问什么答什么；claude-mem提供跨会话的持久记忆，不用每次重新交代背景；caveman让AI说话更简洁，token消耗直降65%。装上这几个，编码体验丝滑到飞起。",
+      "textEn": "The most annoying thing when coding is AI forgetting context and making you repeat yourself. This bundle makes AI truly understand your project: graphify turns your entire codebase into a queryable knowledge graph; claude-mem provides persistent cross-session memory; caveman makes AI speak concisely, cutting token usage by 65%. Install these for a silky smooth coding experience.",
       "itemIds": [
-        "thedotmack-claude-mem",
         "graphify",
-        "upstash-context7"
+        "thedotmack-claude-mem",
+        "caveman"
       ],
       "scenarios": [
         "dev-coding",
         "memory-knowledge",
-        "learn"
+        "workflow"
       ]
     },
     {
       "id": "rec-3",
-      "title": "设计灵感速成：从参考图到设计系统",
-      "titleEn": "Design Inspiration Accelerator: From Reference to Design System",
-      "text": "想要做出高级感设计，却总被说像 AI 生成？这套组合让你轻松驾驭设计：ui-ux-pro-max-skill 提供专业设计知识库，涵盖配色、字体、布局等规则；design-dna 把参考 UI 转化为量化的设计 DNA，生成匹配的界面；hallmark 专治 AI 味，让设计更自然；hue 学习品牌并生成完整设计系统。装上这几个，你就能从参考图到完整设计系统一键生成，设计质感直线上升。",
-      "textEn": "Want high-end designs but always criticized for looking AI-generated? This combo helps you master design: ui-ux-pro-max-skill provides a professional design knowledge base covering color, typography, layout rules; design-dna converts reference UI into quantifiable design DNA and generates matching interfaces; hallmark removes AI flavor for more natural designs; hue learns brand and generates a complete design system. With these, you can go from reference image to full design system in one click, dramatically improving design quality.",
+      "title": "设计师的AI副驾：从0到1产出��业UI和PPT",
+      "titleEn": "Design Copilot: From Zero to Professional UI and Slides",
+      "text": "设计新手也能做出专业级作品？这套组合帮你实现：ui-ux-pro-max-skill提供设计知识库，配色、字体、布局规则一应俱全；open-design让AI成为设计引擎，直接生成原型、落地页和幻灯片；sunchaokun-ppt-design-skill支持4万+样式，一键输出可编辑的PPTX。装上这几个，设计产出又快又好。",
+      "textEn": "Can design newbies produce professional work? This bundle makes it happen: ui-ux-pro-max-skill provides a design knowledge base with color, font, layout rules; open-design turns AI into a design engine for prototypes, landing pages, and slides; sunchaokun-ppt-design-skill supports 40,000+ styles and outputs editable PPTX. Install these for fast, high-quality design output.",
       "itemIds": [
         "ui-ux-pro-max-skill",
-        "zanwei-design-dna",
-        "nutlope-hallmark",
-        "dominikmartn-hue"
+        "open-design",
+        "sunchaokun-ppt-design-skill"
       ],
       "scenarios": [
-        "design"
+        "design",
+        "education",
+        "marketing"
       ]
     }
   ]

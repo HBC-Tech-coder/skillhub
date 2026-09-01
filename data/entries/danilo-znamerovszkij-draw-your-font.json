@@ -1,0 +1,52 @@
+{
+  "id": "danilo-znamerovszkij-draw-your-font",
+  "name": "draw-your-font",
+  "owner": "danilo-znamerovszkij",
+  "url": "https://github.com/danilo-znamerovszkij/draw-your-font",
+  "category": "ui",
+  "description": {
+    "en": "Turn a photo of your handwriting into a real font (TTF/WOFF/WOFF2) - free, open source, no uploads. Node CLI + Claude Code skill.",
+    "zh": "将手写照片转换为真实字体（TTF/WOFF/WOFF2），免费开源，无需上传"
+  },
+  "install": "git clone https://github.com/danilo-znamerovszkij/draw-your-font（按 README 导入 Claude Code）",
+  "ecosystems": [
+    {
+      "id": "claude-code",
+      "kind": "skill",
+      "install": "git clone https://github.com/danilo-znamerovszkij/draw-your-font（按 README 导入 Claude Code）"
+    }
+  ],
+  "scenarios": [
+    "design",
+    "fun"
+  ],
+  "audience": {
+    "zh": "设计师、创意爱好者",
+    "en": "Designers, creative enthusiasts"
+  },
+  "usecases": {
+    "zh": "将手写照片转换为可用的字体文件，用于个性化设计",
+    "en": "Convert handwriting photos into usable font files for personalized design"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 713,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "danilo-znamerovszkij",
+  "tags": [
+    "claude-code",
+    "claude-skill",
+    "font",
+    "handwriting",
+    "handwriting-font",
+    "potrace",
+    "ttf",
+    "woff2"
+  ],
+  "verified": false,
+  "status": "active"
+}

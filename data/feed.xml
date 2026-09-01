@@ -838,6 +838,14 @@
     <category term="workflow"/>
   </entry>
   <entry>
+    <id>skillhub:huangruiteng-loopx</id>
+    <title>loopx</title>
+    <link href="https://github.com/huangruiteng/loopx"/>
+    <updated>2026-09-01T00:00:00Z</updated>
+    <summary>长期代理控制平面，用于在多个工具上管理持久、受控的工作。</summary>
+    <category term="workflow"/>
+  </entry>
+  <entry>
     <id>skillhub:junhoyeo-tokscale</id>
     <title>tokscale</title>
     <link href="https://github.com/junhoyeo/tokscale"/>

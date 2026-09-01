@@ -1,0 +1,50 @@
+{
+  "id": "wanniwa-editorjumper",
+  "name": "EditorJumper",
+  "owner": "wanniwa",
+  "url": "https://github.com/wanniwa/EditorJumper",
+  "category": "dev",
+  "description": {
+    "en": "EditorJumper is a JetBrains IDE plugin that allows you to seamlessly jump between JetBrains IDE and other popular code editors (such as VS Code, Cursor, Trae, and Windsurf). It maintains your cursor position and editing context, greatly improving development efficiency in multi-editor environments.",
+    "zh": "JetBrains插件，可在JetBrains IDE与VS Code、Cursor等编辑器间跳转并保持上下文。"
+  },
+  "install": "git clone https://github.com/wanniwa/EditorJumper",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/wanniwa/EditorJumper"
+    }
+  ],
+  "scenarios": [
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "多编辑器开发者",
+    "en": "Developers using multiple editors"
+  },
+  "usecases": {
+    "zh": "在JetBrains IDE和其他编辑器间无缝跳转",
+    "en": "Seamlessly jump between JetBrains IDE and other editors"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 185,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "wanniwa",
+  "tags": [
+    "cursor",
+    "kiro",
+    "qcoder",
+    "trae",
+    "void",
+    "vscode",
+    "windsurf"
+  ],
+  "verified": false,
+  "status": "active"
+}

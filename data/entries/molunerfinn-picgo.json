@@ -1,0 +1,53 @@
+{
+  "id": "molunerfinn-picgo",
+  "name": "PicGo",
+  "owner": "Molunerfinn",
+  "url": "https://github.com/Molunerfinn/PicGo",
+  "category": "workflow",
+  "description": {
+    "en": ":rocket: The Ultimate Image Uploader for Efficient Creators. Supports Obsidian, Typora, VS Code etc. and 60+ image hosting services  (S3, GitHub, Cloudflare R2, Imgur, Aliyun OSS...). Paste, upload, done.",
+    "zh": "高效的图片上传工具，支持多种图床和编辑器。"
+  },
+  "install": "dsh plugin --profile web add github:Molunerfinn/PicGo",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:Molunerfinn/PicGo"
+    }
+  ],
+  "scenarios": [
+    "content-social"
+  ],
+  "audience": {
+    "zh": "内容创作者、笔记用户",
+    "en": "Content creators, note-taking users"
+  },
+  "usecases": {
+    "zh": "快速上传图片到图床，支持多种编辑器",
+    "en": "Quickly upload images to image hosting services, supporting multiple editors"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 27103,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "MIT",
+  "author": "Molunerfinn",
+  "tags": [
+    "aliyun-oss",
+    "cloudflare-r2",
+    "dsh-plugin",
+    "electron",
+    "electron-app",
+    "electron-vue",
+    "github",
+    "image",
+    "imageuploader",
+    "imgur"
+  ],
+  "verified": false,
+  "status": "active"
+}

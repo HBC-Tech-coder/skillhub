@@ -1,0 +1,53 @@
+{
+  "id": "modelscope-funasr",
+  "name": "FunASR",
+  "owner": "modelscope",
+  "url": "https://github.com/modelscope/FunASR",
+  "category": "voice",
+  "description": {
+    "en": "Open-source speech recognition toolkit for training, inference, streaming ASR, VAD, punctuation, speaker diarization pipelines, and OpenAI-compatible/MCP serving.",
+    "zh": "开源语音识别工具包，支持训练、推理、流式ASR、VAD、标点、说话人分离，并提供OpenAI兼容/MCP服务。"
+  },
+  "install": "参照仓库 README 配置 MCP 客户端",
+  "ecosystems": [
+    {
+      "id": "mcp",
+      "kind": "server",
+      "install": "参照仓库 README 配置 MCP 客户端"
+    }
+  ],
+  "scenarios": [
+    "voice-tts"
+  ],
+  "audience": {
+    "zh": "语音识别开发者、AI应用开发者",
+    "en": "Speech recognition developers, AI app developers"
+  },
+  "usecases": {
+    "zh": "构建语音识别、语音转写、说话人分离等应用",
+    "en": "Build speech recognition, transcription, speaker diarization applications"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 20098,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "MIT",
+  "author": "modelscope",
+  "tags": [
+    "asr",
+    "audio",
+    "chinese",
+    "emotion-recognition",
+    "funasr",
+    "mcp-server",
+    "multilingual-asr",
+    "openai-compatible-api",
+    "paraformer",
+    "punctuation"
+  ],
+  "verified": false,
+  "status": "active"
+}

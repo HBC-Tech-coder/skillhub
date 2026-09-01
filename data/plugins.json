@@ -3,7 +3,7 @@
  "url": "https://hub.hibcglobal.com",
  "source": "https://github.com/HBC-Tech-coder/skillhub",
  "updated": "2026-09-01",
- "count": 229,
+ "count": 230,
  "categories": {
   "agi": {
    "en": "AGI Architecture Exploration",
@@ -5300,6 +5300,60 @@
     "google-maps-scraping",
     "web-scraper",
     "web-scraping"
+   ],
+   "verified": false,
+   "status": "active"
+  },
+  {
+   "id": "huangruiteng-loopx",
+   "name": "loopx",
+   "owner": "huangruiteng",
+   "url": "https://github.com/huangruiteng/loopx",
+   "category": "workflow",
+   "description": {
+    "en": "Long-horizon agent control plane for durable, governed work across Codex, Claude Code, and other harnesses.",
+    "zh": "长期代理控制平面，用于在多个工具上管理持久、受控的工作。"
+   },
+   "install": "dsh plugin --profile web add github:huangruiteng/loopx",
+   "ecosystems": [
+    {
+     "id": "dsh",
+     "kind": "plugin",
+     "install": "dsh plugin --profile web add github:huangruiteng/loopx"
+    }
+   ],
+   "scenarios": [
+    "workflow",
+    "dev-coding"
+   ],
+   "audience": {
+    "zh": "需要长期运行复杂代理任务的开发团队",
+    "en": "Development teams needing long-running complex agent tasks"
+   },
+   "usecases": {
+    "zh": "在Codex、Claude Code等工具上管理持久、受控的代理工作",
+    "en": "Manage durable, governed agent work across Codex, Claude Code, and other harnesses"
+   },
+   "added": "2026-09-01",
+   "npm": null,
+   "tarball": null,
+   "stars": 5353,
+   "downloads": null,
+   "screenshots": [],
+   "kind": "plugin",
+   "license": "Apache-2.0",
+   "author": "huangruiteng",
+   "tags": [
+    "agent-control-plane",
+    "agent-harness",
+    "agent-ops",
+    "ai-agents",
+    "codex",
+    "dsh-plugin",
+    "long-horizon",
+    "long-running-agents",
+    "loop-engineering",
+    "loopx"
    ],
    "verified": false,
    "status": "active"

@@ -1,0 +1,54 @@
+{
+  "id": "open-metadata-openmetadata",
+  "name": "OpenMetadata",
+  "owner": "open-metadata",
+  "url": "https://github.com/open-metadata/OpenMetadata",
+  "category": "dev",
+  "description": {
+    "en": "The Open Context Layer for Data and AI ,  OpenMetadata is the open platform for building trusted data context and business semantics for humans, AI assistants, and agents.",
+    "zh": "OpenMetadata 是一个开放平台，用于构建可信的数据上下文和业务语义，供人类、AI 助手和代理使用。"
+  },
+  "install": "参照仓库 README 配置 MCP 客户端",
+  "ecosystems": [
+    {
+      "id": "mcp",
+      "kind": "server",
+      "install": "参照仓库 README 配置 MCP 客户端"
+    }
+  ],
+  "scenarios": [
+    "dev-coding",
+    "memory-knowledge"
+  ],
+  "audience": {
+    "zh": "数据工程师、AI应用开发者",
+    "en": "Data engineers, AI application developers"
+  },
+  "usecases": {
+    "zh": "构建数据上下文和业务语义层，供AI助手和代理使用",
+    "en": "Build data context and business semantics layer for AI assistants and agents"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 15045,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "server",
+  "license": "Apache-2.0",
+  "author": "open-metadata",
+  "tags": [
+    "context",
+    "context-layer",
+    "data-catalog",
+    "data-collaboration",
+    "data-contracts",
+    "data-discovery",
+    "data-governance",
+    "data-lineage",
+    "data-observability",
+    "data-profiling"
+  ],
+  "verified": false,
+  "status": "active"
+}

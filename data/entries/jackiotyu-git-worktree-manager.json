@@ -1,0 +1,48 @@
+{
+  "id": "jackiotyu-git-worktree-manager",
+  "name": "git-worktree-manager",
+  "owner": "jackiotyu",
+  "url": "https://github.com/jackiotyu/git-worktree-manager",
+  "category": "dev",
+  "description": {
+    "en": "Effortlessly manage Git worktrees in Visual Studio Code! 🚀",
+    "zh": "在 Visual Studio Code 中轻松管理 Git worktrees 的扩展。"
+  },
+  "install": "git clone https://github.com/jackiotyu/git-worktree-manager",
+  "ecosystems": [
+    {
+      "id": "trae",
+      "kind": "skill",
+      "install": "git clone https://github.com/jackiotyu/git-worktree-manager"
+    }
+  ],
+  "scenarios": [
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "Git用户、VS Code开发者",
+    "en": "Git users, VS Code developers"
+  },
+  "usecases": {
+    "zh": "在VS Code中轻松管理Git worktrees",
+    "en": "Effortlessly manage Git worktrees in VS Code"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 279,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "MIT",
+  "author": "jackiotyu",
+  "tags": [
+    "cursor",
+    "git-worktree",
+    "trae",
+    "vscode",
+    "vscode-extension"
+  ],
+  "verified": false,
+  "status": "active"
+}

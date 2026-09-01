@@ -1,0 +1,54 @@
+{
+  "id": "nocobase-nocobase",
+  "name": "nocobase",
+  "owner": "nocobase",
+  "url": "https://github.com/nocobase/nocobase",
+  "category": "workflow",
+  "description": {
+    "en": "NocoBase is an open-source AI + no-code platform for building business systems fast. Instead of generating everything from scratch, AI works on top of production-proven infrastructure and a WYSIWYG no-code interface, so you get both speed and reliability.",
+    "zh": "开源 AI + 无代码平台，用于快速构建业务系统。"
+  },
+  "install": "dsh plugin --profile web add github:nocobase/nocobase",
+  "ecosystems": [
+    {
+      "id": "dsh",
+      "kind": "plugin",
+      "install": "dsh plugin --profile web add github:nocobase/nocobase"
+    }
+  ],
+  "scenarios": [
+    "workflow",
+    "dev-coding"
+  ],
+  "audience": {
+    "zh": "业务系统构建者、低代码开发者",
+    "en": "Business system builders, low-code developers"
+  },
+  "usecases": {
+    "zh": "使用 AI 和可视化界面快速构建业务系统",
+    "en": "Build business systems quickly with AI and visual interface"
+  },
+  "added": "2026-08-31",
+  "npm": null,
+  "tarball": null,
+  "stars": 23958,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "plugin",
+  "license": "NOASSERTION",
+  "author": "nocobase",
+  "tags": [
+    "admin-dashboard",
+    "ai-agent",
+    "ai-agents",
+    "ai-assistant",
+    "ai-tools",
+    "crm",
+    "crud",
+    "dsh-plugin",
+    "erp",
+    "internal-tool"
+  ],
+  "verified": false,
+  "status": "active"
+}
