@@ -57,6 +57,26 @@
     return '<ul class="plist">' + lis.join('') + '</ul>';
   }
 
+  /* ---------- 密码可见性开关（小眼睛，默认关闭=隐藏） ---------- */
+  function pwField(labelHtml, id, attrs) {
+    var a = '';
+    for (var k in attrs) a += ' ' + k + '="' + esc(attrs[k]) + '"';
+    return '<div class="field"><label>' + labelHtml + '</label>' +
+      '<div class="pw-wrap"><input type="password" id="' + id + '"' + a + '>' +
+      '<button type="button" class="eye closed" data-for="' + id + '" title="显示/隐藏" aria-label="显示/隐藏密码">👁️</button></div></div>';
+  }
+  function bindEyes() {
+    app.querySelectorAll('.eye').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var inp = document.getElementById(b.dataset.for);
+        if (!inp) return;
+        var show = inp.type === 'password';
+        inp.type = show ? 'text' : 'password';
+        b.classList.toggle('closed', !show);
+      });
+    });
+  }
+
   /* ---------- 视图：登录 ---------- */
   function renderLogin(errMsg, okMsg) {
     stopPoll();
@@ -67,11 +87,12 @@
       '<div class="auth-err' + (errMsg ? ' show' : '') + '" id="aErr">' + esc(errMsg || '') + '</div>' +
       '<div class="auth-ok' + (okMsg ? ' show' : '') + '" id="aOk">' + esc(okMsg || '') + '</div>' +
       '<div class="field"><label>用户名</label><input type="text" id="fUser" value="admin" autocomplete="username"></div>' +
-      '<div class="field"><label>密码</label><input type="password" id="fPass" autocomplete="current-password"></div>' +
+      pwField('密码', 'fPass', { autocomplete: 'current-password' }) +
       '<button class="btn primary" id="bLogin" style="width:100%">登 录</button>' +
       '<div class="admin-note" style="margin-top:12px">登录失败 10 次后同 IP 将被锁定 15 分钟。默认账号 admin / admin888（请立即改密）。</div>' +
       '</div></div>';
     app.dataset.view = 'login';
+    bindEyes();
     document.getElementById('bLogin').addEventListener('click', doLogin);
     document.getElementById('fPass').addEventListener('keydown', function (e) { if (e.key === 'Enter') doLogin(); });
   }
@@ -97,14 +118,15 @@
       '<h1><span class="logo">技</span>首次登录 · 必须修改密码</h1>' +
       '<div class="sub">修改成功后将退出登录，需用新密码重新登录，之后才有完整超管权限。</div>' +
       '<div class="auth-err' + (errMsg ? ' show' : '') + '" id="aErr">' + esc(errMsg || '') + '</div>' +
-      '<div class="field"><label>当前密码</label><input type="password" id="cOld" autocomplete="current-password"></div>' +
-      '<div class="field"><label>新密码</label><input type="password" id="cNew" autocomplete="new-password"></div>' +
-      '<div class="field"><label>确认新密码</label><input type="password" id="cConf" autocomplete="new-password"></div>' +
+      pwField('当前密码', 'cOld', { autocomplete: 'current-password' }) +
+      pwField('新密码', 'cNew', { autocomplete: 'new-password' }) +
+      pwField('确认新密码', 'cConf', { autocomplete: 'new-password' }) +
       '<div id="cPolicy"></div>' +
       '<button class="btn primary" id="bChange" style="width:100%">修改密码并重新登录</button>' +
       '<button class="btn ghost" id="bBack" style="width:100%;margin-top:8px">返回登录</button>' +
       '</div></div>';
     app.dataset.view = 'change';
+    bindEyes();
     var ref = document.getElementById('cPolicy');
     function refresh() {
       var pw = document.getElementById('cNew').value;
@@ -231,10 +253,11 @@
     document.getElementById('s-keys').innerHTML =
       '<div class="panel"><h3>🔑 API 密钥</h3>' +
       '<div class="mini" style="margin-bottom:10px">保存后立即生效（服务进程内存 + <code>data/.ops/app.env</code>，0600 权限，供定时任务使用；GitHub 公开仓库不会包含任何密钥）。输入框显示掩码，<b>留空不修改</b>，输入新值则替换。</div>' +
-      '<div class="field"><label>DeepSeek API Key<span class="hint">用于 AI 打标 / 每日推荐</span></label><input type="password" id="kDeepseek" placeholder="' + esc(keys.deepseek || '未配置') + '"></div>' +
-      '<div class="field"><label>GitHub Token<span class="hint">skillhub 仓库 contents:write 权限，用于自动推送</span></label><input type="password" id="kGithub" placeholder="' + esc(keys.github || '未配置') + '"></div>' +
+      pwField('DeepSeek API Key<span class="hint">用于 AI 打标 / 每日推荐</span>', 'kDeepseek', { placeholder: keys.deepseek || '未配置' }) +
+      pwField('GitHub Token<span class="hint">skillhub 仓库 contents:write 权限，用于自动推送</span>', 'kGithub', { placeholder: keys.github || '未配置' }) +
       '<div class="actions"><button class="btn primary" id="bSaveKeys">保存密钥</button></div>' +
       '</div>';
+    bindEyes();
     document.getElementById('bSaveKeys').addEventListener('click', function () {
       var d = document.getElementById('kDeepseek').value;
       var g = document.getElementById('kGithub').value;
@@ -330,13 +353,14 @@
     document.getElementById('s-security').innerHTML =
       '<div class="panel"><h3>🛡 修改密码</h3>' +
       '<div class="mini" style="margin-bottom:10px">修改成功后所有会话（含本机）立即下线，需重新登录。</div>' +
-      '<div class="field"><label>当前密码</label><input type="password" id="sOld"></div>' +
-      '<div class="field"><label>新密码</label><input type="password" id="sNew"></div>' +
-      '<div class="field"><label>确认新密码</label><input type="password" id="sConf"></div>' +
+      pwField('当前密码', 'sOld', {}) +
+      pwField('新密码', 'sNew', {}) +
+      pwField('确认新密码', 'sConf', {}) +
       '<div id="sPolicy"></div>' +
       '<div class="actions"><button class="btn primary" id="bSecChange">修改密码</button><button class="btn danger" id="bSecLogout">退出登录</button></div>' +
       '</div>' +
       '<div class="panel"><h3>ℹ️ 会话说明</h3><div class="mini">会话为 HttpOnly Cookie（12 小时滑动过期），服务器重启后全部失效需重新登录；登录接口有 IP 级限流（15 分钟 10 次）。</div></div>';
+    bindEyes();
     var ref = document.getElementById('sPolicy');
     function refresh() {
       var pw = document.getElementById('sNew').value;

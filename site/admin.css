@@ -14,6 +14,13 @@
 [data-theme="dark"] .auth-ok{background:rgba(16,185,129,.12);border-color:rgba(16,185,129,.4);color:#6ee7b7;}
 .auth-ok.show{display:block;}
 
+/* ---------- 密码可见性小眼睛（默认关闭=隐藏，斜线覆盖） ---------- */
+.pw-wrap{position:relative;}
+.pw-wrap input{padding-right:40px;}
+.eye{position:absolute;right:8px;top:50%;transform:translateY(-50%);border:none;background:transparent;cursor:pointer;font-size:15px;line-height:1;padding:2px;color:var(--text);opacity:.55;user-select:none;}
+.eye:hover{opacity:.95;}
+.eye.closed::after{content:'';position:absolute;left:50%;top:50%;width:120%;height:1.5px;background:currentColor;transform:translate(-50%,-50%) rotate(-45deg);border-radius:2px;}
+
 /* ---------- 表单 ---------- */
 .field{margin-bottom:14px;}
 .field label{display:block;font-size:13px;font-weight:600;margin-bottom:5px;color:var(--text);}
