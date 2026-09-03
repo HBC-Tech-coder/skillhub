@@ -7,6 +7,10 @@
 
 ```sh
 # 1. 爬取（每生态一次，草稿入 data/pending/，gitignore 不进仓）
+#    top 200 × 14 查询（GitHub 搜索分页，见 server/crawlers/*）；星标门槛：
+#    dsh/workbuddy/trae ≥3★，mcp/claude-code/codex/gemini ≥5★；trae/foreign 带噪音过滤。
+#    自动入库有质量闸门（server/lib/ingest.js）：INGEST_MIN_STARS 默认 10、INGEST_DAILY_CAP 默认 100，
+#    低于门槛/超出上限的 keep 草稿保留打标结果，走人工审阅转正（长尾覆盖靠人工/点名清单）。
 node server/crawlers/dsh.js
 node server/crawlers/workbuddy.js
 node server/crawlers/trae.js

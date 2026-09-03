@@ -1,6 +1,9 @@
 // AI 自动收录：把 labeled-*.json 中 keep:true 的草稿转正为 entries（幂等，已存在跳过）。
 // 用法：node server/lib/ingest.js [labeled文件]（默认取最新 labeled-*.json）
 // 红线：仅写入 data/entries/<id>.json；不覆盖既有条目；verified 一律 false（AI 打标非人工核验）。
+// 质量闸门（爬取 top200 后必须收紧自动入库）：
+//   INGEST_MIN_STARS 默认 10——星标低于门槛的 keep 草稿不入库（保留打标结果，走人工审阅转正）；
+//   INGEST_DAILY_CAP 默认 100——单次运行最多新增条数，超出部分留待后续轮次（保持目录质量与可审性）。
 const fs = require('fs');
 const path = require('path');
 const { CATEGORY_BY_SCENARIO } = require('../../scripts/lib/scenarios.js');
@@ -9,6 +12,8 @@ const { localDate } = require('../../scripts/lib/dates.js');
 const ROOT = path.resolve(__dirname, '..', '..');
 const PENDING_DIR = path.join(ROOT, 'data', 'pending');
 const ENTRIES_DIR = path.join(ROOT, 'data', 'entries');
+const MIN_STARS = Number(process.env.INGEST_MIN_STARS || 10);
+const DAILY_CAP = Number(process.env.INGEST_DAILY_CAP || 100);
 
 function latestLabeled() {
   const files = fs.readdirSync(PENDING_DIR).filter((f) => f.startsWith('labeled-') && f.endsWith('.json')).sort();
@@ -42,7 +47,7 @@ function main() {
       if (e.url) existingUrls.add(String(e.url).toLowerCase().replace(/\/$/, ''));
     } catch { /* ignore */ }
   }
-  let created = 0, skipped = 0;
+  let created = 0, skipped = 0, held = 0, capped = 0;
   for (const r of labeled.items || []) {
     if (!r.keep) continue;
     const d = byId[r.id];
@@ -50,6 +55,8 @@ function main() {
     const file = path.join(ENTRIES_DIR, r.id + '.json');
     if (fs.existsSync(file)) { skipped++; continue; }
     if (d.url && existingUrls.has(String(d.url).toLowerCase().replace(/\/$/, ''))) { skipped++; continue; }
+    if (created >= DAILY_CAP) { capped++; continue; }
+    if ((d.stars ?? 0) < MIN_STARS) { held++; continue; } // 低星：打标保留，走人工审阅转正
     const scenarios = (r.scenarios || []).filter((s) => typeof s === 'string').slice(0, 3);
     const eco = (d.ecosystems || [])[0] || { id: 'generic', kind: 'other', install: `git clone ${d.url}` };
     const entry = {
@@ -83,7 +90,7 @@ function main() {
     fs.writeFileSync(file, JSON.stringify(entry, null, 2) + '\n');
     created++;
   }
-  console.log(`[ingest] 新增 ${created} 条，跳过 ${skipped} 条（已存在/缺草稿）`);
+  console.log(`[ingest] 新增 ${created} 条；跳过 ${skipped} 条（已存在/缺草稿）；星标<${MIN_STARS} 留审 ${held} 条；超当日上限 ${DAILY_CAP} 截留 ${capped} 条`);
 }
 
 main();

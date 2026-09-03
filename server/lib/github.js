@@ -30,6 +30,26 @@ function searchRepos(q, perPage, token) {
   return ghGet('/search/repositories?q=' + encodeURIComponent(q) + '&sort=stars&order=desc&per_page=' + (perPage || 30), token);
 }
 
+// 分页拉取：最多 total 条（每页 perPage ≤ 100，GitHub 上限），跨页合并去重。
+// 用于"top N"覆盖（如 top 200）；页间 sleep 1.2s 规避搜索限速（认证 30 次/分钟）。
+async function searchReposPaged(q, total, token, perPage) {
+  perPage = Math.min(perPage || 100, 100);
+  const pages = Math.ceil((total || 200) / perPage);
+  const seen = new Map();
+  for (let page = 1; page <= pages; page++) {
+    const res = await ghGet(
+      '/search/repositories?q=' + encodeURIComponent(q) +
+      '&sort=stars&order=desc&per_page=' + perPage + '&page=' + page,
+      token
+    );
+    const items = res.items || [];
+    for (const r of items) if (!seen.has(r.full_name)) seen.set(r.full_name, r);
+    if (items.length < perPage) break; // 已是最后一页
+    await new Promise((resolve) => setTimeout(resolve, 1200));
+  }
+  return [...seen.values()];
+}
+
 // raw.githubusercontent.com 读取（不计 API 限速）。返回文本，失败返回 ''。
 function rawGetText(fullName, file, branch) {
   return new Promise((resolve) => {
@@ -45,4 +65,4 @@ function rawGetText(fullName, file, branch) {
   });
 }
 
-module.exports = { ghGet, searchRepos, rawGetText };
+module.exports = { ghGet, searchRepos, searchReposPaged, rawGetText };
