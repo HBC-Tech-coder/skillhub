@@ -1,0 +1,36 @@
+{
+  "id": "kling-ai-plugin-skill-global",
+  "name": "Kling AI Plugin Skill (Global)",
+  "owner": "Kling AI",
+  "url": "https://kling.ai/mcp/plugin",
+  "category": "skill",
+  "description": {
+    "en": "Official Global npm Skill with kling-plugin CLI for images, video and task tracking. OAuth login; generation uses regional account credits. China and Global accounts, credits and tasks are separate. Complete package required; UNLICENSED.",
+    "zh": "可灵海外版通用 Skill，npm 包含 kling-plugin CLI，支持图像、视频生成及任务查询。OAuth 登录；生成消耗对应账号积分；国内外账号、积分、任务不互通。需安装完整包，非单独复制 SKILL.md；许可 UNLICENSED。"
+  },
+  "install": "npm i -g @klingai/plugin-global@latest --registry=https://registry.npmjs.org --allow-scripts=@klingai/plugin-global",
+  "ecosystems": [
+    {
+      "id": "generic",
+      "kind": "skill",
+      "install": "npm i -g @klingai/plugin-global@latest --registry=https://registry.npmjs.org --allow-scripts=@klingai/plugin-global"
+    }
+  ],
+  "added": "2026-11-13",
+  "npm": "@klingai/plugin-global",
+  "tarball": null,
+  "stars": null,
+  "downloads": null,
+  "screenshots": [],
+  "kind": "skill",
+  "license": "UNLICENSED",
+  "author": "Kling AI",
+  "tags": [
+    "image-generation",
+    "video-generation",
+    "oauth",
+    "global"
+  ],
+  "verified": false,
+  "status": "active"
+}
